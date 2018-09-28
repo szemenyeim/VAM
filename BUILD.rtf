@@ -1,0 +1,54 @@
+This guide will walk you through the steps to build VAM. It was tested on Windows 10 for Visual Studio 2015, but technically it can be built on linux or mac.
+
+Requirements
+
+Using Visual Studio 2015
+
+If you build VAM using VS 2015, then you can download all the required libraries from here. Unzip it in the same folder as the solution file and you are good to go. The precompiled libraries are for x86, for x64 version, you need to compile them.
+
+Other platforms/compilers
+
+If you build VAM with other compilers, you need to download and/or build the following libraries. 
+
+Qt 5.x (tested with 5.6) http://www.qt.io/
+QtAV http://www.qtav.org/
+OpenCV 3.x (tested with 3.0) http://opencv.org/
+ffmpeg http://ffmpeg.org/
+zbar http://zbar.sourceforge.net/
+
+Build VAM
+
+Using Visual Studio 2015
+
+Simply open the solution file and compile it. If you put the precompiled libraries in the right place the solution should find them.
+
+Other platforms/compilers
+
+First, you need to make sure that all the libraries are available on the selected platform, and that the compiler supports Qt. See the list here (http://doc.qt.io/qt-5/supported-platforms.html).
+
+To build VAM you need to:
+1. Create a new project (Create a Qt Widgets application)
+2. Remove any automatically created source, header or resource files from the project
+3. Add the header and source files in the VAM folder
+4. Add VAM.qrc as the resource file of the project
+5. Move the Icons and Translation folder into your project folder
+6. Add the include and library paths of the compiled dependencies to your project
+7. Link with the following libraries:
+opencv core
+opencv imgcodecs
+opencv imgproc
+Qt Core
+Qt GUI
+Qt Widgets
+Qt Multimedia
+Qt Multimedia Widgets
+QtAV
+QtAV Widgets
+avformat
+zbar
+
+Translations
+
+As of now, VAM is available in English and Hungarian. Any translations to other languages are more than welcome. To create a new translation, you need to make a copy of the english translation file, and convert it to another language using Qt Linguist. A complete tutorial on how to use Linguist is available here (http://doc.qt.io/qt-5/linguist-translators.html)
+
+To make your new translation work with VAM, you need to copy the compiled translation file (*.qm) into the Translations folder. Then, you have to open the translations.tr file (it is a simple text file), add the name of the language to the first list, and the name of the translation file to the second. Lists are terminated by the line containing 'end'. Make sure you add the new entries to a new line.

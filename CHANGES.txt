@@ -1,0 +1,104 @@
+2016.05.12
+---------------------------------------------
+- Apróbb hibák javítása
+- Távolságok, szögek számítása nagyjából stimmel
+---------------------------------------------
+2016.05.09
+---------------------------------------------
+- Napló fájl készítése:
+	- A Logs/log.txt fájlba a program jegyzi, hogy a felhasználó 	mit csinál. Ez baromira tud segíteni, hogy az esetleges 	hibákat otthon reprodukálni tudjam
+---------------------------------------------
+2016.05.08
+---------------------------------------------
+- A kód ki lett tisztítva többé kevésbé
+- Sok hibát kijavítottam, minimálisan tesztelve is van
+- Fordítás fájlok is ki lettek takarítva: a már nem használt elemek eltüntek
+- A marker számítás alapjaiban ellenörizve lett
+- A videó ablakban lehetséges a már elkészült képek etalon státuszát módosítani
+- A marker ablakban a célkereszt rajzolását meglehetösen meggyorsítottam
+- TODO:
+	- Sok sok teszt
+	- Log fájlok készítése, hogy a mások által észlelt hibákat 	könnyen reprodukálni tudjam
+---------------------------------------------
+2016.05.04
+---------------------------------------------
+- Felhasználói felület többé-kevésbé igényes
+- Minden ablakot át lehet méretezni, az felület elemei nagyjából jól viselkednek
+- Mostantól az adatbázisok, sémák, illetve mérések átnevezése lehetséges
+	- Ha egy mérés által használt adatbázist, vagy sémát 	nevezünk át, akkor a mérés következö megnyitásánál újra meg 	kell adnunk
+- Mérés készítésénél a felhasznált adatbázist, illetve sémát az elején kell megadnunk, késöbb nem módosítható
+- Video ablak
+	- Képes feldolgozni azt az esetet, ha csak oldalsó, vagy 	csak felsö videónk van
+	- Lehet merevlemezröl állóképet hozzáadni
+	- Létezö állóképet át lehet nevezni
+- Séma ablak
+	- A pontokat és a méréseket át lehet nevezni
+	- Ha olyan pontot próbálunk törölni, amit valamelyik mérés 	használ, akkor kiírja, hogy melyik mérés(ek) akadályozzák a 	pont letörlését
+- Mérés ablak
+	- Ha megváltozik az adatbázis a mérés alatt, akkor már nem 	kell legyalulni az összes markert, csak a megváltozott 	képeket kell újrajelölni
+	- A séma megváltozása esetén ugyanezt tudja a program
+- A fordítás fájlokban elég sok új szöveg van
+- TODO:
+	- Kód kitakarítás	
+	- Markerek számításának ellenörzése
+	- Nagyon sok teszt, mert jelentösen átírtam a progit, de 	minimálisan lett tesztelve
+---------------------------------------------
+2016.04.30
+---------------------------------------------
+- Felhasználói felület letisztítása
+	- Szöveges gombok kiírtása, lecserélve ikonokra sok helyen
+	- Tooltipek hozzáadása a gombokhoz
+- Föablakban a videó adatbázisok is egy listában láthatóak, ugyanúgy megnyitható, törölhetö, stb, mint a többi
+	- A videó adatbázis, már nem egy videóhoz tartozik, hanem 	megyjegyzi az összes hozzá tartozó videót
+	- A videó adatbázis fájl formátuma megváltozott!!! Ha régi 	adatbázist próbálunk betölteni, akkor elöbb-utóbb el fog 	szállni a program
+- A videó ablakban a képek készítésénél már egy 	gombnyomással készíthetö kép mindkét videóról, és egy listában jelennek meg a készített képek
+	- A videó ablak kép készítésekor megpróbálja az adott 	képeken látható QR/vonalkódot leolvasni
+	- Mentés másként funkció
+	- A listából letörölt képeket a merevlemezröl is törli az 	alkalmazás
+- A séma ablakban ha nem nyitunk meg mintaképet, akkor teljesen fekete képre rajzol az alkalmazás
+	- Mentés másként funkció
+- A mérés ablakban is elérhetö a mentés másként funkció
+- Fordítás funkció:
+	- A help/segítség menü-böl elérhetö a nyelv kiválasztása 	funkció
+	- A program a legutoljára kiválasztott nyelvet megjegyzi
+- Program felkészült arra, hogy valaki ninja módon letörli 	az elkészített képeket/videókat
+- Program felkészült arra, hogy a viedó adatbázis, vagy a séma üres lehet
+- Apróbb hibák javítva
+- Ha kimeneti fájlt generálunk, akkor a program a projektet automatikusan elmenti
+- TODO:
+	- UI igényes elrendezése
+	- UI méretváltozásainak kezelése
+	- Program felkészítése arra, ha csak egy videó alapján 	mérünk
+	- Kód kitakarítása
+	- Méret számítások ellenörzése
+	- Teszt, teszt, teszt
+
+---------------------------------------------
+2016.04.28
+---------------------------------------------
+Videó ablak:
+	- A mentési név automatikusan átkerül a másik szövegbeviteli 	mezöbe
+	- A beállítások az ablak tetrjén vannak
+	- Egyszerre több videó megnyitása:
+	- A progi a videó dátuma szerint rendezi sorba a 			videókat (ha a dátum nem elérhetö, akkor név szerint 	rendez)
+	- A videók egymás után playlist-szerüen kerülnek 	lejátszásra, automatikusan, illetve a gombok 	segítségével
+
+Marker ablak:
+	- A görgö segítségével bele lehet zoomolni a képbe
+	- Az ablakon található extra gomb segítségével át lehet 	váltani kijelölési módba
+	- Ebben a módban a marker közelébe töténö kattintással az 	adott marker kijelölhetö, a <w,a,s,d> gombok segítségével az 	egyes irányokba mozgatható, a <delete> és a <backspace> 	gombok segítségével pedig törölhetö
+	- A hátralévö képek számításában lévö hibát javítottam
+	- Az adatbázis megváltozásának téves eszlelését javítottam
+
+Egyéb:
+	- A csv formátumú adatbázis minimalista adatmátrixba teszi 	az adatokat
+	- A szögek fokban számolódnak
+
+Hátralévö dolgok:
+	- QR kód olvasás
+	- Többnyelvüség/automatikus fordítás
+	- Felhasználói felület igényes elékszítése
+	- Ablakok méretváltozásának kezelése
+	- Kód kitakarítása
+	- Méret számítások ellen?rzése
+	- Teszt, teszt, teszt

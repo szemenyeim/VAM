@@ -1,0 +1,183 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf830
+{\fonttbl\f0\fmodern\fcharset0 CourierNewPS-BoldMT;\f1\fmodern\fcharset0 CourierNewPSMT;\f2\fswiss\fcharset0 Helvetica;
+}
+{\colortbl;\red255\green255\blue255;\red163\green21\blue21;}
+{\*\expandedcolortbl;;\csgenericrgb\c63922\c8235\c8235;}
+\paperw12240\paperh15840\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\b\fs36 \cf0 Introduction
+\f1\b0\fs22 \
+\
+	VAM is a free, open source software for video-aided measurement of animals. It is licensed under the GPL 3.0 license. \
+\
+
+\f0\b\fs36 Installation
+\f1\b0\fs22 \
+\
+	To install VAM, simply download the windows installer from here. It was tested on Windows 7 and 10.\
+\
+
+\f0\b\fs36 Usage
+\f1\b0\fs22 \
+\
+	To use VAM, you need to create a video file or still images of the animals to be measured. Currently VAM supports the use of two separate videos: One for the side view an another for an upper view. Both of these videos have to contain a view of an etalon of known length. (Make sure that the animals and the etalons are parallel to the camera plane!)\
+\
+	VAM measurements are organized into projects. You can create and save new projects or open existing ones from the main window. By default projects are saved to 'Documents\\VAM\\Projects\\<project name>\\' (you can set a different directory in the settings menu). A project may contain several of the following elements:\
+\pard\pardeftab720\li720\fi-360\partightenfactor0
+\cf0 Databases for still pictures that will be used for the actual measurement\
+Schemas defining the distances and angles that are to be calculated and the anatomical points used for the computation.\
+Measurement files containing the positions of the anatomical points on the still images.\
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+	The first step in the measurement process is to create a database for the still images. When creating a new still database, you will be prompted for the names of the side and upper video files. If you only have one type of video file, just cancel one of the prompts. You can add multiple side or upper videos to the database file. In this case, the videos will be ordered by timestamp value, or alphabetically if no timestamp is available.\
+\
+	Once the videos are opened, you can create, open, rename and delete still images (don't forget to check the 'etalon' box, when creating a still of the etalon - though you can change a still's etalon flag later using the menubar). The program will automatically try to assign an ID to the stills by searching for a QR or barcode on the images. By default it checks the side image first, and only checks the upper image if there is no code found.\
+\
+	The next step is to create a schema: Here you can define the anatomical points, and use them to define angles and distances that the program will compute for every animal. The points, distances and angles are defined separately for the side and the upper images (if use only one type, make sure that the schema and the still database use the same type). You can also use an example still image pair to help define the schema.\
+\
+	The final step is to mark the positions of the anatomical points on every still. You can do this by creating a measurement. Note, that if you have multiple schemas and databases in your project, then you have to create a new measurement for every database-schema combination.\
+	\
+	In the measurement window you can add the points in order by clicking on the image. When finished with the image, you can move to the next one by clicking on the image again. You can also switch to a marker edit mode, where you can select the markers by clicking near them, and use <w,a,s,d> to move, and <delete> to remove them. You can also set a confidence level for every still image.\
+\
+	By default, VAM presents you all the side still images first, but you can change this in the settings menu - then images will be ordered by animal ID.\
+\
+	Finally, you can generate an output file from the main window. Currently, we support two formats: csv for raw data, and html for a presentation that is more fit for the human eye.\
+\
+
+\f0\b\fs36 Advanced options
+\f1\b0\fs22 \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b \cf0 Logging
+\f1\b0 : By default VAM logs your actions, which makes it easier to reproduce bugs. If you encounter an error, please send me the log file found at 'Users\\<user name>\\AppData\\Roaming\\VAM\\log.txt'.\
+\
+
+\f0\b Automatic Correction: 
+\f1\b0 This feature intends to account for the differences in animal height. Since animals aren't the same height, the distance of the upper points and the etalon will inevitably differ, which leads to inaccuracies. To use auto correction you have to do the following:\
+\pard\pardeftab720\li720\fi-360\partightenfactor0
+\cf0 In the database window you need to set the distance of the upper camera from the ground. It is assumed by the feature the the etalon is placed on the ground for the upper image.\
+In the schema window you need to set the height measurement. Basically you are telling the program which distance defined in the schema is the height of the animal.\
+In the measurement window you have to enable automatic correction.\
+\pard\pardeftab720\partightenfactor0
+\cf0 	\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b \cf0 File structures: 
+\f1\b0 The files generated by VAM are simple text files, editable using any text editor. You are, however, not recommended to do that, since it can lead to undefined behaviour. Still, I list the contents of the files generated by VAM:\
+\
+Project:\
+\pard\pardeftab720\li720\fi-360\partightenfactor0
+\cf0 Header\
+Name\
+0 for csv output, 1 for html\
+Project directory\
+List of database files (one file for every line, terminated by a line containing 'end')\
+List of schema files\
+List of measurement files\
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+Still DB:\
+\pard\pardeftab720\li720\fi-360\partightenfactor0
+\cf0 Header\
+Name\
+Etalon size (in meters)\
+Distance of upper camera (in meters)\
+List of side and upper etalons\
+List of side and upper videos\
+List of side and upper IDs\
+List of side and upper still image paths\
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+Schema:\
+\pard\pardeftab720\li720\fi-360\partightenfactor0
+\cf0 Header\
+Path to file\
+Name\
+Index of the 'height' measurement\
+List of how many times each point is used in a measurement (separate lists for the side and upper points)\
+Lists of the side and upper points\
+\pard\pardeftab720\li1080\fi-360\partightenfactor0
+\cf0 Points contain name and coordinates (the latter are not used)\
+\pard\pardeftab720\li720\fi-360\partightenfactor0
+\cf0 Lists of the side and upper measurements\
+\pard\pardeftab720\li1080\fi-360\partightenfactor0
+\cf0 Measurements contain a name and points used in them\
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+Measurement:\
+\pard\pardeftab720\li720\fi-360\partightenfactor0
+\cf0 Header\
+Path to file\
+Name\
+1 if auto correction is enabled, 0 otherwise\
+Database name\
+Schema name\
+List of side and upper still IDs (used to detect if database was changed)\
+A list of 0s and 1s that indicate whether a still has been fully marked\
+List of the markers for every still (in the same order as in the database)\
+List of confidence values\
+\pard\pardeftab720\partightenfactor0
+\cf0 		\
+
+\f0\b\fs36 Future features\
+
+\f1\b0\fs22 	\
+In the future these features are planned for VAM:\
+\pard\pardeftab720\li720\fi-360\partightenfactor0
+\cf0 Open more still images at once\
+Zoom locally around the cursor if it is close to a mark\
+Create output image with a marks and measurements displayed on it for every enimal\
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+
+\f0\b\fs36 Build VAM from souce:\
+
+\f1\b0\fs22 \
+Click here to read a guide to build VAM from source.\
+\
+
+\f0\b\fs36 Credits:\
+
+\f1\b0\fs22 \
+FFmpeg library - LGPLv2.1 {\field{\*\fldinst{HYPERLINK "http://www.ffmpeg.org/"}}{\fldrslt http://www.ffmpeg.org/}}\
+Qt library - LGPLv3.0 {\field{\*\fldinst{HYPERLINK "http://www.qt.io/"}}{\fldrslt http://www.qt.io/}}\
+VLC library - LGPLv2.1 http://www.videolan.org/vlc/libvlc.html\
+VLC-Qt library - LGPLv3.0 {\field{\*\fldinst{HYPERLINK "http://www.qtav.org/"}}{\fldrslt http://vlc-qt.tano.si/}}\
+OpenCV library - BSD license {\field{\*\fldinst{HYPERLINK "http://opencv.org/"}}{\fldrslt http://opencv.org/}}\
+ZBar library - Zero license {\field{\*\fldinst{HYPERLINK "http://zbar.sourceforge.net/"}}{\fldrslt http://zbar.sourceforge.net/}}\
+Libiconv library - LGPL {\field{\*\fldinst{HYPERLINK "https://www.gnu.org/software/libiconv/"}}{\fldrslt https://www.gnu.org/software/libiconv/}}\
+The Mesa 3D Graphics library - MIT license {\field{\*\fldinst{HYPERLINK "http://www.mesa3d.org/egl.html"}}{\fldrslt http://www.mesa3d.org/egl.html}}\
+ICU - International Components for Unicode {\field{\*\fldinst{HYPERLINK "http://www.unicode.org/copyright.html"}}{\fldrslt http://www.unicode.org/copyright.html}}\
+"Microsoft Visual Studio 2015 Enterprise Edition - {\field{\*\fldinst{HYPERLINK "https://www.visualstudio.com/"}}{\fldrslt https://www.visualstudio.com/}}\
+Flexera InstallShield Limited Edition - {\field{\*\fldinst{HYPERLINK "http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio"}}{\fldrslt http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio}}\
+Icons designed by Momentum Design Lab - Creative Commons (Attribution 3.0 Unported) {\field{\*\fldinst{HYPERLINK "http://momentumdesignlab.com/"}}{\fldrslt http://momentumdesignlab.com/}}\
+Volume icon designed by Yummygum {\field{\*\fldinst{HYPERLINK "https://yummygum.com/"}}{\fldrslt https://yummygum.com/}}\
+Main application icon designed by icons8 - Creative Commons (Attribution-NoDerivs 3.0 Unported) {\field{\*\fldinst{HYPERLINK "http://icons8.com/"}}{\fldrslt http://icons8.com/}}\
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs19 \cf2 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs22 \cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs19 \cf0 VAM --- Video Assisted Measurement of Animals\
+Copyright( C ) 2016  M\'e1rton Szemenyei\
+\
+This program is free software : you can redistribute it and / or modify\
+it under the terms of the GNU General Public License as published by\
+the Free Software Foundation, either version 3 of the License, or\
+( at your option ) any later version.\
+\
+This program is distributed in the hope that it will be useful,\
+but WITHOUT ANY WARRANTY; without even the implied warranty of\
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.See the\
+GNU General Public License for more details.\
+\
+You should have received a copy of the GNU General Public License\
+along with this program.If not, see <{\field{\*\fldinst{HYPERLINK "http://www.gnu.org/licenses/"}}{\fldrslt http://www.gnu.org/licenses/}}>.
+\f1\fs22 \
+}
