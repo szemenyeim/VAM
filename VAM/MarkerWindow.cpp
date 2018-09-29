@@ -818,7 +818,18 @@ void MarkerWindow::drawMarkings(double factor)
 			// Put point marker and name on the image
 			cv::circle(currentDrawing, p, 4, color);
 			//cv::putText( currentDrawing, p.getName().toStdString(), cv::Point( p.x + 10, p.y ), cv::FONT_HERSHEY_COMPLEX_SMALL, 1, color );
-			drawText(currentDrawing, cv::Point(p.x + 10, p.y), p.getName(), currCol);
+
+			// Position text
+			int textWidth = p.getName().size() * 10, textHeight = 17;
+			int originX = p.x + 10, originY = p.y;
+			if (originY < textHeight)
+				originY = textHeight;
+			if (originY + textHeight >= currentDrawing.rows)
+				originY = currentDrawing.rows - textHeight - 1;
+			if (originX + textWidth >= currentDrawing.cols)
+				originX = currentDrawing.cols - textWidth - 1;
+
+			drawText(currentDrawing, cv::Point(originX, originY), p.getName(), currCol);
 		}
 	}
 

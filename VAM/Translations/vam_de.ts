@@ -251,12 +251,12 @@
         <translation>Möchten Sie die Änderungen speichern?</translation>
     </message>
     <message>
-        <location filename="../MarkerWindow.cpp" line="836"/>
+        <location filename="../MarkerWindow.cpp" line="847"/>
         <source>Etalon</source>
         <translation>Etalon</translation>
     </message>
     <message>
-        <location filename="../MarkerWindow.cpp" line="843"/>
+        <location filename="../MarkerWindow.cpp" line="854"/>
         <source>Finished</source>
         <translation>Fertig</translation>
     </message>

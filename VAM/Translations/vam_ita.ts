@@ -251,12 +251,12 @@
         <translation>Salvare le modifiche?</translation>
     </message>
     <message>
-        <location filename="../MarkerWindow.cpp" line="836"/>
+        <location filename="../MarkerWindow.cpp" line="847"/>
         <source>Etalon</source>
         <translation>Riferimento</translation>
     </message>
     <message>
-        <location filename="../MarkerWindow.cpp" line="843"/>
+        <location filename="../MarkerWindow.cpp" line="854"/>
         <source>Finished</source>
         <translation>Fatto</translation>
     </message>
