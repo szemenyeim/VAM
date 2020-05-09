@@ -41,6 +41,8 @@ public:
 	{
 		points.resize(VAMMaxVideos);
 		pixRatio.resize(VAMMaxVideos,1.0);
+		A.resize(VAMMaxVideos);
+		d.resize(VAMMaxVideos);
 		signal = new Messenger();
 		connected = false;
 	}

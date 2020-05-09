@@ -103,6 +103,7 @@ public:
 	inline Schema getSchema(int index) { return schemas[index]; }
 	Schema getSchema(QString name);
 	inline Measurement& getMeasurement(int index) { return measurements[index]; }
+	inline std::vector<Measurement> &getMeasurements() { return measurements; }
 	inline Measurement *getMeasPtr(int index) { return &measurements[index]; }
 	Measurement getMeasurement(QString name);
 

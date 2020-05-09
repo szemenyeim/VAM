@@ -543,6 +543,9 @@ QString VAMTranslatedStrings::measTipMove() {
 QString VAMTranslatedStrings::measTipZoom() {
 	return  tr("Tip: Use the mouse wheel to zoom in and out of the image");
 }
+QString VAMTranslatedStrings::doneStr() {
+	return  tr(" --- (Done)");
+}
 
 
 OrderingType VAMOptions::VAMImageOrderingType = OrderByImageType;

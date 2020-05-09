@@ -191,72 +191,72 @@
         <translation>Correzione automatica</translation>
     </message>
     <message>
-        <location filename="../MarkerWindow.cpp" line="269"/>
+        <location filename="../MarkerWindow.cpp" line="271"/>
         <source>Error</source>
         <translation>Errore</translation>
     </message>
     <message>
-        <location filename="../MarkerWindow.cpp" line="306"/>
+        <location filename="../MarkerWindow.cpp" line="308"/>
         <source>Error: Image files missing</source>
         <translation>Errore: file di immagine non trovati</translation>
     </message>
     <message>
-        <location filename="../MarkerWindow.cpp" line="306"/>
+        <location filename="../MarkerWindow.cpp" line="308"/>
         <source>One or more image files are missing from the hard drive. Please fix the still database!</source>
         <translation>Una o più immagini mancanti sul disco rigido. Si prega di correggere il database!</translation>
     </message>
     <message>
-        <location filename="../MarkerWindow.cpp" line="170"/>
+        <location filename="../MarkerWindow.cpp" line="172"/>
         <source>New Measurement</source>
         <translation>Nuova misurazione</translation>
     </message>
     <message>
-        <location filename="../MarkerWindow.cpp" line="170"/>
+        <location filename="../MarkerWindow.cpp" line="172"/>
         <source>Enter Name:</source>
         <translation>Inserire un nome:</translation>
     </message>
     <message>
-        <location filename="../MarkerWindow.cpp" line="170"/>
+        <location filename="../MarkerWindow.cpp" line="172"/>
         <source>Please specify a name!</source>
         <translation>Compila il campo nome!</translation>
     </message>
     <message>
-        <location filename="../MarkerWindow.cpp" line="170"/>
+        <location filename="../MarkerWindow.cpp" line="172"/>
         <source>A measurement with this name already exists!</source>
         <translation>Misurazione con questo nome già esistente!</translation>
     </message>
     <message>
-        <location filename="../MarkerWindow.cpp" line="269"/>
+        <location filename="../MarkerWindow.cpp" line="271"/>
         <source>The schema or the database used by this measurement is not loaded.</source>
         <translation>Lo schema o il database usato per la misurazione non viene caricato.</translation>
     </message>
     <message>
-        <location filename="../MarkerWindow.cpp" line="296"/>
+        <location filename="../MarkerWindow.cpp" line="298"/>
         <source>Error: Corrupt Database</source>
         <translation>Errore: errore del file di database</translation>
     </message>
     <message>
-        <location filename="../MarkerWindow.cpp" line="296"/>
+        <location filename="../MarkerWindow.cpp" line="298"/>
         <source>The Database file has been corrupted. Please fix the still database!</source>
         <translation>Il database è danneggiato. Si prega di correggere!</translation>
     </message>
     <message>
-        <location filename="../MarkerWindow.cpp" line="473"/>
+        <location filename="../MarkerWindow.cpp" line="475"/>
         <source>The current measurement has been modified.</source>
         <translation>La misurazione corrente è stata modificata.</translation>
     </message>
     <message>
-        <location filename="../MarkerWindow.cpp" line="474"/>
+        <location filename="../MarkerWindow.cpp" line="476"/>
         <source>Do you want to save your changes?</source>
         <translation>Salvare le modifiche?</translation>
     </message>
     <message>
-        <location filename="../MarkerWindow.cpp" line="847"/>
+        <location filename="../MarkerWindow.cpp" line="852"/>
         <source>Etalon</source>
         <translation>Riferimento</translation>
     </message>
     <message>
-        <location filename="../MarkerWindow.cpp" line="854"/>
+        <location filename="../MarkerWindow.cpp" line="859"/>
         <source>Finished</source>
         <translation>Fatto</translation>
     </message>
@@ -1057,16 +1057,16 @@
 <context>
     <name>VAM</name>
     <message>
-        <location filename="../vam.cpp" line="1223"/>
-        <location filename="../vam.cpp" line="1295"/>
+        <location filename="../vam.cpp" line="1229"/>
+        <location filename="../vam.cpp" line="1301"/>
         <source>New Project</source>
         <translation>Nuovo progetto</translation>
     </message>
     <message>
         <location filename="../vam.cpp" line="254"/>
         <location filename="../vam.cpp" line="290"/>
-        <location filename="../vam.cpp" line="1223"/>
-        <location filename="../vam.cpp" line="1295"/>
+        <location filename="../vam.cpp" line="1229"/>
+        <location filename="../vam.cpp" line="1301"/>
         <source>Enter Name:</source>
         <translation>Inserire un nome:</translation>
     </message>
@@ -1083,8 +1083,8 @@
     <message>
         <location filename="../vam.cpp" line="254"/>
         <location filename="../vam.cpp" line="290"/>
-        <location filename="../vam.cpp" line="1223"/>
-        <location filename="../vam.cpp" line="1295"/>
+        <location filename="../vam.cpp" line="1229"/>
+        <location filename="../vam.cpp" line="1301"/>
         <source>Please specify a name!</source>
         <translation>Compila il campo nome!</translation>
     </message>
@@ -1120,18 +1120,18 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="676"/>
+        <location filename="../vam.cpp" line="682"/>
         <source>Select Still Database</source>
         <translation>Seleziona database di fermo immagini</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="698"/>
+        <location filename="../vam.cpp" line="704"/>
         <source>The selected database is empty. Please select another one!</source>
         <translation>Il database selezionato è vuoto. Seleziona un altro database!</translation>
     </message>
     <message>
         <location filename="../vam.cpp" line="331"/>
-        <location filename="../vam.cpp" line="713"/>
+        <location filename="../vam.cpp" line="719"/>
         <source>Select Schema</source>
         <translation>Seleziona lo schema</translation>
     </message>
@@ -1152,7 +1152,7 @@
     </message>
     <message>
         <location filename="../vam.cpp" line="356"/>
-        <location filename="../vam.cpp" line="730"/>
+        <location filename="../vam.cpp" line="736"/>
         <source>The selected schema is empty. Please select another one!</source>
         <translation>Lo schema selezionato è vuoto. Seleziona un altro schema!</translation>
     </message>
@@ -1163,183 +1163,183 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="463"/>
+        <location filename="../vam.cpp" line="469"/>
         <source>Please select a schema to delete!</source>
         <translation>Seleziona lo schema da eliminare!</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="484"/>
+        <location filename="../vam.cpp" line="490"/>
         <source>Please select a measurement to delete!</source>
         <translation>Seleziona la misurazione da eliminare!</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="538"/>
+        <location filename="../vam.cpp" line="544"/>
         <source>Open Schema File</source>
         <translation>Apri file schema</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="538"/>
+        <location filename="../vam.cpp" line="544"/>
         <source>Schema Files (*.schem)</source>
         <translation>File schema (*.schem)</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="547"/>
+        <location filename="../vam.cpp" line="553"/>
         <source>Error opening schema file</source>
         <translation>Errore durante l&apos;apertura dello schema</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="548"/>
-        <location filename="../vam.cpp" line="575"/>
+        <location filename="../vam.cpp" line="554"/>
+        <location filename="../vam.cpp" line="581"/>
         <source>Please try another location</source>
         <translation>Apri un altro file</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="565"/>
+        <location filename="../vam.cpp" line="571"/>
         <source>Open Measurement File</source>
         <translation>Apri file di misurazione</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="565"/>
+        <location filename="../vam.cpp" line="571"/>
         <source>Measurement Files (*.meas)</source>
         <translation>File di misurazione (*.meas)</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="574"/>
+        <location filename="../vam.cpp" line="580"/>
         <source>Error opening measurement file</source>
         <translation>Errore durante l&apos;apertura della misurazione</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="645"/>
+        <location filename="../vam.cpp" line="651"/>
         <source>Please select a schema to edit!</source>
         <translation>Seleziona lo schema!</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="669"/>
+        <location filename="../vam.cpp" line="675"/>
         <source>Please select a measurement to edit!</source>
         <translation>Seleziona la misurazione!</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="850"/>
+        <location filename="../vam.cpp" line="856"/>
         <source>XLSX files (*.xlsx)</source>
         <translation>File XLSX (*.xlsx)</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="856"/>
+        <location filename="../vam.cpp" line="862"/>
         <source>CSV files (*.csv)</source>
         <translation>File CSV  (*.csv)</translation>
     </message>
     <message>
         <location filename="../vam.cpp" line="241"/>
-        <location filename="../vam.cpp" line="1454"/>
+        <location filename="../vam.cpp" line="1460"/>
         <source>Taken %1 stills from %2 cameras</source>
         <translation>%1 fermo immagine da %2 telecamere</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="853"/>
+        <location filename="../vam.cpp" line="859"/>
         <source>HTML files (*.html)</source>
         <translation>File HTML  (*.html)</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="862"/>
+        <location filename="../vam.cpp" line="868"/>
         <source>Select output file</source>
         <translation>Seleziona il file output</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="1007"/>
+        <location filename="../vam.cpp" line="1013"/>
         <source>About VAM</source>
         <translation>VATEM2 info</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="1164"/>
+        <location filename="../vam.cpp" line="1170"/>
         <source>VAM Projects (*.VAMproj)</source>
         <translation>Progetti VAM (*.VAMproj)</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="1241"/>
-        <location filename="../vam.cpp" line="1309"/>
+        <location filename="../vam.cpp" line="1247"/>
+        <location filename="../vam.cpp" line="1315"/>
         <source>Error writing directory</source>
         <translation>Errore durante la preparazione della cartella</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="1241"/>
-        <location filename="../vam.cpp" line="1309"/>
+        <location filename="../vam.cpp" line="1247"/>
+        <location filename="../vam.cpp" line="1315"/>
         <source>The selected project library could not be written. Please choose another one!</source>
         <translation>Lo schema selezionato è vuoto. Seleziona un altro schema!</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="1639"/>
+        <location filename="../vam.cpp" line="1645"/>
         <source>Saving image %1 of %2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="1662"/>
+        <location filename="../vam.cpp" line="1668"/>
         <source>Output Generation Successful!</source>
         <translation>Uscita riuscita!</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="890"/>
+        <location filename="../vam.cpp" line="896"/>
         <source>Select Project Directory</source>
         <translation>Seleziona cartella progetto</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="688"/>
+        <location filename="../vam.cpp" line="694"/>
         <source>The database for the measurement is not loaded.</source>
         <translation>Il database usato per la misurazione non viene caricato.</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="716"/>
+        <location filename="../vam.cpp" line="722"/>
         <source>The schema for the measurement is not loaded.</source>
         <translation>Lo schema usato per la misurazione non viene caricato.</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="1068"/>
+        <location filename="../vam.cpp" line="1074"/>
         <source>Select Language</source>
         <translation>Seleziona la lingua</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="1068"/>
+        <location filename="../vam.cpp" line="1074"/>
         <source>Choose a language from the list</source>
         <translation>Seleziona una lingua dalla lista</translation>
     </message>
     <message>
         <location filename="../vam.cpp" line="140"/>
-        <location filename="../vam.cpp" line="1102"/>
+        <location filename="../vam.cpp" line="1108"/>
         <source>Disable Logging</source>
         <translation>Disattiva la registrazione</translation>
     </message>
     <message>
         <location filename="../vam.cpp" line="140"/>
-        <location filename="../vam.cpp" line="1102"/>
+        <location filename="../vam.cpp" line="1108"/>
         <source>Enable Logging</source>
         <translation>Attiva la registrazione</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="1656"/>
+        <location filename="../vam.cpp" line="1662"/>
         <source>Saved %1 animals with %2 measurements to</source>
         <translation>%1 animali con %2 misure salvate</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="1134"/>
-        <location filename="../vam.cpp" line="1190"/>
-        <location filename="../vam.cpp" line="1557"/>
+        <location filename="../vam.cpp" line="1140"/>
+        <location filename="../vam.cpp" line="1196"/>
+        <location filename="../vam.cpp" line="1563"/>
         <source>The current project has been modified.</source>
         <translation>Il presente progetto è stato modificato.</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="1135"/>
-        <location filename="../vam.cpp" line="1191"/>
-        <location filename="../vam.cpp" line="1558"/>
+        <location filename="../vam.cpp" line="1141"/>
+        <location filename="../vam.cpp" line="1197"/>
+        <location filename="../vam.cpp" line="1564"/>
         <source>Do you want to save your changes?</source>
         <translation>Salvare le modifiche?</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="1164"/>
+        <location filename="../vam.cpp" line="1170"/>
         <source>Open Project File</source>
         <translation>Apri progetto</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="1223"/>
-        <location filename="../vam.cpp" line="1295"/>
+        <location filename="../vam.cpp" line="1229"/>
+        <location filename="../vam.cpp" line="1301"/>
         <source>A project with this name already exists!</source>
         <translation>Progetto con nome già esistente!</translation>
     </message>
@@ -1693,6 +1693,11 @@
         <translation>Suggerimento: Usa la rotella del mouse per ingrandire/ridurre l&apos;immagine</translation>
     </message>
     <message>
+        <location filename="../Utility.cpp" line="547"/>
+        <source> --- (Done)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../Utility.cpp" line="529"/>
         <source>Animal count</source>
         <translation>Numero animale</translation>
@@ -1813,7 +1818,7 @@
     </message>
     <message>
         <location filename="../CalibrationWizard.cpp" line="79"/>
-        <source>Estimate radial distortion</source>
+        <source>Estimate radial distortion (DO NOT TICK THIS, UNLESS THE RADIAL DISTORTION IS VISIBLE!)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

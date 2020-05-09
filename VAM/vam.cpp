@@ -448,7 +448,13 @@ void VAM::videoBoxChanged(double val, VAMImageIndex idx)
     DB.setEtalonDistance(val, toIdx(idx - 1));
 	currentProject->removeDB(0);
 	currentProject->addDB(DB);
-    currentProject->save(currentProject->getName());
+	DB.save(DB.getFileName());
+	QString name = currentProject->getName();
+    currentProject->save(name);
+	for (Measurement &meas : currentProject->getMeasurements())
+	{
+		meas.read(meas.getFileName());
+	}
     
     VAMLogger::log("Etalon distance #" + QString::number(idx) + ":  " + QString::number(val));
 }

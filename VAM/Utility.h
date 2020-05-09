@@ -232,6 +232,7 @@ public:
 	static QString confidence();
 	static QString measTipMove();
 	static QString measTipZoom();
+	static QString doneStr();
 
 };
 

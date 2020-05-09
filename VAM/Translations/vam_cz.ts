@@ -191,72 +191,72 @@
         <translation>Automatická korekce</translation>
     </message>
     <message>
-        <location filename="../MarkerWindow.cpp" line="269"/>
+        <location filename="../MarkerWindow.cpp" line="271"/>
         <source>Error</source>
         <translation>Chyba</translation>
     </message>
     <message>
-        <location filename="../MarkerWindow.cpp" line="306"/>
+        <location filename="../MarkerWindow.cpp" line="308"/>
         <source>Error: Image files missing</source>
         <translation>Chyba: obrázkové soubory se nenašli</translation>
     </message>
     <message>
-        <location filename="../MarkerWindow.cpp" line="306"/>
+        <location filename="../MarkerWindow.cpp" line="308"/>
         <source>One or more image files are missing from the hard drive. Please fix the still database!</source>
         <translation>Na pevném disku chybí jeden nebo více obrázků. Prosím, opravte databázu!</translation>
     </message>
     <message>
-        <location filename="../MarkerWindow.cpp" line="170"/>
+        <location filename="../MarkerWindow.cpp" line="172"/>
         <source>New Measurement</source>
         <translation>Nové měření</translation>
     </message>
     <message>
-        <location filename="../MarkerWindow.cpp" line="170"/>
+        <location filename="../MarkerWindow.cpp" line="172"/>
         <source>Enter Name:</source>
         <translation>Zadejte jméno:</translation>
     </message>
     <message>
-        <location filename="../MarkerWindow.cpp" line="170"/>
+        <location filename="../MarkerWindow.cpp" line="172"/>
         <source>Please specify a name!</source>
         <translation>Nenechávejte pole s názvem prázdné!</translation>
     </message>
     <message>
-        <location filename="../MarkerWindow.cpp" line="170"/>
+        <location filename="../MarkerWindow.cpp" line="172"/>
         <source>A measurement with this name already exists!</source>
         <translation>Měření s takovým jménem již existuje!</translation>
     </message>
     <message>
-        <location filename="../MarkerWindow.cpp" line="269"/>
+        <location filename="../MarkerWindow.cpp" line="271"/>
         <source>The schema or the database used by this measurement is not loaded.</source>
         <translation>Schéma anebo databáze použité měřením nejsou načteny.</translation>
     </message>
     <message>
-        <location filename="../MarkerWindow.cpp" line="296"/>
+        <location filename="../MarkerWindow.cpp" line="298"/>
         <source>Error: Corrupt Database</source>
         <translation>Chyba souboru databáze</translation>
     </message>
     <message>
-        <location filename="../MarkerWindow.cpp" line="296"/>
+        <location filename="../MarkerWindow.cpp" line="298"/>
         <source>The Database file has been corrupted. Please fix the still database!</source>
         <translation>Databázový soubor je poškozen. Opravte to prosím!</translation>
     </message>
     <message>
-        <location filename="../MarkerWindow.cpp" line="473"/>
+        <location filename="../MarkerWindow.cpp" line="475"/>
         <source>The current measurement has been modified.</source>
         <translation>Aktuální měření bylo změnené.</translation>
     </message>
     <message>
-        <location filename="../MarkerWindow.cpp" line="474"/>
+        <location filename="../MarkerWindow.cpp" line="476"/>
         <source>Do you want to save your changes?</source>
         <translation>Chcete uložit změny?</translation>
     </message>
     <message>
-        <location filename="../MarkerWindow.cpp" line="847"/>
+        <location filename="../MarkerWindow.cpp" line="852"/>
         <source>Etalon</source>
         <translation>Etalon</translation>
     </message>
     <message>
-        <location filename="../MarkerWindow.cpp" line="854"/>
+        <location filename="../MarkerWindow.cpp" line="859"/>
         <source>Finished</source>
         <translation>Hotově</translation>
     </message>
@@ -1057,16 +1057,16 @@
 <context>
     <name>VAM</name>
     <message>
-        <location filename="../vam.cpp" line="1223"/>
-        <location filename="../vam.cpp" line="1295"/>
+        <location filename="../vam.cpp" line="1229"/>
+        <location filename="../vam.cpp" line="1301"/>
         <source>New Project</source>
         <translation>Nový projekt</translation>
     </message>
     <message>
         <location filename="../vam.cpp" line="254"/>
         <location filename="../vam.cpp" line="290"/>
-        <location filename="../vam.cpp" line="1223"/>
-        <location filename="../vam.cpp" line="1295"/>
+        <location filename="../vam.cpp" line="1229"/>
+        <location filename="../vam.cpp" line="1301"/>
         <source>Enter Name:</source>
         <translation>Zadajte jméno:</translation>
     </message>
@@ -1083,8 +1083,8 @@
     <message>
         <location filename="../vam.cpp" line="254"/>
         <location filename="../vam.cpp" line="290"/>
-        <location filename="../vam.cpp" line="1223"/>
-        <location filename="../vam.cpp" line="1295"/>
+        <location filename="../vam.cpp" line="1229"/>
+        <location filename="../vam.cpp" line="1301"/>
         <source>Please specify a name!</source>
         <translation>Nenechávejte pole jména prázdné!</translation>
     </message>
@@ -1120,18 +1120,18 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="676"/>
+        <location filename="../vam.cpp" line="682"/>
         <source>Select Still Database</source>
         <translation>Vyberte statický souborovou databázu</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="698"/>
+        <location filename="../vam.cpp" line="704"/>
         <source>The selected database is empty. Please select another one!</source>
         <translation>Vybraná databáza je prázdní. Vyberte jiný!</translation>
     </message>
     <message>
         <location filename="../vam.cpp" line="331"/>
-        <location filename="../vam.cpp" line="713"/>
+        <location filename="../vam.cpp" line="719"/>
         <source>Select Schema</source>
         <translation>Výběr schémů</translation>
     </message>
@@ -1152,7 +1152,7 @@
     </message>
     <message>
         <location filename="../vam.cpp" line="356"/>
-        <location filename="../vam.cpp" line="730"/>
+        <location filename="../vam.cpp" line="736"/>
         <source>The selected schema is empty. Please select another one!</source>
         <translation>Vybraná schéma je prázdní! Vyberte druhý!</translation>
     </message>
@@ -1163,183 +1163,183 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="463"/>
+        <location filename="../vam.cpp" line="469"/>
         <source>Please select a schema to delete!</source>
         <translation>Vyberte jednou schému na zmazání!</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="484"/>
+        <location filename="../vam.cpp" line="490"/>
         <source>Please select a measurement to delete!</source>
         <translation>Vyberte jednou měření na smazání!</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="538"/>
+        <location filename="../vam.cpp" line="544"/>
         <source>Open Schema File</source>
         <translation>Otevření souboru schémy</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="538"/>
+        <location filename="../vam.cpp" line="544"/>
         <source>Schema Files (*.schem)</source>
         <translation>Soubory schémů(*.schem)</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="547"/>
+        <location filename="../vam.cpp" line="553"/>
         <source>Error opening schema file</source>
         <translation>Otevření schémy se nepodařilo</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="548"/>
-        <location filename="../vam.cpp" line="575"/>
+        <location filename="../vam.cpp" line="554"/>
+        <location filename="../vam.cpp" line="581"/>
         <source>Please try another location</source>
         <translation>Skouste otevřít druhý soubor</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="565"/>
+        <location filename="../vam.cpp" line="571"/>
         <source>Open Measurement File</source>
         <translation>Otevření souboru měření</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="565"/>
+        <location filename="../vam.cpp" line="571"/>
         <source>Measurement Files (*.meas)</source>
         <translation>Soubory měření (*.meas)</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="574"/>
+        <location filename="../vam.cpp" line="580"/>
         <source>Error opening measurement file</source>
         <translation>Otevření měření se nepodařilo</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="645"/>
+        <location filename="../vam.cpp" line="651"/>
         <source>Please select a schema to edit!</source>
         <translation>Vyberte jednou schému!</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="669"/>
+        <location filename="../vam.cpp" line="675"/>
         <source>Please select a measurement to edit!</source>
         <translation>Vyberte jednou měření!</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="850"/>
+        <location filename="../vam.cpp" line="856"/>
         <source>XLSX files (*.xlsx)</source>
         <translation>Soubory XLSX(*.xlsx)</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="856"/>
+        <location filename="../vam.cpp" line="862"/>
         <source>CSV files (*.csv)</source>
         <translation>CSV soubory (*.csv)</translation>
     </message>
     <message>
         <location filename="../vam.cpp" line="241"/>
-        <location filename="../vam.cpp" line="1454"/>
+        <location filename="../vam.cpp" line="1460"/>
         <source>Taken %1 stills from %2 cameras</source>
         <translation>%1 statický obrazek %2 z uhla kamery</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="853"/>
+        <location filename="../vam.cpp" line="859"/>
         <source>HTML files (*.html)</source>
         <translation>HTML soubory(*.html)</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="862"/>
+        <location filename="../vam.cpp" line="868"/>
         <source>Select output file</source>
         <translation>Vyberte výstupní soubor</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="1007"/>
+        <location filename="../vam.cpp" line="1013"/>
         <source>About VAM</source>
         <translation>O VATEM2</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="1164"/>
+        <location filename="../vam.cpp" line="1170"/>
         <source>VAM Projects (*.VAMproj)</source>
         <translation>VAM Projects (*.VAMproj)</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="1241"/>
-        <location filename="../vam.cpp" line="1309"/>
+        <location filename="../vam.cpp" line="1247"/>
+        <location filename="../vam.cpp" line="1315"/>
         <source>Error writing directory</source>
         <translation>Chyba při psání knihovny</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="1241"/>
-        <location filename="../vam.cpp" line="1309"/>
+        <location filename="../vam.cpp" line="1247"/>
+        <location filename="../vam.cpp" line="1315"/>
         <source>The selected project library could not be written. Please choose another one!</source>
         <translation>Vybraná knihovna projektu je nemožní napsát! Vyberte jiný!</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="1639"/>
+        <location filename="../vam.cpp" line="1645"/>
         <source>Saving image %1 of %2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="1662"/>
+        <location filename="../vam.cpp" line="1668"/>
         <source>Output Generation Successful!</source>
         <translation>Generováni výstupu je úspěšný!</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="890"/>
+        <location filename="../vam.cpp" line="896"/>
         <source>Select Project Directory</source>
         <translation>Výběr knihovny projektu</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="688"/>
+        <location filename="../vam.cpp" line="694"/>
         <source>The database for the measurement is not loaded.</source>
         <translation>Databáza použitá pro měření není načtena.</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="716"/>
+        <location filename="../vam.cpp" line="722"/>
         <source>The schema for the measurement is not loaded.</source>
         <translation>Databáze použitá pro schému není načtena.</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="1068"/>
+        <location filename="../vam.cpp" line="1074"/>
         <source>Select Language</source>
         <translation>Výběr jazyka</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="1068"/>
+        <location filename="../vam.cpp" line="1074"/>
         <source>Choose a language from the list</source>
         <translation>Vyberte jazyk se seznamu</translation>
     </message>
     <message>
         <location filename="../vam.cpp" line="140"/>
-        <location filename="../vam.cpp" line="1102"/>
+        <location filename="../vam.cpp" line="1108"/>
         <source>Disable Logging</source>
         <translation>Zakázat protokolování</translation>
     </message>
     <message>
         <location filename="../vam.cpp" line="140"/>
-        <location filename="../vam.cpp" line="1102"/>
+        <location filename="../vam.cpp" line="1108"/>
         <source>Enable Logging</source>
         <translation>Povolení protokolování</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="1656"/>
+        <location filename="../vam.cpp" line="1662"/>
         <source>Saved %1 animals with %2 measurements to</source>
         <translation>%1 zvířa%2 rozměrem uloženo</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="1134"/>
-        <location filename="../vam.cpp" line="1190"/>
-        <location filename="../vam.cpp" line="1557"/>
+        <location filename="../vam.cpp" line="1140"/>
+        <location filename="../vam.cpp" line="1196"/>
+        <location filename="../vam.cpp" line="1563"/>
         <source>The current project has been modified.</source>
         <translation>Aktuálný projekt byl změnen.</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="1135"/>
-        <location filename="../vam.cpp" line="1191"/>
-        <location filename="../vam.cpp" line="1558"/>
+        <location filename="../vam.cpp" line="1141"/>
+        <location filename="../vam.cpp" line="1197"/>
+        <location filename="../vam.cpp" line="1564"/>
         <source>Do you want to save your changes?</source>
         <translation>Chcete uložit změny?</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="1164"/>
+        <location filename="../vam.cpp" line="1170"/>
         <source>Open Project File</source>
         <translation>Otevření projektů</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="1223"/>
-        <location filename="../vam.cpp" line="1295"/>
+        <location filename="../vam.cpp" line="1229"/>
+        <location filename="../vam.cpp" line="1301"/>
         <source>A project with this name already exists!</source>
         <translation>Již existuje projekt pod takovým jménem!</translation>
     </message>
@@ -1693,6 +1693,11 @@
         <translation>Použite kolečko myši na zvetšení a na menšení obrazu</translation>
     </message>
     <message>
+        <location filename="../Utility.cpp" line="547"/>
+        <source> --- (Done)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../Utility.cpp" line="529"/>
         <source>Animal count</source>
         <translation>Počet zvířat</translation>
@@ -1813,7 +1818,7 @@
     </message>
     <message>
         <location filename="../CalibrationWizard.cpp" line="79"/>
-        <source>Estimate radial distortion</source>
+        <source>Estimate radial distortion (DO NOT TICK THIS, UNLESS THE RADIAL DISTORTION IS VISIBLE!)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

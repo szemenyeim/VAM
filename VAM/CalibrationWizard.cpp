@@ -76,7 +76,7 @@ VideoPage::VideoPage(VAMImageIndex _idx, QString _projLib, QWidget *parent)
 	loadVideoBtn = new QPushButton(tr("Load Video"));
 	calibrateBtn = new QPushButton(tr("Calibrate"));
 
-	distortion = new QCheckBox(tr("Estimate radial distortion"));
+	distortion = new QCheckBox(tr("Estimate radial distortion (DO NOT TICK THIS, UNLESS THE RADIAL DISTORTION IS VISIBLE!)"));
 	maxFrameBox = new QSpinBox();
 	maxFrameBox->setMinimum(1);
 	maxFrameBox->setMaximum(10000);

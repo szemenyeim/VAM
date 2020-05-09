@@ -191,72 +191,72 @@
         <translation>Automaatkorrektsioon</translation>
     </message>
     <message>
-        <location filename="../MarkerWindow.cpp" line="269"/>
+        <location filename="../MarkerWindow.cpp" line="271"/>
         <source>Error</source>
         <translation>Viga</translation>
     </message>
     <message>
-        <location filename="../MarkerWindow.cpp" line="306"/>
+        <location filename="../MarkerWindow.cpp" line="308"/>
         <source>Error: Image files missing</source>
         <translation>Viga: pildifailid puuduvad</translation>
     </message>
     <message>
-        <location filename="../MarkerWindow.cpp" line="306"/>
+        <location filename="../MarkerWindow.cpp" line="308"/>
         <source>One or more image files are missing from the hard drive. Please fix the still database!</source>
         <translation>Üks või mitu pilti ei ole kõvakettal leitavad. Palun parandage andmebaasi!</translation>
     </message>
     <message>
-        <location filename="../MarkerWindow.cpp" line="170"/>
+        <location filename="../MarkerWindow.cpp" line="172"/>
         <source>New Measurement</source>
         <translation>Uus mõõtmine</translation>
     </message>
     <message>
-        <location filename="../MarkerWindow.cpp" line="170"/>
+        <location filename="../MarkerWindow.cpp" line="172"/>
         <source>Enter Name:</source>
         <translation>Andke nimi:</translation>
     </message>
     <message>
-        <location filename="../MarkerWindow.cpp" line="170"/>
+        <location filename="../MarkerWindow.cpp" line="172"/>
         <source>Please specify a name!</source>
         <translation>Ärge jätke nimevälja tühjaks!</translation>
     </message>
     <message>
-        <location filename="../MarkerWindow.cpp" line="170"/>
+        <location filename="../MarkerWindow.cpp" line="172"/>
         <source>A measurement with this name already exists!</source>
         <translation>Sellenimeline mõõtmine on juba olemas!</translation>
     </message>
     <message>
-        <location filename="../MarkerWindow.cpp" line="269"/>
+        <location filename="../MarkerWindow.cpp" line="271"/>
         <source>The schema or the database used by this measurement is not loaded.</source>
         <translation>Mõõtmiseks kasutatud skeem või andmebaas on täitmata.</translation>
     </message>
     <message>
-        <location filename="../MarkerWindow.cpp" line="296"/>
+        <location filename="../MarkerWindow.cpp" line="298"/>
         <source>Error: Corrupt Database</source>
         <translation>Viga: andmebaasi viga</translation>
     </message>
     <message>
-        <location filename="../MarkerWindow.cpp" line="296"/>
+        <location filename="../MarkerWindow.cpp" line="298"/>
         <source>The Database file has been corrupted. Please fix the still database!</source>
         <translation>Andmebaasi fail on vigane. Palun parandage!</translation>
     </message>
     <message>
-        <location filename="../MarkerWindow.cpp" line="473"/>
+        <location filename="../MarkerWindow.cpp" line="475"/>
         <source>The current measurement has been modified.</source>
         <translation>Käesolev mõõtmine on muudetud..</translation>
     </message>
     <message>
-        <location filename="../MarkerWindow.cpp" line="474"/>
+        <location filename="../MarkerWindow.cpp" line="476"/>
         <source>Do you want to save your changes?</source>
         <translation>Kas soovite muudatused salvestada?</translation>
     </message>
     <message>
-        <location filename="../MarkerWindow.cpp" line="847"/>
+        <location filename="../MarkerWindow.cpp" line="852"/>
         <source>Etalon</source>
         <translation>Etalon</translation>
     </message>
     <message>
-        <location filename="../MarkerWindow.cpp" line="854"/>
+        <location filename="../MarkerWindow.cpp" line="859"/>
         <source>Finished</source>
         <translation>Valmis</translation>
     </message>
@@ -1057,16 +1057,16 @@
 <context>
     <name>VAM</name>
     <message>
-        <location filename="../vam.cpp" line="1223"/>
-        <location filename="../vam.cpp" line="1295"/>
+        <location filename="../vam.cpp" line="1229"/>
+        <location filename="../vam.cpp" line="1301"/>
         <source>New Project</source>
         <translation>Uus projekt</translation>
     </message>
     <message>
         <location filename="../vam.cpp" line="254"/>
         <location filename="../vam.cpp" line="290"/>
-        <location filename="../vam.cpp" line="1223"/>
-        <location filename="../vam.cpp" line="1295"/>
+        <location filename="../vam.cpp" line="1229"/>
+        <location filename="../vam.cpp" line="1301"/>
         <source>Enter Name:</source>
         <translation>Sisesta nimi:</translation>
     </message>
@@ -1083,8 +1083,8 @@
     <message>
         <location filename="../vam.cpp" line="254"/>
         <location filename="../vam.cpp" line="290"/>
-        <location filename="../vam.cpp" line="1223"/>
-        <location filename="../vam.cpp" line="1295"/>
+        <location filename="../vam.cpp" line="1229"/>
+        <location filename="../vam.cpp" line="1301"/>
         <source>Please specify a name!</source>
         <translation>Ärge jätke nimevälja tühjaks!</translation>
     </message>
@@ -1120,18 +1120,18 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="676"/>
+        <location filename="../vam.cpp" line="682"/>
         <source>Select Still Database</source>
         <translation>Vali pildiandmebaas</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="698"/>
+        <location filename="../vam.cpp" line="704"/>
         <source>The selected database is empty. Please select another one!</source>
         <translation>Valitud andmebaas on tühi. Valige teine andmebaas!</translation>
     </message>
     <message>
         <location filename="../vam.cpp" line="331"/>
-        <location filename="../vam.cpp" line="713"/>
+        <location filename="../vam.cpp" line="719"/>
         <source>Select Schema</source>
         <translation>Vali skeem</translation>
     </message>
@@ -1152,7 +1152,7 @@
     </message>
     <message>
         <location filename="../vam.cpp" line="356"/>
-        <location filename="../vam.cpp" line="730"/>
+        <location filename="../vam.cpp" line="736"/>
         <source>The selected schema is empty. Please select another one!</source>
         <translation>Valitud skeem on tühi. Valige teine skeem!</translation>
     </message>
@@ -1163,183 +1163,183 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="463"/>
+        <location filename="../vam.cpp" line="469"/>
         <source>Please select a schema to delete!</source>
         <translation>Valige kustutatav skeem!</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="484"/>
+        <location filename="../vam.cpp" line="490"/>
         <source>Please select a measurement to delete!</source>
         <translation>Valige kustutatav mõõde!</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="538"/>
+        <location filename="../vam.cpp" line="544"/>
         <source>Open Schema File</source>
         <translation>Ava skeemifail</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="538"/>
+        <location filename="../vam.cpp" line="544"/>
         <source>Schema Files (*.schem)</source>
         <translation>Skeemifailid (*.schem)</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="547"/>
+        <location filename="../vam.cpp" line="553"/>
         <source>Error opening schema file</source>
         <translation>Skeemi avamine luhtus</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="548"/>
-        <location filename="../vam.cpp" line="575"/>
+        <location filename="../vam.cpp" line="554"/>
+        <location filename="../vam.cpp" line="581"/>
         <source>Please try another location</source>
         <translation>Proovige avada mõnd teist faili</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="565"/>
+        <location filename="../vam.cpp" line="571"/>
         <source>Open Measurement File</source>
         <translation>Ava mõõtefail</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="565"/>
+        <location filename="../vam.cpp" line="571"/>
         <source>Measurement Files (*.meas)</source>
         <translation>Mõõtmefailid (*.meas)</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="574"/>
+        <location filename="../vam.cpp" line="580"/>
         <source>Error opening measurement file</source>
         <translation>Mõõtme avamine luhtus</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="645"/>
+        <location filename="../vam.cpp" line="651"/>
         <source>Please select a schema to edit!</source>
         <translation>Valige skeem!</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="669"/>
+        <location filename="../vam.cpp" line="675"/>
         <source>Please select a measurement to edit!</source>
         <translation>Valige mõõde!</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="850"/>
+        <location filename="../vam.cpp" line="856"/>
         <source>XLSX files (*.xlsx)</source>
         <translation>XLSX-failid (*.xlsx)</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="856"/>
+        <location filename="../vam.cpp" line="862"/>
         <source>CSV files (*.csv)</source>
         <translation>CVS-failid (*.cvs)</translation>
     </message>
     <message>
         <location filename="../vam.cpp" line="241"/>
-        <location filename="../vam.cpp" line="1454"/>
+        <location filename="../vam.cpp" line="1460"/>
         <source>Taken %1 stills from %2 cameras</source>
         <translation>%1 pilt %2 kaamerast valmis</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="853"/>
+        <location filename="../vam.cpp" line="859"/>
         <source>HTML files (*.html)</source>
         <translation>HTML-failid (*.html)</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="862"/>
+        <location filename="../vam.cpp" line="868"/>
         <source>Select output file</source>
         <translation>Vali väljundifail</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="1007"/>
+        <location filename="../vam.cpp" line="1013"/>
         <source>About VAM</source>
         <translation>VATMEM2-st</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="1164"/>
+        <location filename="../vam.cpp" line="1170"/>
         <source>VAM Projects (*.VAMproj)</source>
         <translation>VAM projektid (*.VAMproj)</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="1241"/>
-        <location filename="../vam.cpp" line="1309"/>
+        <location filename="../vam.cpp" line="1247"/>
+        <location filename="../vam.cpp" line="1315"/>
         <source>Error writing directory</source>
         <translation>Viga kataloogi kirjutamisel</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="1241"/>
-        <location filename="../vam.cpp" line="1309"/>
+        <location filename="../vam.cpp" line="1247"/>
+        <location filename="../vam.cpp" line="1315"/>
         <source>The selected project library could not be written. Please choose another one!</source>
         <translation>Valitud projekti kataloogi ei saa kirjutada. Valige teine kataloog!</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="1639"/>
+        <location filename="../vam.cpp" line="1645"/>
         <source>Saving image %1 of %2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="1662"/>
+        <location filename="../vam.cpp" line="1668"/>
         <source>Output Generation Successful!</source>
         <translation>Väljundi genereerimine õnnestus!</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="890"/>
+        <location filename="../vam.cpp" line="896"/>
         <source>Select Project Directory</source>
         <translation>Vali projekti kataloog</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="688"/>
+        <location filename="../vam.cpp" line="694"/>
         <source>The database for the measurement is not loaded.</source>
         <translation>Mõõtmise jaoks kasutatud andmebaas on laadimata.</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="716"/>
+        <location filename="../vam.cpp" line="722"/>
         <source>The schema for the measurement is not loaded.</source>
         <translation>Mõõtmise jaoks kasutatud skeem on laadimata.</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="1068"/>
+        <location filename="../vam.cpp" line="1074"/>
         <source>Select Language</source>
         <translation>Vali keel</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="1068"/>
+        <location filename="../vam.cpp" line="1074"/>
         <source>Choose a language from the list</source>
         <translation>Valige nimekirjast keel</translation>
     </message>
     <message>
         <location filename="../vam.cpp" line="140"/>
-        <location filename="../vam.cpp" line="1102"/>
+        <location filename="../vam.cpp" line="1108"/>
         <source>Disable Logging</source>
         <translation>Keela logid</translation>
     </message>
     <message>
         <location filename="../vam.cpp" line="140"/>
-        <location filename="../vam.cpp" line="1102"/>
+        <location filename="../vam.cpp" line="1108"/>
         <source>Enable Logging</source>
         <translation>Luba logid</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="1656"/>
+        <location filename="../vam.cpp" line="1662"/>
         <source>Saved %1 animals with %2 measurements to</source>
         <translation>Salvestatud %1 loom %2 mõõtmega</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="1134"/>
-        <location filename="../vam.cpp" line="1190"/>
-        <location filename="../vam.cpp" line="1557"/>
+        <location filename="../vam.cpp" line="1140"/>
+        <location filename="../vam.cpp" line="1196"/>
+        <location filename="../vam.cpp" line="1563"/>
         <source>The current project has been modified.</source>
         <translation>Aktuaalne projekt on muudetud.</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="1135"/>
-        <location filename="../vam.cpp" line="1191"/>
-        <location filename="../vam.cpp" line="1558"/>
+        <location filename="../vam.cpp" line="1141"/>
+        <location filename="../vam.cpp" line="1197"/>
+        <location filename="../vam.cpp" line="1564"/>
         <source>Do you want to save your changes?</source>
         <translation>Kas soovite muudatused salvestada?</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="1164"/>
+        <location filename="../vam.cpp" line="1170"/>
         <source>Open Project File</source>
         <translation>Ava projekt</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="1223"/>
-        <location filename="../vam.cpp" line="1295"/>
+        <location filename="../vam.cpp" line="1229"/>
+        <location filename="../vam.cpp" line="1301"/>
         <source>A project with this name already exists!</source>
         <translation>Selle nimega projekt on juba olemas!</translation>
     </message>
@@ -1693,6 +1693,11 @@
         <translation>Näpunäide: kasuta hiire rullikut pildi suurendamiseks ja</translation>
     </message>
     <message>
+        <location filename="../Utility.cpp" line="547"/>
+        <source> --- (Done)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../Utility.cpp" line="529"/>
         <source>Animal count</source>
         <translation>Loomade arv</translation>
@@ -1813,7 +1818,7 @@
     </message>
     <message>
         <location filename="../CalibrationWizard.cpp" line="79"/>
-        <source>Estimate radial distortion</source>
+        <source>Estimate radial distortion (DO NOT TICK THIS, UNLESS THE RADIAL DISTORTION IS VISIBLE!)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

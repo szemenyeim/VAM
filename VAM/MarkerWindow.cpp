@@ -123,7 +123,9 @@ void MarkerWindow::setupUI()
 	// Hide rows that are finished
 	for (int i = 0; i < currentMeasurement.getMarked().size(); i++)
 	{
-		ui.imagesRemList->setRowHidden(i, currentMeasurement.getMarked()[i]);
+		//ui.imagesRemList->setRowHidden(i, currentMeasurement.getMarked()[i]);
+		if(currentMeasurement.getMarked()[i])
+			unmarkedID->setData(unmarkedID->index(i), IDList[i] + VAMTranslatedStrings::doneStr());
 	}
 
 	ui.imageLabel->setAlignment(Qt::AlignCenter);
@@ -608,6 +610,8 @@ void MarkerWindow::redoImage()
 
 	// Show in list of remaining images
 	ui.imagesRemList->setRowHidden(imgIdxMap[currentImgIndex], false);
+	unmarkedID->setData(unmarkedID->index(imgIdxMap[currentImgIndex]), IDList[imgIdxMap[currentImgIndex]]);
+	
 
 	// If the image was finished, adjust counters
 	if (currentMeasurement.getFirstUnset(imgIdxMap[currentImgIndex]) == -1)
@@ -729,7 +733,8 @@ void MarkerWindow::imageClicked(const QPoint &p)
 
 		// Change finished flags and list view
 		currentMeasurement.setMarked(imgIdxMap[currentImgIndex], true);
-		ui.imagesRemList->setRowHidden(imgIdxMap[currentImgIndex], true);
+		//ui.imagesRemList->setRowHidden(imgIdxMap[currentImgIndex], true);
+		unmarkedID->setData(unmarkedID->index(imgIdxMap[currentImgIndex]), IDList[imgIdxMap[currentImgIndex]] + VAMTranslatedStrings::doneStr());
 
 		// Change remaining and done counters
 		imgRem--;
@@ -1171,6 +1176,7 @@ void MarkerWindow::removePoint()
 		ui.imgDoneLabel->setText(QString::number(imgDone));
 		ui.imgRemLabel->setText(QString::number(imgRem));
 		ui.imagesRemList->setRowHidden(imgIdxMap[currentImgIndex], false);
+		unmarkedID->setData(unmarkedID->index(imgIdxMap[currentImgIndex]), IDList[imgIdxMap[currentImgIndex]]);
 		currentMeasurement.setMarked(imgIdxMap[currentImgIndex], false);
 	}
 
