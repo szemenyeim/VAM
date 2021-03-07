@@ -1,13 +1,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30128.74
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VATEM2", "VAM\VATEM2.vcxproj", "{B12702AD-ABFB-343A-A199-8E24837244A3}"
-EndProject
-Project("{6141683F-8A12-4E36-9623-2EB02B2C2303}") = "Setup", "Setup\Setup.isproj", "{787F499B-5964-4503-A6B3-378156E1DC99}"
-	ProjectSection(ProjectDependencies) = postProject
-		{B12702AD-ABFB-343A-A199-8E24837244A3} = {B12702AD-ABFB-343A-A199-8E24837244A3}
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,47 +19,25 @@ Global
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{B12702AD-ABFB-343A-A199-8E24837244A3}.CD_ROM|Win32.ActiveCfg = Release|Win32
-		{B12702AD-ABFB-343A-A199-8E24837244A3}.CD_ROM|Win32.Build.0 = Release|Win32
 		{B12702AD-ABFB-343A-A199-8E24837244A3}.CD_ROM|x64.ActiveCfg = Release|x64
 		{B12702AD-ABFB-343A-A199-8E24837244A3}.CD_ROM|x64.Build.0 = Release|x64
 		{B12702AD-ABFB-343A-A199-8E24837244A3}.Debug|Win32.ActiveCfg = Debug|Win32
-		{B12702AD-ABFB-343A-A199-8E24837244A3}.Debug|Win32.Build.0 = Debug|Win32
 		{B12702AD-ABFB-343A-A199-8E24837244A3}.Debug|x64.ActiveCfg = Debug|x64
 		{B12702AD-ABFB-343A-A199-8E24837244A3}.Debug|x64.Build.0 = Debug|x64
 		{B12702AD-ABFB-343A-A199-8E24837244A3}.DVD-5|Win32.ActiveCfg = Debug|Win32
-		{B12702AD-ABFB-343A-A199-8E24837244A3}.DVD-5|Win32.Build.0 = Debug|Win32
 		{B12702AD-ABFB-343A-A199-8E24837244A3}.DVD-5|x64.ActiveCfg = Debug|x64
 		{B12702AD-ABFB-343A-A199-8E24837244A3}.DVD-5|x64.Build.0 = Debug|x64
 		{B12702AD-ABFB-343A-A199-8E24837244A3}.Release|Win32.ActiveCfg = Release|Win32
-		{B12702AD-ABFB-343A-A199-8E24837244A3}.Release|Win32.Build.0 = Release|Win32
 		{B12702AD-ABFB-343A-A199-8E24837244A3}.Release|x64.ActiveCfg = Release|x64
 		{B12702AD-ABFB-343A-A199-8E24837244A3}.Release|x64.Build.0 = Release|x64
 		{B12702AD-ABFB-343A-A199-8E24837244A3}.SingleImage|Win32.ActiveCfg = Release|Win32
-		{B12702AD-ABFB-343A-A199-8E24837244A3}.SingleImage|Win32.Build.0 = Release|Win32
 		{B12702AD-ABFB-343A-A199-8E24837244A3}.SingleImage|x64.ActiveCfg = Release|x64
 		{B12702AD-ABFB-343A-A199-8E24837244A3}.SingleImage|x64.Build.0 = Release|x64
-		{787F499B-5964-4503-A6B3-378156E1DC99}.CD_ROM|Win32.ActiveCfg = CD_ROM
-		{787F499B-5964-4503-A6B3-378156E1DC99}.CD_ROM|Win32.Build.0 = CD_ROM
-		{787F499B-5964-4503-A6B3-378156E1DC99}.CD_ROM|x64.ActiveCfg = CD_ROM
-		{787F499B-5964-4503-A6B3-378156E1DC99}.CD_ROM|x64.Build.0 = CD_ROM
-		{787F499B-5964-4503-A6B3-378156E1DC99}.Debug|Win32.ActiveCfg = DVD-5
-		{787F499B-5964-4503-A6B3-378156E1DC99}.Debug|Win32.Build.0 = DVD-5
-		{787F499B-5964-4503-A6B3-378156E1DC99}.Debug|x64.ActiveCfg = DVD-5
-		{787F499B-5964-4503-A6B3-378156E1DC99}.Debug|x64.Build.0 = DVD-5
-		{787F499B-5964-4503-A6B3-378156E1DC99}.DVD-5|Win32.ActiveCfg = DVD-5
-		{787F499B-5964-4503-A6B3-378156E1DC99}.DVD-5|Win32.Build.0 = DVD-5
-		{787F499B-5964-4503-A6B3-378156E1DC99}.DVD-5|x64.ActiveCfg = DVD-5
-		{787F499B-5964-4503-A6B3-378156E1DC99}.DVD-5|x64.Build.0 = DVD-5
-		{787F499B-5964-4503-A6B3-378156E1DC99}.Release|Win32.ActiveCfg = SingleImage
-		{787F499B-5964-4503-A6B3-378156E1DC99}.Release|Win32.Build.0 = SingleImage
-		{787F499B-5964-4503-A6B3-378156E1DC99}.Release|x64.ActiveCfg = SingleImage
-		{787F499B-5964-4503-A6B3-378156E1DC99}.Release|x64.Build.0 = SingleImage
-		{787F499B-5964-4503-A6B3-378156E1DC99}.SingleImage|Win32.ActiveCfg = SingleImage
-		{787F499B-5964-4503-A6B3-378156E1DC99}.SingleImage|Win32.Build.0 = SingleImage
-		{787F499B-5964-4503-A6B3-378156E1DC99}.SingleImage|x64.ActiveCfg = SingleImage
-		{787F499B-5964-4503-A6B3-378156E1DC99}.SingleImage|x64.Build.0 = SingleImage
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2998B6E6-0947-4DB2-A527-C5FB964F0FEE}
 	EndGlobalSection
 EndGlobal
