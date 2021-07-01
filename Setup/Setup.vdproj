@@ -21,6 +21,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_002E34C531EE49E5BB7A73F9446A2A43"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_009A7E6C6ED344D89C38F2619C54697E"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -561,12 +567,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_37A72BA040F1448EACB4C98868FC450E"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_3811C18123254A93811ED26DB1633D1F"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -640,6 +640,12 @@
         "Entry"
         {
         "MsmKey" = "8:_3F0E939EFDE74709A00F7D0781780119"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_4040BAAA461B4699ADCC6D822D5D92D8"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -795,12 +801,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_4E34B3A024674213BA9CC34649921354"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_4E4547E47287440C8DDB8D1A59312218"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -951,12 +951,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_5B8693A1A4224E81B05D1EE8C96542ED"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_5DF0AF7BD3DB47708CF2EA2C4CCA17F3"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -994,12 +988,6 @@
         "Entry"
         {
         "MsmKey" = "8:_628CD37507D34DB9A4AFADA822CAFFDF"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_63E554771D1E43E1AD1A2EFB425DA3E0"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -1101,6 +1089,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_6C6AED3F06E94F268699318EF30D7FC7"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_6CAF8CAFC2D14563B6CDD3E594F9B3DF"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -1168,12 +1162,6 @@
         "Entry"
         {
         "MsmKey" = "8:_7804D83268154B14BE5487E6D62C5060"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_781A2150AAD5452090A81F8AFF9F9285"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -1731,6 +1719,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_AC4E20D27E7849F8B371BB2461DBFD0A"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_AC7ABF32951B465AA2BD8BDA6E1A3E0B"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -1827,12 +1821,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_B7015DC1472446BE8A096D17E2B90EBD"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_B704D82EA3F14910AD7B51314EA592ED"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -1870,6 +1858,12 @@
         "Entry"
         {
         "MsmKey" = "8:_B94D1F22C278408683E4506B08B7A0A7"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_B99D56D672C54222924C23F58147E41B"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -2277,6 +2271,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_EBE1EEF905F8425187B6312FF26C97F0"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_EC060D3883DF41D7A50B94FAA712D100"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -2506,6 +2506,26 @@
             "TargetName" = "8:libsvcdsub_plugin.dll"
             "Tag" = "8:"
             "Folder" = "8:_B2862E927D374704BAA2C2309D9F8E1B"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_002E34C531EE49E5BB7A73F9446A2A43"
+            {
+            "SourcePath" = "8:..\\lgpl-2.1.txt"
+            "TargetName" = "8:lgpl-2.1.txt"
+            "Tag" = "8:"
+            "Folder" = "8:_5DA0519BFE1445EC97469054353D30BC"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -4320,26 +4340,6 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_37A72BA040F1448EACB4C98868FC450E"
-            {
-            "SourcePath" = "8:..\\Libs\\license.rtf"
-            "TargetName" = "8:license.rtf"
-            "Tag" = "8:"
-            "Folder" = "8:_5DA0519BFE1445EC97469054353D30BC"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_3811C18123254A93811ED26DB1633D1F"
             {
             "SourcePath" = "8:..\\Libs\\VlcQt\\Release\\bin\\plugins\\stream_filter\\libhds_plugin.dll"
@@ -4586,6 +4586,26 @@
             "TargetName" = "8:libdemux_cdg_plugin.dll"
             "Tag" = "8:"
             "Folder" = "8:_EF8BDB4283F148AC98C40FF601A467DC"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_4040BAAA461B4699ADCC6D822D5D92D8"
+            {
+            "SourcePath" = "8:..\\LICENSE_Qt.txt"
+            "TargetName" = "8:LICENSE_Qt.txt"
+            "Tag" = "8:"
+            "Folder" = "8:_5DA0519BFE1445EC97469054353D30BC"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -5066,26 +5086,6 @@
             "TargetName" = "8:libsubsusf_plugin.dll"
             "Tag" = "8:"
             "Folder" = "8:_B2862E927D374704BAA2C2309D9F8E1B"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_4E34B3A024674213BA9CC34649921354"
-            {
-            "SourcePath" = "8:..\\Libs\\lgpl-2.1.txt"
-            "TargetName" = "8:lgpl-2.1.txt"
-            "Tag" = "8:"
-            "Folder" = "8:_5DA0519BFE1445EC97469054353D30BC"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -5600,26 +5600,6 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_5B8693A1A4224E81B05D1EE8C96542ED"
-            {
-            "SourcePath" = "8:..\\Libs\\LICENSE_opencv"
-            "TargetName" = "8:LICENSE_opencv"
-            "Tag" = "8:"
-            "Folder" = "8:_5DA0519BFE1445EC97469054353D30BC"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_5DF0AF7BD3DB47708CF2EA2C4CCA17F3"
             {
             "SourcePath" = "8:..\\Libs\\VlcQt\\Release\\bin\\plugins\\packetizer\\libpacketizer_h264_plugin.dll"
@@ -5746,26 +5726,6 @@
             "TargetName" = "8:libidummy_plugin.dll"
             "Tag" = "8:"
             "Folder" = "8:_12B704F2580D4469A8D9612EDF07B1EC"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_63E554771D1E43E1AD1A2EFB425DA3E0"
-            {
-            "SourcePath" = "8:..\\Libs\\LICENSE_Qt.txt"
-            "TargetName" = "8:LICENSE_Qt.txt"
-            "Tag" = "8:"
-            "Folder" = "8:_5DA0519BFE1445EC97469054353D30BC"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -6100,6 +6060,26 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_6C6AED3F06E94F268699318EF30D7FC7"
+            {
+            "SourcePath" = "8:..\\LICENSE_Qt"
+            "TargetName" = "8:LICENSE_Qt"
+            "Tag" = "8:"
+            "Folder" = "8:_5DA0519BFE1445EC97469054353D30BC"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_6CAF8CAFC2D14563B6CDD3E594F9B3DF"
             {
             "SourcePath" = "8:..\\Libs\\VlcQt\\Release\\bin\\plugins\\audio_filter\\libscaletempo_pitch_plugin.dll"
@@ -6326,26 +6306,6 @@
             "TargetName" = "8:libstream_out_delay_plugin.dll"
             "Tag" = "8:"
             "Folder" = "8:_33ED97C4614C45E3903D83E08DBB2239"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_781A2150AAD5452090A81F8AFF9F9285"
-            {
-            "SourcePath" = "8:..\\Libs\\gpl-3.0.txt"
-            "TargetName" = "8:gpl-3.0.txt"
-            "Tag" = "8:"
-            "Folder" = "8:_5DA0519BFE1445EC97469054353D30BC"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -8200,6 +8160,26 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_AC4E20D27E7849F8B371BB2461DBFD0A"
+            {
+            "SourcePath" = "8:..\\license.rtf"
+            "TargetName" = "8:license.rtf"
+            "Tag" = "8:"
+            "Folder" = "8:_5DA0519BFE1445EC97469054353D30BC"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_AC7ABF32951B465AA2BD8BDA6E1A3E0B"
             {
             "SourcePath" = "8:..\\Libs\\VlcQt\\Release\\bin\\plugins\\codec\\libdca_plugin.dll"
@@ -8520,26 +8500,6 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_B7015DC1472446BE8A096D17E2B90EBD"
-            {
-            "SourcePath" = "8:..\\Libs\\LICENSE_Qt"
-            "TargetName" = "8:LICENSE_Qt"
-            "Tag" = "8:"
-            "Folder" = "8:_5DA0519BFE1445EC97469054353D30BC"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_B704D82EA3F14910AD7B51314EA592ED"
             {
             "SourcePath" = "8:..\\Libs\\VlcQt\\Release\\bin\\plugins\\codec\\libvpx_plugin.dll"
@@ -8666,6 +8626,26 @@
             "TargetName" = "8:libmarq_plugin.dll"
             "Tag" = "8:"
             "Folder" = "8:_C8730969FDED44F0B921F4AE58BB5B64"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_B99D56D672C54222924C23F58147E41B"
+            {
+            "SourcePath" = "8:..\\gpl-3.0.txt"
+            "TargetName" = "8:gpl-3.0.txt"
+            "Tag" = "8:"
+            "Folder" = "8:_5DA0519BFE1445EC97469054353D30BC"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -10020,6 +10000,26 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_EBE1EEF905F8425187B6312FF26C97F0"
+            {
+            "SourcePath" = "8:..\\LICENSE_opencv"
+            "TargetName" = "8:LICENSE_opencv"
+            "Tag" = "8:"
+            "Folder" = "8:_5DA0519BFE1445EC97469054353D30BC"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_EC060D3883DF41D7A50B94FAA712D100"
             {
             "SourcePath" = "8:..\\Libs\\VlcQt\\Release\\bin\\plugins\\access_output\\libaccess_output_srt_plugin.dll"
@@ -10867,7 +10867,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:VATEM2"
         "ProductCode" = "8:{E5109F7C-9340-4D4A-8F45-FD7EFE8829A4}"
-        "PackageCode" = "8:{9F70DADF-8ECC-4F55-A6D0-5952491B1E0D}"
+        "PackageCode" = "8:{81E86688-1B52-4038-8966-4B986461DE5B}"
         "UpgradeCode" = "8:{DB827A71-6413-4250-BA18-5FB9F54BE9A6}"
         "AspNetVersion" = "8:2.0.50727.0"
         "RestartWWWService" = "11:FALSE"
@@ -11121,7 +11121,7 @@
                             "ContextData" = "8:"
                             "Attributes" = "3:0"
                             "Setting" = "3:2"
-                            "Value" = "8:_37A72BA040F1448EACB4C98868FC450E"
+                            "Value" = "8:_AC4E20D27E7849F8B371BB2461DBFD0A"
                             "UsePlugInResources" = "11:TRUE"
                             }
                             "Sunken"
@@ -11392,7 +11392,7 @@
                             "ContextData" = "8:"
                             "Attributes" = "3:0"
                             "Setting" = "3:2"
-                            "Value" = "8:_37A72BA040F1448EACB4C98868FC450E"
+                            "Value" = "8:_AC4E20D27E7849F8B371BB2461DBFD0A"
                             "UsePlugInResources" = "11:TRUE"
                             }
                             "Sunken"
