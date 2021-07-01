@@ -50,215 +50,245 @@
 <context>
     <name>MarkerWindow</name>
     <message>
-        <location filename="../marker.ui" line="29"/>
+        <location filename="../marker.ui" line="26"/>
         <source>Mark measurement points</source>
         <translation>Controllo punti di misurazione</translation>
     </message>
     <message>
-        <location filename="../marker.ui" line="108"/>
+        <location filename="../marker.ui" line="105"/>
         <source>Images remaining:</source>
         <translation>Immagini rimanenti:</translation>
     </message>
     <message>
-        <location filename="../marker.ui" line="166"/>
+        <location filename="../marker.ui" line="163"/>
         <source>Automatically account for the diference in the etalon&apos;s and animal&apos;s position using the measurement of the animal&apos;s height</source>
         <translation>Il programma prende automaticamente in considerazione la differenza della distanza del riferimento e dell&apos;animale dalla fotocamera</translation>
     </message>
     <message>
-        <location filename="../marker.ui" line="265"/>
+        <location filename="../marker.ui" line="262"/>
         <source>Measurement Confidence (%):</source>
         <translation>Affidabilità della misurazione (%):</translation>
     </message>
     <message>
-        <location filename="../marker.ui" line="332"/>
+        <location filename="../marker.ui" line="329"/>
         <source>toolBar</source>
         <translation>Toolbar</translation>
     </message>
     <message>
-        <location filename="../marker.ui" line="360"/>
+        <location filename="../marker.ui" line="357"/>
         <source>Save</source>
         <translation>Salva</translation>
     </message>
     <message>
-        <location filename="../marker.ui" line="363"/>
-        <location filename="../marker.ui" line="378"/>
+        <location filename="../marker.ui" line="360"/>
+        <location filename="../marker.ui" line="375"/>
         <source>Save measurement</source>
         <translation>Salva la misurazione</translation>
     </message>
     <message>
-        <location filename="../marker.ui" line="366"/>
+        <location filename="../marker.ui" line="363"/>
         <source>Ctrl+S</source>
         <translation>Ctrl+S</translation>
     </message>
     <message>
-        <location filename="../marker.ui" line="381"/>
+        <location filename="../marker.ui" line="378"/>
         <source>Ctrl+Shift+S</source>
         <translation>Ctrl+Shift+S</translation>
     </message>
     <message>
-        <location filename="../marker.ui" line="390"/>
+        <location filename="../marker.ui" line="387"/>
         <source>Previous Image</source>
         <translation>Immagine precedente</translation>
     </message>
     <message>
-        <location filename="../marker.ui" line="393"/>
+        <location filename="../marker.ui" line="390"/>
         <source>Display the previous image</source>
         <translation>Visualizza immagine precedente</translation>
     </message>
     <message>
-        <location filename="../marker.ui" line="396"/>
+        <location filename="../marker.ui" line="393"/>
         <source>Ctrl+P</source>
         <translation>Ctrl+P</translation>
     </message>
     <message>
-        <location filename="../marker.ui" line="405"/>
+        <location filename="../marker.ui" line="402"/>
         <source>Next image</source>
         <translation>Immagine successiva</translation>
     </message>
     <message>
-        <location filename="../marker.ui" line="408"/>
+        <location filename="../marker.ui" line="405"/>
         <source>Display the mext image</source>
         <translation>Visualizza l&apos;immagine mext</translation>
     </message>
     <message>
-        <location filename="../marker.ui" line="411"/>
+        <location filename="../marker.ui" line="408"/>
         <source>Ctrl+N</source>
         <translation>Ctrl+N</translation>
     </message>
     <message>
-        <location filename="../marker.ui" line="423"/>
+        <location filename="../marker.ui" line="420"/>
         <source>Selection mode</source>
         <translation>Modalità di selezione</translation>
     </message>
     <message>
-        <location filename="../marker.ui" line="426"/>
+        <location filename="../marker.ui" line="423"/>
         <source>Toggle the marker selection mode</source>
         <translation>Modifica la modalità di selezione</translation>
     </message>
     <message>
-        <location filename="../marker.ui" line="435"/>
+        <location filename="../marker.ui" line="432"/>
         <source>Erase points</source>
         <translation>Cancellazione di punti</translation>
     </message>
     <message>
-        <location filename="../marker.ui" line="438"/>
+        <location filename="../marker.ui" line="435"/>
         <source>Removes all marks from the current image</source>
         <translation>Elimina tutti i punti dall&apos;immagine corrente</translation>
     </message>
     <message>
-        <location filename="../marker.ui" line="441"/>
+        <location filename="../marker.ui" line="438"/>
         <source>Ctrl+X</source>
         <translation>Ctrl+X</translation>
     </message>
     <message>
-        <location filename="../marker.ui" line="450"/>
+        <location filename="../marker.ui" line="447"/>
         <source>Done</source>
         <translation>Fatto</translation>
     </message>
     <message>
-        <location filename="../marker.ui" line="453"/>
+        <location filename="../marker.ui" line="450"/>
         <source>Return to the main window</source>
         <translation>Torna alla finestra principale</translation>
     </message>
     <message>
-        <location filename="../marker.ui" line="79"/>
+        <location filename="../marker.ui" line="76"/>
         <source>Images done:</source>
         <translation>Immagini scattate:</translation>
     </message>
     <message>
-        <location filename="../marker.ui" line="137"/>
+        <location filename="../marker.ui" line="134"/>
         <source>Next animal ID:</source>
         <translation>ID animale attuale:</translation>
     </message>
     <message>
-        <location filename="../marker.ui" line="305"/>
+        <location filename="../marker.ui" line="302"/>
         <source>Remaining Images</source>
         <translation>Immagini rimanenti</translation>
     </message>
     <message>
-        <location filename="../marker.ui" line="50"/>
+        <location filename="../marker.ui" line="47"/>
         <source>Next Point:</source>
         <translation>Punto successivo:</translation>
     </message>
     <message>
-        <location filename="../marker.ui" line="375"/>
+        <location filename="../marker.ui" line="372"/>
         <source>Save as</source>
         <translation>Salva con nome</translation>
     </message>
     <message>
-        <location filename="../marker.ui" line="169"/>
+        <location filename="../marker.ui" line="166"/>
         <source>Automatic Correction</source>
         <translation>Correzione automatica</translation>
     </message>
     <message>
-        <location filename="../MarkerWindow.cpp" line="271"/>
+        <location filename="../MarkerWindow.cpp" line="314"/>
         <source>Error</source>
         <translation>Errore</translation>
     </message>
     <message>
-        <location filename="../MarkerWindow.cpp" line="308"/>
+        <location filename="../MarkerWindow.cpp" line="378"/>
         <source>Error: Image files missing</source>
         <translation>Errore: file di immagine non trovati</translation>
     </message>
     <message>
-        <location filename="../MarkerWindow.cpp" line="308"/>
+        <location filename="../MarkerWindow.cpp" line="378"/>
         <source>One or more image files are missing from the hard drive. Please fix the still database!</source>
         <translation>Una o più immagini mancanti sul disco rigido. Si prega di correggere il database!</translation>
     </message>
     <message>
-        <location filename="../MarkerWindow.cpp" line="172"/>
+        <location filename="../MarkerWindow.cpp" line="215"/>
         <source>New Measurement</source>
         <translation>Nuova misurazione</translation>
     </message>
     <message>
-        <location filename="../MarkerWindow.cpp" line="172"/>
+        <location filename="../MarkerWindow.cpp" line="50"/>
+        <source>Model definition</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../MarkerWindow.cpp" line="51"/>
+        <source>Model definition file &apos;model_def.txt&apos; not found.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../MarkerWindow.cpp" line="68"/>
+        <source>No model</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../MarkerWindow.cpp" line="68"/>
+        <source>The neural network model is not found. Automatic keypoint detection will be disabled.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../MarkerWindow.cpp" line="215"/>
         <source>Enter Name:</source>
         <translation>Inserire un nome:</translation>
     </message>
     <message>
-        <location filename="../MarkerWindow.cpp" line="172"/>
+        <location filename="../MarkerWindow.cpp" line="215"/>
         <source>Please specify a name!</source>
         <translation>Compila il campo nome!</translation>
     </message>
     <message>
-        <location filename="../MarkerWindow.cpp" line="172"/>
+        <location filename="../MarkerWindow.cpp" line="215"/>
         <source>A measurement with this name already exists!</source>
         <translation>Misurazione con questo nome già esistente!</translation>
     </message>
     <message>
-        <location filename="../MarkerWindow.cpp" line="271"/>
+        <location filename="../MarkerWindow.cpp" line="314"/>
         <source>The schema or the database used by this measurement is not loaded.</source>
         <translation>Lo schema o il database usato per la misurazione non viene caricato.</translation>
     </message>
     <message>
-        <location filename="../MarkerWindow.cpp" line="298"/>
+        <location filename="../MarkerWindow.cpp" line="368"/>
         <source>Error: Corrupt Database</source>
         <translation>Errore: errore del file di database</translation>
     </message>
     <message>
-        <location filename="../MarkerWindow.cpp" line="298"/>
+        <location filename="../MarkerWindow.cpp" line="368"/>
         <source>The Database file has been corrupted. Please fix the still database!</source>
         <translation>Il database è danneggiato. Si prega di correggere!</translation>
     </message>
     <message>
-        <location filename="../MarkerWindow.cpp" line="475"/>
+        <location filename="../MarkerWindow.cpp" line="545"/>
         <source>The current measurement has been modified.</source>
         <translation>La misurazione corrente è stata modificata.</translation>
     </message>
     <message>
-        <location filename="../MarkerWindow.cpp" line="476"/>
+        <location filename="../MarkerWindow.cpp" line="546"/>
         <source>Do you want to save your changes?</source>
         <translation>Salvare le modifiche?</translation>
     </message>
     <message>
-        <location filename="../MarkerWindow.cpp" line="852"/>
+        <location filename="../MarkerWindow.cpp" line="925"/>
         <source>Etalon</source>
         <translation>Riferimento</translation>
     </message>
     <message>
-        <location filename="../MarkerWindow.cpp" line="859"/>
+        <location filename="../MarkerWindow.cpp" line="932"/>
         <source>Finished</source>
         <translation>Fatto</translation>
+    </message>
+    <message>
+        <location filename="../MarkerWindow.cpp" line="1332"/>
+        <source>Run failed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../MarkerWindow.cpp" line="1332"/>
+        <source>The neural network run has failed</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -374,12 +404,12 @@
         <translation>Salvare le modifiche?</translation>
     </message>
     <message>
-        <location filename="../MorphoWindow.cpp" line="317"/>
+        <location filename="../MorphoWindow.cpp" line="320"/>
         <source>Error: Measuremet file missing</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../MorphoWindow.cpp" line="317"/>
+        <location filename="../MorphoWindow.cpp" line="320"/>
         <source>The measurement file is missing from the project. This shouldn&apos;t happen!</source>
         <translation type="unfinished"></translation>
     </message>
@@ -387,179 +417,179 @@
 <context>
     <name>PlaniWindow</name>
     <message>
-        <location filename="../plani.ui" line="29"/>
+        <location filename="../plani.ui" line="26"/>
         <source>Planimetrics</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../plani.ui" line="57"/>
+        <location filename="../plani.ui" line="54"/>
         <source>Method:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../plani.ui" line="80"/>
+        <location filename="../plani.ui" line="77"/>
         <source>Brush Size:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../plani.ui" line="121"/>
+        <location filename="../plani.ui" line="118"/>
         <source>Erase mode (E)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../plani.ui" line="124"/>
+        <location filename="../plani.ui" line="121"/>
         <source>E</source>
         <translation>E</translation>
     </message>
     <message>
-        <location filename="../plani.ui" line="143"/>
+        <location filename="../plani.ui" line="140"/>
         <source>Draw Polygon (A)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../plani.ui" line="146"/>
+        <location filename="../plani.ui" line="143"/>
         <source>A</source>
         <translation>A</translation>
     </message>
     <message>
-        <location filename="../plani.ui" line="165"/>
+        <location filename="../plani.ui" line="162"/>
         <source>Set ROI (R)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../plani.ui" line="168"/>
+        <location filename="../plani.ui" line="165"/>
         <source>R</source>
         <translation>R</translation>
     </message>
     <message>
-        <location filename="../plani.ui" line="187"/>
+        <location filename="../plani.ui" line="184"/>
         <source>Segmentation (S)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../plani.ui" line="190"/>
+        <location filename="../plani.ui" line="187"/>
         <source>S</source>
         <translation>S</translation>
     </message>
     <message>
-        <location filename="../plani.ui" line="209"/>
+        <location filename="../plani.ui" line="206"/>
         <source>Flood Fill (F)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../plani.ui" line="212"/>
+        <location filename="../plani.ui" line="209"/>
         <source>F</source>
         <translation>F</translation>
     </message>
     <message>
-        <location filename="../plani.ui" line="231"/>
+        <location filename="../plani.ui" line="228"/>
         <source>Clear Points (C)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../plani.ui" line="234"/>
+        <location filename="../plani.ui" line="231"/>
         <source>C</source>
         <translation>C</translation>
     </message>
     <message>
-        <location filename="../plani.ui" line="280"/>
+        <location filename="../plani.ui" line="277"/>
         <source>Threshold: </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../plani.ui" line="392"/>
+        <location filename="../plani.ui" line="389"/>
         <source>Weight:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../plani.ui" line="429"/>
+        <location filename="../plani.ui" line="426"/>
         <source>Remaining Images</source>
         <translation>Immagini rimanenti</translation>
     </message>
     <message>
-        <location filename="../plani.ui" line="456"/>
+        <location filename="../plani.ui" line="453"/>
         <source>toolBar</source>
         <translation>Toolbar</translation>
     </message>
     <message>
-        <location filename="../plani.ui" line="484"/>
+        <location filename="../plani.ui" line="481"/>
         <source>Save</source>
         <translation>Salva</translation>
     </message>
     <message>
-        <location filename="../plani.ui" line="487"/>
+        <location filename="../plani.ui" line="484"/>
         <source>Save planimetrics</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../plani.ui" line="490"/>
+        <location filename="../plani.ui" line="487"/>
         <source>Ctrl+S</source>
         <translation>Ctrl+S</translation>
     </message>
     <message>
-        <location filename="../plani.ui" line="499"/>
+        <location filename="../plani.ui" line="496"/>
         <source>Previous Image</source>
         <translation>Immagine precedente</translation>
     </message>
     <message>
-        <location filename="../plani.ui" line="502"/>
+        <location filename="../plani.ui" line="499"/>
         <source>Display the previous image</source>
         <translation>Visualizza immagine precedente</translation>
     </message>
     <message>
-        <location filename="../plani.ui" line="505"/>
+        <location filename="../plani.ui" line="502"/>
         <source>Ctrl+P</source>
         <translation>Ctrl+P</translation>
     </message>
     <message>
-        <location filename="../plani.ui" line="514"/>
+        <location filename="../plani.ui" line="511"/>
         <source>Next image</source>
         <translation>Immagine successiva</translation>
     </message>
     <message>
-        <location filename="../plani.ui" line="517"/>
+        <location filename="../plani.ui" line="514"/>
         <source>Display the mext image</source>
         <translation>Visualizza l&apos;immagine mext</translation>
     </message>
     <message>
-        <location filename="../plani.ui" line="520"/>
+        <location filename="../plani.ui" line="517"/>
         <source>Ctrl+N</source>
         <translation>Ctrl+N</translation>
     </message>
     <message>
-        <location filename="../plani.ui" line="529"/>
+        <location filename="../plani.ui" line="526"/>
         <source>Clear image</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../plani.ui" line="532"/>
+        <location filename="../plani.ui" line="529"/>
         <source>Clear the current segmentation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../plani.ui" line="535"/>
+        <location filename="../plani.ui" line="532"/>
         <source>Ctrl+D</source>
         <translation>Ctrl+D</translation>
     </message>
     <message>
-        <location filename="../plani.ui" line="544"/>
+        <location filename="../plani.ui" line="541"/>
         <location filename="../PlaniWindow.cpp" line="398"/>
         <location filename="../PlaniWindow.cpp" line="477"/>
         <source>Done</source>
         <translation>Fatto</translation>
     </message>
     <message>
-        <location filename="../plani.ui" line="547"/>
+        <location filename="../plani.ui" line="544"/>
         <source>Return to the main window</source>
         <translation>Torna alla finestra principale</translation>
     </message>
     <message>
-        <location filename="../plani.ui" line="556"/>
+        <location filename="../plani.ui" line="553"/>
         <source>Export</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../plani.ui" line="559"/>
+        <location filename="../plani.ui" line="556"/>
         <source>Export planimetrics data</source>
         <translation type="unfinished"></translation>
     </message>
@@ -685,7 +715,7 @@
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../Utility.cpp" line="181"/>
+        <location filename="../Utility.cpp" line="180"/>
         <source>Name contains invalid characters!</source>
         <translation type="unfinished"></translation>
     </message>
@@ -693,162 +723,162 @@
 <context>
     <name>SchemaWindow</name>
     <message>
-        <location filename="../schema.ui" line="29"/>
+        <location filename="../schema.ui" line="26"/>
         <source>Manage shemas</source>
         <translation>Gestisci schemi</translation>
     </message>
     <message>
-        <location filename="../schema.ui" line="88"/>
-        <location filename="../schema.ui" line="337"/>
-        <location filename="../schema.ui" line="587"/>
-        <location filename="../schema.ui" line="836"/>
+        <location filename="../schema.ui" line="85"/>
+        <location filename="../schema.ui" line="334"/>
+        <location filename="../schema.ui" line="584"/>
+        <location filename="../schema.ui" line="833"/>
         <source>Points</source>
         <translation>Punti</translation>
     </message>
     <message>
-        <location filename="../schema.ui" line="185"/>
-        <location filename="../schema.ui" line="434"/>
-        <location filename="../schema.ui" line="684"/>
-        <location filename="../schema.ui" line="933"/>
+        <location filename="../schema.ui" line="182"/>
+        <location filename="../schema.ui" line="431"/>
+        <location filename="../schema.ui" line="681"/>
+        <location filename="../schema.ui" line="930"/>
         <source>Measurements</source>
         <translation>Misurazioni</translation>
     </message>
     <message>
-        <location filename="../schema.ui" line="119"/>
-        <location filename="../schema.ui" line="368"/>
-        <location filename="../schema.ui" line="618"/>
-        <location filename="../schema.ui" line="867"/>
+        <location filename="../schema.ui" line="116"/>
+        <location filename="../schema.ui" line="365"/>
+        <location filename="../schema.ui" line="615"/>
+        <location filename="../schema.ui" line="864"/>
         <source>Add point</source>
         <translation>Aggiungi punto</translation>
     </message>
     <message>
-        <location filename="../schema.ui" line="222"/>
-        <location filename="../schema.ui" line="471"/>
-        <location filename="../schema.ui" line="721"/>
-        <location filename="../schema.ui" line="970"/>
+        <location filename="../schema.ui" line="219"/>
+        <location filename="../schema.ui" line="468"/>
+        <location filename="../schema.ui" line="718"/>
+        <location filename="../schema.ui" line="967"/>
         <source>Add measurement</source>
         <translation>Aggiungi misurazione</translation>
     </message>
     <message>
-        <location filename="../schema.ui" line="295"/>
+        <location filename="../schema.ui" line="292"/>
         <source>Image #2</source>
         <translation>Image #2</translation>
     </message>
     <message>
-        <location filename="../schema.ui" line="545"/>
+        <location filename="../schema.ui" line="542"/>
         <source>Image #3</source>
         <translation>Image #3</translation>
     </message>
     <message>
-        <location filename="../schema.ui" line="794"/>
+        <location filename="../schema.ui" line="791"/>
         <source>Image #4</source>
         <translation>Image #4</translation>
     </message>
     <message>
-        <location filename="../schema.ui" line="1046"/>
+        <location filename="../schema.ui" line="1043"/>
         <source>toolBar</source>
         <translation>Toolbar</translation>
     </message>
     <message>
-        <location filename="../schema.ui" line="1071"/>
+        <location filename="../schema.ui" line="1068"/>
         <source>Open Images</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../schema.ui" line="1074"/>
+        <location filename="../schema.ui" line="1071"/>
         <source>Open Images to aid schema creation</source>
         <translation>Apri le immagini per facilitare la preparazione dello schema</translation>
     </message>
     <message>
-        <location filename="../schema.ui" line="1077"/>
+        <location filename="../schema.ui" line="1074"/>
         <source>Ctrl+O</source>
         <translation>Ctrl+O</translation>
     </message>
     <message>
-        <location filename="../schema.ui" line="1086"/>
+        <location filename="../schema.ui" line="1083"/>
         <source>save</source>
         <translation>Salva</translation>
     </message>
     <message>
-        <location filename="../schema.ui" line="1089"/>
-        <location filename="../schema.ui" line="1104"/>
+        <location filename="../schema.ui" line="1086"/>
+        <location filename="../schema.ui" line="1101"/>
         <source>Save schema</source>
         <translation>Salva lo schema</translation>
     </message>
     <message>
-        <location filename="../schema.ui" line="1092"/>
+        <location filename="../schema.ui" line="1089"/>
         <source>Ctrl+S</source>
         <translation>Ctrl+S</translation>
     </message>
     <message>
-        <location filename="../schema.ui" line="1101"/>
+        <location filename="../schema.ui" line="1098"/>
         <source>Save as...</source>
         <translation>Salva con nome...</translation>
     </message>
     <message>
-        <location filename="../schema.ui" line="1107"/>
+        <location filename="../schema.ui" line="1104"/>
         <source>Ctrl+Shift+S</source>
         <translation>Ctrl+Shift+S</translation>
     </message>
     <message>
-        <location filename="../schema.ui" line="1116"/>
+        <location filename="../schema.ui" line="1113"/>
         <source>Set Correction Measurement</source>
         <translation>Imposta misurazione usata per la correzione</translation>
     </message>
     <message>
-        <location filename="../schema.ui" line="1119"/>
+        <location filename="../schema.ui" line="1116"/>
         <source>Select a distance from the side measurements that best describes the height of the animal. (This will be used for automatic correction)</source>
         <translation>Seleziona dall&apos;immagine laterale un tipo di misurazione della distanza (che sarà utilizzata per la correzione automatica)</translation>
     </message>
     <message>
-        <location filename="../schema.ui" line="1122"/>
+        <location filename="../schema.ui" line="1119"/>
         <source>Ctrl+C</source>
         <translation>Ctrl+C</translation>
     </message>
     <message>
-        <location filename="../schema.ui" line="1131"/>
+        <location filename="../schema.ui" line="1128"/>
         <source>Done</source>
         <translation>Fatto</translation>
     </message>
     <message>
-        <location filename="../schema.ui" line="1134"/>
+        <location filename="../schema.ui" line="1131"/>
         <source>Return to main window</source>
         <translation>Torna alla finestra principale</translation>
     </message>
     <message>
-        <location filename="../schema.ui" line="159"/>
-        <location filename="../schema.ui" line="408"/>
-        <location filename="../schema.ui" line="658"/>
-        <location filename="../schema.ui" line="907"/>
+        <location filename="../schema.ui" line="156"/>
+        <location filename="../schema.ui" line="405"/>
+        <location filename="../schema.ui" line="655"/>
+        <location filename="../schema.ui" line="904"/>
         <source>Remove point</source>
         <translation>Rimuovere il punto</translation>
     </message>
     <message>
-        <location filename="../schema.ui" line="46"/>
+        <location filename="../schema.ui" line="43"/>
         <source>Image #1</source>
         <translation>Image #1</translation>
     </message>
     <message>
-        <location filename="../schema.ui" line="265"/>
-        <location filename="../schema.ui" line="511"/>
-        <location filename="../schema.ui" line="764"/>
-        <location filename="../schema.ui" line="1010"/>
+        <location filename="../schema.ui" line="262"/>
+        <location filename="../schema.ui" line="508"/>
+        <location filename="../schema.ui" line="761"/>
+        <location filename="../schema.ui" line="1007"/>
         <source>Remove measurement</source>
         <translation>Rimuovere la misurazione</translation>
     </message>
     <message>
-        <location filename="../schema.ui" line="139"/>
-        <location filename="../schema.ui" line="388"/>
-        <location filename="../schema.ui" line="638"/>
-        <location filename="../schema.ui" line="887"/>
+        <location filename="../schema.ui" line="136"/>
+        <location filename="../schema.ui" line="385"/>
+        <location filename="../schema.ui" line="635"/>
+        <location filename="../schema.ui" line="884"/>
         <source>Rename point</source>
         <translation>Rinomina il punto</translation>
     </message>
     <message>
-        <location filename="../schema.ui" line="242"/>
-        <location filename="../schema.ui" line="491"/>
-        <location filename="../schema.ui" line="741"/>
-        <location filename="../schema.ui" line="990"/>
+        <location filename="../schema.ui" line="239"/>
+        <location filename="../schema.ui" line="488"/>
+        <location filename="../schema.ui" line="738"/>
+        <location filename="../schema.ui" line="987"/>
         <source>Rename measurement</source>
         <translation>Rinomina la misurazione</translation>
     </message>
@@ -1014,7 +1044,7 @@
     </message>
     <message>
         <location filename="../SchemaWindow.cpp" line="561"/>
-        <location filename="../SchemaWindow.cpp" line="801"/>
+        <location filename="../SchemaWindow.cpp" line="804"/>
         <source>Done!</source>
         <translation>Fatto!</translation>
     </message>
@@ -1029,27 +1059,27 @@
         <translation>Salvare le modifiche?</translation>
     </message>
     <message>
-        <location filename="../SchemaWindow.cpp" line="811"/>
+        <location filename="../SchemaWindow.cpp" line="814"/>
         <source>Video Selection</source>
         <translation>Selezione video</translation>
     </message>
     <message>
-        <location filename="../SchemaWindow.cpp" line="811"/>
+        <location filename="../SchemaWindow.cpp" line="814"/>
         <source>Please select the index of the video to correct!</source>
         <translation>Inserire il codice del video da correggere!</translation>
     </message>
     <message>
-        <location filename="../SchemaWindow.cpp" line="821"/>
+        <location filename="../SchemaWindow.cpp" line="824"/>
         <source>Please select a side measurement to use!</source>
         <translation>Seleziona una misurazione laterale da rinominare!</translation>
     </message>
     <message>
-        <location filename="../SchemaWindow.cpp" line="830"/>
+        <location filename="../SchemaWindow.cpp" line="833"/>
         <source>The selected measurement is an angle. Please select a distance!</source>
         <translation>La misurazione selezionata è un angolo. Seleziona una distanza!</translation>
     </message>
     <message>
-        <location filename="../SchemaWindow.cpp" line="841"/>
+        <location filename="../SchemaWindow.cpp" line="844"/>
         <source>Height measurement set.</source>
         <translation>Impostazione misurazione dell&apos;altezza.</translation>
     </message>
@@ -1057,289 +1087,299 @@
 <context>
     <name>VAM</name>
     <message>
-        <location filename="../vam.cpp" line="1229"/>
-        <location filename="../vam.cpp" line="1301"/>
+        <location filename="../vam.cpp" line="1245"/>
+        <location filename="../vam.cpp" line="1317"/>
         <source>New Project</source>
         <translation>Nuovo progetto</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="254"/>
-        <location filename="../vam.cpp" line="290"/>
-        <location filename="../vam.cpp" line="1229"/>
-        <location filename="../vam.cpp" line="1301"/>
+        <location filename="../vam.cpp" line="255"/>
+        <location filename="../vam.cpp" line="293"/>
+        <location filename="../vam.cpp" line="1245"/>
+        <location filename="../vam.cpp" line="1317"/>
         <source>Enter Name:</source>
         <translation>Inserire un nome:</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="177"/>
+        <location filename="../vam.cpp" line="178"/>
         <source>&lt;Empty&gt;</source>
         <translation>&lt;Empty&gt;</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="254"/>
+        <location filename="../vam.cpp" line="255"/>
         <source>New Schema</source>
         <translation>Nuovo schema</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="254"/>
-        <location filename="../vam.cpp" line="290"/>
-        <location filename="../vam.cpp" line="1229"/>
-        <location filename="../vam.cpp" line="1301"/>
+        <location filename="../vam.cpp" line="255"/>
+        <location filename="../vam.cpp" line="293"/>
+        <location filename="../vam.cpp" line="1245"/>
+        <location filename="../vam.cpp" line="1317"/>
         <source>Please specify a name!</source>
         <translation>Compila il campo nome!</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="254"/>
+        <location filename="../vam.cpp" line="255"/>
         <source>A schema with this name already exists!</source>
         <translation>Schema con nome già esistente!</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="282"/>
+        <location filename="../vam.cpp" line="285"/>
         <source>Please create a schema and a database first</source>
         <translation>Crea prima uno schema e un database</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="290"/>
-        <location filename="../vam.cpp" line="334"/>
+        <location filename="../vam.cpp" line="293"/>
+        <location filename="../vam.cpp" line="337"/>
         <source>New Measurement</source>
         <translation>Nuova misurazione</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="290"/>
+        <location filename="../vam.cpp" line="293"/>
         <source>A measurement with this name already exists!</source>
         <translation>Misurazione con nome già esistente!</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="413"/>
+        <location filename="../vam.cpp" line="418"/>
         <source>You need to create a measurement before creating planimetrics measurements!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="428"/>
+        <location filename="../vam.cpp" line="435"/>
         <source>You need to create a measurement before creating morphometrics measurements!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="682"/>
+        <location filename="../vam.cpp" line="695"/>
         <source>Select Still Database</source>
         <translation>Seleziona database di fermo immagini</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="704"/>
+        <location filename="../vam.cpp" line="717"/>
         <source>The selected database is empty. Please select another one!</source>
         <translation>Il database selezionato è vuoto. Seleziona un altro database!</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="331"/>
-        <location filename="../vam.cpp" line="719"/>
+        <location filename="../vam.cpp" line="334"/>
+        <location filename="../vam.cpp" line="732"/>
         <source>Select Schema</source>
         <translation>Seleziona lo schema</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="99"/>
+        <location filename="../vam.cpp" line="100"/>
         <source>Number of Cameras:</source>
         <translation>Numero delle telecamere:</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="347"/>
+        <location filename="../vam.cpp" line="350"/>
         <source>Schema mismatch</source>
         <translation>Mancata corrispondenza dello schema</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="347"/>
+        <location filename="../vam.cpp" line="350"/>
         <source>The selected schema does not contain measurements for all cameras. Are you sure you want to use this schema?</source>
         <translation>Lo schema selezionato non contiene misure per tutti i video. Sicuro voler usare questo schema?</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="356"/>
-        <location filename="../vam.cpp" line="736"/>
+        <location filename="../vam.cpp" line="359"/>
+        <location filename="../vam.cpp" line="749"/>
         <source>The selected schema is empty. Please select another one!</source>
         <translation>Lo schema selezionato è vuoto. Seleziona un altro schema!</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="413"/>
-        <location filename="../vam.cpp" line="428"/>
+        <location filename="../vam.cpp" line="418"/>
+        <location filename="../vam.cpp" line="435"/>
         <source>No measurement</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="469"/>
+        <location filename="../vam.cpp" line="478"/>
         <source>Please select a schema to delete!</source>
         <translation>Seleziona lo schema da eliminare!</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="490"/>
+        <location filename="../vam.cpp" line="499"/>
         <source>Please select a measurement to delete!</source>
         <translation>Seleziona la misurazione da eliminare!</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="544"/>
+        <location filename="../vam.cpp" line="553"/>
         <source>Open Schema File</source>
         <translation>Apri file schema</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="544"/>
+        <location filename="../vam.cpp" line="553"/>
         <source>Schema Files (*.schem)</source>
         <translation>File schema (*.schem)</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="553"/>
+        <location filename="../vam.cpp" line="562"/>
         <source>Error opening schema file</source>
         <translation>Errore durante l&apos;apertura dello schema</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="554"/>
-        <location filename="../vam.cpp" line="581"/>
+        <location filename="../vam.cpp" line="563"/>
+        <location filename="../vam.cpp" line="590"/>
         <source>Please try another location</source>
         <translation>Apri un altro file</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="571"/>
+        <location filename="../vam.cpp" line="580"/>
         <source>Open Measurement File</source>
         <translation>Apri file di misurazione</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="571"/>
+        <location filename="../vam.cpp" line="580"/>
         <source>Measurement Files (*.meas)</source>
         <translation>File di misurazione (*.meas)</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="580"/>
+        <location filename="../vam.cpp" line="589"/>
         <source>Error opening measurement file</source>
         <translation>Errore durante l&apos;apertura della misurazione</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="651"/>
+        <location filename="../vam.cpp" line="662"/>
         <source>Please select a schema to edit!</source>
         <translation>Seleziona lo schema!</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="675"/>
+        <location filename="../vam.cpp" line="688"/>
         <source>Please select a measurement to edit!</source>
         <translation>Seleziona la misurazione!</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="856"/>
+        <location filename="../vam.cpp" line="871"/>
         <source>XLSX files (*.xlsx)</source>
         <translation>File XLSX (*.xlsx)</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="862"/>
+        <location filename="../vam.cpp" line="877"/>
         <source>CSV files (*.csv)</source>
         <translation>File CSV  (*.csv)</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="241"/>
-        <location filename="../vam.cpp" line="1460"/>
+        <location filename="../vam.cpp" line="242"/>
+        <location filename="../vam.cpp" line="1476"/>
         <source>Taken %1 stills from %2 cameras</source>
         <translation>%1 fermo immagine da %2 telecamere</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="859"/>
+        <location filename="../vam.cpp" line="874"/>
         <source>HTML files (*.html)</source>
         <translation>File HTML  (*.html)</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="868"/>
+        <location filename="../vam.cpp" line="883"/>
         <source>Select output file</source>
         <translation>Seleziona il file output</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="1013"/>
+        <location filename="../vam.cpp" line="1029"/>
         <source>About VAM</source>
         <translation>VATEM2 info</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="1170"/>
+        <location filename="../vam.cpp" line="1186"/>
         <source>VAM Projects (*.VAMproj)</source>
         <translation>Progetti VAM (*.VAMproj)</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="1247"/>
-        <location filename="../vam.cpp" line="1315"/>
+        <location filename="../vam.cpp" line="1263"/>
+        <location filename="../vam.cpp" line="1331"/>
         <source>Error writing directory</source>
         <translation>Errore durante la preparazione della cartella</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="1247"/>
-        <location filename="../vam.cpp" line="1315"/>
+        <location filename="../vam.cpp" line="1263"/>
+        <location filename="../vam.cpp" line="1331"/>
         <source>The selected project library could not be written. Please choose another one!</source>
         <translation>Lo schema selezionato è vuoto. Seleziona un altro schema!</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="1645"/>
+        <location filename="../vam.cpp" line="1577"/>
+        <source>Caanot close VAM with other windows open</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../vam.cpp" line="1578"/>
+        <source>Please close additional windows first</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../vam.cpp" line="1673"/>
         <source>Saving image %1 of %2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="1668"/>
+        <location filename="../vam.cpp" line="1696"/>
         <source>Output Generation Successful!</source>
         <translation>Uscita riuscita!</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="896"/>
+        <location filename="../vam.cpp" line="911"/>
         <source>Select Project Directory</source>
         <translation>Seleziona cartella progetto</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="694"/>
+        <location filename="../vam.cpp" line="707"/>
         <source>The database for the measurement is not loaded.</source>
         <translation>Il database usato per la misurazione non viene caricato.</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="722"/>
+        <location filename="../vam.cpp" line="735"/>
         <source>The schema for the measurement is not loaded.</source>
         <translation>Lo schema usato per la misurazione non viene caricato.</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="1074"/>
+        <location filename="../vam.cpp" line="1090"/>
         <source>Select Language</source>
         <translation>Seleziona la lingua</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="1074"/>
+        <location filename="../vam.cpp" line="1090"/>
         <source>Choose a language from the list</source>
         <translation>Seleziona una lingua dalla lista</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="140"/>
-        <location filename="../vam.cpp" line="1108"/>
+        <location filename="../vam.cpp" line="141"/>
+        <location filename="../vam.cpp" line="1124"/>
         <source>Disable Logging</source>
         <translation>Disattiva la registrazione</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="140"/>
-        <location filename="../vam.cpp" line="1108"/>
+        <location filename="../vam.cpp" line="141"/>
+        <location filename="../vam.cpp" line="1124"/>
         <source>Enable Logging</source>
         <translation>Attiva la registrazione</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="1662"/>
+        <location filename="../vam.cpp" line="1690"/>
         <source>Saved %1 animals with %2 measurements to</source>
         <translation>%1 animali con %2 misure salvate</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="1140"/>
-        <location filename="../vam.cpp" line="1196"/>
-        <location filename="../vam.cpp" line="1563"/>
+        <location filename="../vam.cpp" line="1156"/>
+        <location filename="../vam.cpp" line="1212"/>
+        <location filename="../vam.cpp" line="1591"/>
         <source>The current project has been modified.</source>
         <translation>Il presente progetto è stato modificato.</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="1141"/>
-        <location filename="../vam.cpp" line="1197"/>
-        <location filename="../vam.cpp" line="1564"/>
+        <location filename="../vam.cpp" line="1157"/>
+        <location filename="../vam.cpp" line="1213"/>
+        <location filename="../vam.cpp" line="1592"/>
         <source>Do you want to save your changes?</source>
         <translation>Salvare le modifiche?</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="1170"/>
+        <location filename="../vam.cpp" line="1186"/>
         <source>Open Project File</source>
         <translation>Apri progetto</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="1229"/>
-        <location filename="../vam.cpp" line="1301"/>
+        <location filename="../vam.cpp" line="1245"/>
+        <location filename="../vam.cpp" line="1317"/>
         <source>A project with this name already exists!</source>
         <translation>Progetto con nome già esistente!</translation>
     </message>
@@ -1560,150 +1600,150 @@
 <context>
     <name>VAMTranslatedStrings</name>
     <message>
-        <location filename="../Utility.cpp" line="461"/>
+        <location filename="../Utility.cpp" line="460"/>
         <source>ID</source>
         <oldsource>ID,</oldsource>
         <translation>ID</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="463"/>
+        <location filename="../Utility.cpp" line="462"/>
         <source>Animal ID</source>
         <oldsource>&lt;h3&gt;Animal ID: </oldsource>
         <translation>ID animale</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="466"/>
+        <location filename="../Utility.cpp" line="465"/>
         <source>Error opening output file</source>
         <translation>Errore durante l&apos;apertra del file output</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="469"/>
-        <location filename="../Utility.cpp" line="493"/>
+        <location filename="../Utility.cpp" line="468"/>
+        <location filename="../Utility.cpp" line="492"/>
         <source>Please try another location.</source>
         <translation>Prova con un altro file.</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="472"/>
+        <location filename="../Utility.cpp" line="471"/>
         <source>Error opening schema file </source>
         <translation>Errore durante l&apos;apertra del file schema </translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="475"/>
+        <location filename="../Utility.cpp" line="474"/>
         <source>The schema will be removed from the project.</source>
         <translation>Lo schema sarà rimosso dal progetto.</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="478"/>
+        <location filename="../Utility.cpp" line="477"/>
         <source>Error opening measurement file </source>
         <translation>Errore durante l&apos;apertura della misurazione </translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="481"/>
+        <location filename="../Utility.cpp" line="480"/>
         <source>The measurement will be removed from the project.</source>
         <translation>La misurazione sarà rimossa dal progetto.</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="484"/>
+        <location filename="../Utility.cpp" line="483"/>
         <source>Error opening database file </source>
         <translation>Errore nell&apos;apertura del file del database </translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="487"/>
+        <location filename="../Utility.cpp" line="486"/>
         <source>The database will be removed from the project.</source>
         <translation>Il database sarà rimosso dal progetto.</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="490"/>
+        <location filename="../Utility.cpp" line="489"/>
         <source>Error opening project file</source>
         <translation>Errore durante l&apos;apertra del file progetto</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="496"/>
+        <location filename="../Utility.cpp" line="495"/>
         <source>Measurement name</source>
         <translation>Nome misurazione</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="499"/>
+        <location filename="../Utility.cpp" line="498"/>
         <source>Value</source>
         <translation>Valore</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="505"/>
+        <location filename="../Utility.cpp" line="504"/>
         <source>Measurement</source>
         <translation>Misurazione</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="508"/>
+        <location filename="../Utility.cpp" line="507"/>
         <source>Schema</source>
         <translation>Schema</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="511"/>
+        <location filename="../Utility.cpp" line="510"/>
         <source> --- (this distance is set as animal height)</source>
         <translation> --- (distanza corrispondente all&apos;altezza dell&apos;animale)</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="514"/>
+        <location filename="../Utility.cpp" line="513"/>
         <source> --- (global etalon)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="517"/>
+        <location filename="../Utility.cpp" line="516"/>
         <source>Video database</source>
         <translation>Database di video</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="520"/>
+        <location filename="../Utility.cpp" line="519"/>
         <source>Etalon Size</source>
         <translation>Misurazione di riferimento</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="523"/>
+        <location filename="../Utility.cpp" line="522"/>
         <source>Camera distance</source>
         <translation>Distanza telecamera</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="526"/>
+        <location filename="../Utility.cpp" line="525"/>
         <source>Correction coefficient</source>
         <translation>Coefficiente di correzione</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="532"/>
+        <location filename="../Utility.cpp" line="531"/>
         <source>Image</source>
         <translation>Immagine</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="535"/>
+        <location filename="../Utility.cpp" line="534"/>
         <source>Measurements</source>
         <translation>Misurazioni</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="538"/>
+        <location filename="../Utility.cpp" line="537"/>
         <source>Confidence</source>
         <translation>Sicurezza</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="541"/>
+        <location filename="../Utility.cpp" line="540"/>
         <source>Tip: Use &lt;w, a, s, d&gt; to move the selected point, &lt;del&gt; to delete it</source>
         <translation>Suggerimento: Usa &lt;w, a, s, d&gt; per spostare il punto selezionato, &lt;del&gt; per eliminarlo</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="544"/>
+        <location filename="../Utility.cpp" line="543"/>
         <source>Tip: Use the mouse wheel to zoom in and out of the image</source>
         <translation>Suggerimento: Usa la rotella del mouse per ingrandire/ridurre l&apos;immagine</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="547"/>
+        <location filename="../Utility.cpp" line="546"/>
         <source> --- (Done)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="529"/>
+        <location filename="../Utility.cpp" line="528"/>
         <source>Animal count</source>
         <translation>Numero animale</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="502"/>
+        <location filename="../Utility.cpp" line="501"/>
         <source>Animal database</source>
         <translation>Database di animali</translation>
     </message>
@@ -1852,17 +1892,17 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../CalibrationWizard.cpp" line="203"/>
+        <location filename="../CalibrationWizard.cpp" line="207"/>
         <source>Calibration failed! No chessboard found</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../CalibrationWizard.cpp" line="207"/>
+        <location filename="../CalibrationWizard.cpp" line="211"/>
         <source>Computing camera parameters</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../CalibrationWizard.cpp" line="222"/>
+        <location filename="../CalibrationWizard.cpp" line="226"/>
         <source>Calibration successful! Calibration error: </source>
         <translation type="unfinished"></translation>
     </message>

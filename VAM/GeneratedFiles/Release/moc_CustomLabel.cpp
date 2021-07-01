@@ -1,18 +1,19 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'CustomLabel.h'
 **
-** Created by: The Qt Meta Object Compiler version 67 (Qt 5.9.4)
+** Created by: The Qt Meta Object Compiler version 67 (Qt 5.15.2)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
+#include <memory>
 #include "../../CustomLabel.h"
 #include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'CustomLabel.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
-#error "This file was generated using the moc from 5.9.4. It"
+#error "This file was generated using the moc from 5.15.2. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
@@ -44,7 +45,7 @@ QT_MOC_LITERAL(3, 26, 10) // "mouseMoved"
 static const uint qt_meta_data_CustomLabel[] = {
 
  // content:
-       7,       // revision
+       8,       // revision
        0,       // classname
        0,    0, // classinfo
        2,   14, // methods
@@ -68,7 +69,7 @@ static const uint qt_meta_data_CustomLabel[] = {
 void CustomLabel::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        CustomLabel *_t = static_cast<CustomLabel *>(_o);
+        auto *_t = static_cast<CustomLabel *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->mousePressed((*reinterpret_cast< const QPoint(*)>(_a[1]))); break;
@@ -78,14 +79,14 @@ void CustomLabel::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
     } else if (_c == QMetaObject::IndexOfMethod) {
         int *result = reinterpret_cast<int *>(_a[0]);
         {
-            typedef void (CustomLabel::*_t)(const QPoint & );
+            using _t = void (CustomLabel::*)(const QPoint & );
             if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&CustomLabel::mousePressed)) {
                 *result = 0;
                 return;
             }
         }
         {
-            typedef void (CustomLabel::*_t)(const QPoint & );
+            using _t = void (CustomLabel::*)(const QPoint & );
             if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&CustomLabel::mouseMoved)) {
                 *result = 1;
                 return;
@@ -94,10 +95,14 @@ void CustomLabel::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
     }
 }
 
-const QMetaObject CustomLabel::staticMetaObject = {
-    { &QLabel::staticMetaObject, qt_meta_stringdata_CustomLabel.data,
-      qt_meta_data_CustomLabel,  qt_static_metacall, nullptr, nullptr}
-};
+QT_INIT_METAOBJECT const QMetaObject CustomLabel::staticMetaObject = { {
+    QMetaObject::SuperData::link<QLabel::staticMetaObject>(),
+    qt_meta_stringdata_CustomLabel.data,
+    qt_meta_data_CustomLabel,
+    qt_static_metacall,
+    nullptr,
+    nullptr
+} };
 
 
 const QMetaObject *CustomLabel::metaObject() const
@@ -133,14 +138,14 @@ int CustomLabel::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 // SIGNAL 0
 void CustomLabel::mousePressed(const QPoint & _t1)
 {
-    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
+    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
     QMetaObject::activate(this, &staticMetaObject, 0, _a);
 }
 
 // SIGNAL 1
 void CustomLabel::mouseMoved(const QPoint & _t1)
 {
-    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
+    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
     QMetaObject::activate(this, &staticMetaObject, 1, _a);
 }
 struct qt_meta_stringdata_CustomScrollArea_t {
@@ -167,7 +172,7 @@ QT_MOC_LITERAL(3, 30, 6) // "factor"
 static const uint qt_meta_data_CustomScrollArea[] = {
 
  // content:
-       7,       // revision
+       8,       // revision
        0,       // classname
        0,    0, // classinfo
        1,   14, // methods
@@ -189,7 +194,7 @@ static const uint qt_meta_data_CustomScrollArea[] = {
 void CustomScrollArea::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        CustomScrollArea *_t = static_cast<CustomScrollArea *>(_o);
+        auto *_t = static_cast<CustomScrollArea *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->wheelTurned((*reinterpret_cast< double(*)>(_a[1])),(*reinterpret_cast< const QPointF(*)>(_a[2]))); break;
@@ -198,7 +203,7 @@ void CustomScrollArea::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int
     } else if (_c == QMetaObject::IndexOfMethod) {
         int *result = reinterpret_cast<int *>(_a[0]);
         {
-            typedef void (CustomScrollArea::*_t)(double , const QPointF & );
+            using _t = void (CustomScrollArea::*)(double , const QPointF & );
             if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&CustomScrollArea::wheelTurned)) {
                 *result = 0;
                 return;
@@ -207,10 +212,14 @@ void CustomScrollArea::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int
     }
 }
 
-const QMetaObject CustomScrollArea::staticMetaObject = {
-    { &QScrollArea::staticMetaObject, qt_meta_stringdata_CustomScrollArea.data,
-      qt_meta_data_CustomScrollArea,  qt_static_metacall, nullptr, nullptr}
-};
+QT_INIT_METAOBJECT const QMetaObject CustomScrollArea::staticMetaObject = { {
+    QMetaObject::SuperData::link<QScrollArea::staticMetaObject>(),
+    qt_meta_stringdata_CustomScrollArea.data,
+    qt_meta_data_CustomScrollArea,
+    qt_static_metacall,
+    nullptr,
+    nullptr
+} };
 
 
 const QMetaObject *CustomScrollArea::metaObject() const
@@ -246,7 +255,7 @@ int CustomScrollArea::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 // SIGNAL 0
 void CustomScrollArea::wheelTurned(double _t1, const QPointF & _t2)
 {
-    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(&_t1)), const_cast<void*>(reinterpret_cast<const void*>(&_t2)) };
+    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))), const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t2))) };
     QMetaObject::activate(this, &staticMetaObject, 0, _a);
 }
 QT_WARNING_POP

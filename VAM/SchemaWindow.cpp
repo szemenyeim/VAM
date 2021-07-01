@@ -586,6 +586,7 @@ void SchemaWindow::closeEvent(QCloseEvent *event)
 				event->ignore();
 				return;
 			}
+			emit closed();
 			event->accept();
 		}
 		else if (ret == QMessageBox::Cancel)
@@ -597,12 +598,14 @@ void SchemaWindow::closeEvent(QCloseEvent *event)
 		else
 		{
 			VAMLogger::log("Discard");
+			emit closed();
 			event->accept();
 		}
 	}
 	else
 	{
 		VAMLogger::log("Bye");
+		emit closed();
 		event->accept();
 	}
 	delete this;

@@ -1186,6 +1186,7 @@ void VideoWindow::closeEvent(QCloseEvent *event)
 			}
 			// Stop players
 			stopVideos();
+			emit closed();
 			event->accept();
 		}
 		else if (ret == QMessageBox::Cancel)
@@ -1199,6 +1200,7 @@ void VideoWindow::closeEvent(QCloseEvent *event)
 			VAMLogger::log("Discard");
 			// Stop players
 			stopVideos();
+			emit closed();
 			event->accept();
 		}
 	}
@@ -1207,6 +1209,7 @@ void VideoWindow::closeEvent(QCloseEvent *event)
 		VAMLogger::log("Bye");
 		// Stop players
 		stopVideos();
+		emit closed();
 		event->accept();
 	}
 	delete this;

@@ -37,6 +37,7 @@ VAM::VAM(QWidget *parent)
 	currentProject = NULL;
 	maxFileNr = 5;
 	generating = false;
+	UIDisabled = false;
 
 	// Read translation file and options
 	readOptionsAndTranslations();
@@ -262,7 +263,9 @@ void VAM::createSchema()
 
 	// Create schema window
 	SchemaWindow *schemaWindow = new SchemaWindow();
-	schemaWindow->setWindowModality(Qt::ApplicationModal);
+	schemaWindow->setWindowModality(Qt::NonModal);
+	toggleUI();
+	connect(schemaWindow, &SchemaWindow::closed, this, &VAM::toggleUI);
 	connect(schemaWindow, &SchemaWindow::newData, this, &VAM::newElementAdded);
 	connect(schemaWindow, &SchemaWindow::dataUpdate, this, &VAM::compDataChanged);
 
@@ -369,7 +372,9 @@ void VAM::createMeasurement()
 
 	// Create marker window
 	MarkerWindow *markerWindow = new MarkerWindow();
-	markerWindow->setWindowModality(Qt::ApplicationModal);
+	markerWindow->setWindowModality(Qt::NonModal);
+	toggleUI();
+	connect(markerWindow, &MarkerWindow::closed, this, &VAM::toggleUI);
 	connect(markerWindow, &MarkerWindow::newData, this, &VAM::newElementAdded);
 	connect(markerWindow, &MarkerWindow::dataUpdate, this, &VAM::compDataChanged);
 
@@ -415,7 +420,9 @@ void VAM::doVolumetric()
 	}
 
 	PlaniWindow *win = new PlaniWindow();
-	win->setWindowModality(Qt::ApplicationModal);
+	win->setWindowModality(Qt::NonModal);
+	toggleUI();
+	connect(win, &PlaniWindow::closed, this, &VAM::toggleUI);
 
 	win->setCurrentProject(currentProject);
 	win->show();
@@ -430,7 +437,9 @@ void VAM::doMorpho()
 	}
 
 	MorphoWindow *win = new MorphoWindow();
-	win->setWindowModality(Qt::ApplicationModal);
+	win->setWindowModality(Qt::NonModal);
+	toggleUI();
+	connect(win, &MorphoWindow::closed, this, &VAM::toggleUI);
 
 	win->setCurrentProject(currentProject);
 	win->show();
@@ -632,7 +641,9 @@ void VAM::dbEdit()
 
 	// Create window
 	VideoWindow *videoWindow = new VideoWindow();
-	videoWindow->setWindowModality(Qt::ApplicationModal);
+	videoWindow->setWindowModality(Qt::NonModal);
+	toggleUI();
+	connect(videoWindow, &VideoWindow::closed, this, &VAM::toggleUI);
 	connect(videoWindow, &VideoWindow::newData, this, &VAM::newElementAdded);
 	connect(videoWindow, &VideoWindow::dataUpdate, this, &VAM::compDataChanged);
 
@@ -656,7 +667,9 @@ void VAM::schemaEdit()
 
 	// Create window
 	SchemaWindow *schemaWindow = new SchemaWindow();
-	schemaWindow->setWindowModality(Qt::ApplicationModal);
+	schemaWindow->setWindowModality(Qt::NonModal);
+	toggleUI();
+	connect(schemaWindow, &SchemaWindow::closed, this, &VAM::toggleUI);
 	connect(schemaWindow, &SchemaWindow::newData, this, &VAM::newElementAdded);
 	connect(schemaWindow, &SchemaWindow::dataUpdate, this, &VAM::compDataChanged);
 
@@ -749,7 +762,9 @@ void VAM::measEdit()
 
 	// Create window
 	MarkerWindow *markerWindow = new MarkerWindow();
-	markerWindow->setWindowModality(Qt::ApplicationModal);
+	markerWindow->setWindowModality(Qt::NonModal);
+	toggleUI();
+	connect(markerWindow, &MarkerWindow::closed, this, &VAM::toggleUI);
 	connect(markerWindow, &MarkerWindow::newData, this, &VAM::newElementAdded);
 	connect(markerWindow, &MarkerWindow::dataUpdate, this, &VAM::compDataChanged);
 
@@ -902,6 +917,7 @@ void VAM::createProjLib()
 
 	// Set new project lib
 	projectLib = text;
+	VAMFileAgent::setProjPath(text);
 }
 
 void VAM::formatChanged(int index)
@@ -1009,7 +1025,7 @@ void VAM::showAbout()
 {
 	// Display about information
 	QMainWindow *window = new QMainWindow(this);
-	window->setWindowModality(Qt::ApplicationModal);
+	window->setWindowModality(Qt::NonModal);
 	window->setWindowTitle(tr("About VAM"));
 
 	QLabel *label = new QLabel(window);
@@ -1554,6 +1570,18 @@ void VAM::updateProjectState()
 
 void VAM::closeEvent(QCloseEvent *event)
 {
+	// Prevent closing during window open
+	if (UIDisabled)
+	{
+		QMessageBox msgBox;
+		msgBox.setText(tr("Caanot close VAM with other windows open"));
+		msgBox.setInformativeText(tr("Please close additional windows first"));
+		msgBox.setStandardButtons(QMessageBox::Ok);
+		msgBox.exec();
+		event->ignore();
+		return;
+	}
+
 	// Prompt for save if modified
 	if (projectModified)
 	{
@@ -1668,4 +1696,57 @@ void VAM::updateBar()
 			QMessageBox::information(this, QGuiApplication::applicationDisplayName(), tr("Output Generation Successful!"));
 		}
 	}
+}
+
+void VAM::toggleUI()
+{
+
+	// Enable elements
+	ui.actionMorphometrics_export->setEnabled(UIDisabled);
+	ui.actionPlanimetrics_export->setEnabled(UIDisabled);
+	ui.actionNew_Project->setEnabled(UIDisabled);
+	ui.actionOpen_Project->setEnabled(UIDisabled);
+	ui.actionSave_As->setEnabled(UIDisabled);
+	ui.actionSave_Project->setEnabled(UIDisabled);
+	ui.actionOrder_Images_by_Animal_ID->setEnabled(UIDisabled);
+	ui.actionEnable_Logging->setEnabled(UIDisabled);
+	ui.actionExit->setEnabled(UIDisabled);
+	ui.actionSelect_Language->setEnabled(UIDisabled);
+	ui.actionSet_Project_Directory->setEnabled(UIDisabled);
+
+	ui.vidEdit1->setEnabled(UIDisabled);
+	ui.vidEdit2->setEnabled(UIDisabled);
+	ui.vidEdit3->setEnabled(UIDisabled);
+	ui.vidEdit4->setEnabled(UIDisabled);
+
+	ui.calibBtn1->setEnabled(UIDisabled);
+	ui.calibBtn2->setEnabled(UIDisabled);
+	ui.calibBtn3->setEnabled(UIDisabled);
+	ui.calibBtn4->setEnabled(UIDisabled);
+
+	ui.stillCreate->setEnabled(UIDisabled);
+	ui.stillDelete->setEnabled(UIDisabled);
+	ui.resetDB->setEnabled(UIDisabled);
+
+	ui.schemaAdd->setEnabled(UIDisabled);
+	ui.schemaCombo->setEnabled(UIDisabled);
+	ui.schemaEdit->setEnabled(UIDisabled);
+	ui.schemaOpen->setEnabled(UIDisabled);
+	ui.schemaRemove->setEnabled(UIDisabled);
+
+	ui.measAdd->setEnabled(UIDisabled);
+	ui.measCombo->setEnabled(UIDisabled);
+	ui.measEdit->setEnabled(UIDisabled);
+	ui.measOpen->setEnabled(UIDisabled);
+	ui.measRemove->setEnabled(UIDisabled);
+
+	ui.formatCombo->setEnabled(UIDisabled);
+	ui.generateOutput->setEnabled(UIDisabled);
+
+	ui.mainToolBar->setEnabled(UIDisabled);
+
+	ui.menuBar->setEnabled(UIDisabled);
+
+	// Set variable
+	UIDisabled = !UIDisabled;
 }

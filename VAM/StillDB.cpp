@@ -270,14 +270,6 @@ bool StillDB::readLegacy(QString _name)
 
 	// Read parameters
 	globalEtalonSize = in.readLine().toDouble();
-	auto etalonIndices = in.readLine().split(",");
-	for (auto ind : etalonIndices)
-	{
-		if (ind != "" && ind != "-1")
-		{
-			globalEtalonIndex.push_back(ind.toInt());
-		}
-	}
 	videoCnt = in.readLine().toInt();
 	usingVideos = in.readLine().toInt();
 
@@ -296,8 +288,16 @@ bool StillDB::readLegacy(QString _name)
 	framePos = readDoubleVector<float>(in);
 
 	// Read etalon indices
-	hasEtalon = readVector< bool >(in);
-	readVector<float>(in);
+	auto etalonIndices = in.readLine().split(",");
+	in.readLine();
+	hasEtalon.resize(IDs.size(), false);
+	for (auto ind : etalonIndices)
+	{
+		if (ind != "" && ind != "-1")
+		{
+			hasEtalon[ind.toInt()] = true;
+		}
+	}
 
 	std::set<int> removeIndices;
 

@@ -53,6 +53,10 @@ private:
 	// User interface
 	Ui::MarkerWindow ui;
 
+	// Neural network
+	bool NNLoaded;
+	std::vector<int> keypointDefs;
+
 	// Auxiliary variables representing changes in the still database
 	std::vector< std::vector< int >> imgIndices;
 
@@ -145,11 +149,14 @@ private:
 	// Setup markings in the measurement
 	void setupMarkings();
 
+	// Get NN marker predictions
+	void predictMarkings();
+
 	// Draw markers on current image
 	void drawMarkings( double factor = 1.0 );
 
 	// Display image and set related labels on the view
-	void showImage();
+	void showImage(bool autoPredict = false);
 
 	// Remove point from image
 	void removePoint();
@@ -182,6 +189,7 @@ signals:
 	// Notifies main view, that a new measurement has been added
 	void newData();
 	void dataUpdate();
+	void closed();
 
 	private slots:
 

@@ -50,215 +50,245 @@
 <context>
     <name>MarkerWindow</name>
     <message>
-        <location filename="../marker.ui" line="29"/>
+        <location filename="../marker.ui" line="26"/>
         <source>Mark measurement points</source>
         <translation>Mérési pontok bejelölése</translation>
     </message>
     <message>
-        <location filename="../marker.ui" line="108"/>
+        <location filename="../marker.ui" line="105"/>
         <source>Images remaining:</source>
         <translation>Háralévő képek:</translation>
     </message>
     <message>
-        <location filename="../marker.ui" line="166"/>
+        <location filename="../marker.ui" line="163"/>
         <source>Automatically account for the diference in the etalon&apos;s and animal&apos;s position using the measurement of the animal&apos;s height</source>
         <translation>A program automatikusan számba veszi az etalon és az állat kamerától való távolságának a különbségét</translation>
     </message>
     <message>
-        <location filename="../marker.ui" line="265"/>
+        <location filename="../marker.ui" line="262"/>
         <source>Measurement Confidence (%):</source>
         <translation>Mérés megbízhatósága (%):</translation>
     </message>
     <message>
-        <location filename="../marker.ui" line="332"/>
+        <location filename="../marker.ui" line="329"/>
         <source>toolBar</source>
         <translation>Eszköztár</translation>
     </message>
     <message>
-        <location filename="../marker.ui" line="360"/>
+        <location filename="../marker.ui" line="357"/>
         <source>Save</source>
         <translation>Mentés</translation>
     </message>
     <message>
-        <location filename="../marker.ui" line="363"/>
-        <location filename="../marker.ui" line="378"/>
+        <location filename="../marker.ui" line="360"/>
+        <location filename="../marker.ui" line="375"/>
         <source>Save measurement</source>
         <translation>Mérés mentése</translation>
     </message>
     <message>
-        <location filename="../marker.ui" line="366"/>
+        <location filename="../marker.ui" line="363"/>
         <source>Ctrl+S</source>
         <translation>Ctrl+S</translation>
     </message>
     <message>
-        <location filename="../marker.ui" line="381"/>
+        <location filename="../marker.ui" line="378"/>
         <source>Ctrl+Shift+S</source>
         <translation>Ctrl+Shift+S</translation>
     </message>
     <message>
-        <location filename="../marker.ui" line="390"/>
+        <location filename="../marker.ui" line="387"/>
         <source>Previous Image</source>
         <translation>Előző kép</translation>
     </message>
     <message>
-        <location filename="../marker.ui" line="393"/>
+        <location filename="../marker.ui" line="390"/>
         <source>Display the previous image</source>
         <translation>Előző kép megjelenítése</translation>
     </message>
     <message>
-        <location filename="../marker.ui" line="396"/>
+        <location filename="../marker.ui" line="393"/>
         <source>Ctrl+P</source>
         <translation>Ctrl+P</translation>
     </message>
     <message>
-        <location filename="../marker.ui" line="405"/>
+        <location filename="../marker.ui" line="402"/>
         <source>Next image</source>
         <translation>Következő kép</translation>
     </message>
     <message>
-        <location filename="../marker.ui" line="408"/>
+        <location filename="../marker.ui" line="405"/>
         <source>Display the mext image</source>
         <translation>Következő kép megjelenítése</translation>
     </message>
     <message>
-        <location filename="../marker.ui" line="411"/>
+        <location filename="../marker.ui" line="408"/>
         <source>Ctrl+N</source>
         <translation>Ctrl+N</translation>
     </message>
     <message>
-        <location filename="../marker.ui" line="423"/>
+        <location filename="../marker.ui" line="420"/>
         <source>Selection mode</source>
         <translation>Kiválasztási mód</translation>
     </message>
     <message>
-        <location filename="../marker.ui" line="426"/>
+        <location filename="../marker.ui" line="423"/>
         <source>Toggle the marker selection mode</source>
         <translation>Kiválasztási mód váltása</translation>
     </message>
     <message>
-        <location filename="../marker.ui" line="435"/>
+        <location filename="../marker.ui" line="432"/>
         <source>Erase points</source>
         <translation>Pontok törlése</translation>
     </message>
     <message>
-        <location filename="../marker.ui" line="438"/>
+        <location filename="../marker.ui" line="435"/>
         <source>Removes all marks from the current image</source>
         <translation>Minden pontot töröl a jelenlegi képről</translation>
     </message>
     <message>
-        <location filename="../marker.ui" line="441"/>
+        <location filename="../marker.ui" line="438"/>
         <source>Ctrl+X</source>
         <translation>Ctrl+X</translation>
     </message>
     <message>
-        <location filename="../marker.ui" line="450"/>
+        <location filename="../marker.ui" line="447"/>
         <source>Done</source>
         <translation>Kész</translation>
     </message>
     <message>
-        <location filename="../marker.ui" line="453"/>
+        <location filename="../marker.ui" line="450"/>
         <source>Return to the main window</source>
         <translation>Visszatérés a főablakba</translation>
     </message>
     <message>
-        <location filename="../marker.ui" line="79"/>
+        <location filename="../marker.ui" line="76"/>
         <source>Images done:</source>
         <translation>Elkészült képek:</translation>
     </message>
     <message>
-        <location filename="../marker.ui" line="137"/>
+        <location filename="../marker.ui" line="134"/>
         <source>Next animal ID:</source>
         <translation>Jelenlegi állat ID-ja:</translation>
     </message>
     <message>
-        <location filename="../marker.ui" line="305"/>
+        <location filename="../marker.ui" line="302"/>
         <source>Remaining Images</source>
         <translation>Hátralévő képek</translation>
     </message>
     <message>
-        <location filename="../marker.ui" line="50"/>
+        <location filename="../marker.ui" line="47"/>
         <source>Next Point:</source>
         <translation>Következő pont:</translation>
     </message>
     <message>
-        <location filename="../marker.ui" line="375"/>
+        <location filename="../marker.ui" line="372"/>
         <source>Save as</source>
         <translation>Mentés másként</translation>
     </message>
     <message>
-        <location filename="../marker.ui" line="169"/>
+        <location filename="../marker.ui" line="166"/>
         <source>Automatic Correction</source>
         <translation>Automatikus korrekció</translation>
     </message>
     <message>
-        <location filename="../MarkerWindow.cpp" line="271"/>
+        <location filename="../MarkerWindow.cpp" line="314"/>
         <source>Error</source>
         <translation>Hiba</translation>
     </message>
     <message>
-        <location filename="../MarkerWindow.cpp" line="308"/>
+        <location filename="../MarkerWindow.cpp" line="378"/>
         <source>Error: Image files missing</source>
         <translation>Hiba: kép fájlok nem találhatóak</translation>
     </message>
     <message>
-        <location filename="../MarkerWindow.cpp" line="308"/>
+        <location filename="../MarkerWindow.cpp" line="378"/>
         <source>One or more image files are missing from the hard drive. Please fix the still database!</source>
         <translation>Egy vagy több kép nam található a merevlemezen. Legyen szíves az adatbázist javítani!</translation>
     </message>
     <message>
-        <location filename="../MarkerWindow.cpp" line="172"/>
+        <location filename="../MarkerWindow.cpp" line="215"/>
         <source>New Measurement</source>
         <translation>Új mérés</translation>
     </message>
     <message>
-        <location filename="../MarkerWindow.cpp" line="172"/>
+        <location filename="../MarkerWindow.cpp" line="50"/>
+        <source>Model definition</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../MarkerWindow.cpp" line="51"/>
+        <source>Model definition file &apos;model_def.txt&apos; not found.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../MarkerWindow.cpp" line="68"/>
+        <source>No model</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../MarkerWindow.cpp" line="68"/>
+        <source>The neural network model is not found. Automatic keypoint detection will be disabled.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../MarkerWindow.cpp" line="215"/>
         <source>Enter Name:</source>
         <translation>Adjon egy nevet:</translation>
     </message>
     <message>
-        <location filename="../MarkerWindow.cpp" line="172"/>
+        <location filename="../MarkerWindow.cpp" line="215"/>
         <source>Please specify a name!</source>
         <translation>Ne hagyja a név mezőt üresen!</translation>
     </message>
     <message>
-        <location filename="../MarkerWindow.cpp" line="172"/>
+        <location filename="../MarkerWindow.cpp" line="215"/>
         <source>A measurement with this name already exists!</source>
         <translation>Ilyen nevű mérés már létezik!</translation>
     </message>
     <message>
-        <location filename="../MarkerWindow.cpp" line="271"/>
+        <location filename="../MarkerWindow.cpp" line="314"/>
         <source>The schema or the database used by this measurement is not loaded.</source>
         <translation>A mérés által használt séma, vagy adatbázis nincs betöltve.</translation>
     </message>
     <message>
-        <location filename="../MarkerWindow.cpp" line="298"/>
+        <location filename="../MarkerWindow.cpp" line="368"/>
         <source>Error: Corrupt Database</source>
         <translation>Hiba: Adatbázis fájl hiba</translation>
     </message>
     <message>
-        <location filename="../MarkerWindow.cpp" line="298"/>
+        <location filename="../MarkerWindow.cpp" line="368"/>
         <source>The Database file has been corrupted. Please fix the still database!</source>
         <translation>Az adatbázis fájl meghibásodott. Legyen szíves kijavítani!</translation>
     </message>
     <message>
-        <location filename="../MarkerWindow.cpp" line="475"/>
+        <location filename="../MarkerWindow.cpp" line="545"/>
         <source>The current measurement has been modified.</source>
         <translation>A jelenlegi mérés módosítva lett.</translation>
     </message>
     <message>
-        <location filename="../MarkerWindow.cpp" line="476"/>
+        <location filename="../MarkerWindow.cpp" line="546"/>
         <source>Do you want to save your changes?</source>
         <translation>El kívánja menteni a változásokat?</translation>
     </message>
     <message>
-        <location filename="../MarkerWindow.cpp" line="852"/>
+        <location filename="../MarkerWindow.cpp" line="925"/>
         <source>Etalon</source>
         <translation>Etalon</translation>
     </message>
     <message>
-        <location filename="../MarkerWindow.cpp" line="859"/>
+        <location filename="../MarkerWindow.cpp" line="932"/>
         <source>Finished</source>
         <translation>Kész</translation>
+    </message>
+    <message>
+        <location filename="../MarkerWindow.cpp" line="1332"/>
+        <source>Run failed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../MarkerWindow.cpp" line="1332"/>
+        <source>The neural network run has failed</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -374,12 +404,12 @@
         <translation>El akarja megnteni a változásokat?</translation>
     </message>
     <message>
-        <location filename="../MorphoWindow.cpp" line="317"/>
+        <location filename="../MorphoWindow.cpp" line="320"/>
         <source>Error: Measuremet file missing</source>
         <translation>Hiba: Mérés fájl nem található</translation>
     </message>
     <message>
-        <location filename="../MorphoWindow.cpp" line="317"/>
+        <location filename="../MorphoWindow.cpp" line="320"/>
         <source>The measurement file is missing from the project. This shouldn&apos;t happen!</source>
         <translation>A projekthez tartozó mérés fájl nincs a diszken. Ennek nem szabadna megtörténni!</translation>
     </message>
@@ -387,179 +417,179 @@
 <context>
     <name>PlaniWindow</name>
     <message>
-        <location filename="../plani.ui" line="29"/>
+        <location filename="../plani.ui" line="26"/>
         <source>Planimetrics</source>
         <translation>Planimetria</translation>
     </message>
     <message>
-        <location filename="../plani.ui" line="57"/>
+        <location filename="../plani.ui" line="54"/>
         <source>Method:</source>
         <translation>Módszer:</translation>
     </message>
     <message>
-        <location filename="../plani.ui" line="80"/>
+        <location filename="../plani.ui" line="77"/>
         <source>Brush Size:</source>
         <translation>Ecset méret:</translation>
     </message>
     <message>
-        <location filename="../plani.ui" line="121"/>
+        <location filename="../plani.ui" line="118"/>
         <source>Erase mode (E)</source>
         <translation>Törlés mód (E)</translation>
     </message>
     <message>
-        <location filename="../plani.ui" line="124"/>
+        <location filename="../plani.ui" line="121"/>
         <source>E</source>
         <translation>E</translation>
     </message>
     <message>
-        <location filename="../plani.ui" line="143"/>
+        <location filename="../plani.ui" line="140"/>
         <source>Draw Polygon (A)</source>
         <translation>Poligon rajzolása (A)</translation>
     </message>
     <message>
-        <location filename="../plani.ui" line="146"/>
+        <location filename="../plani.ui" line="143"/>
         <source>A</source>
         <translation>A</translation>
     </message>
     <message>
-        <location filename="../plani.ui" line="165"/>
+        <location filename="../plani.ui" line="162"/>
         <source>Set ROI (R)</source>
         <translation>ROI beállítása (R)</translation>
     </message>
     <message>
-        <location filename="../plani.ui" line="168"/>
+        <location filename="../plani.ui" line="165"/>
         <source>R</source>
         <translation>R</translation>
     </message>
     <message>
-        <location filename="../plani.ui" line="187"/>
+        <location filename="../plani.ui" line="184"/>
         <source>Segmentation (S)</source>
         <translation>Szegmentáció (S)</translation>
     </message>
     <message>
-        <location filename="../plani.ui" line="190"/>
+        <location filename="../plani.ui" line="187"/>
         <source>S</source>
         <translation>S</translation>
     </message>
     <message>
-        <location filename="../plani.ui" line="209"/>
+        <location filename="../plani.ui" line="206"/>
         <source>Flood Fill (F)</source>
         <translation>Árasztás (F)</translation>
     </message>
     <message>
-        <location filename="../plani.ui" line="212"/>
+        <location filename="../plani.ui" line="209"/>
         <source>F</source>
         <translation>F</translation>
     </message>
     <message>
-        <location filename="../plani.ui" line="231"/>
+        <location filename="../plani.ui" line="228"/>
         <source>Clear Points (C)</source>
         <translation>Pontok törlése (C)</translation>
     </message>
     <message>
-        <location filename="../plani.ui" line="234"/>
+        <location filename="../plani.ui" line="231"/>
         <source>C</source>
         <translation>C</translation>
     </message>
     <message>
-        <location filename="../plani.ui" line="280"/>
+        <location filename="../plani.ui" line="277"/>
         <source>Threshold: </source>
         <translation>Küszöb: </translation>
     </message>
     <message>
-        <location filename="../plani.ui" line="392"/>
+        <location filename="../plani.ui" line="389"/>
         <source>Weight:</source>
         <translation>Súly:</translation>
     </message>
     <message>
-        <location filename="../plani.ui" line="429"/>
+        <location filename="../plani.ui" line="426"/>
         <source>Remaining Images</source>
         <translation>Hátralévő képek</translation>
     </message>
     <message>
-        <location filename="../plani.ui" line="456"/>
+        <location filename="../plani.ui" line="453"/>
         <source>toolBar</source>
         <translation>Eszköztár</translation>
     </message>
     <message>
-        <location filename="../plani.ui" line="484"/>
+        <location filename="../plani.ui" line="481"/>
         <source>Save</source>
         <translation>Mentés</translation>
     </message>
     <message>
-        <location filename="../plani.ui" line="487"/>
+        <location filename="../plani.ui" line="484"/>
         <source>Save planimetrics</source>
         <translation>Planimetria mentése</translation>
     </message>
     <message>
-        <location filename="../plani.ui" line="490"/>
+        <location filename="../plani.ui" line="487"/>
         <source>Ctrl+S</source>
         <translation>Ctrl+S</translation>
     </message>
     <message>
-        <location filename="../plani.ui" line="499"/>
+        <location filename="../plani.ui" line="496"/>
         <source>Previous Image</source>
         <translation>Előző kép</translation>
     </message>
     <message>
-        <location filename="../plani.ui" line="502"/>
+        <location filename="../plani.ui" line="499"/>
         <source>Display the previous image</source>
         <translation>Előző kép megjelenítése</translation>
     </message>
     <message>
-        <location filename="../plani.ui" line="505"/>
+        <location filename="../plani.ui" line="502"/>
         <source>Ctrl+P</source>
         <translation>Ctrl+P</translation>
     </message>
     <message>
-        <location filename="../plani.ui" line="514"/>
+        <location filename="../plani.ui" line="511"/>
         <source>Next image</source>
         <translation>Következő kép</translation>
     </message>
     <message>
-        <location filename="../plani.ui" line="517"/>
+        <location filename="../plani.ui" line="514"/>
         <source>Display the mext image</source>
         <translation>Következő kép megjelenítése</translation>
     </message>
     <message>
-        <location filename="../plani.ui" line="520"/>
+        <location filename="../plani.ui" line="517"/>
         <source>Ctrl+N</source>
         <translation>Ctrl+N</translation>
     </message>
     <message>
-        <location filename="../plani.ui" line="529"/>
+        <location filename="../plani.ui" line="526"/>
         <source>Clear image</source>
         <translation>Kép visszaállítása</translation>
     </message>
     <message>
-        <location filename="../plani.ui" line="532"/>
+        <location filename="../plani.ui" line="529"/>
         <source>Clear the current segmentation</source>
         <translation>A jelenlegi szegmentáció törlése</translation>
     </message>
     <message>
-        <location filename="../plani.ui" line="535"/>
+        <location filename="../plani.ui" line="532"/>
         <source>Ctrl+D</source>
         <translation>Ctrl+D</translation>
     </message>
     <message>
-        <location filename="../plani.ui" line="544"/>
+        <location filename="../plani.ui" line="541"/>
         <location filename="../PlaniWindow.cpp" line="398"/>
         <location filename="../PlaniWindow.cpp" line="477"/>
         <source>Done</source>
         <translation>Kész</translation>
     </message>
     <message>
-        <location filename="../plani.ui" line="547"/>
+        <location filename="../plani.ui" line="544"/>
         <source>Return to the main window</source>
         <translation>Visszatérés a főablakba</translation>
     </message>
     <message>
-        <location filename="../plani.ui" line="556"/>
+        <location filename="../plani.ui" line="553"/>
         <source>Export</source>
         <translation>Exportálás</translation>
     </message>
     <message>
-        <location filename="../plani.ui" line="559"/>
+        <location filename="../plani.ui" line="556"/>
         <source>Export planimetrics data</source>
         <translation>Planimetriai adatok exportálása</translation>
     </message>
@@ -685,7 +715,7 @@
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../Utility.cpp" line="181"/>
+        <location filename="../Utility.cpp" line="180"/>
         <source>Name contains invalid characters!</source>
         <translation>A név érvénytelen karaktereket tartalmaz!</translation>
     </message>
@@ -693,162 +723,162 @@
 <context>
     <name>SchemaWindow</name>
     <message>
-        <location filename="../schema.ui" line="29"/>
+        <location filename="../schema.ui" line="26"/>
         <source>Manage shemas</source>
         <translation>Sémák kezelése</translation>
     </message>
     <message>
-        <location filename="../schema.ui" line="88"/>
-        <location filename="../schema.ui" line="337"/>
-        <location filename="../schema.ui" line="587"/>
-        <location filename="../schema.ui" line="836"/>
+        <location filename="../schema.ui" line="85"/>
+        <location filename="../schema.ui" line="334"/>
+        <location filename="../schema.ui" line="584"/>
+        <location filename="../schema.ui" line="833"/>
         <source>Points</source>
         <translation>Pontok</translation>
     </message>
     <message>
-        <location filename="../schema.ui" line="185"/>
-        <location filename="../schema.ui" line="434"/>
-        <location filename="../schema.ui" line="684"/>
-        <location filename="../schema.ui" line="933"/>
+        <location filename="../schema.ui" line="182"/>
+        <location filename="../schema.ui" line="431"/>
+        <location filename="../schema.ui" line="681"/>
+        <location filename="../schema.ui" line="930"/>
         <source>Measurements</source>
         <translation>Méretek</translation>
     </message>
     <message>
-        <location filename="../schema.ui" line="119"/>
-        <location filename="../schema.ui" line="368"/>
-        <location filename="../schema.ui" line="618"/>
-        <location filename="../schema.ui" line="867"/>
+        <location filename="../schema.ui" line="116"/>
+        <location filename="../schema.ui" line="365"/>
+        <location filename="../schema.ui" line="615"/>
+        <location filename="../schema.ui" line="864"/>
         <source>Add point</source>
         <translation>Új pont</translation>
     </message>
     <message>
-        <location filename="../schema.ui" line="222"/>
-        <location filename="../schema.ui" line="471"/>
-        <location filename="../schema.ui" line="721"/>
-        <location filename="../schema.ui" line="970"/>
+        <location filename="../schema.ui" line="219"/>
+        <location filename="../schema.ui" line="468"/>
+        <location filename="../schema.ui" line="718"/>
+        <location filename="../schema.ui" line="967"/>
         <source>Add measurement</source>
         <translation>Új méret</translation>
     </message>
     <message>
-        <location filename="../schema.ui" line="295"/>
+        <location filename="../schema.ui" line="292"/>
         <source>Image #2</source>
         <translation>Kép #2</translation>
     </message>
     <message>
-        <location filename="../schema.ui" line="545"/>
+        <location filename="../schema.ui" line="542"/>
         <source>Image #3</source>
         <translation>Kép #3</translation>
     </message>
     <message>
-        <location filename="../schema.ui" line="794"/>
+        <location filename="../schema.ui" line="791"/>
         <source>Image #4</source>
         <translation>Kép #4</translation>
     </message>
     <message>
-        <location filename="../schema.ui" line="1046"/>
+        <location filename="../schema.ui" line="1043"/>
         <source>toolBar</source>
         <translation>Eszköztár</translation>
     </message>
     <message>
-        <location filename="../schema.ui" line="1071"/>
+        <location filename="../schema.ui" line="1068"/>
         <source>Open Images</source>
         <translation>Képek megnyitása</translation>
     </message>
     <message>
-        <location filename="../schema.ui" line="1074"/>
+        <location filename="../schema.ui" line="1071"/>
         <source>Open Images to aid schema creation</source>
         <translation>Képek megnyitása a séma készítés segítéséhez</translation>
     </message>
     <message>
-        <location filename="../schema.ui" line="1077"/>
+        <location filename="../schema.ui" line="1074"/>
         <source>Ctrl+O</source>
         <translation>Ctrl+O</translation>
     </message>
     <message>
-        <location filename="../schema.ui" line="1086"/>
+        <location filename="../schema.ui" line="1083"/>
         <source>save</source>
         <translation>Mentés</translation>
     </message>
     <message>
-        <location filename="../schema.ui" line="1089"/>
-        <location filename="../schema.ui" line="1104"/>
+        <location filename="../schema.ui" line="1086"/>
+        <location filename="../schema.ui" line="1101"/>
         <source>Save schema</source>
         <translation>Séma mentése</translation>
     </message>
     <message>
-        <location filename="../schema.ui" line="1092"/>
+        <location filename="../schema.ui" line="1089"/>
         <source>Ctrl+S</source>
         <translation>Ctrl+S</translation>
     </message>
     <message>
-        <location filename="../schema.ui" line="1101"/>
+        <location filename="../schema.ui" line="1098"/>
         <source>Save as...</source>
         <translation>Mentés másként...</translation>
     </message>
     <message>
-        <location filename="../schema.ui" line="1107"/>
+        <location filename="../schema.ui" line="1104"/>
         <source>Ctrl+Shift+S</source>
         <translation>Ctrl+Shift+S</translation>
     </message>
     <message>
-        <location filename="../schema.ui" line="1116"/>
+        <location filename="../schema.ui" line="1113"/>
         <source>Set Correction Measurement</source>
         <translation>A korrekcióhoz használt mérés beállítása</translation>
     </message>
     <message>
-        <location filename="../schema.ui" line="1119"/>
+        <location filename="../schema.ui" line="1116"/>
         <source>Select a distance from the side measurements that best describes the height of the animal. (This will be used for automatic correction)</source>
         <translation>Válasszon egy távolság típusú mérést az oldalsó képről. (Az automatikus korrekció funkció ezt fogja használni)</translation>
     </message>
     <message>
-        <location filename="../schema.ui" line="1122"/>
+        <location filename="../schema.ui" line="1119"/>
         <source>Ctrl+C</source>
         <translation>Ctrl+C</translation>
     </message>
     <message>
-        <location filename="../schema.ui" line="1131"/>
+        <location filename="../schema.ui" line="1128"/>
         <source>Done</source>
         <translation>Kész</translation>
     </message>
     <message>
-        <location filename="../schema.ui" line="1134"/>
+        <location filename="../schema.ui" line="1131"/>
         <source>Return to main window</source>
         <translation>Visszatérés a főablakba</translation>
     </message>
     <message>
-        <location filename="../schema.ui" line="159"/>
-        <location filename="../schema.ui" line="408"/>
-        <location filename="../schema.ui" line="658"/>
-        <location filename="../schema.ui" line="907"/>
+        <location filename="../schema.ui" line="156"/>
+        <location filename="../schema.ui" line="405"/>
+        <location filename="../schema.ui" line="655"/>
+        <location filename="../schema.ui" line="904"/>
         <source>Remove point</source>
         <translation>Pont törlése</translation>
     </message>
     <message>
-        <location filename="../schema.ui" line="46"/>
+        <location filename="../schema.ui" line="43"/>
         <source>Image #1</source>
         <translation>Kép #1</translation>
     </message>
     <message>
-        <location filename="../schema.ui" line="265"/>
-        <location filename="../schema.ui" line="511"/>
-        <location filename="../schema.ui" line="764"/>
-        <location filename="../schema.ui" line="1010"/>
+        <location filename="../schema.ui" line="262"/>
+        <location filename="../schema.ui" line="508"/>
+        <location filename="../schema.ui" line="761"/>
+        <location filename="../schema.ui" line="1007"/>
         <source>Remove measurement</source>
         <translation>Mérés törlése</translation>
     </message>
     <message>
-        <location filename="../schema.ui" line="139"/>
-        <location filename="../schema.ui" line="388"/>
-        <location filename="../schema.ui" line="638"/>
-        <location filename="../schema.ui" line="887"/>
+        <location filename="../schema.ui" line="136"/>
+        <location filename="../schema.ui" line="385"/>
+        <location filename="../schema.ui" line="635"/>
+        <location filename="../schema.ui" line="884"/>
         <source>Rename point</source>
         <translation>Pont átnevezése</translation>
     </message>
     <message>
-        <location filename="../schema.ui" line="242"/>
-        <location filename="../schema.ui" line="491"/>
-        <location filename="../schema.ui" line="741"/>
-        <location filename="../schema.ui" line="990"/>
+        <location filename="../schema.ui" line="239"/>
+        <location filename="../schema.ui" line="488"/>
+        <location filename="../schema.ui" line="738"/>
+        <location filename="../schema.ui" line="987"/>
         <source>Rename measurement</source>
         <translation>Mérés átnevezése</translation>
     </message>
@@ -1014,7 +1044,7 @@
     </message>
     <message>
         <location filename="../SchemaWindow.cpp" line="561"/>
-        <location filename="../SchemaWindow.cpp" line="801"/>
+        <location filename="../SchemaWindow.cpp" line="804"/>
         <source>Done!</source>
         <translation>Kész!</translation>
     </message>
@@ -1029,27 +1059,27 @@
         <translation>Kívánja menteni a változásokat?</translation>
     </message>
     <message>
-        <location filename="../SchemaWindow.cpp" line="811"/>
+        <location filename="../SchemaWindow.cpp" line="814"/>
         <source>Video Selection</source>
         <translation>Videó kiválasztása</translation>
     </message>
     <message>
-        <location filename="../SchemaWindow.cpp" line="811"/>
+        <location filename="../SchemaWindow.cpp" line="814"/>
         <source>Please select the index of the video to correct!</source>
         <translation>Adja meg a korrigálni kivánt videó sorszámát!</translation>
     </message>
     <message>
-        <location filename="../SchemaWindow.cpp" line="821"/>
+        <location filename="../SchemaWindow.cpp" line="824"/>
         <source>Please select a side measurement to use!</source>
         <translation>Válasszon ki egy oldalsó mérést!</translation>
     </message>
     <message>
-        <location filename="../SchemaWindow.cpp" line="830"/>
+        <location filename="../SchemaWindow.cpp" line="833"/>
         <source>The selected measurement is an angle. Please select a distance!</source>
         <translation>A kiválasztott mérés szög típusú. Válasszon távolságot!</translation>
     </message>
     <message>
-        <location filename="../SchemaWindow.cpp" line="841"/>
+        <location filename="../SchemaWindow.cpp" line="844"/>
         <source>Height measurement set.</source>
         <translation>Magasság mérés beállítva.</translation>
     </message>
@@ -1057,289 +1087,299 @@
 <context>
     <name>VAM</name>
     <message>
-        <location filename="../vam.cpp" line="1229"/>
-        <location filename="../vam.cpp" line="1301"/>
+        <location filename="../vam.cpp" line="1245"/>
+        <location filename="../vam.cpp" line="1317"/>
         <source>New Project</source>
         <translation>Új projekt</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="254"/>
-        <location filename="../vam.cpp" line="290"/>
-        <location filename="../vam.cpp" line="1229"/>
-        <location filename="../vam.cpp" line="1301"/>
+        <location filename="../vam.cpp" line="255"/>
+        <location filename="../vam.cpp" line="293"/>
+        <location filename="../vam.cpp" line="1245"/>
+        <location filename="../vam.cpp" line="1317"/>
         <source>Enter Name:</source>
         <translation>Adjon egy nevet:</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="177"/>
+        <location filename="../vam.cpp" line="178"/>
         <source>&lt;Empty&gt;</source>
         <translation>&lt;Üres&gt;</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="254"/>
+        <location filename="../vam.cpp" line="255"/>
         <source>New Schema</source>
         <translation>Új séma</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="254"/>
-        <location filename="../vam.cpp" line="290"/>
-        <location filename="../vam.cpp" line="1229"/>
-        <location filename="../vam.cpp" line="1301"/>
+        <location filename="../vam.cpp" line="255"/>
+        <location filename="../vam.cpp" line="293"/>
+        <location filename="../vam.cpp" line="1245"/>
+        <location filename="../vam.cpp" line="1317"/>
         <source>Please specify a name!</source>
         <translation>Ne hagyja a név mezőt üresen!</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="254"/>
+        <location filename="../vam.cpp" line="255"/>
         <source>A schema with this name already exists!</source>
         <translation>Ilyen nevű séma már létezik!</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="282"/>
+        <location filename="../vam.cpp" line="285"/>
         <source>Please create a schema and a database first</source>
         <translation>Előbb készítsen egy sémát és egy adatbázist</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="290"/>
-        <location filename="../vam.cpp" line="334"/>
+        <location filename="../vam.cpp" line="293"/>
+        <location filename="../vam.cpp" line="337"/>
         <source>New Measurement</source>
         <translation>Új mérés</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="290"/>
+        <location filename="../vam.cpp" line="293"/>
         <source>A measurement with this name already exists!</source>
         <translation>Ilyen nevű mérés már létezik!</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="413"/>
+        <location filename="../vam.cpp" line="418"/>
         <source>You need to create a measurement before creating planimetrics measurements!</source>
         <translation>A planimetria előtt készítsen egy mérést!</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="428"/>
+        <location filename="../vam.cpp" line="435"/>
         <source>You need to create a measurement before creating morphometrics measurements!</source>
         <translation>A morfometria előtt készítsen egy mérést!</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="682"/>
+        <location filename="../vam.cpp" line="695"/>
         <source>Select Still Database</source>
         <translation>Állókép adatbázis kiválasztása</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="704"/>
+        <location filename="../vam.cpp" line="717"/>
         <source>The selected database is empty. Please select another one!</source>
         <translation>A kiválasztott adatbázis üres. Válasszon másikat!</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="331"/>
-        <location filename="../vam.cpp" line="719"/>
+        <location filename="../vam.cpp" line="334"/>
+        <location filename="../vam.cpp" line="732"/>
         <source>Select Schema</source>
         <translation>Séma kiválasztása</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="99"/>
+        <location filename="../vam.cpp" line="100"/>
         <source>Number of Cameras:</source>
         <translation>Kamerák száma:</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="347"/>
+        <location filename="../vam.cpp" line="350"/>
         <source>Schema mismatch</source>
         <translation>Séma eltérés</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="347"/>
+        <location filename="../vam.cpp" line="350"/>
         <source>The selected schema does not contain measurements for all cameras. Are you sure you want to use this schema?</source>
         <translation>A kiválasztott sémában nincs minden videóhoz mérés. Biztos ezt a sémát kívánja használni?</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="356"/>
-        <location filename="../vam.cpp" line="736"/>
+        <location filename="../vam.cpp" line="359"/>
+        <location filename="../vam.cpp" line="749"/>
         <source>The selected schema is empty. Please select another one!</source>
         <translation>A kiválasztott séma üres. Válasszon másikat!</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="413"/>
-        <location filename="../vam.cpp" line="428"/>
+        <location filename="../vam.cpp" line="418"/>
+        <location filename="../vam.cpp" line="435"/>
         <source>No measurement</source>
         <translation>Nincs mérés</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="469"/>
+        <location filename="../vam.cpp" line="478"/>
         <source>Please select a schema to delete!</source>
         <translation>Válasszon ki egy törelndő sémát!</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="490"/>
+        <location filename="../vam.cpp" line="499"/>
         <source>Please select a measurement to delete!</source>
         <translation>Válasszon ki egy törelndő mérést!</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="544"/>
+        <location filename="../vam.cpp" line="553"/>
         <source>Open Schema File</source>
         <translation>Sáma fájl megnyitása</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="544"/>
+        <location filename="../vam.cpp" line="553"/>
         <source>Schema Files (*.schem)</source>
         <translation>Séma fájlok (*.schem)</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="553"/>
+        <location filename="../vam.cpp" line="562"/>
         <source>Error opening schema file</source>
         <translation>Séma megnyitása sikertelen</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="554"/>
-        <location filename="../vam.cpp" line="581"/>
+        <location filename="../vam.cpp" line="563"/>
+        <location filename="../vam.cpp" line="590"/>
         <source>Please try another location</source>
         <translation>Próbájon egy másik fájlt megnyitni</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="571"/>
+        <location filename="../vam.cpp" line="580"/>
         <source>Open Measurement File</source>
         <translation>Mérés fájl megnyitása</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="571"/>
+        <location filename="../vam.cpp" line="580"/>
         <source>Measurement Files (*.meas)</source>
         <translation>Mérés fájlok (*.meas)</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="580"/>
+        <location filename="../vam.cpp" line="589"/>
         <source>Error opening measurement file</source>
         <translation>Mérés megnyitása sikertelen</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="651"/>
+        <location filename="../vam.cpp" line="662"/>
         <source>Please select a schema to edit!</source>
         <translation>Válasszon ki egy sémát!</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="675"/>
+        <location filename="../vam.cpp" line="688"/>
         <source>Please select a measurement to edit!</source>
         <translation>Válasszon ki egy mérést!</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="856"/>
+        <location filename="../vam.cpp" line="871"/>
         <source>XLSX files (*.xlsx)</source>
         <translation>XLSX fájlok (*.xlsx)</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="862"/>
+        <location filename="../vam.cpp" line="877"/>
         <source>CSV files (*.csv)</source>
         <translation>CSV fájlok (*.csv)</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="241"/>
-        <location filename="../vam.cpp" line="1460"/>
+        <location filename="../vam.cpp" line="242"/>
+        <location filename="../vam.cpp" line="1476"/>
         <source>Taken %1 stills from %2 cameras</source>
         <translation>%1 állókép készítve %2 kameraállásból</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="859"/>
+        <location filename="../vam.cpp" line="874"/>
         <source>HTML files (*.html)</source>
         <translation>HTML fájlok (*.html)</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="868"/>
+        <location filename="../vam.cpp" line="883"/>
         <source>Select output file</source>
         <translation>Kimeneti fájl kiválasztása</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="1013"/>
+        <location filename="../vam.cpp" line="1029"/>
         <source>About VAM</source>
         <translation>A VATEM2-ről</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="1170"/>
+        <location filename="../vam.cpp" line="1186"/>
         <source>VAM Projects (*.VAMproj)</source>
         <translation>VATEM2 Projekt fájlok (*.VAMproj)</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="1247"/>
-        <location filename="../vam.cpp" line="1315"/>
+        <location filename="../vam.cpp" line="1263"/>
+        <location filename="../vam.cpp" line="1331"/>
         <source>Error writing directory</source>
         <translation>Hiba a könyvtár írásakor</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="1247"/>
-        <location filename="../vam.cpp" line="1315"/>
+        <location filename="../vam.cpp" line="1263"/>
+        <location filename="../vam.cpp" line="1331"/>
         <source>The selected project library could not be written. Please choose another one!</source>
         <translation>A kiválasztott projekt könyvtár nem írható. Válasszon másikat!</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="1645"/>
+        <location filename="../vam.cpp" line="1577"/>
+        <source>Caanot close VAM with other windows open</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../vam.cpp" line="1578"/>
+        <source>Please close additional windows first</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../vam.cpp" line="1673"/>
         <source>Saving image %1 of %2</source>
         <translation>%1/%2 kép mentése</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="1668"/>
+        <location filename="../vam.cpp" line="1696"/>
         <source>Output Generation Successful!</source>
         <translation>Kimenet generálása sikeres!</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="896"/>
+        <location filename="../vam.cpp" line="911"/>
         <source>Select Project Directory</source>
         <translation>Projekt könyvtár kiválasztása</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="694"/>
+        <location filename="../vam.cpp" line="707"/>
         <source>The database for the measurement is not loaded.</source>
         <translation>A méréshez használt adatbázis nincs betöltve.</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="722"/>
+        <location filename="../vam.cpp" line="735"/>
         <source>The schema for the measurement is not loaded.</source>
         <translation>A méréshez használt séma nincs betöltve.</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="1074"/>
+        <location filename="../vam.cpp" line="1090"/>
         <source>Select Language</source>
         <translation>Nyelv kiválasztása</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="1074"/>
+        <location filename="../vam.cpp" line="1090"/>
         <source>Choose a language from the list</source>
         <translation>Válasszon egy nyelvet a listából</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="140"/>
-        <location filename="../vam.cpp" line="1108"/>
+        <location filename="../vam.cpp" line="141"/>
+        <location filename="../vam.cpp" line="1124"/>
         <source>Disable Logging</source>
         <translation>Naplózás tiltása</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="140"/>
-        <location filename="../vam.cpp" line="1108"/>
+        <location filename="../vam.cpp" line="141"/>
+        <location filename="../vam.cpp" line="1124"/>
         <source>Enable Logging</source>
         <translation>Naplózás engedélyezése</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="1662"/>
+        <location filename="../vam.cpp" line="1690"/>
         <source>Saved %1 animals with %2 measurements to</source>
         <translation>%1 állat %2 mérettel mentve</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="1140"/>
-        <location filename="../vam.cpp" line="1196"/>
-        <location filename="../vam.cpp" line="1563"/>
+        <location filename="../vam.cpp" line="1156"/>
+        <location filename="../vam.cpp" line="1212"/>
+        <location filename="../vam.cpp" line="1591"/>
         <source>The current project has been modified.</source>
         <translation>Az aktuális projekt megváltozott.</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="1141"/>
-        <location filename="../vam.cpp" line="1197"/>
-        <location filename="../vam.cpp" line="1564"/>
+        <location filename="../vam.cpp" line="1157"/>
+        <location filename="../vam.cpp" line="1213"/>
+        <location filename="../vam.cpp" line="1592"/>
         <source>Do you want to save your changes?</source>
         <translation>Kívánja menteni a változásokat?</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="1170"/>
+        <location filename="../vam.cpp" line="1186"/>
         <source>Open Project File</source>
         <translation>Projekt megnyitása</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="1229"/>
-        <location filename="../vam.cpp" line="1301"/>
+        <location filename="../vam.cpp" line="1245"/>
+        <location filename="../vam.cpp" line="1317"/>
         <source>A project with this name already exists!</source>
         <translation>Már létezik ilyen nevű projekt!</translation>
     </message>
@@ -1560,150 +1600,150 @@
 <context>
     <name>VAMTranslatedStrings</name>
     <message>
-        <location filename="../Utility.cpp" line="461"/>
+        <location filename="../Utility.cpp" line="460"/>
         <source>ID</source>
         <oldsource>ID,</oldsource>
         <translation>ID</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="463"/>
+        <location filename="../Utility.cpp" line="462"/>
         <source>Animal ID</source>
         <oldsource>&lt;h3&gt;Animal ID: </oldsource>
         <translation>Állat ID-ja</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="466"/>
+        <location filename="../Utility.cpp" line="465"/>
         <source>Error opening output file</source>
         <translation>Kimeneti fájl megnyitása sikertelen</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="469"/>
-        <location filename="../Utility.cpp" line="493"/>
+        <location filename="../Utility.cpp" line="468"/>
+        <location filename="../Utility.cpp" line="492"/>
         <source>Please try another location.</source>
         <translation>Próbálkozzon egy másik fájllal.</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="472"/>
+        <location filename="../Utility.cpp" line="471"/>
         <source>Error opening schema file </source>
         <translation>Séma megnyitása sikertelen </translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="475"/>
+        <location filename="../Utility.cpp" line="474"/>
         <source>The schema will be removed from the project.</source>
         <translation>A séma törlésre kerül a projektből.</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="478"/>
+        <location filename="../Utility.cpp" line="477"/>
         <source>Error opening measurement file </source>
         <translation>A mérés megnyitása sikertelen </translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="481"/>
+        <location filename="../Utility.cpp" line="480"/>
         <source>The measurement will be removed from the project.</source>
         <translation>A mérés törlésre kerül a projektből.</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="484"/>
+        <location filename="../Utility.cpp" line="483"/>
         <source>Error opening database file </source>
         <translation>Hiba az adatbázis fájl megnyitásakor </translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="487"/>
+        <location filename="../Utility.cpp" line="486"/>
         <source>The database will be removed from the project.</source>
         <translation>Az adatbázis törlésre kerül a projektből.</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="490"/>
+        <location filename="../Utility.cpp" line="489"/>
         <source>Error opening project file</source>
         <translation>A projekt megnyitása sikertelen</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="496"/>
+        <location filename="../Utility.cpp" line="495"/>
         <source>Measurement name</source>
         <translation>Mérés neve</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="499"/>
+        <location filename="../Utility.cpp" line="498"/>
         <source>Value</source>
         <translation>Érték</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="505"/>
+        <location filename="../Utility.cpp" line="504"/>
         <source>Measurement</source>
         <translation>Mérés</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="508"/>
+        <location filename="../Utility.cpp" line="507"/>
         <source>Schema</source>
         <translation>Séma</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="511"/>
+        <location filename="../Utility.cpp" line="510"/>
         <source> --- (this distance is set as animal height)</source>
         <translation> --- (ez a távolság az állat magassága)</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="514"/>
+        <location filename="../Utility.cpp" line="513"/>
         <source> --- (global etalon)</source>
         <translation> --- (globális etalon)</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="517"/>
+        <location filename="../Utility.cpp" line="516"/>
         <source>Video database</source>
         <translation>Videó adatbázis</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="520"/>
+        <location filename="../Utility.cpp" line="519"/>
         <source>Etalon Size</source>
         <translation>Etalon mérete</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="523"/>
+        <location filename="../Utility.cpp" line="522"/>
         <source>Camera distance</source>
         <translation>Kamera távolság</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="526"/>
+        <location filename="../Utility.cpp" line="525"/>
         <source>Correction coefficient</source>
         <translation>Korrekciós együttható</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="532"/>
+        <location filename="../Utility.cpp" line="531"/>
         <source>Image</source>
         <translation>Kép</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="535"/>
+        <location filename="../Utility.cpp" line="534"/>
         <source>Measurements</source>
         <translation>MérésekMérések</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="538"/>
+        <location filename="../Utility.cpp" line="537"/>
         <source>Confidence</source>
         <translation>Konfidencia</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="541"/>
+        <location filename="../Utility.cpp" line="540"/>
         <source>Tip: Use &lt;w, a, s, d&gt; to move the selected point, &lt;del&gt; to delete it</source>
         <translation>Tipp: Használja a &lt;w, a, s, d&gt; gombokat a kiválasztott pont mozgatásához, a &lt;del&gt; gombot pedig a törlésére</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="544"/>
+        <location filename="../Utility.cpp" line="543"/>
         <source>Tip: Use the mouse wheel to zoom in and out of the image</source>
         <translation>Tipp: Használja az egér görgőjét a kép nagyítására/kicsinyítésére</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="547"/>
+        <location filename="../Utility.cpp" line="546"/>
         <source> --- (Done)</source>
         <translation> --- (Kész)</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="529"/>
+        <location filename="../Utility.cpp" line="528"/>
         <source>Animal count</source>
         <translation>Állatok száma</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="502"/>
+        <location filename="../Utility.cpp" line="501"/>
         <source>Animal database</source>
         <translation>Állat adatbázis</translation>
     </message>
@@ -1852,17 +1892,17 @@
         <translation>Győződjön meg, hogy a fájl nem sérült, vagy törölt!</translation>
     </message>
     <message>
-        <location filename="../CalibrationWizard.cpp" line="203"/>
+        <location filename="../CalibrationWizard.cpp" line="207"/>
         <source>Calibration failed! No chessboard found</source>
         <translation>Kalibáció sikertelen! Nem található sakktábla</translation>
     </message>
     <message>
-        <location filename="../CalibrationWizard.cpp" line="207"/>
+        <location filename="../CalibrationWizard.cpp" line="211"/>
         <source>Computing camera parameters</source>
         <translation>Kamera paraméterek számolása</translation>
     </message>
     <message>
-        <location filename="../CalibrationWizard.cpp" line="222"/>
+        <location filename="../CalibrationWizard.cpp" line="226"/>
         <source>Calibration successful! Calibration error: </source>
         <translation>Kalibráció sikeres! Kalibrációs hiba: </translation>
     </message>

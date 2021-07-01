@@ -263,6 +263,12 @@
     <ClInclude Include="GeneratedFiles\ui_plani.h">
       <Filter>Generated Files</Filter>
     </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="Translations\vam_en.ts">
@@ -289,5 +295,11 @@
     <None Include="Translations\vam_slo.ts">
       <Filter>Translation Files</Filter>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="VATEM2.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Icons\ikon02.ico" />
   </ItemGroup>
 </Project>

@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'videoDiag.ui'
 **
-** Created by: Qt User Interface Compiler version 5.9.4
+** Created by: Qt User Interface Compiler version 5.15.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -10,13 +10,11 @@
 #define UI_VIDEODIAG_H
 
 #include <QtCore/QVariant>
-#include <QtWidgets/QAction>
+#include <QtGui/QIcon>
 #include <QtWidgets/QApplication>
-#include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QDoubleSpinBox>
 #include <QtWidgets/QHBoxLayout>
-#include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QListView>
 #include <QtWidgets/QPushButton>
@@ -48,35 +46,35 @@ public:
     void setupUi(QDialog *VideoDialog)
     {
         if (VideoDialog->objectName().isEmpty())
-            VideoDialog->setObjectName(QStringLiteral("VideoDialog"));
+            VideoDialog->setObjectName(QString::fromUtf8("VideoDialog"));
         VideoDialog->setWindowModality(Qt::ApplicationModal);
         VideoDialog->resize(300, 400);
         VideoDialog->setMinimumSize(QSize(300, 400));
         VideoDialog->setMaximumSize(QSize(300, 400));
         horizontalLayoutWidget = new QWidget(VideoDialog);
-        horizontalLayoutWidget->setObjectName(QStringLiteral("horizontalLayoutWidget"));
+        horizontalLayoutWidget->setObjectName(QString::fromUtf8("horizontalLayoutWidget"));
         horizontalLayoutWidget->setGeometry(QRect(9, 9, 281, 381));
         horizontalLayout = new QHBoxLayout(horizontalLayoutWidget);
-        horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
+        horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
         horizontalLayout->setContentsMargins(0, 0, 0, 0);
         verticalLayout = new QVBoxLayout();
-        verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
+        verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
         label_7 = new QLabel(horizontalLayoutWidget);
-        label_7->setObjectName(QStringLiteral("label_7"));
+        label_7->setObjectName(QString::fromUtf8("label_7"));
         label_7->setMaximumSize(QSize(16777215, 20));
         label_7->setAlignment(Qt::AlignCenter);
 
         verticalLayout->addWidget(label_7);
 
         horizontalLayout_4 = new QHBoxLayout();
-        horizontalLayout_4->setObjectName(QStringLiteral("horizontalLayout_4"));
+        horizontalLayout_4->setObjectName(QString::fromUtf8("horizontalLayout_4"));
         label = new QLabel(horizontalLayoutWidget);
-        label->setObjectName(QStringLiteral("label"));
+        label->setObjectName(QString::fromUtf8("label"));
 
         horizontalLayout_4->addWidget(label);
 
         camDistBox = new QDoubleSpinBox(horizontalLayoutWidget);
-        camDistBox->setObjectName(QStringLiteral("camDistBox"));
+        camDistBox->setObjectName(QString::fromUtf8("camDistBox"));
 
         horizontalLayout_4->addWidget(camDistBox);
 
@@ -84,46 +82,46 @@ public:
         verticalLayout->addLayout(horizontalLayout_4);
 
         dbListView = new QListView(horizontalLayoutWidget);
-        dbListView->setObjectName(QStringLiteral("dbListView"));
+        dbListView->setObjectName(QString::fromUtf8("dbListView"));
         dbListView->setEditTriggers(QAbstractItemView::NoEditTriggers);
 
         verticalLayout->addWidget(dbListView);
 
         horizontalLayout_2 = new QHBoxLayout();
-        horizontalLayout_2->setObjectName(QStringLiteral("horizontalLayout_2"));
+        horizontalLayout_2->setObjectName(QString::fromUtf8("horizontalLayout_2"));
         addVid = new QPushButton(horizontalLayoutWidget);
-        addVid->setObjectName(QStringLiteral("addVid"));
+        addVid->setObjectName(QString::fromUtf8("addVid"));
         addVid->setMaximumSize(QSize(75, 30));
         QIcon icon;
-        icon.addFile(QStringLiteral(":/VAM/Icons/1462036180_list-add.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon.addFile(QString::fromUtf8(":/VAM/Icons/1462036180_list-add.png"), QSize(), QIcon::Normal, QIcon::Off);
         addVid->setIcon(icon);
 
         horizontalLayout_2->addWidget(addVid);
 
         deleteVid = new QPushButton(horizontalLayoutWidget);
-        deleteVid->setObjectName(QStringLiteral("deleteVid"));
+        deleteVid->setObjectName(QString::fromUtf8("deleteVid"));
         deleteVid->setMaximumSize(QSize(75, 30));
         QIcon icon1;
-        icon1.addFile(QStringLiteral(":/VAM/Icons/1462036183_document-delete3.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon1.addFile(QString::fromUtf8(":/VAM/Icons/1462036183_document-delete3.png"), QSize(), QIcon::Normal, QIcon::Off);
         deleteVid->setIcon(icon1);
 
         horizontalLayout_2->addWidget(deleteVid);
 
         vidUp = new QPushButton(horizontalLayoutWidget);
-        vidUp->setObjectName(QStringLiteral("vidUp"));
+        vidUp->setObjectName(QString::fromUtf8("vidUp"));
         vidUp->setMaximumSize(QSize(75, 30));
         QIcon icon2;
-        icon2.addFile(QStringLiteral(":/VAM/Icons/1462036195_arrow-up.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon2.addFile(QString::fromUtf8(":/VAM/Icons/1462036195_arrow-up.png"), QSize(), QIcon::Normal, QIcon::Off);
         vidUp->setIcon(icon2);
 
         horizontalLayout_2->addWidget(vidUp);
 
         vidDown = new QPushButton(horizontalLayoutWidget);
-        vidDown->setObjectName(QStringLiteral("vidDown"));
+        vidDown->setObjectName(QString::fromUtf8("vidDown"));
         vidDown->setMinimumSize(QSize(0, 0));
         vidDown->setMaximumSize(QSize(75, 30));
         QIcon icon3;
-        icon3.addFile(QStringLiteral(":/VAM/Icons/1462036198_arrow-down.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon3.addFile(QString::fromUtf8(":/VAM/Icons/1462036198_arrow-down.png"), QSize(), QIcon::Normal, QIcon::Off);
         vidDown->setIcon(icon3);
 
         horizontalLayout_2->addWidget(vidDown);
@@ -132,21 +130,21 @@ public:
         verticalLayout->addLayout(horizontalLayout_2);
 
         horizontalLayout_3 = new QHBoxLayout();
-        horizontalLayout_3->setObjectName(QStringLiteral("horizontalLayout_3"));
+        horizontalLayout_3->setObjectName(QString::fromUtf8("horizontalLayout_3"));
         saveBtn = new QPushButton(horizontalLayoutWidget);
-        saveBtn->setObjectName(QStringLiteral("saveBtn"));
+        saveBtn->setObjectName(QString::fromUtf8("saveBtn"));
         saveBtn->setMaximumSize(QSize(75, 30));
         QIcon icon4;
-        icon4.addFile(QStringLiteral(":/VAM/Icons/1466084211_Accept.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon4.addFile(QString::fromUtf8(":/VAM/Icons/1466084211_Accept.png"), QSize(), QIcon::Normal, QIcon::Off);
         saveBtn->setIcon(icon4);
 
         horizontalLayout_3->addWidget(saveBtn);
 
         cancelBtn = new QPushButton(horizontalLayoutWidget);
-        cancelBtn->setObjectName(QStringLiteral("cancelBtn"));
+        cancelBtn->setObjectName(QString::fromUtf8("cancelBtn"));
         cancelBtn->setMaximumSize(QSize(75, 30));
         QIcon icon5;
-        icon5.addFile(QStringLiteral(":/VAM/Icons/1466084143_delete.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon5.addFile(QString::fromUtf8(":/VAM/Icons/1466084143_delete.png"), QSize(), QIcon::Normal, QIcon::Off);
         cancelBtn->setIcon(icon5);
 
         horizontalLayout_3->addWidget(cancelBtn);
@@ -165,45 +163,45 @@ public:
 
     void retranslateUi(QDialog *VideoDialog)
     {
-        VideoDialog->setWindowTitle(QApplication::translate("VideoDialog", "Video Management", Q_NULLPTR));
-        label_7->setText(QApplication::translate("VideoDialog", "Videos", Q_NULLPTR));
-#ifndef QT_NO_TOOLTIP
-        label->setToolTip(QApplication::translate("VideoDialog", "Use this to set the distance of the camera from the reference point, where the etalon is.", Q_NULLPTR));
-#endif // QT_NO_TOOLTIP
-        label->setText(QApplication::translate("VideoDialog", "Camera Distance:", Q_NULLPTR));
-#ifndef QT_NO_TOOLTIP
-        camDistBox->setToolTip(QApplication::translate("VideoDialog", "Use this to set the distance of the camera from the reference point, where the etalon is.", Q_NULLPTR));
-#endif // QT_NO_TOOLTIP
-#ifndef QT_NO_TOOLTIP
-        addVid->setToolTip(QApplication::translate("VideoDialog", "Add new video", Q_NULLPTR));
-#endif // QT_NO_TOOLTIP
-#ifndef QT_NO_WHATSTHIS
+        VideoDialog->setWindowTitle(QCoreApplication::translate("VideoDialog", "Video Management", nullptr));
+        label_7->setText(QCoreApplication::translate("VideoDialog", "Videos", nullptr));
+#if QT_CONFIG(tooltip)
+        label->setToolTip(QCoreApplication::translate("VideoDialog", "Use this to set the distance of the camera from the reference point, where the etalon is.", nullptr));
+#endif // QT_CONFIG(tooltip)
+        label->setText(QCoreApplication::translate("VideoDialog", "Camera Distance:", nullptr));
+#if QT_CONFIG(tooltip)
+        camDistBox->setToolTip(QCoreApplication::translate("VideoDialog", "Use this to set the distance of the camera from the reference point, where the etalon is.", nullptr));
+#endif // QT_CONFIG(tooltip)
+#if QT_CONFIG(tooltip)
+        addVid->setToolTip(QCoreApplication::translate("VideoDialog", "Add new video", nullptr));
+#endif // QT_CONFIG(tooltip)
+#if QT_CONFIG(whatsthis)
         addVid->setWhatsThis(QString());
-#endif // QT_NO_WHATSTHIS
+#endif // QT_CONFIG(whatsthis)
         addVid->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        deleteVid->setToolTip(QApplication::translate("VideoDialog", "Remove video", Q_NULLPTR));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        deleteVid->setToolTip(QCoreApplication::translate("VideoDialog", "Remove video", nullptr));
+#endif // QT_CONFIG(tooltip)
         deleteVid->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        vidUp->setToolTip(QApplication::translate("VideoDialog", "Move video up", Q_NULLPTR));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        vidUp->setToolTip(QCoreApplication::translate("VideoDialog", "Move video up", nullptr));
+#endif // QT_CONFIG(tooltip)
         vidUp->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        vidDown->setToolTip(QApplication::translate("VideoDialog", "Move video down", Q_NULLPTR));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        vidDown->setToolTip(QCoreApplication::translate("VideoDialog", "Move video down", nullptr));
+#endif // QT_CONFIG(tooltip)
         vidDown->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        saveBtn->setToolTip(QApplication::translate("VideoDialog", "Save video list", Q_NULLPTR));
-#endif // QT_NO_TOOLTIP
-#ifndef QT_NO_WHATSTHIS
+#if QT_CONFIG(tooltip)
+        saveBtn->setToolTip(QCoreApplication::translate("VideoDialog", "Save video list", nullptr));
+#endif // QT_CONFIG(tooltip)
+#if QT_CONFIG(whatsthis)
         saveBtn->setWhatsThis(QString());
-#endif // QT_NO_WHATSTHIS
-        saveBtn->setText(QApplication::translate("VideoDialog", "Save", Q_NULLPTR));
-#ifndef QT_NO_TOOLTIP
-        cancelBtn->setToolTip(QApplication::translate("VideoDialog", "Return without saving", Q_NULLPTR));
-#endif // QT_NO_TOOLTIP
-        cancelBtn->setText(QApplication::translate("VideoDialog", "Cancel", Q_NULLPTR));
+#endif // QT_CONFIG(whatsthis)
+        saveBtn->setText(QCoreApplication::translate("VideoDialog", "Save", nullptr));
+#if QT_CONFIG(tooltip)
+        cancelBtn->setToolTip(QCoreApplication::translate("VideoDialog", "Return without saving", nullptr));
+#endif // QT_CONFIG(tooltip)
+        cancelBtn->setText(QCoreApplication::translate("VideoDialog", "Cancel", nullptr));
     } // retranslateUi
 
 };

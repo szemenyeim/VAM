@@ -14,10 +14,16 @@
 //	You should have received a copy of the GNU General Public License
 //	along with this program.If not, see <http://www.gnu.org/licenses/>.
 
+#pragma warning(push, 0)
+#include <torch/script.h>
+#include <torchvision/vision.h>
+#pragma warning(pop)
 #include "MarkerWindow.h"
 #include <qpainter.h>
 #include <qscrollbar.h>
 
+// This has to defined here, since including the torch header in the header messes with Qt (they both define slot, but differently)
+static torch::jit::script::Module model;
 
 MarkerWindow::MarkerWindow(QWidget *parent)
 	: QMainWindow(parent)
@@ -28,6 +34,42 @@ MarkerWindow::MarkerWindow(QWidget *parent)
 
 	imgIndices.resize(VAMMaxVideos);
 	pointIndices.resize(VAMMaxVideos);
+
+	// Load neural net
+	try {
+		// Deserialize the ScriptModule from a file using torch::jit::load().
+		
+		model = torch::jit::load("./model.pt");
+		model.eval();
+
+		// Read model definition
+		QFile model_def("./model_def.txt");
+
+		if (!model_def.open(QIODevice::ReadOnly | QIODevice::Text))
+		{
+			QMessageBox::warning(this, tr("Model definition"),
+				tr("Model definition file 'model_def.txt' not found."));
+		}
+
+		QTextStream in(&model_def);
+
+		// Read up header line and the line of the filename
+		auto numbers = in.readLine().split(",");
+		for (auto number : numbers)
+		{
+			keypointDefs.push_back(number.toInt());
+		}
+
+		NNLoaded = true;
+		VAMLogger::log("NN Loaded");
+	}
+	catch (std::exception& e) {
+		std::cout << e.what() << std::endl;
+		QMessageBox::warning(this, tr("No model"), tr("The neural network model is not found. Automatic keypoint detection will be disabled."));
+		//QMessageBox::warning(this, tr("No model"), e.what());
+		NNLoaded = false;
+		VAMLogger::log("NN Load failed");
+	}
 
 	// Setup window
 	resetWindow();
@@ -131,8 +173,9 @@ void MarkerWindow::setupUI()
 	ui.imageLabel->setAlignment(Qt::AlignCenter);
 
 	// Setup checkbox
+	bool temp = measurementModified;
 	ui.autoCorrection->setChecked(currentMeasurement.getAutoCorrect());
-
+	measurementModified = temp;
 }
 
 void MarkerWindow::saveMeasurement()
@@ -276,6 +319,33 @@ bool MarkerWindow::setCurrentMeasurement(const Measurement &value, bool schemdbC
 	// Get current schema and DB
 	currentSchema = currentProject->getSchema(currentSchemaIdx);
 	currentDB = currentProject->getDB(currentDBIdx);
+
+	// Check NN vs schema point defs
+	auto ptCnts = currentSchema.pointCounts();
+	int ptSize = 0;
+	for (int i = 0; i < ptCnts.size(); i++)
+	{
+		if (ptCnts[i] == 0)
+			break;
+		ptSize++;
+	}
+	if (ptSize != keypointDefs.size())
+	{
+		NNLoaded = false;
+		VAMLogger::log("Number of Images doesn't match. NN Disabled.");
+	}
+	else
+	{
+		for (int i = 0; i < keypointDefs.size(); i++)
+		{
+			if (ptCnts[i] != keypointDefs[i])
+			{
+				NNLoaded = false;
+				VAMLogger::log("Number of points doesn't match. NN Disabled.");
+				break;
+			}
+		}
+	}
 
 	// Read camera files
 	std::vector<cv::Mat> A(currentDB.getVideoCnt()), d(currentDB.getVideoCnt());
@@ -482,6 +552,7 @@ void MarkerWindow::closeEvent(QCloseEvent *event)
 		{
 			VAMLogger::log("Save");
 			saveMeasurement();
+			emit closed();
 			event->accept();
 		}
 		else if (ret == QMessageBox::Cancel)
@@ -494,12 +565,14 @@ void MarkerWindow::closeEvent(QCloseEvent *event)
 		{
             VAMLogger::log("Discard");
             std::remove((measurementName + ".tmp").toStdString().c_str());
+			emit closed();
 			event->accept();
 		}
 	}
 	else
 	{
 		VAMLogger::log("Bye");
+		emit closed();
 		event->accept();
 	}
 	// Destroy window (A window is alays created using new)
@@ -580,7 +653,7 @@ void MarkerWindow::prevImage()
 	// Decrease image cntr
 	currentImgIndex--;
 	// Display image
-	showImage();
+	showImage(true);
 }
 
 void MarkerWindow::skipImage()
@@ -589,7 +662,7 @@ void MarkerWindow::skipImage()
 	// Increase image cntr
 	currentImgIndex++;
 	// Display image
-	showImage();
+	showImage(true);
 }
 
 void MarkerWindow::listDoubleClicked(QModelIndex curr)
@@ -1012,7 +1085,7 @@ bool MarkerWindow::schemaChanged()
 					if (pointIndices[j][i] == -1)
 						val = true;
 					else
-						pointIndices[j][i];
+						;
 				}
 			}
 		}
@@ -1105,17 +1178,30 @@ void MarkerWindow::setupMarkings()
 		if( isGlobalEtalon() )
 			continue;
 
-		// If not etalon default markings from the schema
-		int offset = hasEtalon() ? 2 : 0;
-		for (int j = offset; j < pointCnt + offset; j++)
-		{
-			currentMeasurement.setMark(Point(currentSchema.getPoint(j - offset, imageIdx).getName(), -1, -1), currentImgIndex, j);
-		}
+// If not etalon default markings from the schema
+int offset = hasEtalon() ? 2 : 0;
+for (int j = offset; j < pointCnt + offset; j++)
+{
+	currentMeasurement.setMark(Point(currentSchema.getPoint(j - offset, imageIdx).getName(), -1, -1), currentImgIndex, j);
+}
 	}
 }
 
-void MarkerWindow::showImage()
+void MarkerWindow::showImage(bool autoPredict)
 {
+	// Read image
+	VAMImageIndex imageIdx = getImageIdx(imgIdxMap[currentImgIndex]);
+	currentImg = imgRead(ImgPathList[imgIdxMap[currentImgIndex]], currentMeasurement.getA()[imageIdx], currentMeasurement.getD()[imageIdx]);
+
+	// Fill image with black if faild to load
+	if (!currentImg.data)
+		currentImg = cv::Mat(cv::Size(ui.imageLabel->size().width(), ui.imageLabel->size().height()), CV_8UC1, cv::Scalar(0, 0, 0));
+
+	if (autoPredict && NNLoaded && !hasEtalon(true) && !currentMeasurement.getMarked()[imgIdxMap[currentImgIndex]] )
+	{
+		predictMarkings();
+	}
+
 	// Set back and forward buttons enabled/disabled based on the image counter
 	ui.actionPrevious_Image->setEnabled(currentImgIndex != 0);
 	ui.actionNext_image->setEnabled(currentImgIndex < ImgPathList.size() - 1);
@@ -1133,14 +1219,6 @@ void MarkerWindow::showImage()
 	// Display number of images finished and remaining
 	ui.imgDoneLabel->setText(QString::number(imgDone));
 	ui.imgRemLabel->setText(QString::number(imgRem));
-
-	// Read image
-	VAMImageIndex imageIdx = getImageIdx(imgIdxMap[currentImgIndex]);
-	currentImg = imgRead(ImgPathList[imgIdxMap[currentImgIndex]], currentMeasurement.getA()[imageIdx], currentMeasurement.getD()[imageIdx]);
-
-	// Fill image with black if faild to load
-	if (!currentImg.data)
-		currentImg = cv::Mat(cv::Size(ui.imageLabel->size().width(), ui.imageLabel->size().height()), CV_8UC1, cv::Scalar(0, 0, 0));
 
 	// Compute aspect ratios
 	float imgRatio = (float)currentImg.cols / (float)currentImg.rows;
@@ -1182,9 +1260,78 @@ void MarkerWindow::removePoint()
 
 	// Reset the selected mark
 	currentMeasurement.setMark(Point(currentMeasurement.getMark(imgIdxMap[currentImgIndex], selectedIdx).getName(), -1, -1), imgIdxMap[currentImgIndex], selectedIdx);
-    
-    currentMeasurement.save(currentProject->getGenProjLib() + "/Measurements/" + currentMeasurement.getName() + ".meas" +".tmp");
+
+	currentMeasurement.save(currentProject->getGenProjLib() + "/Measurements/" + currentMeasurement.getName() + ".meas" + ".tmp");
 	// Get first unset point
 	currentPointIndex = currentMeasurement.getFirstUnset(imgIdxMap[currentImgIndex]);
 	ui.pointName->setText(getPointName());
+}
+
+void MarkerWindow::predictMarkings()
+{
+	cv::Mat resized;
+	cv::Size newSize(512, (512.0 / currentImg.cols ) * currentImg.rows);
+	cv::resize(currentImg, resized, newSize);
+	cv::cvtColor(resized, resized, cv::COLOR_BGR2RGB);
+
+	VAMImageIndex imageIdx = getImageIdx(imgIdxMap[currentImgIndex]);
+
+	cv::Mat padded;
+	int lPad = 0;
+	int padding = 256 - resized.rows;
+	if (padding < 0)
+	{
+		padding *= -1;
+		cv::Rect myROI(padding / 2, 0, resized.cols - padding, resized.rows);
+		padded = resized(myROI);
+	}
+	else {
+		int rPad;
+		lPad = rPad = padding / 2;
+		if (padding % 2 == 1)
+			lPad += 1;
+
+		cv::copyMakeBorder(resized, padded, lPad, rPad, 0, 0, cv::BORDER_CONSTANT, cv::Scalar(0));
+	}
+
+	auto tensor_image = torch::from_blob(padded.data, { padded.rows, padded.cols, padded.channels() }, at::kByte);
+	tensor_image = tensor_image.permute({ 2,0,1 });
+	tensor_image = tensor_image.toType(c10::kFloat).mul(0.00392156862);
+	tensor_image.to(c10::DeviceType::CPU);
+
+	// Create a vector of inputs.
+	std::vector < torch::jit::IValue > inputs;
+	std::vector<torch::Tensor> input;
+	input.push_back(tensor_image);
+	inputs.push_back(input);
+	inputs.push_back(imageIdx);
+
+	try {
+		// Execute the model and turn its output into a tensor.
+		auto output = model.forward(inputs).toTuple()->elements()[1].toList().get(0).toGenericDict();
+		
+						
+		auto markings = currentMeasurement.getMarkRow(imgIdxMap[currentImgIndex]);
+		auto pred = output.at("keypoints").toTensor();
+		auto shape = pred.sizes();
+
+		for (int i = 0; i < markings.size(); i++)
+		{
+			auto kp = pred[0][i];
+			auto x = kp[0].item<float>();
+			auto y = kp[1].item<float>()-lPad;
+
+			Point pt = currentMeasurement.getMark(imgIdxMap[currentImgIndex], i);
+			currentMeasurement.setMark(Point(pt.getName(), x / 512.f, y / 512.f), imgIdxMap[currentImgIndex], i);
+			
+		}
+		currentMeasurement.setMarked(imgIdxMap[currentImgIndex], true);
+	}
+	catch (std::exception& e) {
+		std::cout << e.what() << std::endl;
+		QMessageBox::warning(this, tr("Run failed"), tr("The neural network run has failed"));
+	}
+
+	unmarkedID->setData(unmarkedID->index(imgIdxMap[currentImgIndex]), IDList[imgIdxMap[currentImgIndex]] + VAMTranslatedStrings::doneStr());
+
 }

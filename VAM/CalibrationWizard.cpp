@@ -153,6 +153,7 @@ void VideoPage::calibrate_thread()
 	std::vector<std::vector<cv::Point3f>> worldPts;
 	cv::Size cbSize(9, 6);
 	cv::Size imgSize;
+	cv::Size lowSize;
 	std::vector<cv::Point3f> cbPts;
 	for (int i = 0; i < cbSize.height; i++)
 	{
@@ -183,9 +184,12 @@ void VideoPage::calibrate_thread()
 		skipCnt = 0;
 		if (cv::findChessboardCorners(lowRes, cbSize, pts, cv::CALIB_CB_ADAPTIVE_THRESH | cv::CALIB_CB_FAST_CHECK | cv::CALIB_CB_NORMALIZE_IMAGE))
 		{
-			if( !cv::findChessboardCorners(image, cbSize, pts, cv::CALIB_CB_ADAPTIVE_THRESH | cv::CALIB_CB_FAST_CHECK | cv::CALIB_CB_NORMALIZE_IMAGE) )
+			float ratio = 1920.0 / imgSize.width;
+			cv::resize(image, lowRes, cv::Size(0, 0), ratio, ratio);
+			lowSize = lowRes.size();
+			if( !cv::findChessboardCorners(lowRes, cbSize, pts, cv::CALIB_CB_ADAPTIVE_THRESH | cv::CALIB_CB_FAST_CHECK | cv::CALIB_CB_NORMALIZE_IMAGE) )
 				continue;
-			cornerSubPix(image, pts, cv::Size(11, 11),
+			cornerSubPix(lowRes, pts, cv::Size(11, 11),
 				cv::Size(-1, -1), cv::TermCriteria(cv::TermCriteria::EPS + cv::TermCriteria::COUNT, 60, 0.01));
 			imgPts.push_back(pts);
 			worldPts.push_back(cbPts);
@@ -217,7 +221,7 @@ void VideoPage::calibrate_thread()
 		flags += cv::CALIB_FIX_K1 + cv::CALIB_FIX_K2 + cv::CALIB_FIX_K3 + cv::CALIB_FIX_K4;
 	}
 
-	float error = cv::calibrateCamera(worldPts, imgPts, imgSize, A, d, rv, tv, flags);
+	float error = cv::calibrateCamera(worldPts, imgPts, lowSize, A, d, rv, tv, flags);
 
 	calibLabel->setText(tr("Calibration successful! Calibration error: ") + QString::number(error));
 

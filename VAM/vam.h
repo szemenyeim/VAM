@@ -54,6 +54,9 @@ private:
 	QSpinBox *cameraNumSpin;
 	QLabel *cameraNumLabel;
 
+	// Indicates if the UI has been disabled
+	bool UIDisabled;
+
 	// Images
 	std::vector< cv::Mat > images;
 
@@ -90,6 +93,8 @@ private:
 	void updateBar();
 
 	private slots:
+
+	void toggleUI();
 
 	// Slots for schema/db/measurement creation/deletion/opening/renaming/editing
 	void createSchema();

@@ -89,4 +89,7 @@ protected:
 	// Called on close
 	void closeEvent(QCloseEvent *event);
 
+signals:
+	void closed();
+
 };

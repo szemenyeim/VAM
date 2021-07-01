@@ -747,6 +747,7 @@ void PlaniWindow::closeEvent(QCloseEvent *event)
 		{
 			VAMLogger::log("Save");
 			savePlani();
+			emit closed();
 			event->accept();
 		}
 		else if (ret == QMessageBox::Cancel)
@@ -758,12 +759,14 @@ void PlaniWindow::closeEvent(QCloseEvent *event)
 		else
 		{
 			VAMLogger::log("Discard");
+			emit closed();
 			event->accept();
 		}
 	}
 	else
 	{
 		VAMLogger::log("Bye");
+		emit closed();
 		event->accept();
 	}
 	// Destroy window (A window is alays created using new)

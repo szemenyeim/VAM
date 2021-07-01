@@ -4,6 +4,8 @@ VisualStudioVersion = 16.0.30128.74
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VATEM2", "VAM\VATEM2.vcxproj", "{B12702AD-ABFB-343A-A199-8E24837244A3}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "Setup\Setup.vdproj", "{14983126-D8BA-4DAA-B1FE-AF8563F4490C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		CD_ROM|Win32 = CD_ROM|Win32
@@ -33,6 +35,16 @@ Global
 		{B12702AD-ABFB-343A-A199-8E24837244A3}.SingleImage|Win32.ActiveCfg = Release|Win32
 		{B12702AD-ABFB-343A-A199-8E24837244A3}.SingleImage|x64.ActiveCfg = Release|x64
 		{B12702AD-ABFB-343A-A199-8E24837244A3}.SingleImage|x64.Build.0 = Release|x64
+		{14983126-D8BA-4DAA-B1FE-AF8563F4490C}.CD_ROM|Win32.ActiveCfg = Debug
+		{14983126-D8BA-4DAA-B1FE-AF8563F4490C}.CD_ROM|x64.ActiveCfg = Debug
+		{14983126-D8BA-4DAA-B1FE-AF8563F4490C}.Debug|Win32.ActiveCfg = Debug
+		{14983126-D8BA-4DAA-B1FE-AF8563F4490C}.Debug|x64.ActiveCfg = Debug
+		{14983126-D8BA-4DAA-B1FE-AF8563F4490C}.DVD-5|Win32.ActiveCfg = Debug
+		{14983126-D8BA-4DAA-B1FE-AF8563F4490C}.DVD-5|x64.ActiveCfg = Debug
+		{14983126-D8BA-4DAA-B1FE-AF8563F4490C}.Release|Win32.ActiveCfg = Release
+		{14983126-D8BA-4DAA-B1FE-AF8563F4490C}.Release|x64.ActiveCfg = Release
+		{14983126-D8BA-4DAA-B1FE-AF8563F4490C}.SingleImage|Win32.ActiveCfg = Debug
+		{14983126-D8BA-4DAA-B1FE-AF8563F4490C}.SingleImage|x64.ActiveCfg = Debug
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

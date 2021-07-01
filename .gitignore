@@ -4,3 +4,5 @@
 *.VC.VC.opendb
 *.VC.opendb
 *.VC.db
+Libs/*
+Libs.zip

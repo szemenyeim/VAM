@@ -178,7 +178,15 @@ Project Project::read(QString path)
 	if (newVersion)
 		proj.state = static_cast<ProjectState>(in.readLine().toInt());
 	proj.projLib = in.readLine();
-	VAMFileAgent::abs2rel(proj.projLib);
+	if (VAMFileAgent::isInProjLib(path))
+	{
+		VAMFileAgent::abs2rel(proj.projLib);
+	}
+	else
+	{
+		VAMFileAgent::setProjPath(path.split("Projects")[0]);
+		VAMFileAgent::abs2rel(proj.projLib);
+	}
 
 	QStringList dbList, schemaList, measList;
 

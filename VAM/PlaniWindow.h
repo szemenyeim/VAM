@@ -215,4 +215,5 @@ protected:
 
 signals:
 	void segmDone();
+	void closed();
 };

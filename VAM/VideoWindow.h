@@ -215,6 +215,7 @@ signals:
 	// Signal to tell the main window that there is a new database
 	void newData();
 	void dataUpdate();
+	void closed();
 
 
 protected:

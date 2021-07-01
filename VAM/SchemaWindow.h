@@ -139,6 +139,7 @@ signals:
 	// Signal main window if a new schema is created
 	void newData();
 	void dataUpdate();
+	void closed();
 
 protected:
 

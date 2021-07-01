@@ -12,11 +12,14 @@
     <LocalDebuggerEnvironment>PATH=$(QTDIR)\bin%3b..\Libs\ffmpeg\bin%3b..\Libs\opencv\bin%3b..\Libs\VlcQt\Release\bin%3b..\Libs\libxlsxwriter\bin%3b..\Libs\zbar\bin%3b$(PATH)</LocalDebuggerEnvironment>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <QTDIR>D:\Qt\5.6\msvc2015_64</QTDIR>
-    <LocalDebuggerEnvironment>PATH=$(QTDIR)\bin%3b$(PATH)</LocalDebuggerEnvironment>
+    <QTDIR>D:\3rdPartyLibs\Qt\5.15.2\msvc2019_64</QTDIR>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <LocalDebuggerEnvironment>PATH=$(QTDIR)\bin%3b..\Libs\libtorch\lib_debug%3b..\Libs\ffmpeg\bin%3b..\Libs\libxlsxwriter\bin%3b..\Libs\opencv\bin%3b..\Libs\VlcQt\Debug\bin%3b..\Libs\zbar\bin%3b..\Libs%3b$(PATH)</LocalDebuggerEnvironment>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <QTDIR>D:\Qt\5.6\msvc2015_64</QTDIR>
-    <LocalDebuggerEnvironment>PATH=$(QTDIR)\bin%3b$(PATH)</LocalDebuggerEnvironment>
+    <QTDIR>D:\3rdPartyLibs\Qt\5.15.2\msvc2019_64</QTDIR>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <LocalDebuggerEnvironment>PATH=$(QTDIR)\bin%3b..\Libs\libtorch\lib%3b..\Libs\ffmpeg\bin%3b..\Libs\libxlsxwriter\bin%3b..\Libs\opencv\bin%3b..\Libs\VlcQt\Release\bin%3b..\Libs\zbar\bin%3b$(PATH)
+VLC_PLUGIN_PATH=..\Libs\VlcQt\Release\bin\plugins</LocalDebuggerEnvironment>
   </PropertyGroup>
 </Project>

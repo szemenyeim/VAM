@@ -21,7 +21,6 @@
 #include <QStandardPaths>
 #include <qpainter.h>
 #include <fstream>
-
 #include "zbar.h" 
 
 
