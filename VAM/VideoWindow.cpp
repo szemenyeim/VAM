@@ -29,6 +29,7 @@ extern "C"
 #include <VLCQtCore\Audio.h>
 #include <VLCQtCore\Video.h>
 #include <stdio.h>
+#include "AutoStillDialog.h"
 
 VAMImageIndex VideoWindow::swapIndices(VAMImageIndex idx)
 {
@@ -704,7 +705,7 @@ void VideoWindow::etalonStill()
 void VideoWindow::openStill()
 {
 	QStringList ID;
-	std::vector<QStringList> stillNames(VAMMaxVideos);
+	std::vector<QStringList> stillNames(videoCnt);
 
 	for (int i = 0; i < videoCnt; i++)
 	{
@@ -736,34 +737,8 @@ void VideoWindow::openStill()
 
 	int fileCnt = stillNames[0].size();
 
-	// Read QR
-	for (int i = 0; i < fileCnt; i++)
-	{
-		ID.push_back("");
-
-		for (int j = 0; j < videoCnt; j++)
-		{
-			ID[i] = readQRBarCode(stillNames[j][i]);
-		}
-		bool foundCode = ID.isEmpty();
-
-		// Prompt for ID
-		using std::placeholders::_1;
-		std::function<bool(QString)> func = std::bind(&StillDB::isIDNew, &currentDB, _1);
-		if (!getName(tr("Specify ID"),
-			foundCode ? tr("No QR/Barcode found") : tr("Found QR/Barcode:"),
-			tr("Please specify a name!"),
-			tr("An animal with this ID already exists!"),
-			foundCode ? ID[i] = stillNames[0][i].split("/").back().split(".")[0] : ID[i],
-			func))
-			return;
-
-		// Add still
-		for (int j = 0; j < videoCnt; j++)
-		{
-			currentDB.addStill(stillNames[j][i], ID[i], 0, toIdx(j), true);
-		}
-	}
+	AutoStillDialog* dialog = new AutoStillDialog();
+	dialog->showDialog(stillNames, &currentDB);
 
 	VAMLogger::log("Stills opened");
 

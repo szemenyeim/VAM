@@ -21,6 +21,7 @@
 int main(int argc, char *argv[])
 {
 	QApplication a(argc, argv);
+	a.setStyle("fusion");
 	QPixmap img(":/VAM/Icons/loading.jpg");
 	QSplashScreen splash(img);
 	splash.show();

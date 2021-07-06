@@ -2,11 +2,117 @@
 <!DOCTYPE TS>
 <TS version="2.1" language="hu_HU">
 <context>
+    <name>AutoStillDialog</name>
+    <message>
+        <location filename="../AutoStillDialog.cpp" line="57"/>
+        <source>Please select a still from all videos!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../AutoStillDialog.cpp" line="74"/>
+        <source>Specify ID</source>
+        <translation type="unfinished">ID megadása</translation>
+    </message>
+    <message>
+        <location filename="../AutoStillDialog.cpp" line="75"/>
+        <source>No QR/Barcode found</source>
+        <translation type="unfinished">Nem található QR/Vonalkód</translation>
+    </message>
+    <message>
+        <location filename="../AutoStillDialog.cpp" line="75"/>
+        <source>Found QR/Barcode:</source>
+        <translation type="unfinished">Deketált QR/Vonalkód:</translation>
+    </message>
+    <message>
+        <location filename="../AutoStillDialog.cpp" line="76"/>
+        <source>Please specify a name!</source>
+        <translation type="unfinished">Ne hagyja a név mezőt üresen!</translation>
+    </message>
+    <message>
+        <location filename="../AutoStillDialog.cpp" line="77"/>
+        <source>An animal with this ID already exists!</source>
+        <translation type="unfinished">Ilyen ID-ú állat már létezik!</translation>
+    </message>
+    <message>
+        <location filename="../AutoStillDialog.cpp" line="101"/>
+        <source>Please select an entry from the list!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../AutoStillDialog.cpp" line="146"/>
+        <source>Cannot load</source>
+        <translation type="unfinished">Betöltés sikertelen</translation>
+    </message>
+</context>
+<context>
     <name>CalibrationWizard</name>
     <message>
         <location filename="../CalibrationWizard.cpp" line="20"/>
         <source>Calibration</source>
         <translation>Kalibráció</translation>
+    </message>
+</context>
+<context>
+    <name>Dialog</name>
+    <message>
+        <location filename="../autoStillDiag.ui" line="26"/>
+        <source>Dialog</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../autoStillDiag.ui" line="53"/>
+        <source>Video 1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../autoStillDiag.ui" line="103"/>
+        <source>Video 3</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../autoStillDiag.ui" line="157"/>
+        <source>Video 2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../autoStillDiag.ui" line="207"/>
+        <source>Video 4</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../autoStillDiag.ui" line="259"/>
+        <source>Paired IDs</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../autoStillDiag.ui" line="277"/>
+        <source>Add new video</source>
+        <translation type="unfinished">Új videó hozzáadása</translation>
+    </message>
+    <message>
+        <location filename="../autoStillDiag.ui" line="300"/>
+        <source>Remove video</source>
+        <translation type="unfinished">Videó eltávolítása</translation>
+    </message>
+    <message>
+        <location filename="../autoStillDiag.ui" line="331"/>
+        <source>Save video list</source>
+        <translation type="unfinished">Videó lista elmentése</translation>
+    </message>
+    <message>
+        <location filename="../autoStillDiag.ui" line="337"/>
+        <source>Save</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../autoStillDiag.ui" line="354"/>
+        <source>Return without saving</source>
+        <translation type="unfinished">Visszatérés mentés nélkül</translation>
+    </message>
+    <message>
+        <location filename="../autoStillDiag.ui" line="357"/>
+        <source>Cancel</source>
+        <translation type="unfinished">Mégse</translation>
     </message>
 </context>
 <context>
@@ -281,12 +387,12 @@
         <translation>Kész</translation>
     </message>
     <message>
-        <location filename="../MarkerWindow.cpp" line="1332"/>
+        <location filename="../MarkerWindow.cpp" line="1335"/>
         <source>Run failed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../MarkerWindow.cpp" line="1332"/>
+        <location filename="../MarkerWindow.cpp" line="1335"/>
         <source>The neural network run has failed</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2065,7 +2171,7 @@
     </message>
     <message>
         <location filename="../video.ui" line="812"/>
-        <location filename="../VideoWindow.cpp" line="155"/>
+        <location filename="../VideoWindow.cpp" line="156"/>
         <source>Etalon</source>
         <translation>Etalon</translation>
     </message>
@@ -2086,124 +2192,119 @@
         <translation>Következő videó</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="790"/>
+        <location filename="../VideoWindow.cpp" line="765"/>
         <source>Rename Still</source>
         <translation>Állókép átnevezése</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="548"/>
-        <location filename="../VideoWindow.cpp" line="754"/>
+        <location filename="../VideoWindow.cpp" line="549"/>
         <source>No QR/Barcode found</source>
         <translation>Nem található QR/Vonalkód</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="548"/>
-        <location filename="../VideoWindow.cpp" line="754"/>
+        <location filename="../VideoWindow.cpp" line="549"/>
         <source>Found QR/Barcode:</source>
         <translation>Deketált QR/Vonalkód:</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="547"/>
-        <location filename="../VideoWindow.cpp" line="753"/>
+        <location filename="../VideoWindow.cpp" line="548"/>
         <source>Specify ID</source>
         <translation>ID megadása</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="159"/>
+        <location filename="../VideoWindow.cpp" line="160"/>
         <source>Etalon Size (meters):</source>
         <translation>Etalon méret (méter):</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="145"/>
+        <location filename="../VideoWindow.cpp" line="146"/>
         <source>Lock Videos</source>
         <translation>Videók összekapcsolása</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="148"/>
+        <location filename="../VideoWindow.cpp" line="149"/>
         <source>Toggle deinterlace mode.</source>
         <translation>Deinterlace mód kapcsolása.</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="150"/>
+        <location filename="../VideoWindow.cpp" line="151"/>
         <source>Deinterlace</source>
         <translation>Deinterlace</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="153"/>
+        <location filename="../VideoWindow.cpp" line="154"/>
         <source>Toggle Etalon.</source>
         <translation>Etalon státusz állítása.</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="550"/>
-        <location filename="../VideoWindow.cpp" line="756"/>
+        <location filename="../VideoWindow.cpp" line="551"/>
         <source>An animal with this ID already exists!</source>
         <translation>Ilyen ID-ú állat már létezik!</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="650"/>
+        <location filename="../VideoWindow.cpp" line="651"/>
         <source>Please select a still to delete!</source>
         <translation>Vállassza ki a törlendő képet!</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="675"/>
+        <location filename="../VideoWindow.cpp" line="676"/>
         <source>Please select a still!</source>
         <translation>Válasszon ki egy képet!</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="696"/>
+        <location filename="../VideoWindow.cpp" line="697"/>
         <source>The selected still does not contain an etalon!</source>
         <translation>A kiválasztott állóképen nincs etalon!</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="712"/>
+        <location filename="../VideoWindow.cpp" line="713"/>
         <source>Image Files (*.bmp *.dds *.gif *.ico *.jpg *.jpeg *.tga *.tif *.tiff *.pbm *.pgm *.png *.ppm *.xbm *.xpm)</source>
         <translation>Képfájlok (*.bmp *.dds *.gif *.ico *.jpg *.jpeg *.tga *.tif *.tiff *.pbm *.pgm *.png *.ppm *.xbm *.xpm)</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="733"/>
+        <location filename="../VideoWindow.cpp" line="734"/>
         <source>Please select an equal number of side and upper stills to open!</source>
         <translation>Ugyanannyi oldalsó és felső állóképet válasszon ki!</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="782"/>
+        <location filename="../VideoWindow.cpp" line="757"/>
         <source>Please select a still to rename!</source>
         <translation>Válassza ki az átnevezni kívánt képet!</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="790"/>
+        <location filename="../VideoWindow.cpp" line="765"/>
         <source>Enter ID:</source>
         <translation>ID megadása:</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="847"/>
+        <location filename="../VideoWindow.cpp" line="822"/>
         <source>There is no global etalon</source>
         <translation>Nincs globális etalon</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="848"/>
+        <location filename="../VideoWindow.cpp" line="823"/>
         <source>Do you want to save the database anyway?</source>
         <translation>Így is el akarja menteni az adatbázist?</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="549"/>
-        <location filename="../VideoWindow.cpp" line="755"/>
-        <location filename="../VideoWindow.cpp" line="790"/>
-        <location filename="../VideoWindow.cpp" line="880"/>
+        <location filename="../VideoWindow.cpp" line="550"/>
+        <location filename="../VideoWindow.cpp" line="765"/>
+        <location filename="../VideoWindow.cpp" line="855"/>
         <source>Please specify a name!</source>
         <translation>Ne hagyja a név mezőt üresen!</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="143"/>
+        <location filename="../VideoWindow.cpp" line="144"/>
         <source>Use this to lock the videos together. (Pausing, resuming, etc. one of the videos will affect all of them)</source>
         <translation>A videók összekapcsolása. (Ha az egyik videót megállítja, újraindítja, stb., akkor az az összes többire is hatni fog)</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="712"/>
+        <location filename="../VideoWindow.cpp" line="713"/>
         <source>Open Image Files #</source>
         <translation>Kép fájlok megynitása #</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="790"/>
+        <location filename="../VideoWindow.cpp" line="765"/>
         <source>A still with this name already exists!</source>
         <translation>Már létezik ilyen nevű kép!</translation>
     </message>
@@ -2214,27 +2315,27 @@
         <translation>Adatbázis mentése</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="880"/>
+        <location filename="../VideoWindow.cpp" line="855"/>
         <source>New Video database</source>
         <translation>Új videó adatbázis</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="880"/>
+        <location filename="../VideoWindow.cpp" line="855"/>
         <source>Enter Name:</source>
         <translation>Adjon egy nevet:</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="880"/>
+        <location filename="../VideoWindow.cpp" line="855"/>
         <source>A database with this name already exists!</source>
         <translation>Ilyen nevű adatbázis már létezik!</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="1172"/>
+        <location filename="../VideoWindow.cpp" line="1147"/>
         <source>The current video database has been modified.</source>
         <translation>Az aktuális videó adatbázis megváltozott.</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="1173"/>
+        <location filename="../VideoWindow.cpp" line="1148"/>
         <source>Do you want to save your changes?</source>
         <translation>Kívánja menteni a változásokat?</translation>
     </message>

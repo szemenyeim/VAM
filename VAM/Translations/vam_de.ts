@@ -2,11 +2,117 @@
 <!DOCTYPE TS>
 <TS version="2.1" language="de">
 <context>
+    <name>AutoStillDialog</name>
+    <message>
+        <location filename="../AutoStillDialog.cpp" line="57"/>
+        <source>Please select a still from all videos!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../AutoStillDialog.cpp" line="74"/>
+        <source>Specify ID</source>
+        <translation type="unfinished">ID angeben</translation>
+    </message>
+    <message>
+        <location filename="../AutoStillDialog.cpp" line="75"/>
+        <source>No QR/Barcode found</source>
+        <translation type="unfinished">Kein QR-/Strichcode ist zu finden</translation>
+    </message>
+    <message>
+        <location filename="../AutoStillDialog.cpp" line="75"/>
+        <source>Found QR/Barcode:</source>
+        <translation type="unfinished">Detektierter QR-/Strichcode:</translation>
+    </message>
+    <message>
+        <location filename="../AutoStillDialog.cpp" line="76"/>
+        <source>Please specify a name!</source>
+        <translation type="unfinished">Namensfeld bitte nicht leer lassen!</translation>
+    </message>
+    <message>
+        <location filename="../AutoStillDialog.cpp" line="77"/>
+        <source>An animal with this ID already exists!</source>
+        <translation type="unfinished">Es gibt schon ein Tier mit dieser ID!</translation>
+    </message>
+    <message>
+        <location filename="../AutoStillDialog.cpp" line="101"/>
+        <source>Please select an entry from the list!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../AutoStillDialog.cpp" line="146"/>
+        <source>Cannot load</source>
+        <translation type="unfinished">Ihr Upload war nicht erfolgreich</translation>
+    </message>
+</context>
+<context>
     <name>CalibrationWizard</name>
     <message>
         <location filename="../CalibrationWizard.cpp" line="20"/>
         <source>Calibration</source>
         <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>Dialog</name>
+    <message>
+        <location filename="../autoStillDiag.ui" line="26"/>
+        <source>Dialog</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../autoStillDiag.ui" line="53"/>
+        <source>Video 1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../autoStillDiag.ui" line="103"/>
+        <source>Video 3</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../autoStillDiag.ui" line="157"/>
+        <source>Video 2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../autoStillDiag.ui" line="207"/>
+        <source>Video 4</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../autoStillDiag.ui" line="259"/>
+        <source>Paired IDs</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../autoStillDiag.ui" line="277"/>
+        <source>Add new video</source>
+        <translation type="unfinished">Neues Video hinzufügen</translation>
+    </message>
+    <message>
+        <location filename="../autoStillDiag.ui" line="300"/>
+        <source>Remove video</source>
+        <translation type="unfinished">Video entfernen</translation>
+    </message>
+    <message>
+        <location filename="../autoStillDiag.ui" line="331"/>
+        <source>Save video list</source>
+        <translation type="unfinished">Videoliste speichern</translation>
+    </message>
+    <message>
+        <location filename="../autoStillDiag.ui" line="337"/>
+        <source>Save</source>
+        <translation type="unfinished">Speichern</translation>
+    </message>
+    <message>
+        <location filename="../autoStillDiag.ui" line="354"/>
+        <source>Return without saving</source>
+        <translation type="unfinished">Zurückkehren ohne zu speichern</translation>
+    </message>
+    <message>
+        <location filename="../autoStillDiag.ui" line="357"/>
+        <source>Cancel</source>
+        <translation type="unfinished">Abbrechen</translation>
     </message>
 </context>
 <context>
@@ -281,12 +387,12 @@
         <translation>Fertig</translation>
     </message>
     <message>
-        <location filename="../MarkerWindow.cpp" line="1332"/>
+        <location filename="../MarkerWindow.cpp" line="1335"/>
         <source>Run failed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../MarkerWindow.cpp" line="1332"/>
+        <location filename="../MarkerWindow.cpp" line="1335"/>
         <source>The neural network run has failed</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2065,7 +2171,7 @@
     </message>
     <message>
         <location filename="../video.ui" line="812"/>
-        <location filename="../VideoWindow.cpp" line="155"/>
+        <location filename="../VideoWindow.cpp" line="156"/>
         <source>Etalon</source>
         <translation>Etalon</translation>
     </message>
@@ -2086,124 +2192,119 @@
         <translation>Nächstes Video</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="790"/>
+        <location filename="../VideoWindow.cpp" line="765"/>
         <source>Rename Still</source>
         <translation>Bild umbenennen</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="548"/>
-        <location filename="../VideoWindow.cpp" line="754"/>
+        <location filename="../VideoWindow.cpp" line="549"/>
         <source>No QR/Barcode found</source>
         <translation>Kein QR-/Strichcode ist zu finden</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="548"/>
-        <location filename="../VideoWindow.cpp" line="754"/>
+        <location filename="../VideoWindow.cpp" line="549"/>
         <source>Found QR/Barcode:</source>
         <translation>Detektierter QR-/Strichcode:</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="547"/>
-        <location filename="../VideoWindow.cpp" line="753"/>
+        <location filename="../VideoWindow.cpp" line="548"/>
         <source>Specify ID</source>
         <translation>ID angeben</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="159"/>
+        <location filename="../VideoWindow.cpp" line="160"/>
         <source>Etalon Size (meters):</source>
         <translation>Abmessungen des Etalons:</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="145"/>
+        <location filename="../VideoWindow.cpp" line="146"/>
         <source>Lock Videos</source>
         <translation>Verbindung von Videos</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="148"/>
+        <location filename="../VideoWindow.cpp" line="149"/>
         <source>Toggle deinterlace mode.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="150"/>
+        <location filename="../VideoWindow.cpp" line="151"/>
         <source>Deinterlace</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="153"/>
+        <location filename="../VideoWindow.cpp" line="154"/>
         <source>Toggle Etalon.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="550"/>
-        <location filename="../VideoWindow.cpp" line="756"/>
+        <location filename="../VideoWindow.cpp" line="551"/>
         <source>An animal with this ID already exists!</source>
         <translation>Es gibt schon ein Tier mit dieser ID!</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="650"/>
+        <location filename="../VideoWindow.cpp" line="651"/>
         <source>Please select a still to delete!</source>
         <translation>Wählen Sie das zu löschende Bild aus!</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="675"/>
+        <location filename="../VideoWindow.cpp" line="676"/>
         <source>Please select a still!</source>
         <translation>Wählen Sie da Bild aus!</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="696"/>
+        <location filename="../VideoWindow.cpp" line="697"/>
         <source>The selected still does not contain an etalon!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="712"/>
+        <location filename="../VideoWindow.cpp" line="713"/>
         <source>Image Files (*.bmp *.dds *.gif *.ico *.jpg *.jpeg *.tga *.tif *.tiff *.pbm *.pgm *.png *.ppm *.xbm *.xpm)</source>
         <translation>Bilddateien (*.bmp *.dds *.gif *.ico *.jpg*.jpeg *.tga *.tif *.tiff *.pbm *.pgm*.png *.ppm *.xbm *.xpm)</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="733"/>
+        <location filename="../VideoWindow.cpp" line="734"/>
         <source>Please select an equal number of side and upper stills to open!</source>
         <translation>Wählen Sie seitliche und obere Standbilder in gleicher Anzahl aus!</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="782"/>
+        <location filename="../VideoWindow.cpp" line="757"/>
         <source>Please select a still to rename!</source>
         <translation>Wählen Sie das umzubenennende Bild aus!</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="790"/>
+        <location filename="../VideoWindow.cpp" line="765"/>
         <source>Enter ID:</source>
         <translation>ID angeben:</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="847"/>
+        <location filename="../VideoWindow.cpp" line="822"/>
         <source>There is no global etalon</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="848"/>
+        <location filename="../VideoWindow.cpp" line="823"/>
         <source>Do you want to save the database anyway?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="549"/>
-        <location filename="../VideoWindow.cpp" line="755"/>
-        <location filename="../VideoWindow.cpp" line="790"/>
-        <location filename="../VideoWindow.cpp" line="880"/>
+        <location filename="../VideoWindow.cpp" line="550"/>
+        <location filename="../VideoWindow.cpp" line="765"/>
+        <location filename="../VideoWindow.cpp" line="855"/>
         <source>Please specify a name!</source>
         <translation>Namensfeld bitte nicht leer lassen!</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="143"/>
+        <location filename="../VideoWindow.cpp" line="144"/>
         <source>Use this to lock the videos together. (Pausing, resuming, etc. one of the videos will affect all of them)</source>
         <translation>Videos verbinden. (Wenn Sie eines der Videos stoppen, wieder starten usw., dann wird sich das auf alle anderen Videos auswirken.)</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="712"/>
+        <location filename="../VideoWindow.cpp" line="713"/>
         <source>Open Image Files #</source>
         <translation>Bilddateien öffnen #</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="790"/>
+        <location filename="../VideoWindow.cpp" line="765"/>
         <source>A still with this name already exists!</source>
         <translation>Es gibt schon ein Bild mit diesem Namen!</translation>
     </message>
@@ -2214,27 +2315,27 @@
         <translation>Datenbank speichern</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="880"/>
+        <location filename="../VideoWindow.cpp" line="855"/>
         <source>New Video database</source>
         <translation>Neue Videodatenbank</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="880"/>
+        <location filename="../VideoWindow.cpp" line="855"/>
         <source>Enter Name:</source>
         <translation>Bitte Namen angeben:</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="880"/>
+        <location filename="../VideoWindow.cpp" line="855"/>
         <source>A database with this name already exists!</source>
         <translation>Es gibt schon eine Datenbank mit diesem Namen!</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="1172"/>
+        <location filename="../VideoWindow.cpp" line="1147"/>
         <source>The current video database has been modified.</source>
         <translation>Die aktuelle Videodatei hat sich geändert.</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="1173"/>
+        <location filename="../VideoWindow.cpp" line="1148"/>
         <source>Do you want to save your changes?</source>
         <translation>Möchten Sie die Änderungen speichern?</translation>
     </message>
