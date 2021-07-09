@@ -22,8 +22,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_VideoWindow_t {
-    QByteArrayData data[38];
-    char stringdata0[432];
+    QByteArrayData data[39];
+    char stringdata0[441];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -57,19 +57,20 @@ QT_MOC_LITERAL(21, 231, 12), // "updateSlider"
 QT_MOC_LITERAL(22, 244, 8), // "remStill"
 QT_MOC_LITERAL(23, 253, 11), // "etalonStill"
 QT_MOC_LITERAL(24, 265, 9), // "openStill"
-QT_MOC_LITERAL(25, 275, 11), // "renameStill"
-QT_MOC_LITERAL(26, 287, 13), // "reorderVideos"
-QT_MOC_LITERAL(27, 301, 5), // "doneC"
-QT_MOC_LITERAL(28, 307, 7), // "saveAsC"
-QT_MOC_LITERAL(29, 315, 12), // "pauseClicked"
-QT_MOC_LITERAL(30, 328, 11), // "playClicked"
-QT_MOC_LITERAL(31, 340, 16), // "playPauseClicked"
-QT_MOC_LITERAL(32, 357, 9), // "fbClicked"
-QT_MOC_LITERAL(33, 367, 9), // "ffClicked"
-QT_MOC_LITERAL(34, 377, 11), // "prevClicked"
-QT_MOC_LITERAL(35, 389, 11), // "nextClicked"
-QT_MOC_LITERAL(36, 401, 18), // "audioSliderChanged"
-QT_MOC_LITERAL(37, 420, 11) // "swapIndices"
+QT_MOC_LITERAL(25, 275, 9), // "editStill"
+QT_MOC_LITERAL(26, 285, 13), // "reorderVideos"
+QT_MOC_LITERAL(27, 299, 5), // "doneC"
+QT_MOC_LITERAL(28, 305, 7), // "saveAsC"
+QT_MOC_LITERAL(29, 313, 10), // "autoDetect"
+QT_MOC_LITERAL(30, 324, 12), // "pauseClicked"
+QT_MOC_LITERAL(31, 337, 11), // "playClicked"
+QT_MOC_LITERAL(32, 349, 16), // "playPauseClicked"
+QT_MOC_LITERAL(33, 366, 9), // "fbClicked"
+QT_MOC_LITERAL(34, 376, 9), // "ffClicked"
+QT_MOC_LITERAL(35, 386, 11), // "prevClicked"
+QT_MOC_LITERAL(36, 398, 11), // "nextClicked"
+QT_MOC_LITERAL(37, 410, 18), // "audioSliderChanged"
+QT_MOC_LITERAL(38, 429, 11) // "swapIndices"
 
     },
     "VideoWindow\0newData\0\0dataUpdate\0closed\0"
@@ -79,8 +80,8 @@ QT_MOC_LITERAL(37, 420, 11) // "swapIndices"
     "sliderChanged\0VAMImageIndex\0idx\0"
     "sliderPressed\0stillSaveClicked\0"
     "imageSaved\0filePath\0updateSlider\0"
-    "remStill\0etalonStill\0openStill\0"
-    "renameStill\0reorderVideos\0doneC\0saveAsC\0"
+    "remStill\0etalonStill\0openStill\0editStill\0"
+    "reorderVideos\0doneC\0saveAsC\0autoDetect\0"
     "pauseClicked\0playClicked\0playPauseClicked\0"
     "fbClicked\0ffClicked\0prevClicked\0"
     "nextClicked\0audioSliderChanged\0"
@@ -94,7 +95,7 @@ static const uint qt_meta_data_VideoWindow[] = {
        8,       // revision
        0,       // classname
        0,    0, // classinfo
-      30,   14, // methods
+      31,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -102,38 +103,39 @@ static const uint qt_meta_data_VideoWindow[] = {
        3,       // signalCount
 
  // signals: name, argc, parameters, tag, flags
-       1,    0,  164,    2, 0x06 /* Public */,
-       3,    0,  165,    2, 0x06 /* Public */,
-       4,    0,  166,    2, 0x06 /* Public */,
+       1,    0,  169,    2, 0x06 /* Public */,
+       3,    0,  170,    2, 0x06 /* Public */,
+       4,    0,  171,    2, 0x06 /* Public */,
 
  // slots: name, argc, parameters, tag, flags
-       5,    1,  167,    2, 0x08 /* Private */,
-       7,    1,  170,    2, 0x08 /* Private */,
-       8,    1,  173,    2, 0x08 /* Private */,
-       9,    1,  176,    2, 0x08 /* Private */,
-      10,    1,  179,    2, 0x08 /* Private */,
-      13,    1,  182,    2, 0x08 /* Private */,
-      14,    1,  185,    2, 0x08 /* Private */,
-      17,    1,  188,    2, 0x08 /* Private */,
-      18,    0,  191,    2, 0x08 /* Private */,
-      19,    2,  192,    2, 0x08 /* Private */,
-      21,    2,  197,    2, 0x08 /* Private */,
-      22,    0,  202,    2, 0x08 /* Private */,
-      23,    0,  203,    2, 0x08 /* Private */,
-      24,    0,  204,    2, 0x08 /* Private */,
-      25,    0,  205,    2, 0x08 /* Private */,
-      26,    0,  206,    2, 0x08 /* Private */,
-      27,    0,  207,    2, 0x08 /* Private */,
-      28,    0,  208,    2, 0x08 /* Private */,
-      29,    1,  209,    2, 0x08 /* Private */,
-      30,    1,  212,    2, 0x08 /* Private */,
-      31,    1,  215,    2, 0x08 /* Private */,
-      32,    1,  218,    2, 0x08 /* Private */,
-      33,    1,  221,    2, 0x08 /* Private */,
-      34,    1,  224,    2, 0x08 /* Private */,
-      35,    1,  227,    2, 0x08 /* Private */,
-      36,    1,  230,    2, 0x08 /* Private */,
-      37,    1,  233,    2, 0x08 /* Private */,
+       5,    1,  172,    2, 0x08 /* Private */,
+       7,    1,  175,    2, 0x08 /* Private */,
+       8,    1,  178,    2, 0x08 /* Private */,
+       9,    1,  181,    2, 0x08 /* Private */,
+      10,    1,  184,    2, 0x08 /* Private */,
+      13,    1,  187,    2, 0x08 /* Private */,
+      14,    1,  190,    2, 0x08 /* Private */,
+      17,    1,  193,    2, 0x08 /* Private */,
+      18,    0,  196,    2, 0x08 /* Private */,
+      19,    2,  197,    2, 0x08 /* Private */,
+      21,    2,  202,    2, 0x08 /* Private */,
+      22,    0,  207,    2, 0x08 /* Private */,
+      23,    0,  208,    2, 0x08 /* Private */,
+      24,    0,  209,    2, 0x08 /* Private */,
+      25,    0,  210,    2, 0x08 /* Private */,
+      26,    0,  211,    2, 0x08 /* Private */,
+      27,    0,  212,    2, 0x08 /* Private */,
+      28,    0,  213,    2, 0x08 /* Private */,
+      29,    0,  214,    2, 0x08 /* Private */,
+      30,    1,  215,    2, 0x08 /* Private */,
+      31,    1,  218,    2, 0x08 /* Private */,
+      32,    1,  221,    2, 0x08 /* Private */,
+      33,    1,  224,    2, 0x08 /* Private */,
+      34,    1,  227,    2, 0x08 /* Private */,
+      35,    1,  230,    2, 0x08 /* Private */,
+      36,    1,  233,    2, 0x08 /* Private */,
+      37,    1,  236,    2, 0x08 /* Private */,
+      38,    1,  239,    2, 0x08 /* Private */,
 
  // signals: parameters
     QMetaType::Void,
@@ -158,6 +160,7 @@ static const uint qt_meta_data_VideoWindow[] = {
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Bool,
+    QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void, 0x80000000 | 15,   16,
     QMetaType::Void, 0x80000000 | 15,   16,
@@ -195,20 +198,21 @@ void VideoWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
         case 14: _t->remStill(); break;
         case 15: _t->etalonStill(); break;
         case 16: _t->openStill(); break;
-        case 17: _t->renameStill(); break;
+        case 17: _t->editStill(); break;
         case 18: _t->reorderVideos(); break;
         case 19: { bool _r = _t->doneC();
             if (_a[0]) *reinterpret_cast< bool*>(_a[0]) = std::move(_r); }  break;
         case 20: _t->saveAsC(); break;
-        case 21: _t->pauseClicked((*reinterpret_cast< VAMImageIndex(*)>(_a[1]))); break;
-        case 22: _t->playClicked((*reinterpret_cast< VAMImageIndex(*)>(_a[1]))); break;
-        case 23: _t->playPauseClicked((*reinterpret_cast< VAMImageIndex(*)>(_a[1]))); break;
-        case 24: _t->fbClicked((*reinterpret_cast< VAMImageIndex(*)>(_a[1]))); break;
-        case 25: _t->ffClicked((*reinterpret_cast< VAMImageIndex(*)>(_a[1]))); break;
-        case 26: _t->prevClicked((*reinterpret_cast< VAMImageIndex(*)>(_a[1]))); break;
-        case 27: _t->nextClicked((*reinterpret_cast< VAMImageIndex(*)>(_a[1]))); break;
-        case 28: _t->audioSliderChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
-        case 29: { VAMImageIndex _r = _t->swapIndices((*reinterpret_cast< VAMImageIndex(*)>(_a[1])));
+        case 21: _t->autoDetect(); break;
+        case 22: _t->pauseClicked((*reinterpret_cast< VAMImageIndex(*)>(_a[1]))); break;
+        case 23: _t->playClicked((*reinterpret_cast< VAMImageIndex(*)>(_a[1]))); break;
+        case 24: _t->playPauseClicked((*reinterpret_cast< VAMImageIndex(*)>(_a[1]))); break;
+        case 25: _t->fbClicked((*reinterpret_cast< VAMImageIndex(*)>(_a[1]))); break;
+        case 26: _t->ffClicked((*reinterpret_cast< VAMImageIndex(*)>(_a[1]))); break;
+        case 27: _t->prevClicked((*reinterpret_cast< VAMImageIndex(*)>(_a[1]))); break;
+        case 28: _t->nextClicked((*reinterpret_cast< VAMImageIndex(*)>(_a[1]))); break;
+        case 29: _t->audioSliderChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 30: { VAMImageIndex _r = _t->swapIndices((*reinterpret_cast< VAMImageIndex(*)>(_a[1])));
             if (_a[0]) *reinterpret_cast< VAMImageIndex*>(_a[0]) = std::move(_r); }  break;
         default: ;
         }
@@ -267,13 +271,13 @@ int VideoWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 30)
+        if (_id < 31)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 30;
+        _id -= 31;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 30)
+        if (_id < 31)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 30;
+        _id -= 31;
     }
     return _id;
 }

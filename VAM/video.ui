@@ -685,6 +685,7 @@
    <addaction name="actionSave"/>
    <addaction name="actionSave_as"/>
    <addaction name="separator"/>
+   <addaction name="actionDetect"/>
   </widget>
   <widget class="QToolBar" name="toolBar_2">
    <property name="windowTitle">
@@ -704,7 +705,7 @@
    </attribute>
    <addaction name="actionDelete_still"/>
    <addaction name="actionEtalon"/>
-   <addaction name="actionRename_still"/>
+   <addaction name="actionEdit_still"/>
    <addaction name="actionOpen_still"/>
    <addaction name="actionSave_stills"/>
    <addaction name="separator"/>
@@ -770,16 +771,16 @@
     <string>Ctrl+O</string>
    </property>
   </action>
-  <action name="actionRename_still">
+  <action name="actionEdit_still">
    <property name="icon">
     <iconset resource="VAM.qrc">
      <normaloff>:/VAM/Icons/1462036358_edit.png</normaloff>:/VAM/Icons/1462036358_edit.png</iconset>
    </property>
    <property name="text">
-    <string>Rename still</string>
+    <string>Edit still</string>
    </property>
    <property name="toolTip">
-    <string>Rename the selected still</string>
+    <string>Edit the selected still</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+R</string>
@@ -847,6 +848,18 @@
    </property>
    <property name="toolTip">
     <string>Check to order videos vertically first</string>
+   </property>
+  </action>
+  <action name="actionDetect">
+   <property name="icon">
+    <iconset resource="VAM.qrc">
+     <normaloff>:/VAM/Icons/1462036191_Play.png</normaloff>:/VAM/Icons/1462036191_Play.png</iconset>
+   </property>
+   <property name="text">
+    <string>Automatic Detection</string>
+   </property>
+   <property name="toolTip">
+    <string>Launch automatic cattle detection</string>
    </property>
   </action>
  </widget>

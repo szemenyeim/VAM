@@ -189,10 +189,11 @@ private:
 	void remStill();
 	void etalonStill();
 	void openStill();
-	void renameStill();
+	void editStill();
 	void reorderVideos();
 	bool doneC();
 	void saveAsC();
+	void autoDetect();
 	//void changeVidC();
 
 	// Slots for video controls

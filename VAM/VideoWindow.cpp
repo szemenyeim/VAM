@@ -30,6 +30,7 @@ extern "C"
 #include <VLCQtCore\Video.h>
 #include <stdio.h>
 #include "AutoStillDialog.h"
+#include "DetectionWizard.h"
 
 VAMImageIndex VideoWindow::swapIndices(VAMImageIndex idx)
 {
@@ -192,7 +193,8 @@ void VideoWindow::resetWindow()
 	connect(ui.actionDelete_still, &QAction::triggered, this, &VideoWindow::remStill);
 	connect(ui.actionSave_stills, &QAction::triggered, this, &VideoWindow::stillSaveClicked);
 	connect(ui.actionOpen_still, &QAction::triggered, this, &VideoWindow::openStill);
-	connect(ui.actionRename_still, &QAction::triggered, this, &VideoWindow::renameStill);
+	connect(ui.actionEdit_still, &QAction::triggered, this, &VideoWindow::editStill);
+	connect(ui.actionDetect, &QAction::triggered, this, &VideoWindow::autoDetect);
 	connect(ui.actionVideo_Order, &QAction::triggered, this, &VideoWindow::reorderVideos);
 	connect(ui.actionEtalon, &QAction::triggered, this, &VideoWindow::etalonStill);
 	connect(ui.actionSave, &QAction::triggered, this, &VideoWindow::doneC);
@@ -747,7 +749,7 @@ void VideoWindow::openStill()
 
 }
 
-void VideoWindow::renameStill()
+void VideoWindow::editStill()
 {
 	// Check if there is a still selected
 	QModelIndexList indexes = ui.stillImageList->selectionModel()->selectedIndexes();
@@ -881,6 +883,12 @@ void VideoWindow::saveAsC()
 
 	// No longer modified
 	DBModified = false;
+}
+
+void VideoWindow::autoDetect()
+{
+	DetectionWizard wizard(&currentDB, this);
+	wizard.exec();
 }
 
 /*void VideoWindow::changeVidC()

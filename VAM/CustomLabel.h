@@ -28,6 +28,7 @@ class CustomLabel : public QLabel
 		signals :
 	// Emitted signals 
 	void mousePressed( const QPoint& );
+	void mouseReleased(const QPoint&);
 	void mouseMoved( const QPoint& );
 
 public:
@@ -40,8 +41,14 @@ public:
 	int x;
 	int y;
 
+	// Variables for rectangle
+	bool paintRect;
+	int x2;
+	int y2;
+
 	// Functions that catch mouse events
 	void mousePressEvent( QMouseEvent* ev );
+	void mouseReleaseEvent(QMouseEvent* ev);
 	void mouseMoveEvent( QMouseEvent* ev ); 
 
 protected:

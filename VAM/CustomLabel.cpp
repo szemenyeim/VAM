@@ -25,6 +25,13 @@ void CustomLabel::mousePressEvent( QMouseEvent* ev )
 	emit mousePressed( p );
 }
 
+void CustomLabel::mouseReleaseEvent(QMouseEvent* ev)
+{
+	// Emit position of mouse move
+	const QPoint p = ev->pos();
+	emit mouseReleased(p);
+}
+
 void CustomLabel::mouseMoveEvent( QMouseEvent* ev )
 {
 	// Emit position of mouse move
@@ -53,6 +60,24 @@ void CustomLabel::paintEvent( QPaintEvent * ev )
 		painter.drawLine( QPointF( 0, y ), QPointF( size().width(), y ) );
 		painter.drawLine( QPointF( x, 0 ), QPointF( x, size().height() ) );
 	}
+	else if (paintRect)
+	{
+		// Create painter
+		QPainter painter(this);
+
+		// set pen to draw
+		QPen CrosshairPen;
+		CrosshairPen.setColor(QColor::fromRgb(255, 255, 255));
+		CrosshairPen.setWidth(1);
+		CrosshairPen.setJoinStyle(Qt::MiterJoin);
+		painter.setPen(CrosshairPen);
+
+		// Draw two lines
+		painter.drawLine(QPointF(x, y), QPointF(x2, y));
+		painter.drawLine(QPointF(x, y), QPointF(x, y2));
+		painter.drawLine(QPointF(x, y2), QPointF(x2, y2));
+		painter.drawLine(QPointF(x2, y), QPointF(x2, y2));
+	}
 }
 
 // Call parent constructors
@@ -60,8 +85,10 @@ CustomLabel::CustomLabel( QWidget * parent, Qt::WindowFlags f )
     : QLabel( parent, f ) 
 {
 	paintCrosshair = false;
+	paintRect = false;
 
 	x = y = -1;
+	x2 = y2 = -1;
 
 	setMouseTracking(true);
 }
@@ -71,8 +98,10 @@ CustomLabel::CustomLabel( const QString& text, QWidget* parent, Qt::WindowFlags 
     : QLabel( text, parent, f ) 
 {
 	paintCrosshair = false;
+	paintRect = false;
 
 	x = y = -1;
+	x2 = y2 = -1;
 
 	setMouseTracking(true);
 }

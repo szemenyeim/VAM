@@ -33,11 +33,12 @@ public:
     QAction *actionSave_as;
     QAction *actionSave_stills;
     QAction *actionOpen_still;
-    QAction *actionRename_still;
+    QAction *actionEdit_still;
     QAction *actionDelete_still;
     QAction *actionEtalon;
     QAction *actionDone;
     QAction *actionVideo_Order;
+    QAction *actionDetect;
     QWidget *centralwidget;
     QHBoxLayout *horizontalLayout;
     QHBoxLayout *horizontalLayout_35;
@@ -120,11 +121,11 @@ public:
         QIcon icon3;
         icon3.addFile(QString::fromUtf8(":/VAM/Icons/1462367694_folder_open-add2.png"), QSize(), QIcon::Normal, QIcon::Off);
         actionOpen_still->setIcon(icon3);
-        actionRename_still = new QAction(VideoWindow);
-        actionRename_still->setObjectName(QString::fromUtf8("actionRename_still"));
+        actionEdit_still = new QAction(VideoWindow);
+        actionEdit_still->setObjectName(QString::fromUtf8("actionEdit_still"));
         QIcon icon4;
         icon4.addFile(QString::fromUtf8(":/VAM/Icons/1462036358_edit.png"), QSize(), QIcon::Normal, QIcon::Off);
-        actionRename_still->setIcon(icon4);
+        actionEdit_still->setIcon(icon4);
         actionDelete_still = new QAction(VideoWindow);
         actionDelete_still->setObjectName(QString::fromUtf8("actionDelete_still"));
         QIcon icon5;
@@ -151,6 +152,11 @@ public:
         icon8.addFile(QString::fromUtf8(":/VAM/Icons/if_tile_windows_vertically_16x16_10027.png"), QSize(), QIcon::Active, QIcon::On);
         icon8.addFile(QString::fromUtf8(":/VAM/Icons/if_tile_windows_horizontally_16x16_10026.png"), QSize(), QIcon::Selected, QIcon::Off);
         actionVideo_Order->setIcon(icon8);
+        actionDetect = new QAction(VideoWindow);
+        actionDetect->setObjectName(QString::fromUtf8("actionDetect"));
+        QIcon icon9;
+        icon9.addFile(QString::fromUtf8(":/VAM/Icons/1462036191_Play.png"), QSize(), QIcon::Normal, QIcon::Off);
+        actionDetect->setIcon(icon9);
         centralwidget = new QWidget(VideoWindow);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         horizontalLayout = new QHBoxLayout(centralwidget);
@@ -181,27 +187,25 @@ public:
         prevVid1 = new QPushButton(centralwidget);
         prevVid1->setObjectName(QString::fromUtf8("prevVid1"));
         prevVid1->setMaximumSize(QSize(30, 25));
-        QIcon icon9;
-        icon9.addFile(QString::fromUtf8(":/VAM/Icons/1462036188_Fast-Backward.png"), QSize(), QIcon::Normal, QIcon::Off);
-        prevVid1->setIcon(icon9);
+        QIcon icon10;
+        icon10.addFile(QString::fromUtf8(":/VAM/Icons/1462036188_Fast-Backward.png"), QSize(), QIcon::Normal, QIcon::Off);
+        prevVid1->setIcon(icon10);
 
         horizontalLayout_38->addWidget(prevVid1);
 
         frameBack1 = new QPushButton(centralwidget);
         frameBack1->setObjectName(QString::fromUtf8("frameBack1"));
         frameBack1->setMaximumSize(QSize(30, 25));
-        QIcon icon10;
-        icon10.addFile(QString::fromUtf8(":/VAM/Icons/1462036208_Skip-Backward.png"), QSize(), QIcon::Normal, QIcon::Off);
-        frameBack1->setIcon(icon10);
+        QIcon icon11;
+        icon11.addFile(QString::fromUtf8(":/VAM/Icons/1462036208_Skip-Backward.png"), QSize(), QIcon::Normal, QIcon::Off);
+        frameBack1->setIcon(icon11);
 
         horizontalLayout_38->addWidget(frameBack1);
 
         play1 = new QPushButton(centralwidget);
         play1->setObjectName(QString::fromUtf8("play1"));
         play1->setMaximumSize(QSize(30, 25));
-        QIcon icon11;
-        icon11.addFile(QString::fromUtf8(":/VAM/Icons/1462036191_Play.png"), QSize(), QIcon::Normal, QIcon::Off);
-        play1->setIcon(icon11);
+        play1->setIcon(icon9);
 
         horizontalLayout_38->addWidget(play1);
 
@@ -247,21 +251,21 @@ public:
         prevVid2 = new QPushButton(centralwidget);
         prevVid2->setObjectName(QString::fromUtf8("prevVid2"));
         prevVid2->setMaximumSize(QSize(30, 25));
-        prevVid2->setIcon(icon9);
+        prevVid2->setIcon(icon10);
 
         horizontalLayout_40->addWidget(prevVid2);
 
         frameBack2 = new QPushButton(centralwidget);
         frameBack2->setObjectName(QString::fromUtf8("frameBack2"));
         frameBack2->setMaximumSize(QSize(30, 25));
-        frameBack2->setIcon(icon10);
+        frameBack2->setIcon(icon11);
 
         horizontalLayout_40->addWidget(frameBack2);
 
         play2 = new QPushButton(centralwidget);
         play2->setObjectName(QString::fromUtf8("play2"));
         play2->setMaximumSize(QSize(30, 25));
-        play2->setIcon(icon11);
+        play2->setIcon(icon9);
 
         horizontalLayout_40->addWidget(play2);
 
@@ -308,21 +312,21 @@ public:
         prevVid3 = new QPushButton(centralwidget);
         prevVid3->setObjectName(QString::fromUtf8("prevVid3"));
         prevVid3->setMaximumSize(QSize(30, 25));
-        prevVid3->setIcon(icon9);
+        prevVid3->setIcon(icon10);
 
         horizontalLayout_43->addWidget(prevVid3);
 
         frameBack3 = new QPushButton(centralwidget);
         frameBack3->setObjectName(QString::fromUtf8("frameBack3"));
         frameBack3->setMaximumSize(QSize(30, 25));
-        frameBack3->setIcon(icon10);
+        frameBack3->setIcon(icon11);
 
         horizontalLayout_43->addWidget(frameBack3);
 
         play3 = new QPushButton(centralwidget);
         play3->setObjectName(QString::fromUtf8("play3"));
         play3->setMaximumSize(QSize(30, 25));
-        play3->setIcon(icon11);
+        play3->setIcon(icon9);
 
         horizontalLayout_43->addWidget(play3);
 
@@ -364,21 +368,21 @@ public:
         prevVid4 = new QPushButton(centralwidget);
         prevVid4->setObjectName(QString::fromUtf8("prevVid4"));
         prevVid4->setMaximumSize(QSize(30, 25));
-        prevVid4->setIcon(icon9);
+        prevVid4->setIcon(icon10);
 
         horizontalLayout_45->addWidget(prevVid4);
 
         frameBack4 = new QPushButton(centralwidget);
         frameBack4->setObjectName(QString::fromUtf8("frameBack4"));
         frameBack4->setMaximumSize(QSize(30, 25));
-        frameBack4->setIcon(icon10);
+        frameBack4->setIcon(icon11);
 
         horizontalLayout_45->addWidget(frameBack4);
 
         play4 = new QPushButton(centralwidget);
         play4->setObjectName(QString::fromUtf8("play4"));
         play4->setMaximumSize(QSize(30, 25));
-        play4->setIcon(icon11);
+        play4->setIcon(icon9);
 
         horizontalLayout_45->addWidget(play4);
 
@@ -487,9 +491,10 @@ public:
         toolBar->addAction(actionSave);
         toolBar->addAction(actionSave_as);
         toolBar->addSeparator();
+        toolBar->addAction(actionDetect);
         toolBar_2->addAction(actionDelete_still);
         toolBar_2->addAction(actionEtalon);
-        toolBar_2->addAction(actionRename_still);
+        toolBar_2->addAction(actionEdit_still);
         toolBar_2->addAction(actionOpen_still);
         toolBar_2->addAction(actionSave_stills);
         toolBar_2->addSeparator();
@@ -531,12 +536,12 @@ public:
 #if QT_CONFIG(shortcut)
         actionOpen_still->setShortcut(QCoreApplication::translate("VideoWindow", "Ctrl+O", nullptr));
 #endif // QT_CONFIG(shortcut)
-        actionRename_still->setText(QCoreApplication::translate("VideoWindow", "Rename still", nullptr));
+        actionEdit_still->setText(QCoreApplication::translate("VideoWindow", "Edit still", nullptr));
 #if QT_CONFIG(tooltip)
-        actionRename_still->setToolTip(QCoreApplication::translate("VideoWindow", "Rename the selected still", nullptr));
+        actionEdit_still->setToolTip(QCoreApplication::translate("VideoWindow", "Edit the selected still", nullptr));
 #endif // QT_CONFIG(tooltip)
 #if QT_CONFIG(shortcut)
-        actionRename_still->setShortcut(QCoreApplication::translate("VideoWindow", "Ctrl+R", nullptr));
+        actionEdit_still->setShortcut(QCoreApplication::translate("VideoWindow", "Ctrl+R", nullptr));
 #endif // QT_CONFIG(shortcut)
         actionDelete_still->setText(QCoreApplication::translate("VideoWindow", "Delete still", nullptr));
 #if QT_CONFIG(tooltip)
@@ -559,6 +564,10 @@ public:
         actionVideo_Order->setText(QCoreApplication::translate("VideoWindow", "Video Order", nullptr));
 #if QT_CONFIG(tooltip)
         actionVideo_Order->setToolTip(QCoreApplication::translate("VideoWindow", "Check to order videos vertically first", nullptr));
+#endif // QT_CONFIG(tooltip)
+        actionDetect->setText(QCoreApplication::translate("VideoWindow", "Automatic Detection", nullptr));
+#if QT_CONFIG(tooltip)
+        actionDetect->setToolTip(QCoreApplication::translate("VideoWindow", "Launch automatic cattle detection", nullptr));
 #endif // QT_CONFIG(tooltip)
         videoName1->setText(QString());
 #if QT_CONFIG(tooltip)
