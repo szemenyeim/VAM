@@ -1,15 +1,21 @@
+
+#pragma warning(push, 0)
+#include <torch/script.h>
+#include <torchvision/vision.h>
+#pragma warning(pop)
 #include "DetectionWizard.h"
 #include <QVBoxLayout>
 #include <QStandardPaths>
 #include <QtConcurrent/QtConcurrent>
 #include <opencv2\opencv.hpp>
+#include "AutoStillDialog.h"
 
+static torch::jit::script::Module model;
 
-
-DetectionWizard::DetectionWizard(StillDB *db, QWidget* parent) : QWizard(parent)
+DetectionWizard::DetectionWizard(Project* proj, StillDB *db, QWidget* parent) : QWizard(parent)
 {
 	setPage(Page_Intro, new IntroPage_2);
-	setPage(Page_Video, new VideoPage_2(db));
+	setPage(Page_Video, new VideoPage_2(proj, db));
 
 	setStartId(Page_Intro);
 
@@ -45,8 +51,8 @@ int IntroPage_2::nextId() const
 
 }
 
-VideoPage_2::VideoPage_2(StillDB *db, QWidget* parent)
-	: currentDB(db), QWizardPage(parent)
+VideoPage_2::VideoPage_2(Project *proj, StillDB *db, QWidget* parent)
+	: currentProject(proj), currentDB(db), QWizardPage(parent)
 {
 	setTitle(tr("Detection"));
 	setSubTitle(tr("Please load the created video, then press calibrate."));
@@ -93,6 +99,9 @@ VideoPage_2::VideoPage_2(StillDB *db, QWidget* parent)
 	progressBar2->setMaximum(20000);
 	progressBar2->setValue(0);
 
+	model = torch::jit::load("./model.pt");
+	model.eval();
+
 	connect(selectAreaBtn, &QPushButton::clicked, this, &VideoPage_2::getActiveArea);
 	connect(detectBtn, &QPushButton::clicked, this, &VideoPage_2::detect);
 	connect(this, &VideoPage_2::computed, this, &VideoPage_2::imageDone);
@@ -128,6 +137,76 @@ void VideoPage_2::getActiveArea()
 
 bool VideoPage_2::checkCattle(const cv::Mat& img)
 {
+	cv::Mat resized;
+	cv::Size newSize(512, (512.0 / img.cols) * img.rows);
+	cv::resize(img, resized, newSize);
+	cv::cvtColor(resized, resized, cv::COLOR_BGR2RGB);
+
+	float imgSize = 1.0 / (512.0 * 256.0);
+
+	cv::Mat padded;
+	int padding = 256 - resized.rows;
+	if (padding < 0)
+	{
+		int lPad, rPad;
+		lPad = rPad = -padding / 2;
+		if (padding % 2 == 1)
+			lPad += 1;
+
+		cv::Rect myROI(0, lPad, resized.cols, resized.rows + padding);
+		padded = resized(myROI);
+	}
+	else {
+		int lPad, rPad;
+		lPad = rPad = padding / 2;
+		if (padding % 2 == 1)
+			lPad += 1;
+
+		cv::copyMakeBorder(resized, padded, lPad, rPad, 0, 0, cv::BORDER_CONSTANT, cv::Scalar(0));
+	}
+
+	auto tensor_image = torch::from_blob(padded.data, { padded.rows, padded.cols, padded.channels() }, at::kByte);
+	tensor_image = tensor_image.permute({ 2,0,1 });
+	tensor_image = tensor_image.toType(c10::kFloat).mul(0.00392156862);
+	tensor_image.to(c10::DeviceType::CPU);
+
+	// Create a vector of inputs.
+	std::vector < torch::jit::IValue > inputs;
+	std::vector<torch::Tensor> input;
+	input.push_back(tensor_image);
+	inputs.push_back(input);
+	inputs.push_back(0);
+
+	try {
+		// Execute the model and turn its output into a tensor.
+		auto output = model.forward(inputs).toTuple()->elements()[1].toList().get(0).toGenericDict();
+
+		auto bbs = output.at("boxes").toTensor();
+		auto confs = output.at("scores").toTensor();
+
+		auto size = bbs.sizes()[0];
+
+		for (int i = 0; i < size; i++)
+		{
+			auto bb = bbs[i];
+			auto conf = confs[i].item().toFloat();
+			if (conf > confT)
+			{
+				float bbSize = ((bb[3] - bb[1]) * (bb[2] - bb[0])).item().toFloat();
+				if (bbSize*imgSize > areaT)
+				{
+					return true;
+				}
+			}
+		}
+
+		
+	}
+	catch (std::exception& e) {
+		std::cout << e.what() << std::endl;
+		QMessageBox::warning(this, tr("Run failed"), tr("The neural network run has failed"));
+	}
+
 	return false;
 }
 
@@ -213,9 +292,8 @@ void VideoPage_2::detect_thread()
 						// check cattle
 						if (checkCattle(img))
 						{
-							currentProject->getAbsProjLib() + "/Database/images/";
-							QString dir = currentDB->p
-							QString name = "frames/" + QString(i) + "_" + QString(cntr) + ".jpg";
+							QString baseDir = currentProject->getAbsProjLib() + "/Database/images/";
+							QString name = baseDir + QString::number(i) + "_" + QString::number(cntr) + ".jpg";
 							cv::imwrite(name.toStdString(), img);
 							newImages[i].push_back(name);
 
@@ -233,6 +311,11 @@ void VideoPage_2::detect_thread()
 		}
 		emit videoComputed();
 	}
+
+	AutoStillDialog* dialog = new AutoStillDialog();
+	dialog->showDialog(newImages, currentDB);
+
+	this->close();
 }
 
 void VideoPage_2::videoDone()

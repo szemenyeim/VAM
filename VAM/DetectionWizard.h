@@ -8,6 +8,7 @@
 #include <QProgressbar>
 #include "Utility.h"
 #include "StillDB.h"
+#include "Project.h"
 #include "CustomLabel.h"
 
 
@@ -20,7 +21,7 @@ public:
 		Page_Intro, Page_Video, Page_Conclusion
 	};
 
-	DetectionWizard(StillDB *db, QWidget* parent = 0);
+	DetectionWizard(Project* proj, StillDB *db, QWidget* parent = 0);
 private:
 	StillDB* currentDB;
 };
@@ -44,7 +45,7 @@ class VideoPage_2 : public QWizardPage
 	Q_OBJECT
 
 public:
-	VideoPage_2(StillDB* db, QWidget* parent = 0);
+	VideoPage_2(Project* proj, StillDB* db, QWidget* parent = 0);
 	int nextId() const override;
 
 signals:
@@ -54,6 +55,7 @@ signals:
 private:
 
 	StillDB* currentDB;
+	Project* currentProject;
 
 	QLabel* videoLabel;
 	QLabel* calibLabel;

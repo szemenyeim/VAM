@@ -108,7 +108,7 @@
       <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
       <AdditionalLibraryDirectories>$(QTDIR)\lib;..\Libs\ffmpeg\lib;..\Libs\libxlsxwriter\lib;..\Libs\opencv\lib;..\Libs\tbb\lib;..\Libs\QtAV\lib;..\Libs\vlc;..\Libs\zbar\lib;..\Libs\libtorch\lib_debug;..\Libs\VlcQt\Debug\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>qtmaind.lib;opencv_calib3d341d.lib;opencv_core341d.lib;opencv_imgproc341d.lib;opencv_imgcodecs341d.lib;opencv_videoio341d.lib;VLCQtCore.lib;VLCQtWidgets.lib;libzbar64-0.lib;xlsxwriter.lib;Zlib.lib;libvlc.lib;libvlccore.lib;Qt5Cored.lib;Qt5Guid.lib;Qt5Widgetsd.lib;torch_cpu.lib;c10.lib;torchvision.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>qtmaind.lib;opencv_calib3d341d.lib;opencv_core341d.lib;opencv_imgproc341d.lib;opencv_imgcodecs341d.lib;opencv_video341d.lib;opencv_videoio341d.lib;VLCQtCore.lib;VLCQtWidgets.lib;libzbar64-0.lib;xlsxwriter.lib;Zlib.lib;libvlc.lib;libvlccore.lib;Qt5Cored.lib;Qt5Guid.lib;Qt5Widgetsd.lib;torch_cpu.lib;c10.lib;torchvision.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -141,7 +141,7 @@
       <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
       <AdditionalLibraryDirectories>$(QTDIR)\lib;..\Libs\ffmpeg\lib;..\Libs\libxlsxwriter\lib;..\Libs\opencv\lib;..\Libs\tbb\lib;..\Libs\QtAV\lib;..\Libs\vlc;..\Libs\libtorch\lib;..\Libs\zbar\lib;..\Libs\VlcQt\Release\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>false</GenerateDebugInformation>
-      <AdditionalDependencies>qtmain.lib;opencv_calib3d341.lib;opencv_core341.lib;opencv_imgproc341.lib;opencv_imgcodecs341.lib;opencv_videoio341.lib;VLCQtCore.lib;VLCQtWidgets.lib;libzbar64-0.lib;xlsxwriter.lib;Zlib.lib;libvlc.lib;libvlccore.lib;Qt5Core.lib;Qt5Gui.lib;Qt5Widgets.lib;torch_cpu.lib;c10.lib;torchvision.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>qtmain.lib;opencv_calib3d341.lib;opencv_core341.lib;opencv_imgproc341.lib;opencv_imgcodecs341.lib;opencv_video341.lib;opencv_videoio341.lib;VLCQtCore.lib;VLCQtWidgets.lib;libzbar64-0.lib;xlsxwriter.lib;Zlib.lib;libvlc.lib;libvlccore.lib;Qt5Core.lib;Qt5Gui.lib;Qt5Widgets.lib;torch_cpu.lib;c10.lib;torchvision.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>

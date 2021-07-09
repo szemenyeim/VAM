@@ -887,7 +887,7 @@ void VideoWindow::saveAsC()
 
 void VideoWindow::autoDetect()
 {
-	DetectionWizard wizard(&currentDB, this);
+	DetectionWizard wizard(currentProject, &currentDB, this);
 	wizard.exec();
 }
 

@@ -4,22 +4,22 @@
 <context>
     <name>AreaSelectWindow</name>
     <message>
-        <location filename="../DetectionWizard.cpp" line="234"/>
+        <location filename="../DetectionWizard.cpp" line="373"/>
         <source>Please draw the Region of Interest (RoI) on all images.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../DetectionWizard.cpp" line="243"/>
+        <location filename="../DetectionWizard.cpp" line="383"/>
         <source>Done</source>
         <translation type="unfinished">Hotovo</translation>
     </message>
     <message>
-        <location filename="../DetectionWizard.cpp" line="286"/>
+        <location filename="../DetectionWizard.cpp" line="427"/>
         <source>RoIs missing</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../DetectionWizard.cpp" line="286"/>
+        <location filename="../DetectionWizard.cpp" line="427"/>
         <source>Please select the RoI on all images!</source>
         <translation type="unfinished"></translation>
     </message>
@@ -78,7 +78,7 @@
 <context>
     <name>DetectionWizard</name>
     <message>
-        <location filename="../DetectionWizard.cpp" line="20"/>
+        <location filename="../DetectionWizard.cpp" line="26"/>
         <source>Calibration</source>
         <translation type="unfinished"></translation>
     </message>
@@ -187,17 +187,17 @@
 <context>
     <name>IntroPage_2</name>
     <message>
-        <location filename="../DetectionWizard.cpp" line="27"/>
+        <location filename="../DetectionWizard.cpp" line="33"/>
         <source>Introduction</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../DetectionWizard.cpp" line="30"/>
+        <location filename="../DetectionWizard.cpp" line="36"/>
         <source>This wizard will launch automatic cattle detection.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../DetectionWizard.cpp" line="33"/>
+        <location filename="../DetectionWizard.cpp" line="39"/>
         <source>As a first step, you will have to select the area in the videos where the cattle should be detected. Then you can set some parameters regarding the sensitivity of the detection. Finally, you can launch the detection.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2065,52 +2065,62 @@
 <context>
     <name>VideoPage_2</name>
     <message>
-        <location filename="../DetectionWizard.cpp" line="51"/>
+        <location filename="../DetectionWizard.cpp" line="57"/>
         <source>Detection</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../DetectionWizard.cpp" line="52"/>
+        <location filename="../DetectionWizard.cpp" line="58"/>
         <source>Please load the created video, then press calibrate.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../DetectionWizard.cpp" line="56"/>
+        <location filename="../DetectionWizard.cpp" line="62"/>
         <source>Motion is ignored for thisd many seconds after a detection.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../DetectionWizard.cpp" line="57"/>
+        <location filename="../DetectionWizard.cpp" line="63"/>
         <source>Motion detection sensitivity [0-1].</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../DetectionWizard.cpp" line="58"/>
+        <location filename="../DetectionWizard.cpp" line="64"/>
         <source>AI detection confidence threshold [0-1].</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../DetectionWizard.cpp" line="59"/>
+        <location filename="../DetectionWizard.cpp" line="65"/>
         <source>Cattle size threshold [0-1].</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../DetectionWizard.cpp" line="61"/>
+        <location filename="../DetectionWizard.cpp" line="67"/>
         <source>Select Detection Area</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../DetectionWizard.cpp" line="62"/>
+        <location filename="../DetectionWizard.cpp" line="68"/>
         <source>Detect</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../DetectionWizard.cpp" line="171"/>
+        <location filename="../DetectionWizard.cpp" line="207"/>
+        <source>Run failed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../DetectionWizard.cpp" line="207"/>
+        <source>The neural network run has failed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../DetectionWizard.cpp" line="260"/>
         <source>Cannot open video file!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../DetectionWizard.cpp" line="171"/>
+        <location filename="../DetectionWizard.cpp" line="260"/>
         <source>Please make sure it is not corrupt or deleted!</source>
         <translation type="unfinished"></translation>
     </message>

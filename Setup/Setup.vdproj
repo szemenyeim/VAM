@@ -873,6 +873,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_54D4EDC066244CF9937A8E60ABF34E0D"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_557C6F948ED944E09819E242A0BC9389"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -5326,6 +5332,26 @@
             "TargetName" = "8:libpacketizer_a52_plugin.dll"
             "Tag" = "8:"
             "Folder" = "8:_4E2819C92E9C41488FC18D49D2A7089E"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_54D4EDC066244CF9937A8E60ABF34E0D"
+            {
+            "SourcePath" = "8:..\\Libs\\opencv\\bin\\opencv_video341.dll"
+            "TargetName" = "8:opencv_video341.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_5DA0519BFE1445EC97469054353D30BC"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
