@@ -4,22 +4,22 @@
 <context>
     <name>AreaSelectWindow</name>
     <message>
-        <location filename="../DetectionWizard.cpp" line="433"/>
+        <location filename="../DetectionWizard.cpp" line="434"/>
         <source>Please draw the Region of Interest (RoI) on all images.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../DetectionWizard.cpp" line="443"/>
+        <location filename="../DetectionWizard.cpp" line="444"/>
         <source>Done</source>
         <translation type="unfinished">Gotowe</translation>
     </message>
     <message>
-        <location filename="../DetectionWizard.cpp" line="491"/>
+        <location filename="../DetectionWizard.cpp" line="492"/>
         <source>RoIs missing</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../DetectionWizard.cpp" line="491"/>
+        <location filename="../DetectionWizard.cpp" line="492"/>
         <source>Please select the RoI on all images!</source>
         <translation type="unfinished"></translation>
     </message>
@@ -84,7 +84,7 @@
     <name>DetectionWizard</name>
     <message>
         <location filename="../DetectionWizard.cpp" line="27"/>
-        <source>Calibration</source>
+        <source>Automatic Detection</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -92,61 +92,66 @@
     <name>Dialog</name>
     <message>
         <location filename="../autoStillDiag.ui" line="26"/>
-        <source>Dialog</source>
+        <source>Pair Still Images</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../autoStillDiag.ui" line="53"/>
+        <source>Select frames from the input lists and pair them using the New ID button.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../autoStillDiag.ui" line="77"/>
         <source>Video 1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../autoStillDiag.ui" line="103"/>
+        <location filename="../autoStillDiag.ui" line="127"/>
         <source>Video 3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../autoStillDiag.ui" line="157"/>
+        <location filename="../autoStillDiag.ui" line="181"/>
         <source>Video 2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../autoStillDiag.ui" line="207"/>
+        <location filename="../autoStillDiag.ui" line="231"/>
         <source>Video 4</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../autoStillDiag.ui" line="259"/>
+        <location filename="../autoStillDiag.ui" line="283"/>
         <source>Paired IDs</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../autoStillDiag.ui" line="277"/>
+        <location filename="../autoStillDiag.ui" line="301"/>
         <source>Add new video</source>
         <translation type="unfinished">Dodaj nowe wideo</translation>
     </message>
     <message>
-        <location filename="../autoStillDiag.ui" line="300"/>
+        <location filename="../autoStillDiag.ui" line="324"/>
         <source>Remove video</source>
         <translation type="unfinished">Usuń wideo</translation>
     </message>
     <message>
-        <location filename="../autoStillDiag.ui" line="331"/>
+        <location filename="../autoStillDiag.ui" line="355"/>
         <source>Save video list</source>
         <translation type="unfinished">Zapisz listę wideo</translation>
     </message>
     <message>
-        <location filename="../autoStillDiag.ui" line="337"/>
+        <location filename="../autoStillDiag.ui" line="361"/>
         <source>Save</source>
         <translation type="unfinished">Zapisz</translation>
     </message>
     <message>
-        <location filename="../autoStillDiag.ui" line="354"/>
+        <location filename="../autoStillDiag.ui" line="378"/>
         <source>Return without saving</source>
         <translation type="unfinished">Powrót bez zapisywania</translation>
     </message>
     <message>
-        <location filename="../autoStillDiag.ui" line="357"/>
+        <location filename="../autoStillDiag.ui" line="381"/>
         <source>Cancel</source>
         <translation type="unfinished">Anuluj</translation>
     </message>
@@ -1248,16 +1253,16 @@ Then you can set some parameters regarding the sensitivity of the detection. Fin
 <context>
     <name>VAM</name>
     <message>
-        <location filename="../vam.cpp" line="1245"/>
-        <location filename="../vam.cpp" line="1317"/>
+        <location filename="../vam.cpp" line="1253"/>
+        <location filename="../vam.cpp" line="1325"/>
         <source>New Project</source>
         <translation>Nowy projekt</translation>
     </message>
     <message>
         <location filename="../vam.cpp" line="255"/>
         <location filename="../vam.cpp" line="293"/>
-        <location filename="../vam.cpp" line="1245"/>
-        <location filename="../vam.cpp" line="1317"/>
+        <location filename="../vam.cpp" line="1253"/>
+        <location filename="../vam.cpp" line="1325"/>
         <source>Enter Name:</source>
         <translation>Wpisz nazwę:</translation>
     </message>
@@ -1274,8 +1279,8 @@ Then you can set some parameters regarding the sensitivity of the detection. Fin
     <message>
         <location filename="../vam.cpp" line="255"/>
         <location filename="../vam.cpp" line="293"/>
-        <location filename="../vam.cpp" line="1245"/>
-        <location filename="../vam.cpp" line="1317"/>
+        <location filename="../vam.cpp" line="1253"/>
+        <location filename="../vam.cpp" line="1325"/>
         <source>Please specify a name!</source>
         <translation>Proszę uzupełnić pole z nazwą!</translation>
     </message>
@@ -1301,28 +1306,28 @@ Then you can set some parameters regarding the sensitivity of the detection. Fin
         <translation>Pomiar o tej nazwie już istnieje!</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="418"/>
+        <location filename="../vam.cpp" line="420"/>
         <source>You need to create a measurement before creating planimetrics measurements!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="435"/>
+        <location filename="../vam.cpp" line="437"/>
         <source>You need to create a measurement before creating morphometrics measurements!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="695"/>
+        <location filename="../vam.cpp" line="701"/>
         <source>Select Still Database</source>
         <translation>Wybierz bazę danych klatek</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="717"/>
+        <location filename="../vam.cpp" line="723"/>
         <source>The selected database is empty. Please select another one!</source>
         <translation>Wybrana baza danych jest pusta. Proszę wybrać inną!</translation>
     </message>
     <message>
         <location filename="../vam.cpp" line="334"/>
-        <location filename="../vam.cpp" line="732"/>
+        <location filename="../vam.cpp" line="738"/>
         <source>Select Schema</source>
         <translation>Wybierz schemat</translation>
     </message>
@@ -1343,204 +1348,208 @@ Then you can set some parameters regarding the sensitivity of the detection. Fin
     </message>
     <message>
         <location filename="../vam.cpp" line="359"/>
-        <location filename="../vam.cpp" line="749"/>
+        <location filename="../vam.cpp" line="755"/>
         <source>The selected schema is empty. Please select another one!</source>
         <translation>Wybrany schemat jest pusty. Proszę wybrać inny!</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="418"/>
-        <location filename="../vam.cpp" line="435"/>
+        <location filename="../vam.cpp" line="420"/>
+        <location filename="../vam.cpp" line="437"/>
         <source>No measurement</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="478"/>
+        <location filename="../vam.cpp" line="480"/>
         <source>Please select a schema to delete!</source>
         <translation>Proszę wybrać schemat do usunięcia!</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="499"/>
+        <location filename="../vam.cpp" line="501"/>
         <source>Please select a measurement to delete!</source>
         <translation>Proszę wybrać pomiar do usunięcia!</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="553"/>
+        <location filename="../vam.cpp" line="555"/>
         <source>Open Schema File</source>
         <translation>Otwórz plik ze schematem</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="553"/>
+        <location filename="../vam.cpp" line="555"/>
         <source>Schema Files (*.schem)</source>
         <translation>Pliki schematowe (*.schem)</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="562"/>
+        <location filename="../vam.cpp" line="564"/>
         <source>Error opening schema file</source>
         <translation>Błąd przy otwieraniu pliku ze schematem</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="563"/>
-        <location filename="../vam.cpp" line="590"/>
+        <location filename="../vam.cpp" line="565"/>
+        <location filename="../vam.cpp" line="592"/>
         <source>Please try another location</source>
         <translation>Proszę wybrać inny plik</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="580"/>
+        <location filename="../vam.cpp" line="582"/>
         <source>Open Measurement File</source>
         <translation>Otwórz plik z pomiarami</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="580"/>
+        <location filename="../vam.cpp" line="582"/>
         <source>Measurement Files (*.meas)</source>
         <translation>Pliki pomiarowe (*.meas)</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="589"/>
+        <location filename="../vam.cpp" line="591"/>
         <source>Error opening measurement file</source>
         <translation>Błąd przy otwieraniu pliku z pomiarem</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="662"/>
+        <location filename="../vam.cpp" line="666"/>
         <source>Please select a schema to edit!</source>
         <translation>Proszę wybrać schemat do edycji!</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="688"/>
+        <location filename="../vam.cpp" line="694"/>
         <source>Please select a measurement to edit!</source>
         <translation>Proszę wybrać pomiar do edycji!</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="871"/>
+        <location filename="../vam.cpp" line="879"/>
         <source>XLSX files (*.xlsx)</source>
         <translation>Pliki XLSX (*.xlsx)</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="877"/>
+        <location filename="../vam.cpp" line="885"/>
         <source>CSV files (*.csv)</source>
         <translation>Pliki CSV (*.csv)</translation>
     </message>
     <message>
         <location filename="../vam.cpp" line="242"/>
-        <location filename="../vam.cpp" line="1476"/>
+        <location filename="../vam.cpp" line="1484"/>
         <source>Taken %1 stills from %2 cameras</source>
         <translation>Zapisano %1 klatek z %2 kamer</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="874"/>
+        <location filename="../vam.cpp" line="882"/>
         <source>HTML files (*.html)</source>
         <translation>Pliki HTML (*.html)</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="883"/>
+        <location filename="../vam.cpp" line="891"/>
         <source>Select output file</source>
         <translation>Wybierz plik wyjściowy</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="1029"/>
         <source>About VAM</source>
-        <translation>O VATEM2</translation>
+        <translation type="vanished">O VATEM2</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="1186"/>
+        <location filename="../vam.cpp" line="1194"/>
         <source>VAM Projects (*.VAMproj)</source>
         <translation>Projekty VAM (*.VAMproj)</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="1263"/>
-        <location filename="../vam.cpp" line="1331"/>
+        <location filename="../vam.cpp" line="1271"/>
+        <location filename="../vam.cpp" line="1339"/>
         <source>Error writing directory</source>
         <translation>Błąd przy tworzeniu katalogu</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="1263"/>
-        <location filename="../vam.cpp" line="1331"/>
+        <location filename="../vam.cpp" line="1271"/>
+        <location filename="../vam.cpp" line="1339"/>
         <source>The selected project library could not be written. Please choose another one!</source>
         <translation>Wybrana biblioteka projektu nie może być użyta. Proszę wybrać inną!</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="1577"/>
+        <location filename="../vam.cpp" line="1585"/>
         <source>Caanot close VAM with other windows open</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="1578"/>
+        <location filename="../vam.cpp" line="1586"/>
         <source>Please close additional windows first</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="1673"/>
+        <location filename="../vam.cpp" line="1681"/>
         <source>Saving image %1 of %2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="1696"/>
+        <location filename="../vam.cpp" line="1704"/>
         <source>Output Generation Successful!</source>
         <translation>Dane wyjściowe wygenerowane pomyślnie!</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="911"/>
+        <location filename="../vam.cpp" line="919"/>
         <source>Select Project Directory</source>
         <translation>Wybierz katalog projektu</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="707"/>
+        <location filename="../vam.cpp" line="713"/>
         <source>The database for the measurement is not loaded.</source>
         <translation>Schemat dla pomiaru nie został załadowany.</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="735"/>
+        <location filename="../vam.cpp" line="741"/>
         <source>The schema for the measurement is not loaded.</source>
         <translation>Schemat dla pomiaru nie został załadowany.</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="1090"/>
+        <location filename="../vam.cpp" line="1037"/>
+        <source>About VATEM3</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../vam.cpp" line="1098"/>
         <source>Select Language</source>
         <translation>Wybierz język</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="1090"/>
+        <location filename="../vam.cpp" line="1098"/>
         <source>Choose a language from the list</source>
         <translation>Wybierz język z listy</translation>
     </message>
     <message>
         <location filename="../vam.cpp" line="141"/>
-        <location filename="../vam.cpp" line="1124"/>
+        <location filename="../vam.cpp" line="1132"/>
         <source>Disable Logging</source>
         <translation>Wyłącz rejestrowanie</translation>
     </message>
     <message>
         <location filename="../vam.cpp" line="141"/>
-        <location filename="../vam.cpp" line="1124"/>
+        <location filename="../vam.cpp" line="1132"/>
         <source>Enable Logging</source>
         <translation>Włącz rejestrowanie</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="1690"/>
+        <location filename="../vam.cpp" line="1698"/>
         <source>Saved %1 animals with %2 measurements to</source>
         <translation>Zapisano %1 zwierząt z %2 pomiarem</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="1156"/>
-        <location filename="../vam.cpp" line="1212"/>
-        <location filename="../vam.cpp" line="1591"/>
+        <location filename="../vam.cpp" line="1164"/>
+        <location filename="../vam.cpp" line="1220"/>
+        <location filename="../vam.cpp" line="1599"/>
         <source>The current project has been modified.</source>
         <translation>Bieżący projekt został zmodyfikowany.</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="1157"/>
-        <location filename="../vam.cpp" line="1213"/>
-        <location filename="../vam.cpp" line="1592"/>
+        <location filename="../vam.cpp" line="1165"/>
+        <location filename="../vam.cpp" line="1221"/>
+        <location filename="../vam.cpp" line="1600"/>
         <source>Do you want to save your changes?</source>
         <translation>Czy chcesz zapisać zmiany?</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="1186"/>
+        <location filename="../vam.cpp" line="1194"/>
         <source>Open Project File</source>
         <translation>Otwórz plik z projektem</translation>
     </message>
     <message>
-        <location filename="../vam.cpp" line="1245"/>
-        <location filename="../vam.cpp" line="1317"/>
+        <location filename="../vam.cpp" line="1253"/>
+        <location filename="../vam.cpp" line="1325"/>
         <source>A project with this name already exists!</source>
         <translation>Projekt o tej nazwie już istnieje!</translation>
     </message>
@@ -1591,9 +1600,8 @@ Then you can set some parameters regarding the sensitivity of the detection. Fin
         <translation>Format pliku wyjściowego</translation>
     </message>
     <message>
-        <location filename="../vam.ui" line="32"/>
         <source>VAM (Video Assisted Measurement)</source>
-        <translation>Pomiar wspomagany Wideo</translation>
+        <translation type="vanished">Pomiar wspomagany Wideo</translation>
     </message>
     <message>
         <location filename="../vam.ui" line="462"/>
@@ -1614,6 +1622,11 @@ Then you can set some parameters regarding the sensitivity of the detection. Fin
         <location filename="../vam.ui" line="94"/>
         <source>Videos #1</source>
         <translation>Videos #1</translation>
+    </message>
+    <message>
+        <location filename="../vam.ui" line="32"/>
+        <source>VATEM3 (Video Assisted Measurement)</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../vam.ui" line="168"/>
@@ -2111,22 +2124,27 @@ Then you can set some parameters regarding the sensitivity of the detection. Fin
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../DetectionWizard.cpp" line="224"/>
+        <location filename="../DetectionWizard.cpp" line="145"/>
+        <source>Select detection area.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../DetectionWizard.cpp" line="225"/>
         <source>Run failed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../DetectionWizard.cpp" line="224"/>
+        <location filename="../DetectionWizard.cpp" line="225"/>
         <source>The neural network run has failed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../DetectionWizard.cpp" line="290"/>
+        <location filename="../DetectionWizard.cpp" line="291"/>
         <source>Cannot open video file!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../DetectionWizard.cpp" line="290"/>
+        <location filename="../DetectionWizard.cpp" line="291"/>
         <source>Please make sure it is not corrupt or deleted!</source>
         <translation type="unfinished"></translation>
     </message>

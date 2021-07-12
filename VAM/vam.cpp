@@ -43,7 +43,7 @@ VAM::VAM(QWidget *parent)
 	readOptionsAndTranslations();
 
 	// If default project, create lib
-	projectLib = QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation).append(QString("/VATEM2"));
+	projectLib = QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation).append(QString("/VATEM3"));
 
 	QDir dir(projectLib);
 	if (!dir.exists())
@@ -384,6 +384,8 @@ void VAM::createMeasurement()
 	markerWindow->setCurrentProject(currentProject);
 	if (markerWindow->setCurrentMeasurement(newMeas))
 		markerWindow->show();
+	else
+		toggleUI();
 }
 
 void VAM::manageVideos(int index)
@@ -651,6 +653,8 @@ void VAM::dbEdit()
 	videoWindow->setCurrentProject(currentProject);
 	if (videoWindow->setCurrentDB(currentProject->getDB(0 /*index.row()*/)))
 		videoWindow->show();
+	else
+		toggleUI();
 }
 
 void VAM::schemaEdit()
@@ -677,6 +681,8 @@ void VAM::schemaEdit()
 	schemaWindow->setCurrentProject(currentProject);
 	if (schemaWindow->setCurrentSchema(currentProject->getSchema(index)))
 		schemaWindow->show();
+	else
+		toggleUI();
 }
 
 void VAM::measEdit()
@@ -772,6 +778,8 @@ void VAM::measEdit()
 	markerWindow->setCurrentProject(currentProject);
 	if (markerWindow->setCurrentMeasurement(currentProject->getMeasurement(index), (noDB || noSchema)))
 		markerWindow->show();
+	else
+		toggleUI();
 }
 
 /*void VAM::renameMeas()
@@ -1026,12 +1034,12 @@ void VAM::showAbout()
 	// Display about information
 	QMainWindow *window = new QMainWindow(this);
 	window->setWindowModality(Qt::NonModal);
-	window->setWindowTitle(tr("About VAM"));
+	window->setWindowTitle(tr("About VATEM3"));
 
 	QLabel *label = new QLabel(window);
 
-	label->setText("VATEM2 --- Video Assisted Measurement of Animals http://github.com/szemenyeim/VATEM2 \n"
-		"Copyright( C ) 2017  Marton Szemenyei\n"
+	label->setText("VATEM3 --- Video Assisted Measurement of Animals http://github.com/szemenyeim/VATEM2 \n"
+		"Copyright( C ) 2021  Marton Szemenyei\n"
 		"Produced by the University of Veterinary Sciences, Budapest (www.univet.hu/en)\n\n"
 		"This program is free software : you can redistribute it and / or modify\n"
 		"it under the terms of the GNU General Public License as published by\n"

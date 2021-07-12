@@ -37,7 +37,7 @@ void Measurement::save( QString fName )
 	QTextStream out( &file );
 
 	// Write header, filename, name, and simple variables
-	out << "VATEM2 measurement file\n" << "v2.0\n" << fileName << "\n" << name << "\n" << autoCorrect << "\n" << DB.getFileName() << "\n" << schema.getFileName() << "\n";
+	out << "VATEM3 measurement file\n" << "v2.0\n" << fileName << "\n" << name << "\n" << autoCorrect << "\n" << DB.getFileName() << "\n" << schema.getFileName() << "\n";
 
 	writeQStringList( IDs, out );
 

@@ -327,7 +327,7 @@ void Schema::save(QString fName)
 	QTextStream out(&file);
 
 	// Put out header and basic data
-	out << "VATEM2 schema file\n" << "v2.0\n" << fileName << "\n" << name << "\n";
+	out << "VATEM3 schema file\n" << "v2.0\n" << fileName << "\n" << name << "\n";
 	
 	for (int i = 0; i < VAMMaxVideos; i++)
 	{

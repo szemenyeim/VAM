@@ -26,7 +26,9 @@ QT_BEGIN_NAMESPACE
 class Ui_Dialog
 {
 public:
-    QWidget *horizontalLayoutWidget;
+    QWidget *verticalLayoutWidget;
+    QVBoxLayout *verticalLayout_3;
+    QLabel *label;
     QHBoxLayout *horizontalLayout;
     QVBoxLayout *verticalLayout_5;
     QHBoxLayout *horizontalLayout_7;
@@ -73,26 +75,36 @@ public:
         Dialog->resize(1040, 1080);
         Dialog->setMinimumSize(QSize(1040, 1080));
         Dialog->setMaximumSize(QSize(1040, 1080));
-        horizontalLayoutWidget = new QWidget(Dialog);
-        horizontalLayoutWidget->setObjectName(QString::fromUtf8("horizontalLayoutWidget"));
-        horizontalLayoutWidget->setGeometry(QRect(20, 20, 1001, 1041));
-        horizontalLayout = new QHBoxLayout(horizontalLayoutWidget);
+        verticalLayoutWidget = new QWidget(Dialog);
+        verticalLayoutWidget->setObjectName(QString::fromUtf8("verticalLayoutWidget"));
+        verticalLayoutWidget->setGeometry(QRect(0, 10, 1041, 1061));
+        verticalLayout_3 = new QVBoxLayout(verticalLayoutWidget);
+        verticalLayout_3->setObjectName(QString::fromUtf8("verticalLayout_3"));
+        verticalLayout_3->setContentsMargins(0, 0, 0, 0);
+        label = new QLabel(verticalLayoutWidget);
+        label->setObjectName(QString::fromUtf8("label"));
+        label->setMinimumSize(QSize(0, 30));
+        label->setMaximumSize(QSize(16777215, 30));
+        label->setAlignment(Qt::AlignCenter);
+
+        verticalLayout_3->addWidget(label);
+
+        horizontalLayout = new QHBoxLayout();
         horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
-        horizontalLayout->setContentsMargins(0, 0, 0, 0);
         verticalLayout_5 = new QVBoxLayout();
         verticalLayout_5->setObjectName(QString::fromUtf8("verticalLayout_5"));
         horizontalLayout_7 = new QHBoxLayout();
         horizontalLayout_7->setObjectName(QString::fromUtf8("horizontalLayout_7"));
         videoLayout1 = new QVBoxLayout();
         videoLayout1->setObjectName(QString::fromUtf8("videoLayout1"));
-        label1 = new QLabel(horizontalLayoutWidget);
+        label1 = new QLabel(verticalLayoutWidget);
         label1->setObjectName(QString::fromUtf8("label1"));
         label1->setMaximumSize(QSize(16777215, 20));
         label1->setAlignment(Qt::AlignCenter);
 
         videoLayout1->addWidget(label1);
 
-        image1 = new CustomLabel(horizontalLayoutWidget);
+        image1 = new CustomLabel(verticalLayoutWidget);
         image1->setObjectName(QString::fromUtf8("image1"));
         QSizePolicy sizePolicy(QSizePolicy::MinimumExpanding, QSizePolicy::MinimumExpanding);
         sizePolicy.setHorizontalStretch(0);
@@ -105,7 +117,7 @@ public:
 
         horizontalLayout_9 = new QHBoxLayout();
         horizontalLayout_9->setObjectName(QString::fromUtf8("horizontalLayout_9"));
-        stillList1 = new QListView(horizontalLayoutWidget);
+        stillList1 = new QListView(verticalLayoutWidget);
         stillList1->setObjectName(QString::fromUtf8("stillList1"));
 
         horizontalLayout_9->addWidget(stillList1);
@@ -123,14 +135,14 @@ public:
         horizontalLayout_10->setObjectName(QString::fromUtf8("horizontalLayout_10"));
         videoLayout3 = new QVBoxLayout();
         videoLayout3->setObjectName(QString::fromUtf8("videoLayout3"));
-        label3 = new QLabel(horizontalLayoutWidget);
+        label3 = new QLabel(verticalLayoutWidget);
         label3->setObjectName(QString::fromUtf8("label3"));
         label3->setMaximumSize(QSize(16777215, 20));
         label3->setAlignment(Qt::AlignCenter);
 
         videoLayout3->addWidget(label3);
 
-        image3 = new CustomLabel(horizontalLayoutWidget);
+        image3 = new CustomLabel(verticalLayoutWidget);
         image3->setObjectName(QString::fromUtf8("image3"));
         sizePolicy.setHeightForWidth(image3->sizePolicy().hasHeightForWidth());
         image3->setSizePolicy(sizePolicy);
@@ -140,7 +152,7 @@ public:
 
         horizontalLayout_11 = new QHBoxLayout();
         horizontalLayout_11->setObjectName(QString::fromUtf8("horizontalLayout_11"));
-        stillList3 = new QListView(horizontalLayoutWidget);
+        stillList3 = new QListView(verticalLayoutWidget);
         stillList3->setObjectName(QString::fromUtf8("stillList3"));
 
         horizontalLayout_11->addWidget(stillList3);
@@ -163,14 +175,14 @@ public:
         horizontalLayout_8->setObjectName(QString::fromUtf8("horizontalLayout_8"));
         videoLayout2 = new QVBoxLayout();
         videoLayout2->setObjectName(QString::fromUtf8("videoLayout2"));
-        label2 = new QLabel(horizontalLayoutWidget);
+        label2 = new QLabel(verticalLayoutWidget);
         label2->setObjectName(QString::fromUtf8("label2"));
         label2->setMaximumSize(QSize(16777215, 20));
         label2->setAlignment(Qt::AlignCenter);
 
         videoLayout2->addWidget(label2);
 
-        image2 = new CustomLabel(horizontalLayoutWidget);
+        image2 = new CustomLabel(verticalLayoutWidget);
         image2->setObjectName(QString::fromUtf8("image2"));
         sizePolicy.setHeightForWidth(image2->sizePolicy().hasHeightForWidth());
         image2->setSizePolicy(sizePolicy);
@@ -180,7 +192,7 @@ public:
 
         horizontalLayout_6 = new QHBoxLayout();
         horizontalLayout_6->setObjectName(QString::fromUtf8("horizontalLayout_6"));
-        stillList2 = new QListView(horizontalLayoutWidget);
+        stillList2 = new QListView(verticalLayoutWidget);
         stillList2->setObjectName(QString::fromUtf8("stillList2"));
 
         horizontalLayout_6->addWidget(stillList2);
@@ -198,14 +210,14 @@ public:
         horizontalLayout_12->setObjectName(QString::fromUtf8("horizontalLayout_12"));
         videoLayout4 = new QVBoxLayout();
         videoLayout4->setObjectName(QString::fromUtf8("videoLayout4"));
-        label4 = new QLabel(horizontalLayoutWidget);
+        label4 = new QLabel(verticalLayoutWidget);
         label4->setObjectName(QString::fromUtf8("label4"));
         label4->setMaximumSize(QSize(16777215, 20));
         label4->setAlignment(Qt::AlignCenter);
 
         videoLayout4->addWidget(label4);
 
-        image4 = new CustomLabel(horizontalLayoutWidget);
+        image4 = new CustomLabel(verticalLayoutWidget);
         image4->setObjectName(QString::fromUtf8("image4"));
         sizePolicy.setHeightForWidth(image4->sizePolicy().hasHeightForWidth());
         image4->setSizePolicy(sizePolicy);
@@ -215,7 +227,7 @@ public:
 
         horizontalLayout_13 = new QHBoxLayout();
         horizontalLayout_13->setObjectName(QString::fromUtf8("horizontalLayout_13"));
-        stillList4 = new QListView(horizontalLayoutWidget);
+        stillList4 = new QListView(verticalLayoutWidget);
         stillList4->setObjectName(QString::fromUtf8("stillList4"));
 
         horizontalLayout_13->addWidget(stillList4);
@@ -236,7 +248,7 @@ public:
         verticalLayout_2->setObjectName(QString::fromUtf8("verticalLayout_2"));
         verticalLayout = new QVBoxLayout();
         verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
-        label_7 = new QLabel(horizontalLayoutWidget);
+        label_7 = new QLabel(verticalLayoutWidget);
         label_7->setObjectName(QString::fromUtf8("label_7"));
         label_7->setMaximumSize(QSize(16777215, 20));
         label_7->setAlignment(Qt::AlignCenter);
@@ -245,7 +257,7 @@ public:
 
         horizontalLayout_2 = new QHBoxLayout();
         horizontalLayout_2->setObjectName(QString::fromUtf8("horizontalLayout_2"));
-        addElem = new QPushButton(horizontalLayoutWidget);
+        addElem = new QPushButton(verticalLayoutWidget);
         addElem->setObjectName(QString::fromUtf8("addElem"));
         addElem->setMaximumSize(QSize(75, 30));
         QIcon icon;
@@ -254,7 +266,7 @@ public:
 
         horizontalLayout_2->addWidget(addElem);
 
-        deleteElem = new QPushButton(horizontalLayoutWidget);
+        deleteElem = new QPushButton(verticalLayoutWidget);
         deleteElem->setObjectName(QString::fromUtf8("deleteElem"));
         deleteElem->setMaximumSize(QSize(75, 30));
         QIcon icon1;
@@ -268,7 +280,7 @@ public:
 
         horizontalLayout_4 = new QHBoxLayout();
         horizontalLayout_4->setObjectName(QString::fromUtf8("horizontalLayout_4"));
-        pairedList = new QListView(horizontalLayoutWidget);
+        pairedList = new QListView(verticalLayoutWidget);
         pairedList->setObjectName(QString::fromUtf8("pairedList"));
 
         horizontalLayout_4->addWidget(pairedList);
@@ -278,7 +290,7 @@ public:
 
         horizontalLayout_3 = new QHBoxLayout();
         horizontalLayout_3->setObjectName(QString::fromUtf8("horizontalLayout_3"));
-        saveBtn = new QPushButton(horizontalLayoutWidget);
+        saveBtn = new QPushButton(verticalLayoutWidget);
         saveBtn->setObjectName(QString::fromUtf8("saveBtn"));
         saveBtn->setMaximumSize(QSize(75, 30));
         QIcon icon2;
@@ -287,7 +299,7 @@ public:
 
         horizontalLayout_3->addWidget(saveBtn);
 
-        cancelBtn = new QPushButton(horizontalLayoutWidget);
+        cancelBtn = new QPushButton(verticalLayoutWidget);
         cancelBtn->setObjectName(QString::fromUtf8("cancelBtn"));
         cancelBtn->setMaximumSize(QSize(75, 30));
         QIcon icon3;
@@ -306,6 +318,9 @@ public:
         horizontalLayout->addLayout(verticalLayout_2);
 
 
+        verticalLayout_3->addLayout(horizontalLayout);
+
+
         retranslateUi(Dialog);
 
         QMetaObject::connectSlotsByName(Dialog);
@@ -313,7 +328,8 @@ public:
 
     void retranslateUi(QDialog *Dialog)
     {
-        Dialog->setWindowTitle(QCoreApplication::translate("Dialog", "Dialog", nullptr));
+        Dialog->setWindowTitle(QCoreApplication::translate("Dialog", "Pair Still Images", nullptr));
+        label->setText(QCoreApplication::translate("Dialog", "Select frames from the input lists and pair them using the New ID button.", nullptr));
         label1->setText(QCoreApplication::translate("Dialog", "Video 1", nullptr));
         image1->setProperty("text", QVariant(QString()));
         label3->setText(QCoreApplication::translate("Dialog", "Video 3", nullptr));

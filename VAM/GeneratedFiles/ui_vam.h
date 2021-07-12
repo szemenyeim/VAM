@@ -215,7 +215,7 @@ public:
         projNameLabel = new QLabel(centralWidget);
         projNameLabel->setObjectName(QString::fromUtf8("projNameLabel"));
         projNameLabel->setMaximumSize(QSize(16777215, 30));
-        projNameLabel->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop);
+        projNameLabel->setAlignment(Qt::AlignHCenter|Qt::AlignTop);
 
         horizontalLayout->addWidget(projNameLabel);
 
@@ -726,7 +726,7 @@ public:
 
     void retranslateUi(QMainWindow *VAMClass)
     {
-        VAMClass->setWindowTitle(QCoreApplication::translate("VAMClass", "VAM (Video Assisted Measurement)", nullptr));
+        VAMClass->setWindowTitle(QCoreApplication::translate("VAMClass", "VATEM3 (Video Assisted Measurement)", nullptr));
         actionOpen_Project->setText(QCoreApplication::translate("VAMClass", "Open Project", nullptr));
 #if QT_CONFIG(shortcut)
         actionOpen_Project->setShortcut(QCoreApplication::translate("VAMClass", "Ctrl+O", nullptr));

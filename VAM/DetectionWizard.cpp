@@ -24,7 +24,7 @@ DetectionWizard::DetectionWizard(Project* proj, StillDB *db, QWidget* parent) : 
 
 	setPixmap(QWizard::LogoPixmap, QPixmap(":/VAM/Icons/1462455465_centimeter.png"));
 
-	setWindowTitle(tr("Calibration"));
+	setWindowTitle(tr("Automatic Detection"));
 }
 
 
@@ -142,6 +142,7 @@ void VideoPage_2::getActiveArea()
 	selectAreaBtn->setEnabled(false);
 	detectBtn->setEnabled(false);
 
+	window->setWindowTitle(tr("Select detection area."));
 	window->setWindowModality(Qt::ApplicationModal);
 	window->show();
 }
@@ -369,7 +370,7 @@ void VideoPage_2::finished_slot()
 	dialog->setWindowModality(Qt::ApplicationModal);
 	dialog->showDialog(newImages, currentDB);
 
-	this->close();
+	wizard()->close();
 }
 
 void VideoPage_2::videoDone()

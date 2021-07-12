@@ -244,7 +244,7 @@ void Project::save(QString name)
 	QTextStream out(&file);
 
 	// Write header, name, format index, and project lib
-	out << "VATEM2 project file v2.0\n" << name << "\n" << formatIndex << "\n" << state << "\n" << projLib << "\n";
+	out << "VATEM3 project file v2.0\n" << name << "\n" << formatIndex << "\n" << state << "\n" << projLib << "\n";
 
 	// Get measurement, database and measurement file names
 	QStringList dbList, schemaList, measList;

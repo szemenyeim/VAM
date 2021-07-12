@@ -128,7 +128,7 @@ void StillDB::save(QString _name)
 	QTextStream out(&file);
 
 	// Write header, name, and parameters
-	out << "VATEM2 stilldb file\n" << "v4.0\n" << name << "\n" << globalEtalonSize << "\n";
+	out << "VATEM3 stilldb file\n" << "v4.0\n" << name << "\n" << globalEtalonSize << "\n";
 	
 	for (auto ind:globalEtalonIndex)
 	{

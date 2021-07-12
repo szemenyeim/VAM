@@ -2459,7 +2459,7 @@
         "DisplayName" = "8:Release"
         "IsDebugOnly" = "11:FALSE"
         "IsReleaseOnly" = "11:TRUE"
-        "OutputFilename" = "8:VATEM2.msi"
+        "OutputFilename" = "8:VATEM3.msi"
         "PackageFilesAs" = "3:2"
         "PackageFileSize" = "3:-2147483648"
         "CabType" = "3:1"
@@ -10525,7 +10525,7 @@
             }
             "{3C67513D-01DD-4637-8A68-80971EB9504F}:_5DA0519BFE1445EC97469054353D30BC"
             {
-            "DefaultLocation" = "8:[ProgramFilesFolder][Manufacturer]\\[ProductName]"
+            "DefaultLocation" = "8:[ProgramFiles64Folder][Manufacturer]\\[ProductName]"
             "Name" = "8:#1925"
             "AlwaysCreate" = "11:FALSE"
             "Condition" = "8:"
@@ -10891,7 +10891,7 @@
         "Product"
         {
         "Name" = "8:Microsoft Visual Studio"
-        "ProductName" = "8:VATEM2"
+        "ProductName" = "8:VATEM3"
         "ProductCode" = "8:{E5109F7C-9340-4D4A-8F45-FD7EFE8829A4}"
         "PackageCode" = "8:{81E86688-1B52-4038-8966-4B986461DE5B}"
         "UpgradeCode" = "8:{DB827A71-6413-4250-BA18-5FB9F54BE9A6}"
@@ -10901,12 +10901,12 @@
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
         "ProductVersion" = "8:1.0.0"
-        "Manufacturer" = "8:MMM"
+        "Manufacturer" = "8:UNIVET"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
         "Title" = "8:Setup"
         "Subject" = "8:"
-        "ARPCONTACT" = "8:MMM"
+        "ARPCONTACT" = "8:Márton Szemenyei"
         "Keywords" = "8:"
         "ARPCOMMENTS" = "8:"
         "ARPURLINFOABOUT" = "8:"
@@ -10914,7 +10914,7 @@
         "ARPIconIndex" = "3:0"
         "SearchPath" = "8:"
         "UseSystemSearchPath" = "11:TRUE"
-        "TargetPlatform" = "3:0"
+        "TargetPlatform" = "3:1"
         "PreBuildEvent" = "8:"
         "PostBuildEvent" = "8:"
         "RunPostBuildEvent" = "3:0"
@@ -11264,7 +11264,7 @@
                             "ContextData" = "8:"
                             "Attributes" = "3:0"
                             "Setting" = "3:2"
-                            "Value" = "8:The installer will guide you through the steps required to install VATEM 2 on your computer."
+                            "Value" = "8:The installer will guide you through the steps required to install VATEM 3 on your computer."
                             "DefaultValue" = "8:#1203"
                             "UsePlugInResources" = "11:TRUE"
                             }
@@ -11500,7 +11500,7 @@
                             "ContextData" = "8:"
                             "Attributes" = "3:0"
                             "Setting" = "3:2"
-                            "Value" = "8:The installer will guide you through the steps required to install VATEM 2 on your computer."
+                            "Value" = "8:The installer will guide you through the steps required to install VATEM 3 on your computer."
                             "DefaultValue" = "8:#1203"
                             "UsePlugInResources" = "11:TRUE"
                             }
@@ -11522,7 +11522,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_45A652F5E8A14F96B968EB26D6F448D2"
             {
-            "SourcePath" = "8:..\\x64\\Release\\VATEM2.exe"
+            "SourcePath" = "8:..\\x64\\Release\\VATEM3.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_5DA0519BFE1445EC97469054353D30BC"
