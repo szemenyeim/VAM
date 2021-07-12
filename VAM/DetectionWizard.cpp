@@ -5,6 +5,7 @@
 #pragma warning(pop)
 #include "DetectionWizard.h"
 #include <QVBoxLayout>
+#include <QScrollBar>
 #include <QStandardPaths>
 #include <QtConcurrent/QtConcurrent>
 #include <opencv2\opencv.hpp>
@@ -36,7 +37,7 @@ IntroPage_2::IntroPage_2(QWidget* parent)
 	topLabel = new QLabel(tr("This wizard will launch automatic cattle detection."));
 	topLabel->setWordWrap(true);
 
-	textLabel = new QLabel(tr("As a first step, you will have to select the area in the videos where the cattle should be detected. Then you can set some parameters regarding the sensitivity of the detection. Finally, you can launch the detection."));
+	textLabel = new QLabel(tr("As a first step, you will have to select the area in the videos where the cattle should be detected.\nThen you can set some parameters regarding the sensitivity of the detection. Finally, you can launch the detection."));
 	topLabel->setWordWrap(true);
 
 	QVBoxLayout* layout = new QVBoxLayout;
@@ -55,11 +56,11 @@ VideoPage_2::VideoPage_2(Project *proj, StillDB *db, QWidget* parent)
 	: currentProject(proj), currentDB(db), QWizardPage(parent)
 {
 	setTitle(tr("Detection"));
-	setSubTitle(tr("Please load the created video, then press calibrate."));
+	setSubTitle(tr("First select the detection areas on the videos, then press detect."));
 
-	videoLabel = new QLabel("");
-	calibLabel = new QLabel("");
-	delayLabel = new QLabel(tr("Motion is ignored for thisd many seconds after a detection."));
+	videoLabel = new QLabel("Progress");
+	calibLabel = new QLabel("Current video progress");
+	delayLabel = new QLabel(tr("Motion is ignored for this many seconds after a detection."));
 	motionLabel = new QLabel(tr("Motion detection sensitivity [0-1]."));
 	confidenceLabel = new QLabel(tr("AI detection confidence threshold [0-1]."));
 	areaLabel = new QLabel(tr("Cattle size threshold [0-1]."));
@@ -99,15 +100,22 @@ VideoPage_2::VideoPage_2(Project *proj, StillDB *db, QWidget* parent)
 	progressBar2->setMaximum(20000);
 	progressBar2->setValue(0);
 
+	logBox = new QTextEdit();
+	logBox->setReadOnly(true);
+
 	model = torch::jit::load("./model.pt");
 	model.eval();
+
+	canceled_flag = false;
+	finished = false;
 
 	connect(selectAreaBtn, &QPushButton::clicked, this, &VideoPage_2::getActiveArea);
 	connect(detectBtn, &QPushButton::clicked, this, &VideoPage_2::detect);
 	connect(this, &VideoPage_2::computed, this, &VideoPage_2::imageDone);
+	connect(this, &VideoPage_2::videoComputed, this, &VideoPage_2::videoDone);
+	connect(this, &VideoPage_2::logChanged, this, &VideoPage_2::display_log);
 
 	QVBoxLayout* layout = new QVBoxLayout;
-	layout->addWidget(videoLabel);
 	layout->addWidget(selectAreaBtn);
 	layout->addWidget(delayLabel);
 	layout->addWidget(delayBox);
@@ -118,9 +126,11 @@ VideoPage_2::VideoPage_2(Project *proj, StillDB *db, QWidget* parent)
 	layout->addWidget(areaLabel);
 	layout->addWidget(areaBox);
 	layout->addWidget(detectBtn);
+	layout->addWidget(videoLabel);
 	layout->addWidget(progressBar);
-	layout->addWidget(progressBar2);
 	layout->addWidget(calibLabel);
+	layout->addWidget(progressBar2);
+	layout->addWidget(logBox);
 	setLayout(layout);
 }
 
@@ -132,6 +142,7 @@ void VideoPage_2::getActiveArea()
 	selectAreaBtn->setEnabled(false);
 	detectBtn->setEnabled(false);
 
+	window->setWindowModality(Qt::ApplicationModal);
 	window->show();
 }
 
@@ -190,10 +201,16 @@ bool VideoPage_2::checkCattle(const cv::Mat& img)
 		{
 			auto bb = bbs[i];
 			auto conf = confs[i].item().toFloat();
+
+			float bbSize = ((bb[3] - bb[1]) * (bb[2] - bb[0])).item().toFloat() * imgSize;
+
+			logText += "Cattle check: Confidence: " + QString::number(conf) +
+				" with ratio: " + QString::number(bbSize) + "\n";
+			emit logChanged();
+
 			if (conf > confT)
 			{
-				float bbSize = ((bb[3] - bb[1]) * (bb[2] - bb[0])).item().toFloat();
-				if (bbSize*imgSize > areaT)
+				if (bbSize > areaT)
 				{
 					return true;
 				}
@@ -208,6 +225,14 @@ bool VideoPage_2::checkCattle(const cv::Mat& img)
 	}
 
 	return false;
+}
+
+void VideoPage_2::waitForFinished()
+{
+	while (!finished)
+	{
+		;
+	}
 }
 
 void VideoPage_2::detect()
@@ -231,8 +256,16 @@ void VideoPage_2::detect()
 	confT = confidenceBox->value();
 	areaT = areaBox->value();
 
+	logText = "Starting detection...\n";
+	logBox->setText(logText);
+
 	selectAreaBtn->setEnabled(false);
 	detectBtn->setEnabled(false);
+	wizard()->button(QWizard::BackButton)->setEnabled(false);
+	wizard()->button(QWizard::FinishButton)->setEnabled(false);
+	connect(wizard()->button(QWizard::CancelButton), &QPushButton::pressed, this, &VideoPage_2::canceled);
+	connect(wizard()->button(QWizard::FinishButton), &QPushButton::pressed, this, &VideoPage_2::finished_slot);
+
 
 	QtConcurrent::run(this, &VideoPage_2::detect_thread);
 
@@ -240,15 +273,12 @@ void VideoPage_2::detect()
 
 void VideoPage_2::detect_thread()
 {
-	calibLabel->setText("");
-
 	for (int i = 0; i < currentDB->getVideoCnt(); i++)
 	{
 		auto videos = currentDB->getVideos()[i];
 		bool sense = true;
 		int cntr = 0;
 		int lastFrame = 0;
-		float frameSize = 1.0 / (640.0 * 360.0);
 		newImages.push_back(QStringList());
 
 		for (auto video : videos)
@@ -268,15 +298,22 @@ void VideoPage_2::detect_thread()
 
 			while (true)
 			{
-				cv::Mat img;
-				bool ret = cap.read(img);
+				if (canceled_flag)
+				{
+					finished = true;
+					return;
+				}
+				cv::Mat orig;
+				bool ret = cap.read(orig);
 				if (!ret)
 				{
 					break;
 				}
 
-				cv::resize(img, img, cv::Size(640, 360));
+				cv::Mat img;
+				cv::resize(orig, img, cv::Size(640, 360));
 				img = img(RoIs[i]);
+				float frameSize = 1.0 / (img.cols * img.rows * 255.0);
 
 				cv::Mat fgmask;
 				fgbg->apply(img, fgmask);
@@ -289,12 +326,16 @@ void VideoPage_2::detect_thread()
 						sense = false;
 						lastFrame = cntr;
 
+						logText += "Motion detected in frame " + QString::number(cntr) +
+							" with ratio: " + QString::number(ratio) + "\n";
+						emit logChanged();
+
 						// check cattle
-						if (checkCattle(img))
+						if (checkCattle(orig))
 						{
 							QString baseDir = currentProject->getAbsProjLib() + "/Database/images/";
 							QString name = baseDir + QString::number(i) + "_" + QString::number(cntr) + ".jpg";
-							cv::imwrite(name.toStdString(), img);
+							cv::imwrite(name.toStdString(), orig);
 							newImages[i].push_back(name);
 
 						}
@@ -312,7 +353,20 @@ void VideoPage_2::detect_thread()
 		emit videoComputed();
 	}
 
+	wizard()->button(QWizard::FinishButton)->setEnabled(true);
+
+}
+
+void VideoPage_2::display_log()
+{
+	logBox->setText(logText);
+	logBox->verticalScrollBar()->setValue(logBox->verticalScrollBar()->maximum());
+}
+
+void VideoPage_2::finished_slot()
+{
 	AutoStillDialog* dialog = new AutoStillDialog();
+	dialog->setWindowModality(Qt::ApplicationModal);
 	dialog->showDialog(newImages, currentDB);
 
 	this->close();
@@ -351,6 +405,12 @@ void VideoPage_2::areaSelectFinished(std::vector<cv::Rect> _RoIs)
 	RoIs = _RoIs;
 	selectAreaBtn->setEnabled(true);
 	detectBtn->setEnabled(true);
+}
+
+void VideoPage_2::canceled()
+{
+	canceled_flag = true;
+	waitForFinished();
 }
 
 
@@ -392,6 +452,10 @@ AreaSelectWindow::AreaSelectWindow(StillDB* db, QWidget* parent)
 	layout->addWidget(doneBtn);
 
 	setLayout(layout);
+
+	connect(doneBtn, &QPushButton::pressed, this, &AreaSelectWindow::donePushed);
+
+	setWindowFlags(windowFlags() | Qt::WindowStaysOnTopHint);
 
 	for (int i = 0; i < db->getVideoCnt(); i++)
 	{

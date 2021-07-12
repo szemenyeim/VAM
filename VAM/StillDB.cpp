@@ -71,6 +71,18 @@ void StillDB::addStill(QString still, QString ID, float stillPos, VAMImageIndex 
 	exceptionList.push_back(still);
 }
 
+void StillDB::renameStillImage(int stillIdx, QString still, float stillPos, VAMImageIndex imageIdx)
+{
+	// Convert filename
+	if (VAMFileAgent::isInProjLib(still))
+		VAMFileAgent::abs2rel(still);
+
+	// Determine variables
+	QStringList* stillList = &stillNames[imageIdx];
+	(*stillList)[stillIdx] = still;
+	framePos[stillIdx][imageIdx] = stillPos;
+}
+
 void StillDB::removeVideo(QString video, VAMImageIndex imageIdx)
 {
 	QStringList *list = &videos[imageIdx];

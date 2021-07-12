@@ -6,6 +6,7 @@
 #include <QSpinBox>
 #include <QDoubleSpinBox>
 #include <QProgressbar>
+#include <QTextEdit>
 #include "Utility.h"
 #include "StillDB.h"
 #include "Project.h"
@@ -51,6 +52,7 @@ public:
 signals:
 	void computed();
 	void videoComputed();
+	void logChanged();
 
 private:
 
@@ -73,6 +75,10 @@ private:
 	QLabel* areaLabel;
 	QDoubleSpinBox* areaBox;
 
+	QTextEdit* logBox;
+
+	QString logText;
+
 	VAMImageIndex idx;
 	QString projLib;
 
@@ -86,7 +92,11 @@ private:
 	float motionT;
 	float areaT;
 
+	bool canceled_flag;
+	bool finished;
+
 	bool checkCattle(const cv::Mat& img);
+	void waitForFinished();
 
 private slots:
 	void getActiveArea();
@@ -95,6 +105,9 @@ private slots:
 	void imageDone();
 	void videoDone();
 	void areaSelectFinished(std::vector<cv::Rect> _RoIs);
+	void canceled();
+	void finished_slot();
+	void display_log();
 };
 
 class AreaSelectWindow : public QDialog

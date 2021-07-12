@@ -47,19 +47,35 @@ void AutoStillDialog::addStill()
 	std::vector< int > indices;
 	std::vector< QString > stillNames;
 	QString ENAR = "";
+	bool complete = true;
+	int firstGoodIdx = 0;
 
 	for (int i = 0; i < videoCnt; i++)
 	{
 		int idx = lists[i]->currentIndex().row();
 		if (idx < 0)
 		{
-			QMessageBox::warning(this, QGuiApplication::applicationDisplayName(),
-				tr("Please select a still from all videos!"));
-			return;
+			indices.push_back(-1);
+			stillNames.push_back("#NONE");
+			complete = false;
+			if (firstGoodIdx == i)
+			{
+				firstGoodIdx++;
+			}
+			continue;
 		}
 
 		indices.push_back(idx);
 		stillNames.push_back(stillLists[i][idx]);
+	}
+
+	if (firstGoodIdx == videoCnt)
+	{
+		indices.clear();
+		stillNames.clear();
+		QMessageBox::warning(this, QGuiApplication::applicationDisplayName(),
+			tr("Please select at least one image!"));
+		return;
 	}
 
 	for (int j = 0; j < videoCnt; j++)
@@ -75,10 +91,14 @@ void AutoStillDialog::addStill()
 		foundCode ? tr("No QR/Barcode found") : tr("Found QR/Barcode:"),
 		tr("Please specify a name!"),
 		tr("An animal with this ID already exists!"),
-		foundCode ? ENAR = stillNames[0].split("/").back().split(".")[0] : ENAR,
+		foundCode ? ENAR = stillNames[firstGoodIdx].split("/").back().split(".")[0] : ENAR,
 		func))
 	{
 		stillIndices.push_back(indices);
+		if (!complete)
+		{
+			ENAR += tr(" - INCOMPLETE");
+		}
 		outENAR.push_back(ENAR);
 		outModel->setStringList(outENAR);
 		ui.pairedList->update();
@@ -87,7 +107,9 @@ void AutoStillDialog::addStill()
 		{
 			outStillList[i].push_back(stillNames[i]);
 			lists[i]->clearSelection();
-			lists[i]->setRowHidden(indices[i], true);
+			lists[i]->setCurrentIndex(stillListModels[i]->index(-1));
+			if (indices[i] >= 0)
+				lists[i]->setRowHidden(indices[i], true);
 		}
 	}
 }
@@ -106,7 +128,8 @@ void AutoStillDialog::removeStill()
 
 	for (int i = 0; i < videoCnt; i++)
 	{
-		lists[i]->setRowHidden(indices[i], false);
+		if (indices[i] >= 0)
+			lists[i]->setRowHidden(indices[i], false);
 		outStillList[i].erase(outStillList[i].begin() + idx);
 	}
 	stillIndices.erase(stillIndices.begin() + idx);
@@ -119,11 +142,11 @@ void AutoStillDialog::saveBtn()
 {
 	// Add still
 
-	for (int i = 0; i < outENAR.size(); i++)
+	for (int i = 0; i < videoCnt; i++)
 	{
-		for (int j = 0; j < videoCnt; j++)
+		for (int j = 0; j < outENAR.size(); j++)
 		{
-			currentDB->addStill(outStillList[i][j], outENAR[i], 0, toIdx(j), true);
+			currentDB->addStill(outStillList[i][j], outENAR[j], 0, toIdx(i), true);
 		}
 	}
 	this->close();

@@ -117,6 +117,8 @@ void VideoWindow::resetWindow()
 	sliderDrag = true;
 	frameLock = false;
 	videoOrderVertical = false;
+	editing = false;
+	stillIdx = -1;
 	paused.resize(VAMMaxVideos, false);
 	autoPlayEnabled.resize(VAMMaxVideos, true);
 	dbName = "";
@@ -200,6 +202,7 @@ void VideoWindow::resetWindow()
 	connect(ui.actionSave, &QAction::triggered, this, &VideoWindow::doneC);
 	connect(ui.actionSave_as, &QAction::triggered, this, &VideoWindow::saveAsC);
 	connect(ui.actionDone, &QAction::triggered, this, &VideoWindow::close);
+	connect(ui.actionComplete, &QAction::triggered, this, &VideoWindow::completeStill);
 
 	for (int i = 0; i < VAMMaxVideos; i++)
 	{
@@ -486,16 +489,18 @@ void VideoWindow::stillSaveClicked()
 
 	filePaths.clear();
 	filePaths.resize(videoCnt, "");
-
+	missing = std::vector< bool >(videoCnt, true);
+	
+	editing = false;
 	for (int i = 0; i < videoCnt; i++)
 	{
-
 		VAMImageIndex idx = swapIndices(toIdx(i));
 		// Set file path of the still
 		filePaths[i] = currentProject->getAbsProjLib() + "/Database/images/temp_" + QString::number(idx) + ".jpg";
 		players[idx]->video()->takeSnapshot(filePaths[i]);
 
 	}
+	
 }
 
 void VideoWindow::imageSaved(const QString &filePath, VAMImageIndex idx)
@@ -509,7 +514,9 @@ void VideoWindow::imageSaved(const QString &filePath, VAMImageIndex idx)
 	{
 		if (filePaths[i].isEmpty())
 		{
-			return;
+			if(missing[i])
+				return;
+
 		}
 	}
 
@@ -525,17 +532,26 @@ void VideoWindow::imageSaved(const QString &filePath, VAMImageIndex idx)
 
 	QString ID;
 
-	for (int i = 0; i < videoCnt; i++)
+	if (editing)
 	{
-		progress.setValue(i);
-
-		// Read QR
-		ID = readQRBarCode(filePaths[i]);
-
-		// If no QR on the side image, try the upper
-		if (ID.isEmpty())
+		ID = currentDB.getIDs(true)[stillIdx];
+		ID = ID.mid(0, ID.indexOf("_-_"));
+	}
+	else
+	{
+		for (int i = 0; i < videoCnt; i++)
 		{
-			break;
+			progress.setValue(i);
+
+			// Read QR
+			if (missing[i])
+				ID = readQRBarCode(filePaths[i]);
+
+			// If no QR on the side image, try the upper
+			if (ID.isEmpty())
+			{
+				break;
+			}
 		}
 	}
 
@@ -557,9 +573,12 @@ void VideoWindow::imageSaved(const QString &filePath, VAMImageIndex idx)
 		// Delete stills
 		for (int i = 0; i < videoCnt; i++)
 		{
-			QString path = filePaths[i];
-			VAMFileAgent::openFile(path);
-			QFile::remove(filePaths[i]);
+			if (missing[i])
+			{
+				QString path = filePaths[i];
+				VAMFileAgent::openFile(path);
+				QFile::remove(filePaths[i]);
+			}
 
 			// Reset paths
 			filePaths.clear();
@@ -577,11 +596,20 @@ void VideoWindow::imageSaved(const QString &filePath, VAMImageIndex idx)
 	{
 		VAMImageIndex idx = swapIndices(toIdx(i));
 		// Set file path of the still
-		QFile img(filePaths[i]);
-		filePaths[i] = currentProject->getAbsProjLib() + "/Database/images/" + ID + "_" + QString::number(idx) + ".jpg";
-		img.rename(filePaths[i]);
-		VAMFileAgent::abs2rel(filePaths[i]);
-		currentDB.addStill(filePaths[i], ID, players[i]->position(), toIdx(i));
+		if (missing[i])
+		{
+			QFile img(filePaths[i]);
+			filePaths[i] = currentProject->getAbsProjLib() + "/Database/images/" + ID + "_" + QString::number(idx) + ".jpg";
+			img.rename(filePaths[i]);
+			VAMFileAgent::abs2rel(filePaths[i]);
+			if (editing)
+			{
+				currentDB.renameStill(stillIdx, ID);
+				currentDB.renameStillImage(stillIdx, filePaths[i], players[i]->position(), toIdx(i));
+			}
+			else
+				currentDB.addStill(filePaths[i], ID, players[i]->position(), toIdx(i));
+		}
 
 		// Set etalons
 		if (etalon)
@@ -889,6 +917,48 @@ void VideoWindow::autoDetect()
 {
 	DetectionWizard wizard(currentProject, &currentDB, this);
 	wizard.exec();
+}
+
+void VideoWindow::completeStill()
+{
+	VAMLogger::log("Still complete");
+
+	QString filePath(currentProject->getAbsProjLib());
+
+	filePaths.clear();
+	filePaths.resize(videoCnt, "");
+	missing = std::vector< bool >(videoCnt, false);
+
+	QModelIndexList indexes = ui.stillImageList->selectionModel()->selectedIndexes();
+
+	if (indexes.isEmpty())
+	{
+		QMessageBox::warning(this, QGuiApplication::applicationDisplayName(),
+			tr("Please select an incomplete entry!"));
+	}
+	else
+	{
+		stillIdx = indexes[0].row();
+		editing = true;
+		bool wasComplete = true;
+		for (int i = 0; i < videoCnt; i++)
+		{
+			VAMImageIndex idx = swapIndices(toIdx(i));
+			if (currentDB.getStill(stillIdx, toIdx(i)) == "#NONE")
+			{
+				missing[i] = true;
+				wasComplete = false;
+				// Set file path of the still
+				filePaths[i] = currentProject->getAbsProjLib() + "/Database/images/temp_" + QString::number(idx) + ".jpg";
+				players[idx]->video()->takeSnapshot(filePaths[i]);
+			}
+		}
+		if (wasComplete)
+		{
+			QMessageBox::warning(this, QGuiApplication::applicationDisplayName(),
+				tr("You are trying to add stills to a complete entry. Please select an incomplete entry, or press ESC to add a new entry!"));
+		}
+	}
 }
 
 /*void VideoWindow::changeVidC()

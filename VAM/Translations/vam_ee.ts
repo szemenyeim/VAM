@@ -4,22 +4,22 @@
 <context>
     <name>AreaSelectWindow</name>
     <message>
-        <location filename="../DetectionWizard.cpp" line="373"/>
+        <location filename="../DetectionWizard.cpp" line="433"/>
         <source>Please draw the Region of Interest (RoI) on all images.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../DetectionWizard.cpp" line="383"/>
+        <location filename="../DetectionWizard.cpp" line="443"/>
         <source>Done</source>
         <translation type="unfinished">Valmis</translation>
     </message>
     <message>
-        <location filename="../DetectionWizard.cpp" line="427"/>
+        <location filename="../DetectionWizard.cpp" line="491"/>
         <source>RoIs missing</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../DetectionWizard.cpp" line="427"/>
+        <location filename="../DetectionWizard.cpp" line="491"/>
         <source>Please select the RoI on all images!</source>
         <translation type="unfinished"></translation>
     </message>
@@ -27,42 +27,47 @@
 <context>
     <name>AutoStillDialog</name>
     <message>
-        <location filename="../AutoStillDialog.cpp" line="57"/>
-        <source>Please select a still from all videos!</source>
+        <location filename="../AutoStillDialog.cpp" line="77"/>
+        <source>Please select at least one image!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../AutoStillDialog.cpp" line="74"/>
+        <location filename="../AutoStillDialog.cpp" line="90"/>
         <source>Specify ID</source>
         <translation type="unfinished">Määra ID</translation>
     </message>
     <message>
-        <location filename="../AutoStillDialog.cpp" line="75"/>
+        <location filename="../AutoStillDialog.cpp" line="91"/>
         <source>No QR/Barcode found</source>
         <translation type="unfinished">QR/triipkoodi ei leitud</translation>
     </message>
     <message>
-        <location filename="../AutoStillDialog.cpp" line="75"/>
+        <location filename="../AutoStillDialog.cpp" line="91"/>
         <source>Found QR/Barcode:</source>
         <translation type="unfinished">QR/triipkood:</translation>
     </message>
     <message>
-        <location filename="../AutoStillDialog.cpp" line="76"/>
+        <location filename="../AutoStillDialog.cpp" line="92"/>
         <source>Please specify a name!</source>
         <translation type="unfinished">Ärge jätke nimevälja tühjaks!</translation>
     </message>
     <message>
-        <location filename="../AutoStillDialog.cpp" line="77"/>
+        <location filename="../AutoStillDialog.cpp" line="93"/>
         <source>An animal with this ID already exists!</source>
         <translation type="unfinished">Selle ID-ga loom on juba olemas!</translation>
     </message>
     <message>
-        <location filename="../AutoStillDialog.cpp" line="101"/>
+        <location filename="../AutoStillDialog.cpp" line="100"/>
+        <source> - INCOMPLETE</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../AutoStillDialog.cpp" line="123"/>
         <source>Please select an entry from the list!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../AutoStillDialog.cpp" line="146"/>
+        <location filename="../AutoStillDialog.cpp" line="169"/>
         <source>Cannot load</source>
         <translation type="unfinished">Laadimine luhtus</translation>
     </message>
@@ -78,7 +83,7 @@
 <context>
     <name>DetectionWizard</name>
     <message>
-        <location filename="../DetectionWizard.cpp" line="26"/>
+        <location filename="../DetectionWizard.cpp" line="27"/>
         <source>Calibration</source>
         <translation type="unfinished"></translation>
     </message>
@@ -187,18 +192,19 @@
 <context>
     <name>IntroPage_2</name>
     <message>
-        <location filename="../DetectionWizard.cpp" line="33"/>
+        <location filename="../DetectionWizard.cpp" line="34"/>
         <source>Introduction</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../DetectionWizard.cpp" line="36"/>
+        <location filename="../DetectionWizard.cpp" line="37"/>
         <source>This wizard will launch automatic cattle detection.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../DetectionWizard.cpp" line="39"/>
-        <source>As a first step, you will have to select the area in the videos where the cattle should be detected. Then you can set some parameters regarding the sensitivity of the detection. Finally, you can launch the detection.</source>
+        <location filename="../DetectionWizard.cpp" line="40"/>
+        <source>As a first step, you will have to select the area in the videos where the cattle should be detected.
+Then you can set some parameters regarding the sensitivity of the detection. Finally, you can launch the detection.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -2065,62 +2071,62 @@
 <context>
     <name>VideoPage_2</name>
     <message>
-        <location filename="../DetectionWizard.cpp" line="57"/>
+        <location filename="../DetectionWizard.cpp" line="58"/>
         <source>Detection</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../DetectionWizard.cpp" line="58"/>
-        <source>Please load the created video, then press calibrate.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../DetectionWizard.cpp" line="62"/>
-        <source>Motion is ignored for thisd many seconds after a detection.</source>
+        <location filename="../DetectionWizard.cpp" line="59"/>
+        <source>First select the detection areas on the videos, then press detect.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../DetectionWizard.cpp" line="63"/>
-        <source>Motion detection sensitivity [0-1].</source>
+        <source>Motion is ignored for this many seconds after a detection.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../DetectionWizard.cpp" line="64"/>
-        <source>AI detection confidence threshold [0-1].</source>
+        <source>Motion detection sensitivity [0-1].</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../DetectionWizard.cpp" line="65"/>
+        <source>AI detection confidence threshold [0-1].</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../DetectionWizard.cpp" line="66"/>
         <source>Cattle size threshold [0-1].</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../DetectionWizard.cpp" line="67"/>
+        <location filename="../DetectionWizard.cpp" line="68"/>
         <source>Select Detection Area</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../DetectionWizard.cpp" line="68"/>
+        <location filename="../DetectionWizard.cpp" line="69"/>
         <source>Detect</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../DetectionWizard.cpp" line="207"/>
+        <location filename="../DetectionWizard.cpp" line="224"/>
         <source>Run failed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../DetectionWizard.cpp" line="207"/>
+        <location filename="../DetectionWizard.cpp" line="224"/>
         <source>The neural network run has failed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../DetectionWizard.cpp" line="260"/>
+        <location filename="../DetectionWizard.cpp" line="290"/>
         <source>Cannot open video file!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../DetectionWizard.cpp" line="260"/>
+        <location filename="../DetectionWizard.cpp" line="290"/>
         <source>Please make sure it is not corrupt or deleted!</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2167,59 +2173,74 @@
         <translation>Tööriistad_2</translation>
     </message>
     <message>
-        <location filename="../video.ui" line="720"/>
+        <location filename="../video.ui" line="721"/>
         <source>Save</source>
         <translation>Salvesta</translation>
     </message>
     <message>
-        <location filename="../video.ui" line="726"/>
+        <location filename="../video.ui" line="727"/>
         <source>Ctrl+S</source>
         <translation>Ctrl+S</translation>
     </message>
     <message>
-        <location filename="../video.ui" line="735"/>
+        <location filename="../video.ui" line="736"/>
         <source>Save as...</source>
         <translation>Salvesta nimega...</translation>
     </message>
     <message>
-        <location filename="../video.ui" line="741"/>
+        <location filename="../video.ui" line="742"/>
         <source>Ctrl+Shift+S</source>
         <translation>Ctrl+Shift+S</translation>
     </message>
     <message>
-        <location filename="../video.ui" line="753"/>
+        <location filename="../video.ui" line="754"/>
         <source>Save still pictures</source>
         <translation>Salvesta pildid</translation>
     </message>
     <message>
-        <location filename="../video.ui" line="756"/>
+        <location filename="../video.ui" line="757"/>
         <source>Ctrl+G</source>
         <translation>Ctrl+G</translation>
     </message>
     <message>
-        <location filename="../video.ui" line="765"/>
+        <location filename="../video.ui" line="766"/>
         <source>Open still</source>
         <translation>Ava pildifail</translation>
     </message>
     <message>
-        <location filename="../video.ui" line="768"/>
+        <location filename="../video.ui" line="769"/>
         <source>Open still pictures</source>
         <translation>Olemasoleva pildi avamine</translation>
     </message>
     <message>
-        <location filename="../video.ui" line="771"/>
+        <location filename="../video.ui" line="772"/>
         <source>Ctrl+O</source>
         <translation>Ctrl+O</translation>
     </message>
     <message>
-        <location filename="../video.ui" line="859"/>
+        <location filename="../video.ui" line="860"/>
         <source>Automatic Detection</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../video.ui" line="862"/>
+        <location filename="../video.ui" line="863"/>
         <source>Launch automatic cattle detection</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../video.ui" line="872"/>
+        <source>Complete Entry</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../video.ui" line="875"/>
+        <source>Add missing still to incomplete entry</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../video.ui" line="878"/>
+        <source>Ctrl+C</source>
+        <translation type="unfinished">Ctrl+C</translation>
     </message>
     <message>
         <source>Rename still</source>
@@ -2230,57 +2251,57 @@
         <translation type="vanished">Valitud pildi ümbernimetamine</translation>
     </message>
     <message>
-        <location filename="../video.ui" line="786"/>
+        <location filename="../video.ui" line="787"/>
         <source>Ctrl+R</source>
         <translation>Ctrl+R</translation>
     </message>
     <message>
-        <location filename="../video.ui" line="795"/>
+        <location filename="../video.ui" line="796"/>
         <source>Delete still</source>
         <translation>Kustuta pilt</translation>
     </message>
     <message>
-        <location filename="../video.ui" line="798"/>
+        <location filename="../video.ui" line="799"/>
         <source>Remove the selected still</source>
         <translation>Valitud pildi kustutamine</translation>
     </message>
     <message>
-        <location filename="../video.ui" line="801"/>
+        <location filename="../video.ui" line="802"/>
         <source>Ctrl+X</source>
         <translation>Ctrl+X</translation>
     </message>
     <message>
-        <location filename="../video.ui" line="816"/>
+        <location filename="../video.ui" line="817"/>
         <source>Set the selected image as the global etalon</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../video.ui" line="819"/>
+        <location filename="../video.ui" line="820"/>
         <source>Ctrl+E</source>
         <translation>Ctrl+E</translation>
     </message>
     <message>
-        <location filename="../video.ui" line="828"/>
+        <location filename="../video.ui" line="829"/>
         <source>Done</source>
         <translation>Valmis</translation>
     </message>
     <message>
-        <location filename="../video.ui" line="831"/>
+        <location filename="../video.ui" line="832"/>
         <source>Return to the main window</source>
         <translation>Mine tagasi peaaknasse</translation>
     </message>
     <message>
-        <location filename="../video.ui" line="847"/>
+        <location filename="../video.ui" line="848"/>
         <source>Video Order</source>
         <translation>Videote järjestus</translation>
     </message>
     <message>
-        <location filename="../video.ui" line="850"/>
+        <location filename="../video.ui" line="851"/>
         <source>Check to order videos vertically first</source>
         <translation>Lülitage sisse, et videod oleksid üksteise all</translation>
     </message>
     <message>
-        <location filename="../video.ui" line="750"/>
+        <location filename="../video.ui" line="751"/>
         <source>Save stills</source>
         <translation>Salvesta pildid</translation>
     </message>
@@ -2290,18 +2311,18 @@
         <translation>Salvestatud pildid</translation>
     </message>
     <message>
-        <location filename="../video.ui" line="780"/>
+        <location filename="../video.ui" line="781"/>
         <source>Edit still</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../video.ui" line="783"/>
+        <location filename="../video.ui" line="784"/>
         <source>Edit the selected still</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../video.ui" line="813"/>
-        <location filename="../VideoWindow.cpp" line="157"/>
+        <location filename="../video.ui" line="814"/>
+        <location filename="../VideoWindow.cpp" line="159"/>
         <source>Etalon</source>
         <translation>Etalon</translation>
     </message>
@@ -2322,150 +2343,160 @@
         <translation>Järgmine video</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="767"/>
+        <location filename="../VideoWindow.cpp" line="795"/>
         <source>Rename Still</source>
         <translation>Rename Still</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="551"/>
+        <location filename="../VideoWindow.cpp" line="567"/>
         <source>No QR/Barcode found</source>
         <translation>QR/triipkoodi ei leitud</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="551"/>
+        <location filename="../VideoWindow.cpp" line="567"/>
         <source>Found QR/Barcode:</source>
         <translation>QR/triipkood:</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="550"/>
+        <location filename="../VideoWindow.cpp" line="566"/>
         <source>Specify ID</source>
         <translation>Määra ID</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="161"/>
+        <location filename="../VideoWindow.cpp" line="163"/>
         <source>Etalon Size (meters):</source>
         <translation>Etaloni suurus (meetrit):</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="147"/>
+        <location filename="../VideoWindow.cpp" line="149"/>
         <source>Lock Videos</source>
         <translation>Videote ühendamine</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="150"/>
+        <location filename="../VideoWindow.cpp" line="152"/>
         <source>Toggle deinterlace mode.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="152"/>
+        <location filename="../VideoWindow.cpp" line="154"/>
         <source>Deinterlace</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="155"/>
+        <location filename="../VideoWindow.cpp" line="157"/>
         <source>Toggle Etalon.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="553"/>
+        <location filename="../VideoWindow.cpp" line="937"/>
+        <source>Please select an incomplete entry!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../VideoWindow.cpp" line="959"/>
+        <source>You are trying to add stills to a complete entry. Please select an incomplete entry, or press ESC to add a new entry!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../VideoWindow.cpp" line="569"/>
         <source>An animal with this ID already exists!</source>
         <translation>Selle ID-ga loom on juba olemas!</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="653"/>
+        <location filename="../VideoWindow.cpp" line="681"/>
         <source>Please select a still to delete!</source>
         <translation>Valige kustutatav pilt!</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="678"/>
+        <location filename="../VideoWindow.cpp" line="706"/>
         <source>Please select a still!</source>
         <translation>Valige pilt!</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="699"/>
+        <location filename="../VideoWindow.cpp" line="727"/>
         <source>The selected still does not contain an etalon!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="715"/>
+        <location filename="../VideoWindow.cpp" line="743"/>
         <source>Image Files (*.bmp *.dds *.gif *.ico *.jpg *.jpeg *.tga *.tif *.tiff *.pbm *.pgm *.png *.ppm *.xbm *.xpm)</source>
         <translation>Pildifailid (*.bmp *.dds *.gif *.ico *.jpg *.jpeg *.tga *.tif *.tiff *.pbm *.pgm *.png *.ppm *.xbm *.xpm)</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="736"/>
+        <location filename="../VideoWindow.cpp" line="764"/>
         <source>Please select an equal number of side and upper stills to open!</source>
         <translation>Valige sama palju külgmisi ja ülemisi pilte!</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="759"/>
+        <location filename="../VideoWindow.cpp" line="787"/>
         <source>Please select a still to rename!</source>
         <translation>Valige pilt, mida soovite ümber nimetada!</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="767"/>
+        <location filename="../VideoWindow.cpp" line="795"/>
         <source>Enter ID:</source>
         <translation>Sisesta ID:</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="824"/>
+        <location filename="../VideoWindow.cpp" line="852"/>
         <source>There is no global etalon</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="825"/>
+        <location filename="../VideoWindow.cpp" line="853"/>
         <source>Do you want to save the database anyway?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="552"/>
-        <location filename="../VideoWindow.cpp" line="767"/>
-        <location filename="../VideoWindow.cpp" line="857"/>
+        <location filename="../VideoWindow.cpp" line="568"/>
+        <location filename="../VideoWindow.cpp" line="795"/>
+        <location filename="../VideoWindow.cpp" line="885"/>
         <source>Please specify a name!</source>
         <translation>Ärge jätke nimevälja tühjaks!</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="145"/>
+        <location filename="../VideoWindow.cpp" line="147"/>
         <source>Use this to lock the videos together. (Pausing, resuming, etc. one of the videos will affect all of them)</source>
         <translation>Videote ühendamine. (Kui peatate, käivitate uuesti jne ühe video, siis mõjub see ka teistele.)</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="715"/>
+        <location filename="../VideoWindow.cpp" line="743"/>
         <source>Open Image Files #</source>
         <translation>Pildifailide avamine #</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="767"/>
+        <location filename="../VideoWindow.cpp" line="795"/>
         <source>A still with this name already exists!</source>
         <translation>Selle nimega pilt on juba olemas!</translation>
     </message>
     <message>
-        <location filename="../video.ui" line="723"/>
-        <location filename="../video.ui" line="738"/>
+        <location filename="../video.ui" line="724"/>
+        <location filename="../video.ui" line="739"/>
         <source>Save Database</source>
         <translation>Salvesta andmebaas</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="857"/>
+        <location filename="../VideoWindow.cpp" line="885"/>
         <source>New Video database</source>
         <translation>Uus videoandmebaas</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="857"/>
+        <location filename="../VideoWindow.cpp" line="885"/>
         <source>Enter Name:</source>
         <translation>Sisesta nimi:</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="857"/>
+        <location filename="../VideoWindow.cpp" line="885"/>
         <source>A database with this name already exists!</source>
         <translation>Selle nimega andmebaas on juba olemas!</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="1155"/>
+        <location filename="../VideoWindow.cpp" line="1225"/>
         <source>The current video database has been modified.</source>
         <translation>Aktuaalne videoandmebaas on muudetud.</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="1156"/>
+        <location filename="../VideoWindow.cpp" line="1226"/>
         <source>Do you want to save your changes?</source>
         <translation>Kas soovite muudatused salvestada?</translation>
     </message>

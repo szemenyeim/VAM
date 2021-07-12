@@ -121,6 +121,11 @@ private:
 	// Current video order
 	bool videoOrderVertical;
 
+	// Helper variables for completing stills
+	bool editing;
+	std::vector<bool> missing;
+	int stillIdx;
+
 	// Paused states of the videos
 	std::vector<bool> paused;
 
@@ -194,6 +199,7 @@ private:
 	bool doneC();
 	void saveAsC();
 	void autoDetect();
+	void completeStill();
 	//void changeVidC();
 
 	// Slots for video controls

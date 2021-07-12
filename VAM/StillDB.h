@@ -32,6 +32,9 @@ public:
 
 	// Add still image to the database
     void addStill( QString still, QString ID, float stillPos, VAMImageIndex imageIdx, bool fromOpen = false );
+	
+	// Rename still image the database
+	void renameStillImage(int stillIdx, QString still, float stillPos, VAMImageIndex imageIdx);
 
 	// Deletes still image
 	void deleteStill( int index );
@@ -83,6 +86,20 @@ public:
 
 	// Get vector containing the indices of etalon images
 	inline const std::vector< bool > &getEtalons() const { return hasEtalon; }
+
+	// Check for missing images
+	inline bool isComplete()
+	{
+		for (int vidIdx = 0; vidIdx < videoCnt; vidIdx++)
+		{
+			for (auto img : stillNames[vidIdx])
+			{
+				if (img == "#NONE")
+					return false;
+			}
+		}
+		return true;
+	}
 
 	// Get full list of still image IDs
 	inline QStringList getIDs(bool justOnce = false)

@@ -39,6 +39,7 @@ public:
     QAction *actionDone;
     QAction *actionVideo_Order;
     QAction *actionDetect;
+    QAction *actionComplete;
     QWidget *centralwidget;
     QHBoxLayout *horizontalLayout;
     QHBoxLayout *horizontalLayout_35;
@@ -157,6 +158,11 @@ public:
         QIcon icon9;
         icon9.addFile(QString::fromUtf8(":/VAM/Icons/1462036191_Play.png"), QSize(), QIcon::Normal, QIcon::Off);
         actionDetect->setIcon(icon9);
+        actionComplete = new QAction(VideoWindow);
+        actionComplete->setObjectName(QString::fromUtf8("actionComplete"));
+        QIcon icon10;
+        icon10.addFile(QString::fromUtf8(":/VAM/Icons/1462036180_list-add.png"), QSize(), QIcon::Normal, QIcon::Off);
+        actionComplete->setIcon(icon10);
         centralwidget = new QWidget(VideoWindow);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         horizontalLayout = new QHBoxLayout(centralwidget);
@@ -187,18 +193,18 @@ public:
         prevVid1 = new QPushButton(centralwidget);
         prevVid1->setObjectName(QString::fromUtf8("prevVid1"));
         prevVid1->setMaximumSize(QSize(30, 25));
-        QIcon icon10;
-        icon10.addFile(QString::fromUtf8(":/VAM/Icons/1462036188_Fast-Backward.png"), QSize(), QIcon::Normal, QIcon::Off);
-        prevVid1->setIcon(icon10);
+        QIcon icon11;
+        icon11.addFile(QString::fromUtf8(":/VAM/Icons/1462036188_Fast-Backward.png"), QSize(), QIcon::Normal, QIcon::Off);
+        prevVid1->setIcon(icon11);
 
         horizontalLayout_38->addWidget(prevVid1);
 
         frameBack1 = new QPushButton(centralwidget);
         frameBack1->setObjectName(QString::fromUtf8("frameBack1"));
         frameBack1->setMaximumSize(QSize(30, 25));
-        QIcon icon11;
-        icon11.addFile(QString::fromUtf8(":/VAM/Icons/1462036208_Skip-Backward.png"), QSize(), QIcon::Normal, QIcon::Off);
-        frameBack1->setIcon(icon11);
+        QIcon icon12;
+        icon12.addFile(QString::fromUtf8(":/VAM/Icons/1462036208_Skip-Backward.png"), QSize(), QIcon::Normal, QIcon::Off);
+        frameBack1->setIcon(icon12);
 
         horizontalLayout_38->addWidget(frameBack1);
 
@@ -212,18 +218,18 @@ public:
         frameForward1 = new QPushButton(centralwidget);
         frameForward1->setObjectName(QString::fromUtf8("frameForward1"));
         frameForward1->setMaximumSize(QSize(30, 25));
-        QIcon icon12;
-        icon12.addFile(QString::fromUtf8(":/VAM/Icons/1462036208_Skip-Forward.png"), QSize(), QIcon::Normal, QIcon::Off);
-        frameForward1->setIcon(icon12);
+        QIcon icon13;
+        icon13.addFile(QString::fromUtf8(":/VAM/Icons/1462036208_Skip-Forward.png"), QSize(), QIcon::Normal, QIcon::Off);
+        frameForward1->setIcon(icon13);
 
         horizontalLayout_38->addWidget(frameForward1);
 
         nextVid1 = new QPushButton(centralwidget);
         nextVid1->setObjectName(QString::fromUtf8("nextVid1"));
         nextVid1->setMaximumSize(QSize(30, 25));
-        QIcon icon13;
-        icon13.addFile(QString::fromUtf8(":/VAM/Icons/1462036188_Fast-Forward.png"), QSize(), QIcon::Normal, QIcon::Off);
-        nextVid1->setIcon(icon13);
+        QIcon icon14;
+        icon14.addFile(QString::fromUtf8(":/VAM/Icons/1462036188_Fast-Forward.png"), QSize(), QIcon::Normal, QIcon::Off);
+        nextVid1->setIcon(icon14);
 
         horizontalLayout_38->addWidget(nextVid1);
 
@@ -251,14 +257,14 @@ public:
         prevVid2 = new QPushButton(centralwidget);
         prevVid2->setObjectName(QString::fromUtf8("prevVid2"));
         prevVid2->setMaximumSize(QSize(30, 25));
-        prevVid2->setIcon(icon10);
+        prevVid2->setIcon(icon11);
 
         horizontalLayout_40->addWidget(prevVid2);
 
         frameBack2 = new QPushButton(centralwidget);
         frameBack2->setObjectName(QString::fromUtf8("frameBack2"));
         frameBack2->setMaximumSize(QSize(30, 25));
-        frameBack2->setIcon(icon11);
+        frameBack2->setIcon(icon12);
 
         horizontalLayout_40->addWidget(frameBack2);
 
@@ -272,14 +278,14 @@ public:
         frameForward2 = new QPushButton(centralwidget);
         frameForward2->setObjectName(QString::fromUtf8("frameForward2"));
         frameForward2->setMaximumSize(QSize(30, 25));
-        frameForward2->setIcon(icon12);
+        frameForward2->setIcon(icon13);
 
         horizontalLayout_40->addWidget(frameForward2);
 
         nextVid2 = new QPushButton(centralwidget);
         nextVid2->setObjectName(QString::fromUtf8("nextVid2"));
         nextVid2->setMaximumSize(QSize(30, 25));
-        nextVid2->setIcon(icon13);
+        nextVid2->setIcon(icon14);
 
         horizontalLayout_40->addWidget(nextVid2);
 
@@ -312,14 +318,14 @@ public:
         prevVid3 = new QPushButton(centralwidget);
         prevVid3->setObjectName(QString::fromUtf8("prevVid3"));
         prevVid3->setMaximumSize(QSize(30, 25));
-        prevVid3->setIcon(icon10);
+        prevVid3->setIcon(icon11);
 
         horizontalLayout_43->addWidget(prevVid3);
 
         frameBack3 = new QPushButton(centralwidget);
         frameBack3->setObjectName(QString::fromUtf8("frameBack3"));
         frameBack3->setMaximumSize(QSize(30, 25));
-        frameBack3->setIcon(icon11);
+        frameBack3->setIcon(icon12);
 
         horizontalLayout_43->addWidget(frameBack3);
 
@@ -333,14 +339,14 @@ public:
         frameForward3 = new QPushButton(centralwidget);
         frameForward3->setObjectName(QString::fromUtf8("frameForward3"));
         frameForward3->setMaximumSize(QSize(30, 25));
-        frameForward3->setIcon(icon12);
+        frameForward3->setIcon(icon13);
 
         horizontalLayout_43->addWidget(frameForward3);
 
         nextVid3 = new QPushButton(centralwidget);
         nextVid3->setObjectName(QString::fromUtf8("nextVid3"));
         nextVid3->setMaximumSize(QSize(30, 25));
-        nextVid3->setIcon(icon13);
+        nextVid3->setIcon(icon14);
 
         horizontalLayout_43->addWidget(nextVid3);
 
@@ -368,14 +374,14 @@ public:
         prevVid4 = new QPushButton(centralwidget);
         prevVid4->setObjectName(QString::fromUtf8("prevVid4"));
         prevVid4->setMaximumSize(QSize(30, 25));
-        prevVid4->setIcon(icon10);
+        prevVid4->setIcon(icon11);
 
         horizontalLayout_45->addWidget(prevVid4);
 
         frameBack4 = new QPushButton(centralwidget);
         frameBack4->setObjectName(QString::fromUtf8("frameBack4"));
         frameBack4->setMaximumSize(QSize(30, 25));
-        frameBack4->setIcon(icon11);
+        frameBack4->setIcon(icon12);
 
         horizontalLayout_45->addWidget(frameBack4);
 
@@ -389,14 +395,14 @@ public:
         frameForward4 = new QPushButton(centralwidget);
         frameForward4->setObjectName(QString::fromUtf8("frameForward4"));
         frameForward4->setMaximumSize(QSize(30, 25));
-        frameForward4->setIcon(icon12);
+        frameForward4->setIcon(icon13);
 
         horizontalLayout_45->addWidget(frameForward4);
 
         nextVid4 = new QPushButton(centralwidget);
         nextVid4->setObjectName(QString::fromUtf8("nextVid4"));
         nextVid4->setMaximumSize(QSize(30, 25));
-        nextVid4->setIcon(icon13);
+        nextVid4->setIcon(icon14);
 
         horizontalLayout_45->addWidget(nextVid4);
 
@@ -496,6 +502,7 @@ public:
         toolBar_2->addAction(actionEtalon);
         toolBar_2->addAction(actionEdit_still);
         toolBar_2->addAction(actionOpen_still);
+        toolBar_2->addAction(actionComplete);
         toolBar_2->addAction(actionSave_stills);
         toolBar_2->addSeparator();
         toolBar_2->addAction(actionVideo_Order);
@@ -569,6 +576,13 @@ public:
 #if QT_CONFIG(tooltip)
         actionDetect->setToolTip(QCoreApplication::translate("VideoWindow", "Launch automatic cattle detection", nullptr));
 #endif // QT_CONFIG(tooltip)
+        actionComplete->setText(QCoreApplication::translate("VideoWindow", "Complete Entry", nullptr));
+#if QT_CONFIG(tooltip)
+        actionComplete->setToolTip(QCoreApplication::translate("VideoWindow", "Add missing still to incomplete entry", nullptr));
+#endif // QT_CONFIG(tooltip)
+#if QT_CONFIG(shortcut)
+        actionComplete->setShortcut(QCoreApplication::translate("VideoWindow", "Ctrl+C", nullptr));
+#endif // QT_CONFIG(shortcut)
         videoName1->setText(QString());
 #if QT_CONFIG(tooltip)
         prevVid1->setToolTip(QCoreApplication::translate("VideoWindow", "Previous video", nullptr));

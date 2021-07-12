@@ -28,5 +28,6 @@ int main(int argc, char *argv[])
 	VAM w;
 	w.show();
 	splash.finish(&w);
+
 	return a.exec();
 }
