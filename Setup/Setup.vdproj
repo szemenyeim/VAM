@@ -729,12 +729,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_45A652F5E8A14F96B968EB26D6F448D2"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_45DB2A42BA3E4171B30272461E51C064"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -1600,6 +1594,12 @@
         "Entry"
         {
         "MsmKey" = "8:_A2279A46858641989040BB7B1CD13FC4"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_A27EF603A37A47118825AF7541032E02"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -10897,7 +10897,7 @@
         "UpgradeCode" = "8:{DB827A71-6413-4250-BA18-5FB9F54BE9A6}"
         "AspNetVersion" = "8:2.0.50727.0"
         "RestartWWWService" = "11:FALSE"
-        "RemovePreviousVersions" = "11:FALSE"
+        "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
         "ProductVersion" = "8:1.0.0"
@@ -11015,16 +11015,30 @@
         {
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_11F4D56F86354C57AE97EA2C4964AD6D"
             {
-            "Name" = "8:VATEM2"
+            "Name" = "8:VATEM3"
             "Arguments" = "8:"
             "Description" = "8:"
             "ShowCmd" = "3:1"
             "IconIndex" = "3:101"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_45A652F5E8A14F96B968EB26D6F448D2"
+            "Target" = "8:"
             "Folder" = "8:_0FBA4F172F654AEE8C597878A96EF613"
             "WorkingFolder" = "8:_5DA0519BFE1445EC97469054353D30BC"
-            "Icon" = "8:_45A652F5E8A14F96B968EB26D6F448D2"
+            "Icon" = "8:_A27EF603A37A47118825AF7541032E02"
+            "Feature" = "8:"
+            }
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_DA67C409C55A4DD796C56C30DF49F40A"
+            {
+            "Name" = "8:VATEM3"
+            "Arguments" = "8:"
+            "Description" = "8:"
+            "ShowCmd" = "3:1"
+            "IconIndex" = "3:101"
+            "Transitive" = "11:FALSE"
+            "Target" = "8:_AA8CA04121B44D1FA50F834D464F8E30"
+            "Folder" = "8:_AA8CA04121B44D1FA50F834D464F8E30"
+            "WorkingFolder" = "8:_AA8CA04121B44D1FA50F834D464F8E30"
+            "Icon" = "8:_A27EF603A37A47118825AF7541032E02"
             "Feature" = "8:"
             }
         }
@@ -11520,34 +11534,6 @@
         }
         "ProjectOutput"
         {
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_45A652F5E8A14F96B968EB26D6F448D2"
-            {
-            "SourcePath" = "8:..\\x64\\Release\\VATEM3.exe"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_5DA0519BFE1445EC97469054353D30BC"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            "ProjectOutputGroupRegister" = "3:1"
-            "OutputConfiguration" = "8:"
-            "OutputGroupCanonicalName" = "8:Built"
-            "OutputProjectGuid" = "8:{B12702AD-ABFB-343A-A199-8E24837244A3}"
-            "ShowKeyOutput" = "11:TRUE"
-                "ExcludeFilters"
-                {
-                }
-            }
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_6D6F693DD4F243309DC15E1107461884"
             {
             "SourcePath" = "8:"
@@ -11570,6 +11556,34 @@
             "ProjectOutputGroupRegister" = "3:1"
             "OutputConfiguration" = "8:"
             "OutputGroupCanonicalName" = "8:LocalizedResourceDlls"
+            "OutputProjectGuid" = "8:{B12702AD-ABFB-343A-A199-8E24837244A3}"
+            "ShowKeyOutput" = "11:TRUE"
+                "ExcludeFilters"
+                {
+                }
+            }
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_A27EF603A37A47118825AF7541032E02"
+            {
+            "SourcePath" = "8:..\\x64\\Release\\VATEM3.exe"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_5DA0519BFE1445EC97469054353D30BC"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            "ProjectOutputGroupRegister" = "3:1"
+            "OutputConfiguration" = "8:"
+            "OutputGroupCanonicalName" = "8:Built"
             "OutputProjectGuid" = "8:{B12702AD-ABFB-343A-A199-8E24837244A3}"
             "ShowKeyOutput" = "11:TRUE"
                 "ExcludeFilters"

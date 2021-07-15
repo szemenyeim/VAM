@@ -447,11 +447,15 @@ void checkInBounds(cv::Rect & rect, const cv::Size & imSize)
 	if (rect.x + rect.width >= imSize.width)
 		rect.x = imSize.width - rect.width - 1;
 	if (rect.y + rect.height >= imSize.height)
-		rect.y = imSize.height - -rect.height - 1;
+		rect.y = imSize.height - rect.height - 1;
 	if (rect.x < 0)
 		rect.x = 0;
+	if (rect.x + rect.width >= imSize.width)
+		rect.width = imSize.width - 1;
 	if (rect.y < 0)
 		rect.y = 0;
+	if (rect.y + rect.height >= imSize.height)
+		rect.height = imSize.height - 1;
 
 }
 

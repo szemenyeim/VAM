@@ -1774,150 +1774,150 @@ Then you can set some parameters regarding the sensitivity of the detection. Fin
 <context>
     <name>VAMTranslatedStrings</name>
     <message>
-        <location filename="../Utility.cpp" line="460"/>
+        <location filename="../Utility.cpp" line="464"/>
         <source>ID</source>
         <oldsource>ID,</oldsource>
         <translation>ID</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="462"/>
+        <location filename="../Utility.cpp" line="466"/>
         <source>Animal ID</source>
         <oldsource>&lt;h3&gt;Animal ID: </oldsource>
         <translation>ID des Tieres</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="465"/>
+        <location filename="../Utility.cpp" line="469"/>
         <source>Error opening output file</source>
         <translation>Öffnung der Ausgangsdatei war nicht erfolgreich</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="468"/>
-        <location filename="../Utility.cpp" line="492"/>
+        <location filename="../Utility.cpp" line="472"/>
+        <location filename="../Utility.cpp" line="496"/>
         <source>Please try another location.</source>
         <translation>Bitte versuchen Sie es mit einer anderen Datei.</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="471"/>
+        <location filename="../Utility.cpp" line="475"/>
         <source>Error opening schema file </source>
         <translation>Öffnung des Schemas war nicht erfolgreich </translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="474"/>
+        <location filename="../Utility.cpp" line="478"/>
         <source>The schema will be removed from the project.</source>
         <translation>Das Schema wird aus dem Projekt gelöscht.</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="477"/>
+        <location filename="../Utility.cpp" line="481"/>
         <source>Error opening measurement file </source>
         <translation>Öffnung der Messung war nicht erfolgreich </translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="480"/>
+        <location filename="../Utility.cpp" line="484"/>
         <source>The measurement will be removed from the project.</source>
         <translation>Die Messung wird aus dem Projekt gelöscht.</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="483"/>
+        <location filename="../Utility.cpp" line="487"/>
         <source>Error opening database file </source>
         <translation>Fehler beim Öffnen der Datenbankdatei </translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="486"/>
+        <location filename="../Utility.cpp" line="490"/>
         <source>The database will be removed from the project.</source>
         <translation>Die Datenbank wird aus dem Projekt gelöscht.</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="489"/>
+        <location filename="../Utility.cpp" line="493"/>
         <source>Error opening project file</source>
         <translation>Öffnung der Projektdatei war nicht erfolgreich</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="495"/>
+        <location filename="../Utility.cpp" line="499"/>
         <source>Measurement name</source>
         <translation>Name der Messung</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="498"/>
+        <location filename="../Utility.cpp" line="502"/>
         <source>Value</source>
         <translation>Wert</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="504"/>
+        <location filename="../Utility.cpp" line="508"/>
         <source>Measurement</source>
         <translation>Messung</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="507"/>
+        <location filename="../Utility.cpp" line="511"/>
         <source>Schema</source>
         <translation>Schema</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="510"/>
+        <location filename="../Utility.cpp" line="514"/>
         <source> --- (this distance is set as animal height)</source>
         <translation> --- (diese Entfernung ist die Höhe des Tieres)</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="513"/>
+        <location filename="../Utility.cpp" line="517"/>
         <source> --- (global etalon)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="516"/>
+        <location filename="../Utility.cpp" line="520"/>
         <source>Video database</source>
         <translation>Videodatenbank</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="519"/>
+        <location filename="../Utility.cpp" line="523"/>
         <source>Etalon Size</source>
         <translation>Abmessungen des Etalons</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="522"/>
+        <location filename="../Utility.cpp" line="526"/>
         <source>Camera distance</source>
         <translation>Entfernung von der Kamera</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="525"/>
+        <location filename="../Utility.cpp" line="529"/>
         <source>Correction coefficient</source>
         <translation>Korrekturkoeffizient</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="531"/>
+        <location filename="../Utility.cpp" line="535"/>
         <source>Image</source>
         <translation>Bild</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="534"/>
+        <location filename="../Utility.cpp" line="538"/>
         <source>Measurements</source>
         <translation>Messungen</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="537"/>
+        <location filename="../Utility.cpp" line="541"/>
         <source>Confidence</source>
         <translation>Konfidenz</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="540"/>
+        <location filename="../Utility.cpp" line="544"/>
         <source>Tip: Use &lt;w, a, s, d&gt; to move the selected point, &lt;del&gt; to delete it</source>
         <translation>Tipp: Benutzen Sie die Tasten &lt;w, a, s, d&gt; zur Bewegung des ausgewählten Punktes, und die Taste &lt;del&gt; zum Löschen</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="543"/>
+        <location filename="../Utility.cpp" line="547"/>
         <source>Tip: Use the mouse wheel to zoom in and out of the image</source>
         <translation>Tipp: Benutzen Sie den Trackball der Maus zur Vergrößerung/Verkleinerung des Bildes</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="546"/>
+        <location filename="../Utility.cpp" line="550"/>
         <source> --- (Done)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="528"/>
+        <location filename="../Utility.cpp" line="532"/>
         <source>Animal count</source>
         <translation>Anzahl der Tiere</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="501"/>
+        <location filename="../Utility.cpp" line="505"/>
         <source>Animal database</source>
         <translation>Datenbank für Tiere</translation>
     </message>
