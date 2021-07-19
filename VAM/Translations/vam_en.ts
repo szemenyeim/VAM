@@ -2348,7 +2348,7 @@ Then you can set some parameters regarding the sensitivity of the detection. Fin
     </message>
     <message>
         <location filename="../video.ui" line="814"/>
-        <location filename="../VideoWindow.cpp" line="159"/>
+        <location filename="../VideoWindow.cpp" line="160"/>
         <source>Etalon</source>
         <translation>Etalon</translation>
     </message>
@@ -2369,129 +2369,129 @@ Then you can set some parameters regarding the sensitivity of the detection. Fin
         <translation>Next video</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="795"/>
+        <location filename="../VideoWindow.cpp" line="796"/>
         <source>Rename Still</source>
         <translation>Rename Still</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="567"/>
+        <location filename="../VideoWindow.cpp" line="568"/>
         <source>No QR/Barcode found</source>
         <translation>No QR/Barcode found</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="567"/>
+        <location filename="../VideoWindow.cpp" line="568"/>
         <source>Found QR/Barcode:</source>
         <translation>Found QR/Barcode:</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="566"/>
+        <location filename="../VideoWindow.cpp" line="567"/>
         <source>Specify ID</source>
         <translation>Specify ID</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="163"/>
+        <location filename="../VideoWindow.cpp" line="164"/>
         <source>Etalon Size (meters):</source>
         <translation>Etalon Size (meters):</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="149"/>
+        <location filename="../VideoWindow.cpp" line="150"/>
         <source>Lock Videos</source>
         <translation>Lock Videos</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="152"/>
+        <location filename="../VideoWindow.cpp" line="153"/>
         <source>Toggle deinterlace mode.</source>
         <translation>Toggle deinterlace mode.</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="154"/>
+        <location filename="../VideoWindow.cpp" line="155"/>
         <source>Deinterlace</source>
         <translation>Deinterlace</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="157"/>
+        <location filename="../VideoWindow.cpp" line="158"/>
         <source>Toggle Etalon.</source>
         <translation>Toggle Etalon.</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="937"/>
+        <location filename="../VideoWindow.cpp" line="938"/>
         <source>Please select an incomplete entry!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="959"/>
+        <location filename="../VideoWindow.cpp" line="960"/>
         <source>You are trying to add stills to a complete entry. Please select an incomplete entry, or press ESC to add a new entry!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="569"/>
+        <location filename="../VideoWindow.cpp" line="570"/>
         <source>An animal with this ID already exists!</source>
         <translation>An animal with this ID already exists!</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="681"/>
+        <location filename="../VideoWindow.cpp" line="682"/>
         <source>Please select a still to delete!</source>
         <translation>Please select a still to delete!</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="706"/>
+        <location filename="../VideoWindow.cpp" line="707"/>
         <source>Please select a still!</source>
         <translation>Please select a still!</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="727"/>
+        <location filename="../VideoWindow.cpp" line="728"/>
         <source>The selected still does not contain an etalon!</source>
         <translation>The selected still does not contain an etalon!</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="743"/>
+        <location filename="../VideoWindow.cpp" line="744"/>
         <source>Image Files (*.bmp *.dds *.gif *.ico *.jpg *.jpeg *.tga *.tif *.tiff *.pbm *.pgm *.png *.ppm *.xbm *.xpm)</source>
         <translation>Image Files (*.bmp *.dds *.gif *.ico *.jpg *.jpeg *.tga *.tif *.tiff *.pbm *.pgm *.png *.ppm *.xbm *.xpm)</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="764"/>
+        <location filename="../VideoWindow.cpp" line="765"/>
         <source>Please select an equal number of side and upper stills to open!</source>
         <translation>Please select an equal number of side and upper stills to open!</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="787"/>
+        <location filename="../VideoWindow.cpp" line="788"/>
         <source>Please select a still to rename!</source>
         <translation>Please select a still to rename!</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="795"/>
+        <location filename="../VideoWindow.cpp" line="796"/>
         <source>Enter ID:</source>
         <translation>Enter ID:</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="852"/>
+        <location filename="../VideoWindow.cpp" line="853"/>
         <source>There is no global etalon</source>
         <translation>There is no global etalon</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="853"/>
+        <location filename="../VideoWindow.cpp" line="854"/>
         <source>Do you want to save the database anyway?</source>
         <translation>Do you want to save the database anyway?</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="568"/>
-        <location filename="../VideoWindow.cpp" line="795"/>
-        <location filename="../VideoWindow.cpp" line="885"/>
+        <location filename="../VideoWindow.cpp" line="569"/>
+        <location filename="../VideoWindow.cpp" line="796"/>
+        <location filename="../VideoWindow.cpp" line="886"/>
         <source>Please specify a name!</source>
         <translation>Please specify a name!</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="147"/>
+        <location filename="../VideoWindow.cpp" line="148"/>
         <source>Use this to lock the videos together. (Pausing, resuming, etc. one of the videos will affect all of them)</source>
         <translation>Use this to lock the videos together. (Pausing, resuming, etc. one of the videos will affect all of them)</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="743"/>
+        <location filename="../VideoWindow.cpp" line="744"/>
         <source>Open Image Files #</source>
         <translation>Open Image Files #</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="795"/>
+        <location filename="../VideoWindow.cpp" line="796"/>
         <source>A still with this name already exists!</source>
         <translation>A still with this name already exists!</translation>
     </message>
@@ -2502,27 +2502,27 @@ Then you can set some parameters regarding the sensitivity of the detection. Fin
         <translation>Save Database</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="885"/>
+        <location filename="../VideoWindow.cpp" line="886"/>
         <source>New Video database</source>
         <translation>New Video database</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="885"/>
+        <location filename="../VideoWindow.cpp" line="886"/>
         <source>Enter Name:</source>
         <translation>Enter Name:</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="885"/>
+        <location filename="../VideoWindow.cpp" line="886"/>
         <source>A database with this name already exists!</source>
         <translation>A database with this name already exists!</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="1225"/>
+        <location filename="../VideoWindow.cpp" line="1226"/>
         <source>The current video database has been modified.</source>
         <translation>The current video database has been modified.</translation>
     </message>
     <message>
-        <location filename="../VideoWindow.cpp" line="1226"/>
+        <location filename="../VideoWindow.cpp" line="1227"/>
         <source>Do you want to save your changes?</source>
         <translation>Do you want to save your changes?</translation>
     </message>

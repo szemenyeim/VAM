@@ -87,13 +87,14 @@ void VideoWindow::show()
 	{
 		VAMImageIndex idx = swapIndices(toIdx(i));
 
+		paused[idx] = true;
+
+		// Set plaing status
+		playing[idx] = false;
+
 		// Setup model
 		if (idx < videoCnt)
 		{
-			paused[idx] = true;
-
-			// Set plaing status
-			playing[idx] = false;
 
 			players[i]->stop();
 			// Setup media
@@ -807,14 +808,14 @@ void VideoWindow::editStill()
 
 void VideoWindow::reorderVideos()
 {
-	videoOrderVertical = !videoOrderVertical;
-
-	setupUI(true);
-
 	bool temp = frameLock;
 	frameLock = true;
 	pauseClicked(toIdx(0));
 	frameLock = temp;
+
+	videoOrderVertical = !videoOrderVertical;
+
+	setupUI(true);
 }
 
 bool VideoWindow::doneC()
@@ -1024,7 +1025,7 @@ void VideoWindow::playClicked(VAMImageIndex idx)
 			players[idx2]->resume();
 			if (!playing[idx2])
 			{
-				players[idx2]->open(media[idx2]);
+				players[idx2]->open(media[idx]);
 				playing[idx2] = true;
 				qApp->processEvents();
 			}

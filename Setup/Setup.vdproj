@@ -10868,7 +10868,7 @@
             "{1525181F-901A-416C-8A58-119130FE478E}:_AA8CA04121B44D1FA50F834D464F8E30"
             {
             "Name" = "8:#1919"
-            "AlwaysCreate" = "11:FALSE"
+            "AlwaysCreate" = "11:TRUE"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Property" = "8:ProgramMenuFolder"
@@ -11013,7 +11013,7 @@
         }
         "Shortcut"
         {
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_11F4D56F86354C57AE97EA2C4964AD6D"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_45A0008389974E86A9624BDAB359B423"
             {
             "Name" = "8:VATEM3"
             "Arguments" = "8:"
@@ -11021,13 +11021,13 @@
             "ShowCmd" = "3:1"
             "IconIndex" = "3:101"
             "Transitive" = "11:FALSE"
-            "Target" = "8:"
-            "Folder" = "8:_0FBA4F172F654AEE8C597878A96EF613"
+            "Target" = "8:_A27EF603A37A47118825AF7541032E02"
+            "Folder" = "8:_AA8CA04121B44D1FA50F834D464F8E30"
             "WorkingFolder" = "8:_5DA0519BFE1445EC97469054353D30BC"
             "Icon" = "8:_A27EF603A37A47118825AF7541032E02"
             "Feature" = "8:"
             }
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_DA67C409C55A4DD796C56C30DF49F40A"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_EDFD65F7A928402ABE02F89A26C3BD16"
             {
             "Name" = "8:VATEM3"
             "Arguments" = "8:"
@@ -11035,9 +11035,9 @@
             "ShowCmd" = "3:1"
             "IconIndex" = "3:101"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_AA8CA04121B44D1FA50F834D464F8E30"
-            "Folder" = "8:_AA8CA04121B44D1FA50F834D464F8E30"
-            "WorkingFolder" = "8:_AA8CA04121B44D1FA50F834D464F8E30"
+            "Target" = "8:_A27EF603A37A47118825AF7541032E02"
+            "Folder" = "8:_0FBA4F172F654AEE8C597878A96EF613"
+            "WorkingFolder" = "8:_5DA0519BFE1445EC97469054353D30BC"
             "Icon" = "8:_A27EF603A37A47118825AF7541032E02"
             "Feature" = "8:"
             }
