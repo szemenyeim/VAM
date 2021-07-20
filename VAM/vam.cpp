@@ -1062,14 +1062,13 @@ void VAM::showAbout()
 		"ZBar library - Zero license http://zbar.sourceforge.net/ \n"
 		"Libiconv library - LGPL https://www.gnu.org/software/libiconv/ \n"
 		"XLSX Writer Lib - Free BSD https://github.com/jmcnamara/libxlsxwriter \n"
+		"PyTorch - Free BSD https://pytorch.org \n"
 		"The Mesa 3D Graphics library - MIT license http://www.mesa3d.org/egl.html \n"
 		"ICU - International Components for Unicode http://www.unicode.org/copyright.html \n"
-		"Microsoft Visual Studio 2015 Enterprise Edition - https://www.visualstudio.com/ \n"
-		"Flexera InstallShield Limited Edition - http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio \n"
+		"Microsoft Visual Studio 2019 Community Edition - https://www.visualstudio.com/ \n"
 		"Icons designed by Momentum Design Lab - Creative Commons (Attribution 3.0 Unported) http://momentumdesignlab.com/ \n"
                 "Additional icons by ASP.NET icons http://aspneticons.com/ \n"
                 "Volume icon designed by Yummygum https://yummygum.com/ \n"
-		"Main application icon designed by icons8 - Creative Commons (Attribution-NoDerivs 3.0 Unported) http://icons8.com/ \n"
 		"\n");
 
 	label->setTextInteractionFlags(Qt::TextSelectableByMouse);
