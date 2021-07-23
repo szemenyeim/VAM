@@ -1119,6 +1119,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_70806D2E58AA42ED844E32C9D51755A8"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_70D6C67C549941C7A8B15EB7C75A136C"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -6186,6 +6192,26 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_70806D2E58AA42ED844E32C9D51755A8"
+            {
+            "SourcePath" = "8:..\\VAM\\Icons\\ikon01.ico"
+            "TargetName" = "8:ikon01.ico"
+            "Tag" = "8:"
+            "Folder" = "8:_5DA0519BFE1445EC97469054353D30BC"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_70D6C67C549941C7A8B15EB7C75A136C"
             {
             "SourcePath" = "8:..\\Libs\\VlcQt\\Release\\bin\\plugins\\demux\\libreal_plugin.dll"
@@ -11019,12 +11045,12 @@
             "Arguments" = "8:"
             "Description" = "8:"
             "ShowCmd" = "3:1"
-            "IconIndex" = "3:101"
+            "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
             "Target" = "8:_A27EF603A37A47118825AF7541032E02"
             "Folder" = "8:_AA8CA04121B44D1FA50F834D464F8E30"
             "WorkingFolder" = "8:_5DA0519BFE1445EC97469054353D30BC"
-            "Icon" = "8:_A27EF603A37A47118825AF7541032E02"
+            "Icon" = "8:_70806D2E58AA42ED844E32C9D51755A8"
             "Feature" = "8:"
             }
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_EDFD65F7A928402ABE02F89A26C3BD16"
@@ -11033,12 +11059,12 @@
             "Arguments" = "8:"
             "Description" = "8:"
             "ShowCmd" = "3:1"
-            "IconIndex" = "3:101"
+            "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
             "Target" = "8:_A27EF603A37A47118825AF7541032E02"
             "Folder" = "8:_0FBA4F172F654AEE8C597878A96EF613"
             "WorkingFolder" = "8:_5DA0519BFE1445EC97469054353D30BC"
-            "Icon" = "8:_A27EF603A37A47118825AF7541032E02"
+            "Icon" = "8:_70806D2E58AA42ED844E32C9D51755A8"
             "Feature" = "8:"
             }
         }
