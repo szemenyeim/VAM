@@ -132,6 +132,16 @@
 \newcommand{\sectref}[1]{\ref{sect:#1}}
 \newcommand{\tabref}[1]{\ref{tab:#1}.}
 
+\newcommand*{\img}[1]{%
+	\raisebox{-.02\baselineskip}{%
+		\includegraphics[
+		height=\baselineskip,
+		width=\baselineskip,
+		keepaspectratio,
+		]{#1}%
+	}%
+}
+
 \DeclareMathOperator*{\argmax}{arg\,max}
 %\DeclareMathOperator*[1]{\floor}{arg\,max}
 \DeclareMathOperator{\sign}{sgn}
@@ -220,7 +230,27 @@ Welcome to the VATEM3 User Manual. This document will guide you in the basic usa
 
 Upon opening the software you will be greeted by the \textbf{Project Window}. This screen aims to give you a general overview of the stage of completion of your measurement project. Stages with a green checkmark are completed, while those with a red cross sign are not completed. To make newer stages available, please complete all previous stages.
 
-You first step is to create a new project, or open an existing one by clicking the appropriate button in the toolbar at the top of the window. Upon creating a new project you will be asked to enter its name. By default projects are saved into the \textit{"Documents\\VATEM3\\<Project Name>"} folder and have the extension of \textit{.vamproj}. You can change the default project folder in the \textbf{Advanced menu}
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{\textwidth}
+		\centering 
+		\includegraphics[width=0.75\textwidth]{./images/MW1.png}
+	\end{subfigure}
+	\caption[]
+	{\small  The Project Window.}
+\end{figure} 
+
+You first step is to create a new project, or open an existing one by clicking the appropriate button in the toolbar at the top of the window. Upon creating a new project you will be asked to enter its name. By default projects are saved into the \textit{"Documents/VATEM3/<Project Name>"} folder and have the extension of \textit{.vamproj}. You can change the default project folder in the \textbf{Advanced menu}.
+
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{\textwidth}
+		\centering 
+		\includegraphics[width=0.25\textwidth]{./images/NewProj.png}
+	\end{subfigure}
+	\caption[]
+	{\small  Creating a project.}
+\end{figure} 
 
 \subsection{Setting the number of videos}
 
@@ -228,7 +258,17 @@ The next step is setting the number of videos/cameras your project uses. VATEM3 
 
 \section{Adding videos}
 
-The next step is adding the videos to your project by opening the \textbf{Video Interface}. You can do this separately for each camera by clicking the add button below the corresponding empty list. Here, you can browse your computer, and select multiple video files, and order them as you please. \textbf{You need to select at least one video file for each camera!}
+The next step is adding the videos to your project by opening the \textbf{Video Interface}. You can do this separately for each camera by clicking the \textbf{Add} \img{../VAM/Icons/1462036180_list-add.png} button below the corresponding empty list. Here, you can browse your computer, and select multiple video files, and order them as you please. \textbf{You need to select at least one video file for each camera!}
+
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{\textwidth}
+		\centering 
+		\includegraphics[width=0.35\textwidth]{./images/AddVid.png}
+	\end{subfigure}
+	\caption[]
+	{\small  The Video Interface.}
+\end{figure} 
 
 \subsection{Camera distance}
 
@@ -236,27 +276,49 @@ For the second, and higher cameras, the \textbf{Video Interface} will have an ex
 
 \section{Still database}
 
-The next task is to take still images on animals using the videos imported in the previous stage. To do this, open the \textbf{Still Window} by clicking on the \textit{Create Stills} button. In this window, you can play and pause each video independently, or at the same time by using the \textit{Frame Lock} setting the the toolbar. The toolbar also contains a \textit{Deinterlace} option for interlaced videos, and you can also toggle the window to arrange your videos vertically or horizontally.
+The next task is to take still images on animals using the videos imported in the previous stage. To do this, open the \textbf{Still Window} by clicking on the \textit{Create Stills} button. In this window, you can play and pause each video independently, or at the same time by using the \textit{Frame Lock} setting the the toolbar. The toolbar also contains a \textit{Deinterlace} option for interlaced videos, and you can also toggle the window (\img{../VAM/Icons/if_tile_windows_horizontally_16x16_10026.png}) to arrange your videos vertically or horizontally.
+
+The video players allow you to play or pause the videos, skip to the previous/next videos (\img{../VAM/Icons/1462036208_Skip-Backward.png} \img{../VAM/Icons/1462036208_Skip-Forward.png} buttons), and navigate forward/backward frame by frame (\img{../VAM/Icons/1462036188_Fast-Backward.png} and \img{../VAM/Icons/1462036188_Fast-Forward.png} buttons).
+
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{\textwidth}
+		\centering 
+		\includegraphics[width=0.95\textwidth]{./images/VideoW.png}
+	\end{subfigure}
+	\caption[]
+	{\small  The Still Window.}
+\end{figure} 
 
 The \textbf{Project Window} allows you to clear all still images previously created in the database, while you can also reset the database, which also clears all videos added in the previous stage.
 
 \subsection{Taking snapshots}
 
-To create a still image, it is recommended that you pause all videos at the desired frame. Then, by clicking the \textit{Take Snapshot} button, you can take a still image from all videos simultaneously. The program will then attempt to find a QR or barcode in each of the images that contains the ID of the animal. Regardless of the results, the software will prompt you to enter an ID. You can change the ID of any animal by selecting the animal from the side list, and clicking the \textit{Edit} button, or delete them completely using the \textit{Remove} button.
+To create a still image, it is recommended that you pause all videos at the desired frame. Then, by clicking the \textit{Take Snapshot} \img{../VAM/Icons/1462024260_Camera.png} button, you can take a still image from all videos simultaneously. The program will then attempt to find a QR or barcode in each of the images that contains the ID of the animal. Regardless of the results, the software will prompt you to enter an ID. You can change the ID of any animal by selecting the animal from the side list, and clicking the \textit{Edit} \img{../VAM/Icons/1462036358_edit.png} button, or delete them completely using the \textit{Remove} \img{../VAM/Icons/1462036183_document-delete3.png} button.
 
 \subsection{Setting global etalon}
 
 Etalon images are used to provide the software with a known reference. When taking the video it is important to have at least one etalon shown to all cameras. Etalon images only have two measurement points, which define one distance. The size of the etalon can be set for each etalon still image separately using the toolbar.
 
-To mark a still image as etalon, select the image from the side list, and click the \textit{Etalon} checkbox in the top toolbar. Note, that the state of this checkbox changes automatically to reflect the etalon status of the \textit{currently selected image}. While you can mark multiple images as etalon, the software will only use the one marked as the \textit{Global Etalon} for the measurements. To set a still image as the global etalon, select a still that has already been marked as etalon, and click the \textit{Set Global Etalon} button in the top right. If successful, a visual indicator will appear in the list.
+To mark a still image as etalon, select the image from the side list, and click the \textit{Etalon} checkbox in the top toolbar. Note, that the state of this checkbox changes automatically to reflect the etalon status of the \textit{currently selected image}. While you can mark multiple images as etalon, the software will only use the one marked as the \textit{Global Etalon} for the measurements. To set a still image as the global etalon, select a still that has already been marked as etalon, and click the \textit{Set Global Etalon} \img{../VAM/Icons/1462455465_centimeter.png} button in the top right. If successful, a visual indicator will appear in the list.
 
 \subsection{Open images for stills} \label{sec:openStill}
 
-If you already have still images that you want to add to the database, you can do that by clicking the \textit{Open Stills} button. This will prompt a file selection dialog for each camera. \textbf{NOTE: You will see as many file selection dialogs, as you have cameras, so select only still image belonging to camera \# 1 in the first dialog, and so on.}
+If you already have still images that you want to add to the database, you can do that by clicking the \textit{Open Stills} \img{../VAM/Icons/1462367694_folder_open-add2.png} button. This will prompt a file selection dialog for each camera. \textbf{NOTE: You will see as many file selection dialogs, as you have cameras, so select only still image belonging to camera \# 1 in the first dialog, and so on.}
 
 Once you have selected still images for all cameras, the \textbf{Still Pairing Window} will pop up, allowing you to select which stills from the different cameras belong to the same animal. You can do this by selecting a still from each input list, and adding them to the output list on the right. This action will also run the QR code detection, and prompt you to enter an ID. You can also remove paired stills and pair them again, if needed. NOTE: At this stage, you can create incomplete entries (i.e.: animals that are missing stills from some cameras), but to complete the still creation stage, these incomplete entries have to be completed. 
 
-By clicking the \textit{Save} button, the opened stills will be added to the database.
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{\textwidth}
+		\centering 
+		\includegraphics[width=0.65\textwidth]{./images/PairStill.png}
+	\end{subfigure}
+	\caption[]
+	{\small  The Still Pairing Window.}
+\end{figure} 
+
+By clicking the \textit{Save} \img{../VAM/Icons/1462036176_save_accept.png} button, the opened stills will be added to the database.
 
 \subsection{Complete stills} \label{sec:compStill}
 
@@ -264,7 +326,7 @@ If you have incomplete stills in your database, you can complete them by perform
 \begin{enumerate}
 	\item Navigate the videos to the desired positions  and pause them.
 	\item Select the incomplete still from the right side list.
-	\item Click the \textit{Complete Still} button, which will create new stills for all cameras that were marked as missing.
+	\item Click the \textit{Complete Still} \img{../VAM/Icons/1462024271_New_image.png} button, which will create new stills for all cameras that were marked as missing.
 \end{enumerate}
 
 \section{Schemas}
@@ -273,17 +335,47 @@ The next stage following the still creation is the \textbf{Schema Definition}. \
 
 A single project may contain multiple schemas, if you wish to mark the same set of animals using different points or measurements. In the \textbf{Project Window}, you can add and import schemas to your project, whle you can also edit or remove existing schemas by selecting them from the drop-down list and clicking the appropriate button.
 
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{\textwidth}
+		\centering 
+		\includegraphics[width=0.95\textwidth]{./images/SchemW.png}
+	\end{subfigure}
+	\caption[]
+	{\small  The Schema Window.}
+\end{figure} 
+
 \subsection{Open images}
 
 Once a schema is open, you can open existing still images to assist with the visualization of your points and measurement. Note, that this feature only server as a visual aid, and has no actual effect on the schema or the measurement. Just like the still opening feature, you will get a pop-up file selection dialog for each camera.
 
 \subsection{Points}
 
-The next step is adding marker points to the schema. These points are the markers you will have to locate on the created stills in a later phase. You can define these marker points separately for each camera. To add a new point, click the \textit{New Point} button of the corresponding camera, and name the point. Then, click on the highlighted image to select a location of the point for visualization. Note, that this last step has no actual effect on the schema, it is only for aiding the user visually. Once created, points can be renamed and removed by selecting them from the list, and clicking the appropriate button.
+The next step is adding marker points to the schema. These points are the markers you will have to locate on the created stills in a later phase. You can define these marker points separately for each camera. To add a new point, click the \textit{New Point} \img{../VAM/Icons/1462036180_list-add.png} button of the corresponding camera, and name the point. Then, click on the highlighted image to select a location of the point for visualization. Note, that this last step has no actual effect on the schema, it is only for aiding the user visually. Once created, points can be renamed and removed by selecting them from the list, and clicking the appropriate button.
+
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{\textwidth}
+		\centering 
+		\includegraphics[width=0.95\textwidth]{./images/SchemPoint.png}
+	\end{subfigure}
+	\caption[]
+	{\small  Point Creation.}
+\end{figure} 
 
 \subsection{Measurements}
 
-The points defined in the previous step can be used to define \textit{Measurements}. Measurements have two types: \textit{Distance} measurements, requiring two points, and \textins{Angle} measurements, requiring three. To add a new measurement, click the \textit{Add} button of the selected camera, and select the desired measurement type from the drop-down menu. Then, you will be prompted to select the points making up the measurement from the corresponding list. As you select the points, the visual aid interface at the top of the window will show your measurement. 
+The points defined in the previous step can be used to define \textit{Measurements}. Measurements have two types: \textit{Distance} measurements, requiring two points, and \textins{Angle} measurements, requiring three. To add a new measurement, click the \textit{Add} \img{../VAM/Icons/1462036180_list-add.png} button of the selected camera, and select the desired measurement type from the drop-down menu. Then, you will be prompted to select the points making up the measurement from the corresponding list. As you select the points, the visual aid interface at the top of the window will show your measurement. 
+
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{\textwidth}
+		\centering 
+		\includegraphics[width=0.95\textwidth]{./images/SchemDist.png}
+	\end{subfigure}
+	\caption[]
+	{\small  Measurement Creation.}
+\end{figure} 
 
 You can also rename and delete measurements by selecting them from the list a clicking the appropriate button.
 
@@ -295,15 +387,34 @@ The final feature of  the \textbf{Schema Window} is setting the correction measu
 
 To select a correction measurement, first click the button in the toolbar, then select the camera you wish to correct. Then, select one of the measurements from the previous cameras. \textbf{NOTE:} The software can only correct \textbf{forward}, meaning the measurement correcting a particular camera has to be on one of the previous cameras.
 
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{\textwidth}
+		\centering 
+		\includegraphics[width=0.25\textwidth]{./images/SelectVideoCorr.png}
+	\end{subfigure}
+	\caption[]
+	{\small  Selecting the video to be corrected.}
+\end{figure} 
+
 \section{Measurement}
 
 The penultimate stage of the basic usage is creating the measurement. A measurement file contains all the point locations for all animals. The \textbf{Project Window} allows you to create a new measurement by clicking the appropriate button, and selecting the schema to use. A single measurement can only use one schema, so if you wish to measure the same animals using multiple schemas, then create a new measurement for each schema. You can also rename or remove measurement. 
 
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{\textwidth}
+		\centering 
+		\includegraphics[width=0.95\textwidth]{./images/MeasW.png}
+	\end{subfigure}
+	\caption[]
+	{\small  The Measurement Window.}
+\end{figure} 
+
 \subsection{Navigation among images}
 
-In the \textbf{Measurement Window}, you can navigate among all the still images in the project by either using the arrow buttons, or by double-clicking the desired still in the right side list.
+In the \textbf{Measurement Window}, you can navigate among all the still images in the project by either using the arrow buttons (\img{../VAM/Icons/1462036195_arrow-left1.png} \img{../VAM/Icons/1462036198_arrow-right1.png}), or by double-clicking the desired still in the right side list.
 
-buttons, double click
 
 \subsection{Add points}
 
@@ -317,28 +428,39 @@ If you choose manual marking, then you can do that by simply clicking the image 
 
 To edit points, you have to first toggle selection mode, using the toolbar. Then you can select individual points by clicking near them. You can move the selected point by using the \textbf{<w,a,s,d>} keys, or delete it.
 
+
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{\textwidth}
+		\centering 
+		\includegraphics[width=0.95\textwidth]{./images/MeasWSel.png}
+	\end{subfigure}
+	\caption[]
+	{\small  Editing marker points.}
+\end{figure} 
+
 You can also set the measurement confidence for each still separately, which will be saved to the report file.
 
 \section{Output generation}
 
-The final stage of the project lifecycle is output generation. In this stage, you can save your measurement data by selecting a desired format from the drop-down list, and hitting \textit{Generate}. Once the progress bar is finished, your output files will be found in the \textit{"<Project Folder>\\Outputs"} folder.
+The final stage of the project lifecycle is output generation. In this stage, you can save your measurement data by selecting a desired format from the drop-down list, and hitting \textit{Generate}. Once the progress bar is finished, your output files will be found in the \textit{"<Project Folder>/Outputs"} folder.
+
+
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{\textwidth}
+		\centering 
+		\includegraphics[width=0.75\textwidth]{./images/MWFin.png}
+	\end{subfigure}
+	\caption[]
+	{\small  A finished project.}
+\end{figure} 
 
 \subsection{Formats}
 
 VATEM3 currently supports 3 formats: raw cvs, xlsx and html. The first simply saves all measurement data for each animal in a comma separated values file, which is ideal for any future automatic processing step. The xlsx format saves the same data, but in a more human-readable and editable form. The html format generates a report that includes the completed measurement images as well, and is the most readably of the there formats. 
 
 NOTE: The measurement images are saved next to the output file in all three cases.
- 
-
-\begin{figure}[!htb]
-\centering
-\begin{subfigure}{\textwidth}
-\centering 
-\includegraphics[height=4.7cm]{../VAM/Icons/chessboard.png}
-\end{subfigure}
-\caption[]
-{\small  Image.}
-\end{figure} 
 
 
 \chapter{Advanced Usage}
@@ -349,7 +471,7 @@ In this chapter, we cover the more advanced features of the VATEM3 software, nam
 
 The camera calibration function can be used to avoid two practical problems with commercial video cameras: Non-square pixels and geometric distortion. The first issue mostly occurs in old video cameras, and results in incorrect measurements, as the VATEM3 software assumes that the cameras have square-shaped pixel sensors. The second causes "barrel" and "pillow" distoritons in the image, causing straight lies to curve in the image. \textbf{NOTE: If your camera does not have these issues, then Calibration is completely unnecessary, and may cause inaccurate measurements.}
 
-You can perform calibration for each camera, click the \textit{Calibrate} button in the \textbf{Video Stage} of the \textbf{Project Window}. This will launch a calibration wizard, which asks you to print an image of a chessboard calibration object on a A4 size paper. After printing the image, secure it on a flat, rigid surface to prevent the paper from folding, as that will give your very inaccurate results.
+You can perform calibration for each camera, click the \textit{Calibrate} \img{../VAM/Icons/1462455465_centimeter.png} button in the \textbf{Video Stage} of the \textbf{Project Window}. This will launch a calibration wizard, which asks you to print an image of a chessboard calibration object on a A4 size paper. After printing the image, secure it on a flat, rigid surface to prevent the paper from folding, as that will give your very inaccurate results.
 
 \subsection{Take video}
 
@@ -359,17 +481,47 @@ The second step of calibration is to record a short video with your camera, wher
 
 Once the video is done, save it on your computer, and load it in the next window of the wizard. Once the video is loaded, adjust the settings if necessary, and hit calibrate. Please be aware that if the recorded video is not good quality then this feature (especially the estimation of distortion) may cause more harm than good.
 
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{\textwidth}
+		\centering 
+		\includegraphics[width=0.5\textwidth]{./images/Calib.png}
+	\end{subfigure}
+	\caption[]
+	{\small  The Calibration Wizard.}
+\end{figure} 
+
 \section{Automatic still generation}
 
 Another advanced feature is AI assisted automatic still image generation, accessible from the \textbf{Still Window}. Currently, the software only supports the detection of cattle in side and top images.
 
 You can access this feature by clicking the \textit{Automatic Detection} button.
 
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{\textwidth}
+		\centering 
+		\includegraphics[width=0.5\textwidth]{./images/AutoDetect.png}
+	\end{subfigure}
+	\caption[]
+	{\small  The Detection Wizard.}
+\end{figure} 
+
 \subsection{Set detection area}
 
 You first task in the wizard is to select the detection area. To achieve higher speeds, the software runs motion detection in this area to pic out frames it needs to investigate further. You can select the area by drawing a rectangle on the images with your mouse. 
 
 \textbf{NOTE: The detection area should encompass the full height of the animals, and roughly 50\% of the length of the area where they are visible. This ensures, that once an animal enters the detection area, they are already fully visible in the image. See examples below.}
+
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{\textwidth}
+		\centering 
+		\includegraphics[width=0.5\textwidth]{./images/DetArea.png}
+	\end{subfigure}
+	\caption[]
+	{\small  Setting the detection area.}
+\end{figure} 
 
 \subsection{Detection}
 
@@ -378,6 +530,16 @@ The detection process has multiple adjustable settings. The first one is the \te
 The next setting is the \textbf{Confidence Threshold}, which is the sensitivity of the AI-based cattle recognition. The higher this setting, the more certain the AI needs to be that it has seen a cattle. The last setting is the \textbf{Area Threshold}, which sets the minimum area an animal needs to be to count as a detection. This setting aims to avoid accidentally detecting cattle in the background.
 
 Once the settings are set, you can launch the detection. Once the detection is finished, you can launch a dialog to pair and add the detected still images (see: \autoref{sec:openStill, sec:compStill}).
+
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{\textwidth}
+		\centering 
+		\includegraphics[width=0.5\textwidth]{./images/AutoDetect2.png}
+	\end{subfigure}
+	\caption[]
+	{\small  Detection in progress.}
+\end{figure} 
 
 \section{Planimetrics}
 
@@ -393,11 +555,40 @@ The \textbf{Planimetrics Window} provides several powerful tools to allow you to
 
 The polygon tool allows you to draw polygon shapes onto the image. To do this, make sure, that \textins{Polygon} is selected from the drop-down list on the left, then proceed to put down the outer corners of the polygon onto the image by clicking on it. Once finished, click the \textit{Draw Polygon} button. You can put down multiple polygons.
 
+
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{\textwidth}
+		\centering 
+		\includegraphics[width=0.95\textwidth]{./images/PlaniPoly1.png}
+	\end{subfigure}
+	\begin{subfigure}{\textwidth}
+	\centering 
+	\includegraphics[width=0.95\textwidth]{./images/PlaniPoly2.png}
+	\end{subfigure}
+	\caption[]
+	{\small  Using the polygon tool.}
+\end{figure} 
+
 \subsection{Automatic segmentation}
 
 You can also perform automatic segmentation by selecting a \textbf{Region of Interest (RoI)} on the image. To do this, put down at least 2 point on the image using the polygon tool. These two points will define a rectangle. Once finished, click the \textit{Set ROI} button, then click on the \textit{Segmentation} button. By changing the threshold slider, you can increase or decrease the sensitivity of the segmentation.
 
 Another way of automatic segmentation is by flood filling the image from a certain point. To do this, set a ROI as before, and click the \textit{Flood Fill} button. Then click the image at the location you want to start the flooding, and change the threshold slider to get close to the desired result.
+
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{\textwidth}
+		\centering 
+		\includegraphics[width=0.95\textwidth]{./images/PlaniROI.png}
+	\end{subfigure}
+	\begin{subfigure}{\textwidth}
+		\centering 
+		\includegraphics[width=0.95\textwidth]{./images/PlaniSeg.png}
+	\end{subfigure}
+	\caption[]
+	{\small  Using the automatic segmentation tool.}
+\end{figure} 
 
 \subsection{Brush tools}
 
@@ -406,6 +597,16 @@ The final set of tools allow you to make minor corrections to the segmentation m
 \section{Morphometrics}
 
 The final advanced feature of the VATEM3 software is exporting Morphometric data from the measurements. To launch this feature, the project has to have completed the measurement stage. After that, this can be launched from the \textins{Advanced} menu of the \textbf{Project Window}. 
+
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{\textwidth}
+		\centering 
+		\includegraphics[width=0.5\textwidth]{./images/Morpho.png}
+	\end{subfigure}
+	\caption[]
+	{\small  The Morphometrics Window.}
+\end{figure} 
 
 \subsection{Setup data}
 
@@ -438,7 +639,7 @@ If you encounter an error, we request that you make an error report including a 
 
 \subsection{Accessing the VATEM3 log}
 
-To access the VATEM3 log file, you first have to turn on logging. This can be done in the \textit{Advanced} menu of the \textbf{Project Window}. Once this is done, the log file will be available in your installation folder (where VATEM3.exe is also located). Attaching this file to your error report help us reproduce the issue you encountered, and thus fix it as soon as possible.
+To access the VATEM3 log file, you first have to turn on logging. This can be done in the \textit{Settings} menu of the \textbf{Project Window}. Once this is done, the log file will be available in your installation folder (where VATEM3.exe is also located). Attaching this file to your error report help us reproduce the issue you encountered, and thus fix it as soon as possible.
 
 \chapter*{Declaration of Support}
 
