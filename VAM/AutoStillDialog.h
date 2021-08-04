@@ -12,7 +12,7 @@ class AutoStillDialog : public QDialog
 public:
 	AutoStillDialog(QWidget* parent = 0);
 
-	void showDialog(std::vector< QStringList > stills, StillDB* db);
+	bool showDialog(std::vector< QStringList > stills, StillDB* db);
 
 private:
 	Ui::Dialog ui;

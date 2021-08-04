@@ -353,9 +353,6 @@ void VideoPage_2::detect_thread()
 		}
 		emit videoComputed();
 	}
-
-	wizard()->button(QWizard::FinishButton)->setEnabled(true);
-
 }
 
 void VideoPage_2::display_log()
@@ -368,16 +365,16 @@ void VideoPage_2::finished_slot()
 {
 	AutoStillDialog* dialog = new AutoStillDialog();
 	dialog->setWindowModality(Qt::ApplicationModal);
-	dialog->showDialog(newImages, currentDB);
 
-	wizard()->close();
+	if (dialog->showDialog(newImages, currentDB) )
+		wizard()->close();
 }
 
 void VideoPage_2::videoDone()
 {
 	int i = progressBar->value();
 	progressBar->setValue(i + 1);
-	if (i >= currentDB->getVideoCnt())
+	if (i >= currentDB->getVideoCnt() - 1)
 	{
 		detectBtn->setEnabled(true);
 		selectAreaBtn->setEnabled(true);
@@ -385,10 +382,13 @@ void VideoPage_2::videoDone()
 		{
 			progressBar->setValue(progressBar->maximum());
 		}
+
+		wizard()->button(QWizard::FinishButton)->setEnabled(true);
+		finished = true;
 	}
 	else {
 
-		auto videos = currentDB->getVideos()[0];
+		auto videos = currentDB->getVideos()[i+1];
 		frameCnt = 0;
 		for (auto video : videos)
 		{
@@ -477,6 +477,11 @@ AreaSelectWindow::AreaSelectWindow(StillDB* db, QWidget* parent)
 			cv::resize(img, img, cv::Size(640, 360));
 			imgLabel->setPixmap(QPixmap::fromImage(cvMatToQImage(img)));
 			imgLabel->update();
+		}
+		else {
+			QMessageBox::warning(this, tr("Video missing"), tr("One or more video files are missing! Please make sure all video files in the database are available and try again!"));
+			this->close();
+			return;
 		}
 
 		RoIs.push_back(cv::Rect(-1, -1, -1, -1));

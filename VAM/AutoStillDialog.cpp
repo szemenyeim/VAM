@@ -2,7 +2,7 @@
 
 AutoStillDialog::AutoStillDialog(QWidget* parent) : QDialog(parent) {}
 
-void AutoStillDialog::showDialog(std::vector<QStringList> stills, StillDB* db)
+bool AutoStillDialog::showDialog(std::vector<QStringList> stills, StillDB* db)
 {
 	ui.setupUi(this);
 	stillLists = stills;
@@ -21,6 +21,11 @@ void AutoStillDialog::showDialog(std::vector<QStringList> stills, StillDB* db)
 	{
 		if (i < videoCnt)
 		{
+			if (stillLists[i].empty())
+			{
+				QMessageBox::warning(this, tr("No Detections"), tr("There were no animals detected on one of the videos. Please try again after adjusting the parameters!"));
+				return false;
+			}
 			stillListModels.push_back(new QStringListModel(stillLists[i]));
 			lists[i]->setModel(stillListModels[i]);
 			outStillList.push_back(QStringList());
@@ -40,6 +45,8 @@ void AutoStillDialog::showDialog(std::vector<QStringList> stills, StillDB* db)
 	connect(ui.cancelBtn, &QPushButton::clicked, this, &AutoStillDialog::cancelBtn);
 
 	this->show();
+
+	return true;
 }
 
 void AutoStillDialog::addStill()
