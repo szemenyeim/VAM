@@ -1342,7 +1342,7 @@ void MarkerWindow::predictMarkings()
 		{
 			auto kp = pred[0][i];
 			auto x = kp[0].item<float>();
-			auto y = kp[1].item<float>()- padding/2.0;
+			auto y = kp[1].item<float>() - padding / 2.0;
 
 			Point pt = currentMeasurement.getMark(imgIdxMap[currentImgIndex], i);
 			currentMeasurement.setMark(Point(pt.getName(), x / 512.f, y / 512.f), imgIdxMap[currentImgIndex], i);
