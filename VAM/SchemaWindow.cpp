@@ -764,13 +764,16 @@ void SchemaWindow::imageClicked(const QPoint &p, VAMImageIndex idx)
 	{
 		VAMLogger::log("image click #" + QString::number(idx));
 
-		// Get click location scaled between [0,1] (to make it scale invariant)
-		Point location((double)p.x() / (double)imageLabels[idx]->size().width(), (double)p.y() / (double)imageLabels[idx]->size().height());
-
 		// Get pointer variables according to image index
-		cv::Mat *img = &images[idx];
-		cv::Mat *disp = &dispImages[idx];
-		CustomLabel *label = imageLabels[idx];
+		cv::Mat* img = &images[idx];
+		cv::Mat* disp = &dispImages[idx];
+		CustomLabel* label = imageLabels[idx];
+
+		// Get click location scaled between [0,1] (to make it scale invariant)
+		double x = p.x() - (label->size().width() - disp->cols)/2;
+		double y = p.y() - (label->size().height() - disp->rows)/2;
+		Point location( x / disp->cols,	y / disp->rows);
+
 
 		// Draw on image
 		if (img->data)
