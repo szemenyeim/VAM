@@ -968,7 +968,7 @@ void VideoWindow::completeStill()
 	QStringList fileNames;
 	for( int i = 0; i < videoCnt; i++ )
 	{
-		fileNames = QFileDialog::getOpenFileNames( this, tr( "Change Video File(s)" ) + " #" + QString::number( i + 1 ), currentProject->getProjLib(), tr( "Video Files (*.avi *.mp4 *.mkv *.vid *.mv4 *.mts *.m4v)" ) );
+		fileNames = QFileDialog::getOpenFileNames( this, tr( "Change Video File(s)" ) + " #" + QString::number( i + 1 ), currentProject->getProjLib(), tr( "Video Files (*.avi *.mp4 *.mkv *.vid *.mv4 *.m4v)" ) );
 		if( fileNames.isEmpty() )
 			continue;
 		DBModified = true;
