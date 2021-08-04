@@ -1275,6 +1275,7 @@ void MarkerWindow::predictMarkings()
 	cv::cvtColor(resized, resized, cv::COLOR_BGR2RGB);
 
 	VAMImageIndex imageIdx = getImageIdx(imgIdxMap[currentImgIndex]);
+	float imgSize = 1.0 / (512.0 * 256.0);
 
 	cv::Mat padded;
 	int padding = 256 - resized.rows;
@@ -1313,10 +1314,29 @@ void MarkerWindow::predictMarkings()
 		// Execute the model and turn its output into a tensor.
 		auto output = model.forward(inputs).toTuple()->elements()[1].toList().get(0).toGenericDict();
 		
+		auto bb = output.at("boxes").toTensor()[0];
+		auto conf = output.at("scores").toTensor()[0].item().toFloat();
+
+		auto pred = output.at("keypoints").toTensor();
+		auto shape = pred.sizes()[0];
+		if (shape > 1)
+		{
+			QMessageBox::warning(this, tr("This is a debug message"), tr("More than 1 BB"));
+		}
+
+		float bbSize = ((bb[3] - bb[1]) * (bb[2] - bb[0])).item().toFloat() * imgSize;
+		if (conf < 0.8)
+		{
+			if (bbSize < 0.1)
+			{
+				QMessageBox::warning(this, tr("Uncertain result"), 
+					tr("The neural network has not detected a cattle with high enough confidence. Please annotate this image manually!")
+					+ " (" + QString::number(conf) + ", " + QString::number(bbSize) + ")");
+				return;
+			}
+		}
 						
 		auto markings = currentMeasurement.getMarkRow(imgIdxMap[currentImgIndex]);
-		auto pred = output.at("keypoints").toTensor();
-		auto shape = pred.sizes();
 
 		for (int i = 0; i < markings.size(); i++)
 		{
