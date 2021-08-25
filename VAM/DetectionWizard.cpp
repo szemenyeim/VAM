@@ -72,7 +72,7 @@ VideoPage_2::VideoPage_2(Project *proj, StillDB *db, QWidget* parent)
 	delayBox = new QSpinBox();
 	delayBox->setMinimum(1);
 	delayBox->setMaximum(20);
-	delayBox->setValue(5);
+	delayBox->setValue(4);
 
 	motionBox = new QDoubleSpinBox();
 	motionBox->setMinimum(0.05);
@@ -87,9 +87,9 @@ VideoPage_2::VideoPage_2(Project *proj, StillDB *db, QWidget* parent)
 	confidenceBox->setDecimals(1);
 
 	areaBox = new QDoubleSpinBox();
-	areaBox->setMinimum(0.05);
+	areaBox->setMinimum(0.01);
 	areaBox->setMaximum(0.75);
-	areaBox->setValue(0.1);
+	areaBox->setValue(0.05);
 	areaBox->setDecimals(2);
 
 	progressBar = new QProgressBar();
@@ -206,16 +206,29 @@ bool VideoPage_2::checkCattle(const cv::Mat& img)
 			float bbSize = ((bb[3] - bb[1]) * (bb[2] - bb[0])).item().toFloat() * imgSize;
 
 			logText += "Cattle check: Confidence: " + QString::number(conf) +
-				" with ratio: " + QString::number(bbSize) + "\n";
-			emit logChanged();
+				" with ratio: " + QString::number(bbSize) + " - ";
+			
+			bool accept = false;
 
 			if (conf > confT)
 			{
 				if (bbSize > areaT)
 				{
-					return true;
+					accept = true;
 				}
 			}
+
+			if (accept)
+			{
+				logText += "Accepted\n";
+				emit logChanged();
+				return true;
+			}
+			else {
+				logText += "Rejected\n";
+				emit logChanged();
+			}
+
 		}
 
 		
@@ -468,6 +481,13 @@ AreaSelectWindow::AreaSelectWindow(StillDB* db, QWidget* parent)
 		connect(imgLabel, &CustomLabel::mouseReleased,
 			std::bind(&AreaSelectWindow::imageReleased, this, std::placeholders::_1, toIdx(i)));
 
+		if (db->getVideos()[i].isEmpty())
+		{
+			QMessageBox::warning(this, tr("Video list empty"), tr("One or more video lists are empty. Please add videos for all cameras!"));
+			this->close();
+			return;
+		}
+
 		auto video = db->getVideos()[i][0];
 		cv::VideoCapture cap(video.toStdString());
 		cv::Mat img;
@@ -484,8 +504,19 @@ AreaSelectWindow::AreaSelectWindow(StillDB* db, QWidget* parent)
 			return;
 		}
 
-		RoIs.push_back(cv::Rect(-1, -1, -1, -1));
+		RoIs.push_back(cv::Rect(256, 120, 128, 160));
+		images[i]->x = 256;
+		images[i]->y = 120;
+		images[i]->x2 = 384;
+		images[i]->y2 = 280;
+		images[i]->update();
 	}
+}
+
+void AreaSelectWindow::closeEvent(QCloseEvent* event)
+{
+	emit finished(RoIs);
+	event->accept();
 }
 
 void AreaSelectWindow::donePushed()

@@ -137,6 +137,9 @@ private slots:
 	// Slot for handling click release
 	void imageReleased(const QPoint& p, VAMImageIndex idx);
 
+protected:
+	void closeEvent(QCloseEvent* event);
+
 signals:
 
 	void finished(std::vector<cv::Rect> RoIs);

@@ -4,32 +4,42 @@
 <context>
     <name>AreaSelectWindow</name>
     <message>
-        <location filename="../DetectionWizard.cpp" line="434"/>
+        <location filename="../DetectionWizard.cpp" line="447"/>
         <source>Please draw the Region of Interest (RoI) on all images.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../DetectionWizard.cpp" line="444"/>
+        <location filename="../DetectionWizard.cpp" line="457"/>
         <source>Done</source>
         <translation type="unfinished">Done</translation>
     </message>
     <message>
-        <location filename="../DetectionWizard.cpp" line="482"/>
+        <location filename="../DetectionWizard.cpp" line="486"/>
+        <source>Video list empty</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../DetectionWizard.cpp" line="486"/>
+        <source>One or more video lists are empty. Please add videos for all cameras!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../DetectionWizard.cpp" line="502"/>
         <source>Video missing</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../DetectionWizard.cpp" line="482"/>
+        <location filename="../DetectionWizard.cpp" line="502"/>
         <source>One or more video files are missing! Please make sure all video files in the database are available and try again!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../DetectionWizard.cpp" line="497"/>
+        <location filename="../DetectionWizard.cpp" line="528"/>
         <source>RoIs missing</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../DetectionWizard.cpp" line="497"/>
+        <location filename="../DetectionWizard.cpp" line="528"/>
         <source>Please select the RoI on all images!</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2177,22 +2187,22 @@ Then you can set some parameters regarding the sensitivity of the detection. Fin
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../DetectionWizard.cpp" line="225"/>
+        <location filename="../DetectionWizard.cpp" line="238"/>
         <source>Run failed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../DetectionWizard.cpp" line="225"/>
+        <location filename="../DetectionWizard.cpp" line="238"/>
         <source>The neural network run has failed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../DetectionWizard.cpp" line="291"/>
+        <location filename="../DetectionWizard.cpp" line="304"/>
         <source>Cannot open video file!</source>
         <translation type="unfinished">Cannot open video file!</translation>
     </message>
     <message>
-        <location filename="../DetectionWizard.cpp" line="291"/>
+        <location filename="../DetectionWizard.cpp" line="304"/>
         <source>Please make sure it is not corrupt or deleted!</source>
         <translation type="unfinished">Please make sure it is not corrupt or deleted!</translation>
     </message>
